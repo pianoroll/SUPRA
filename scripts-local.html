@@ -1,0 +1,161 @@
+
+<script>
+// vim: ts=3
+
+document.addEventListener("DOMContentLoaded", function () {
+	var request = new XMLHttpRequest();
+	request.addEventListener("load", function () {
+		var aton = new ATON;
+		displayList(aton.parse(this.responseText).ROLL);
+	});
+	request.open("GET", "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton");
+	request.send();
+});
+
+
+function displayList(index) {
+	var output = "";
+	output += "<table id='red-welte-list'>";
+	output += "<thead>";
+	output += "<tr>";
+	output += "<th></th>";
+	output += "<th onclick='sortByNumber(1)'>Label</th>";
+	output += "<th onclick='sortByText(2)'>Title</th>";
+	output += "<th onclick='sortByText(3)'>Composer</th>";
+	output += "<th onclick='sortByText(4)'>Performer</th>";
+	output += "</tr>";
+	output += "</thead>";
+	output += "<tbody>";
+	for (var i=0; i<index.length; i++) {
+		if (!index[i].TITLE) {
+			continue;
+		}
+		output += "<tr class='data'>";
+
+		var druid = index[i].DRUID.trim();
+		output += "<td>";
+		output += "<div id='audio_" + druid + "' ";
+		output += "style='cursor:hand; cursor:pointer;' ";
+		output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
+		output += "class='play audio'>play</div>";
+		output += "</td>";
+
+		output += "<td style='white-space:pre;'>" + index[i].LABEL.replace("Welte-Mignon", "WM") + "</td>";
+
+		output += "<td style='max-width:250px;'>" + index[i].TITLE + "</td>";
+		output += "<td style='min-width:250px;'>";
+		if (index[i].COMPOSER) {
+		 	output += index[i].COMPOSER.replace("-1", "&ndash;1");
+		}
+		output += "</td>";
+		output += "<td>" + index[i].PERFORMER + "</td>";
+		output += "</tr>";
+	}
+	output += "</tbody>";
+	output += "</table>";
+
+	var element = document.querySelector("div#list");
+	element.innerHTML = output;
+	sortByNumber(1);
+}
+
+
+
+//////////////////////////////
+//
+// sortByText --
+//
+
+function sortByText(index, selector) {
+	var data = document.querySelectorAll(".data");
+	var datalist = [];
+	var i;
+	for (i=0; i<data.length; i++) {
+		datalist.push(data[i]);
+	}
+	datalist.sort(function(a, b) {
+		var A;
+		var B;
+		if (selector) {
+			A = a.cells[index].querySelector(selector).innerHTML;
+			B = b.cells[index].querySelector(selector).innerHTML;
+		} else {
+			A = a.cells[index].textContent;
+			B = b.cells[index].textContent;
+		}
+		if (A.match(/^\s*$/)) {
+			return +1;
+		}
+		if (B.match(/^\s*$/)) {
+			return -1;
+		}
+		var result = A.localeCompare(B);
+		return result;
+	});
+
+	var body = document.querySelector("table#red-welte-list tbody");
+	body.innerHTML = "";
+	for (i=0; i<datalist.length; i++) {
+		body.appendChild(datalist[i]);
+	}
+}
+
+
+
+
+//////////////////////////////
+//
+// sortByNumber --
+//
+
+function sortByNumber(index, selector) {
+	var data = document.querySelectorAll(".data");
+	var datalist = [];
+	var i;
+	for (i=0; i<data.length; i++) {
+		datalist.push(data[i]);
+	}
+	datalist.sort(function(a, b) {
+		var A;
+		var B;
+		if (selector) {
+			A = a.cells[index].querySelector(selector).innerHTML;
+			B = b.cells[index].querySelector(selector).innerHTML;
+		} else {
+			A = a.cells[index].textContent;
+			B = b.cells[index].textContent;
+		}
+
+		if (A.match(/^\s*$/)) {
+			return +1;
+		}
+		if (B.match(/^\s*$/)) {
+			return -1;
+		}
+
+		var Anum = 0;
+		var Bnum = 0;
+		var matches;
+		if (matches = A.match(/(\d+)/)) {
+			Anum = parseInt(matches[1]);
+		}
+		if (matches = B.match(/(\d+)/)) {
+			Bnum = parseInt(matches[1]);
+		}
+
+		return Anum - Bnum;
+	});
+
+	var body = document.querySelector("table#red-welte-list tbody");
+	body.innerHTML = "";
+	for (i=0; i<datalist.length; i++) {
+		body.appendChild(datalist[i]);
+	}
+}
+
+
+</script>
+
+
+
+
