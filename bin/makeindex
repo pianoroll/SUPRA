@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+use strict;
+
+my $rolltext = "rolltext";
+
+my @list = sort glob "*/midi-exp/*-exp.mid";
+
+foreach my $item (@list) {
+	print "\@\@BEGIN: ROLL\n";
+	my $data = `rolltext $item`;
+	print $data;
+	print "\@\@END: ROLL\n\n\n";
+}
+
+
