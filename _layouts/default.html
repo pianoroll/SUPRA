@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- source: http://web.stanford.edu/group/webdev/cardinal -->
+
+<head>
+<title>SUPRA</title>
+
+<!-- Meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- These meta tags are used when someone shares a link to this page on Facebook,
+     Twitter or other social media sites. All tags are optional, but including them
+     and customizing the content for specific sites can help the visibility of your
+     content.
+<meta property="og:type" content="website" />
+<meta property="og:title" content="SUPRA: Stanford University Piano Roll Archive" />
+<meta name="twitter:site" content="@TwitterHandle" />
+<meta name="twitter:title" content="SUPRA" />
+<meta name="twitter:description" content="Stanford University Piano Roll Archive." />
+-->
+
+<!-- CSS -->
+<link rel="stylesheet" href="/styles/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="/styles/base.min.css?v=0.1" type="text/css" />
+<link rel="stylesheet" href="/styles/custom.css?v=0.1" type="text/css"/>
+<!-- JS and jQuery --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script src="/scripts/modernizr.custom.17475.js"></script> 
+<script src="/scripts/bootstrap.min.js"></script> 
+<script src="/scripts/aton.js"></script> 
+
+<!-- custom JS -->
+<script src="/scripts/base.js?v=1.0"></script>
+<script src="/scripts/custom.js"></script>
+</head>
+
+<body class="home"> <!-- class="home" underlines the Home link in the top nav -->
+<div id="su-wrap"> <!-- used to force footer to bottom of short pages -->
+  <div id="su-content"> <!-- used to force footer to bottom of short pages --> 
+    
+    <!--=== Top ===-->
+    <div id="top">
+      <div class="container"> 
+        <!--=== Skip links ===-->
+        <div id="skip"> <a href="#content" onClick="$('#content').focus()">Skip to content</a> </div>
+        <!-- /Skip links --> 
+      </div>
+    </div>
+    <!--/top--> 
+    
+    <!--=== Header ===-->
+    <div id="header" class="clearfix" role="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8"> 
+            <!-- Logo -->
+            <div id="logo" class="clearfix"> <span style="color:white; font-size:320%">SUPRA</span> </div>
+            <!-- /logo -->
+            <div id="signature">
+              <div id="site-name">
+                <a href="/">
+                  <span id="site-name-1">Stanford University Piano Roll Archive</span>
+                  <span id="site-name-2">Optional line 2 - add two-line-signature to body class to display</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Menu -->
+    <div id="mainmenu" class="clearfix" role="navigation">
+      <div class="container">
+        <div class="navbar navbar-default"> 
+          
+          <!-- main navigation -->
+          <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
+          <!-- /nav-collapse -->
+          
+          <div class="navbar-collapse collapse"> 
+            <!--search box-->
+<!--
+            <div id="nav-search" role="search">
+              <form action="http://www.stanford.edu/search" method="get" id="search-form" accept-charset="UTF-8">
+                <h2 class="hidden">Search form</h2>
+                <label class="hidden" for="search-field">Search term</label>
+                <input name="cx" type="hidden" value="003265255082301896483:sq5n7qoyfh8">
+                <input name="cof" type="hidden" value="FORID:9">
+                <input name="ie" type="hidden" value="UTF-8">
+                <input name="as_sitesearch" type="hidden" value="facts.stanford.edu">
+                <input title="Search string" class="input-medium" placeholder="Search this site&hellip;" type="text" id="search-field" name="q" value="" size="15" maxlength="128" />
+                <button id="search-btn" type="submit" name="submit"  aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+-->
+
+            <div  role="navigation">
+              <div id="primary-nav">
+                <ul class="nav navbar-nav" aria-label="primary navigation">
+                  <li id="nav-home"> <a href="/">Home</a></li>
+                  <li id="nav-1"> <a href="/about">About</a> </li>
+                  <li id="nav-2"> <a target="_blank" href="https://github.com/pianoroll/SUPRA">Github</a> </li>
+<!--
+                   <ul class="dropdown-menu">
+                     <li><a  href="#">Submenu 1</a></li>
+                     <li><a  href="#">Submenu 2</a></li>
+                     <li><a  href="#">Submenu 3</a></li>
+                     <li><a  href="#">Submenu 4</a></li>
+                     <li><a  href="#">Submenu 5</a></li>
+                   </ul>
+-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /nav-collapse --> 
+        </div>
+        <!-- /navbar --> 
+        
+      </div>
+      <!-- /container --> 
+    </div>
+    <!-- /mainmenu --> 
+    
+    <!-- main content -->
+    <div id="content" class="container" role="main" tabindex="0">
+
+
+      <h1 class="hide">Cardinal Theme</h1>
+      <div class="row">
+                <!-- Main column -->
+        <div id="main-content" class="col-md-16 col-md-push-1" role="main">
+
+	{{content}}
+
+
+
+        <div id="sidebar-second" class="col-md-3 col-md-pull-9">
+          <div class="well">
+            <h2>About Stanford Cardinal</h2>
+            <p>Stanford Cardinal is available both as HTML / Dreamweaver templates and as a WordPress theme. It is based on the design of the Stanford homepage, and is ready to use without any additional styling.</p>
+            <p><a class="more-link" href="http://wordpressthemes.stanford.edu/"><i class="fa fa-chevron-circle-right"></i> <span>See demo WordPress site</span></a></p>
+            <p>Stanford Cardinal can be used only for the official websites of University academic departments, centers, research groups and administrative units. It is available by request for this purpose.</p>
+            <p><a class="more-link" href="http://helpsu.stanford.edu/?pcat=stanfordhomepage"><i class="fa fa-chevron-circle-right"></i> <span>Request Stanford Cardinal</span></a></p>
+          </div>
+          <div class="well">
+            <h2>In the Spotlight</h2>
+            <img src="assets/cardinal/images/samples/LemonsNTower1170.jpg" alt="" />
+            <p class="caption">This is an optional image caption.</p>
+            <p>This is a display element called a "well".  It can be used in either sidebar to highlight content in a shaded box.</p>
+            <p>A <em>well</em> is perfect for featuring an event or calling out highlighted information.</p>
+            <p><a class="more-link" href="#"><i class="fa fa-chevron-circle-right"></i> <span>More information</span></a></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- #content--> 
+    
+  </div>
+  <!-- #su-content --> 
+</div>
+<!-- #su-wrap --> 
+
+<!-- BEGIN footer -->
+<div id="footer" class="clearfix footer" role="contentinfo">
+  <!-- Fat footer start -->
+  <div class="container">
+    <div id="footer-content" class="row">
+<!--
+      <div class="col-xs-12 col-sm-6 col-sm-push-3">
+        <h3>More about us</h3>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet lobortis libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae tortor ligula, quis laoreet ante. Phasellus in turpis ac elit consectetur viverra. Praesent nec massa vitae dui facilisis venenatis et at nisi.</p>
+      </div>
+-->
+<!--
+      <div class="col-xs-12 col-sm-3 col-sm-push-3">
+        <h3>Related Links</h3>
+        <ul>
+          <li><a href="#">Particularly relevant</a></li>
+          <li><a href="#">Related and really quite interesting</a></li>
+          <li><a href="#">Useful in certain circumstances</a></li>
+          <li><a href="#">Purely tangential information</a></li>
+        </ul>
+      </div>
+-->
+    </div>
+  </div>
+  <!-- Fat footer end -->
+  
+  <!-- Global footer snippet start -->
+  <div id="global-footer">
+    <div class="container">
+      <div class="row">
+<!--
+        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="http://www.stanford.edu"> <img src="assets/cardinal/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/> </a> </div>
+-->
+        <!-- #bottom-logo end -->
+        <div id="bottom-text" class="col-xs-6 col-sm-10">
+          <ul>
+            <li class="home"><a target="_blank" href="https://library.stanford.edu/music">Stanford Music Library</a></li>
+          </ul>
+        </div>
+        <!-- .bottom-text end -->
+        <div class="clear"></div>
+      </div>
+      <!-- .row end --> 
+    </div>
+    <!-- .container end --> 
+  </div>
+  <!-- Global footer snippet end --> 
+  
+</div>
+<!-- END footer --> 
+
+</body>
+</html>
+

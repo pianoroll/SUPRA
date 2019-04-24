@@ -6,3 +6,6 @@
 .DS_Store
 Icon*
 *.bak
+Gemfile.lock
+.jekyll-metadata
+_site
