@@ -1,0 +1,40 @@
+<script>
+
+var CGI = {};      // CGI parameters from URL
+var ROLLINFO = [];
+var SORTCOLUMN = 1;
+var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+
+document.addEventListener("DOMContentLoaded", function () {
+	var matches;
+	CGI = GetCgiParameters();
+	if (CGI.s) {
+		if (matches = CGI.s.match(/(\d+)/)) {
+			SORTCOLUMN = parseInt(matches[1]);
+		}
+	}
+
+	var request = new XMLHttpRequest();
+	request.addEventListener("load", function () {
+		var aton = new ATON;
+		ROLLINFO = aton.parse(this.responseText).ROLL;
+		if (CGI.q && !CGI.q.match(/^\s*$/)) {
+			displayList(ROLLINFO, CGI.q);
+		} else {
+			displayList(ROLLINFO);
+		}
+		displayStats(ROLLINFO);
+	});
+	request.open("GET", ATONINDEX);
+	request.send();
+
+	var element = document.querySelector("input#search");
+	if (element) {
+		element.addEventListener("input", function() {
+			doSearch(element.value);
+		});
+	}
+
+});
+
+</script>

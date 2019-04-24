@@ -8,13 +8,12 @@ summary:
 ---
 
 
-## List of Red Welte Rolls ##
 
-
+<input id="search" placeholder="search" value="">
+<span id="search-count"></span>
 
 <div id="list"></div>
 
 {% include_relative styles-local.html %}
-{% include_relative scripts-audio.html %}
 {% include_relative scripts-local.html %}
 

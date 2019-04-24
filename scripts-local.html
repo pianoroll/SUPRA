@@ -1,23 +1,14 @@
 
+{% include_relative listeners.html %}
+{% include_relative scripts-audio.html %}
+
 <script>
 // vim: ts=3
 
-var ROLLINFO = [];
 
-document.addEventListener("DOMContentLoaded", function () {
-	var request = new XMLHttpRequest();
-	request.addEventListener("load", function () {
-		var aton = new ATON;
-		ROLLINFO = aton.parse(this.responseText).ROLL;
-		displayList(ROLLINFO);
-		displayStats(ROLLINFO);
-	});
-	request.open("GET", "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton");
-	request.send();
-});
+function displayList(index, query) {
 
-
-function displayList(index) {
+	reportMatches(index);
 	var output = "";
 	output += "<table id='red-welte-list'>";
 	output += "<thead>";
@@ -59,8 +50,22 @@ function displayList(index) {
 	output += "</table>";
 
 	var element = document.querySelector("div#list");
-	element.innerHTML = output;
-	sortByNumber(1);
+
+	if (query) {
+		element.style.display = "none";
+		var inp = document.querySelector("input#search");
+		if (inp) {
+			inp.value = query;
+			doSearch(query);
+		}
+	} else {
+		element.innerHTML = output;
+	}
+	sortByNumber(SORTCOLUMN);
+
+	if (query) {
+		element.style.display = "block";
+	}
 }
 
 
@@ -113,6 +118,7 @@ function sortByText(index, selector) {
 //
 
 function sortByNumber(index, selector) {
+	SORTCOLUMN = index;
 	var data = document.querySelectorAll(".data");
 	var datalist = [];
 	var i;
@@ -179,6 +185,9 @@ function displayStats(database) {
 	content += rmiles + " miles (";
 	content += rkm + " km)<br/>";
 
+	var notes = 1596721;  // for 386
+	content += notes.toLocaleString() + " notes<br/>";
+
 	var sec = 167349; // for 386
 	var hours = parseInt(sec/3600);
 	sec = sec - hours * 3600;
@@ -219,6 +228,99 @@ function getRollLength(database) {
 	return sum;
 }
 
+
+//////////////////////////////
+//
+// doSearch --
+//
+
+function doSearch(text) {
+	text = text.trim();
+	var fields = text.split(/\s+/);
+	var entries = ROLLINFO;
+	var oldentries;
+	for (var i=0; i<fields.length; i++) { 
+		if (fields[i].match(/^\s*$/)) {
+			continue;
+		}
+		oldentries = entries;
+		entries = [];
+		var regexp = new RegExp(fields[i], "i");
+		for (var j=0; j<oldentries.length; j++) {
+			if (oldentries[j].TITLE && oldentries[j].TITLE.match(regexp)) {
+				entries.push(oldentries[j]);
+				continue;
+			}
+			if (oldentries[j].COMPOSER && oldentries[j].COMPOSER.match(regexp)) {
+				entries.push(oldentries[j]);
+				continue;
+			}
+			if (oldentries[j].PERFORMER && oldentries[j].PERFORMER.match(regexp)) {
+				entries.push(oldentries[j]);
+				continue;
+			}
+			if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
+				entries.push(oldentries[j]);
+				continue;
+			}
+		}
+		
+	}
+
+	displayList(entries);
+}
+
+
+
+//////////////////////////////
+//
+// reportMatches --
+//
+
+function reportMatches(list) {
+	var element = document.querySelector("#search-count");
+	if (!element) {
+		return;
+	}
+	if (list.length == ROLLINFO.length) {
+		element.innerHTML = "";
+		return;
+	}
+	var output = "" + list.length;
+	output += " roll";
+	if (list.length != 1) {
+		output += "s";
+	}
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// GetCgiParameters -- Returns an associative array containing the
+//     page's URL's CGI parameters
+//
+
+function GetCgiParameters() {
+   var url = window.location.search.substring(1);
+   var output = {};
+   var settings = url.split('&');
+   for (var i=0; i<settings.length; i++) {
+      var pair = settings[i].split('=');
+      pair[0] = decodeURIComponent(pair[0]);
+      pair[1] = decodeURIComponent(pair[1]);
+      if (typeof output[pair[0]] === 'undefined') {
+         output[pair[0]] = pair[1];
+      } else if (typeof output[pair[0]] === 'string') {
+         var arr = [ output[pair[0]], pair[1] ];
+         output[pair[0]] = arr;
+      } else {
+         output[pair[0]].push(pair[1]);
+      }
+   }
+   return output;
+}
 
 </script>
 
