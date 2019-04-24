@@ -2,11 +2,15 @@
 <script>
 // vim: ts=3
 
+var ROLLINFO = [];
+
 document.addEventListener("DOMContentLoaded", function () {
 	var request = new XMLHttpRequest();
 	request.addEventListener("load", function () {
 		var aton = new ATON;
-		displayList(aton.parse(this.responseText).ROLL);
+		ROLLINFO = aton.parse(this.responseText).ROLL;
+		displayList(ROLLINFO);
+		displayStats(ROLLINFO);
 	});
 	request.open("GET", "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton");
 	request.send();
@@ -151,6 +155,68 @@ function sortByNumber(index, selector) {
 	for (i=0; i<datalist.length; i++) {
 		body.appendChild(datalist[i]);
 	}
+}
+
+
+//////////////////////////////
+//
+// displayStats --
+//
+
+function displayStats(database) {
+	var element = document.querySelector("#stats");
+	if (!element) {
+		return;
+	}
+	var content = "";
+	content += database.length + " scanned piano rolls<br/>";
+	rolllen = getRollLength(database);
+	content += (rolllen * 4096).toLocaleString() + " pixels<br/>";
+	var miles = rolllen / 300.0 / 12.0 / 5280.0;
+	var rmiles = parseInt(miles * 100.0 + 0.5)/100.0;
+	var km = miles * 1.60934;
+	var rkm = parseInt(km * 100.0 + 0.5)/100.0;
+	content += rmiles + " miles (";
+	content += rkm + " km)<br/>";
+
+	var sec = 167349; // for 386
+	var hours = parseInt(sec/3600);
+	sec = sec - hours * 3600;
+	var min = parseInt(sec/60);
+	sec = sec - min * 60;
+	content += hours + ":";
+	if (min < 10) {
+		content += "0";
+	}
+	content += min + ":";
+	if (sec < 10) {
+		content += "0";
+	}
+	content += sec;
+	content += " hours of music";
+
+	element.innerHTML = content;
+}
+
+
+//////////////////////////////
+//
+// getRollLength -- return a sum of the IMAGE_LENGTH parameter from
+//    each entry.
+//
+
+function getRollLength(database) {
+	var sum = 0;
+	for (var i=0; i<database.length; i++) {
+		if (!database[i].IMAGE_LENGTH) {
+			continue;
+		}
+		var matches;
+		if (matches = database[i].IMAGE_LENGTH.match(/(\d+)px/)) {
+			sum += parseInt(matches[1]);
+		}
+	}
+	return sum;
 }
 
 
