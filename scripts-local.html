@@ -5,9 +5,7 @@
 <script>
 // vim: ts=3
 
-
 function displayList(index, query) {
-
 	reportMatches(index);
 	var output = "";
 	output += "<table id='red-welte-list'>";
@@ -32,7 +30,7 @@ function displayList(index, query) {
 		var druid = index[i].DRUID.trim();
 		output += "<td>";
 		output += "<div id='audio_" + druid + "' ";
-		output += "style='cursor:hand; cursor:pointer;' ";
+		output += "style='cursor:pointer;' ";
 		output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
 		output += "class='play audio'>play</div>";
 		output += "</td>";
@@ -45,7 +43,11 @@ function displayList(index, query) {
 		 	output += index[i].COMPOSER.replace("-1", "&ndash;1");
 		}
 		output += "</td>";
-		output += "<td>" + index[i].PERFORMER + "</td>";
+		output += "<td>";
+		if (index[i].PERFORMER) {
+		 	output += index[i].PERFORMER.replace("-1", "&ndash;1");
+		}
+		output += "</td>";
 
 		output += "<td>";
 		output += "<span class='searchworks'>";
@@ -69,7 +71,6 @@ function displayList(index, query) {
 	output += "</table>";
 
 	var element = document.querySelector("div#list");
-
 	if (query) {
 		element.style.display = "none";
 		var inp = document.querySelector("input#search");
@@ -190,6 +191,11 @@ function sortByNumber(index, selector) {
 //
 
 function doSearch(text) {
+	if (!text) {
+		var element = document.querySelector("input#search");
+		text = element.value;
+	}
+
 	text = text.trim();
 	var fields = text.split(/\s+/);
 	var entries = ROLLINFO;

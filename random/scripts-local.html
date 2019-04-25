@@ -51,7 +51,7 @@ function displayRandom(list) {
 	output += "</td>";
 	output += "<td>";
 	if (list[rindex].COMPOSER) {
-		output += list[rindex].COMPOSER;
+		output += list[rindex].COMPOSER.replace(/-1/, "&ndash;1");
 	}
 	output += "</td>";
 	output += "</tr>";
@@ -62,7 +62,18 @@ function displayRandom(list) {
 	output += "</td>";
 	output += "<td>";
 	if (list[rindex].PERFORMER) {
-		output += list[rindex].PERFORMER;
+		output += list[rindex].PERFORMER.replace(/-1/, "&ndash;1");
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Label:";
+	output += "</td>";
+	output += "<td>";
+	if (list[rindex].LABEL) {
+		output += list[rindex].LABEL;
 	}
 	output += "</td>";
 	output += "</tr>";

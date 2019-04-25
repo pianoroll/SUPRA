@@ -6,6 +6,9 @@ permalink: /random/index.html
 vim: ts=3
 summary: 
 ---
+<!--
+see also: https://codepen.io/craigstroman/pen/aOyRYx
+-->
 
 # Random performance #
 

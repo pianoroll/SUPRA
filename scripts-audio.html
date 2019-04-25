@@ -16,12 +16,15 @@ var AUDIOid        = '';                   // currently playing audio button.
 function PlayAudioFile(druid, element, starttime) {
 	// The JRPID is not the same as the currently playing file
 	// (or there is no file playing).  So start the new one.
+
+
 	if (!AUDIO) {
 	   AUDIO = document.getElementById('audio');
    }
 	if (!AUDIO) {
-		document.body.innerHTML += '<audio id="audio"></audio>\n';
-	   AUDIO = document.getElementById('audio');
+	   AUDIO = document.createElement("AUDIO");
+		AUDIO.id = "audio";
+		document.body.appendChild(AUDIO);
 	}
    if (!AUDIO) {
 		console.log('Error: could not set up audio interface\n');
@@ -60,7 +63,6 @@ function PlayAudioFile(druid, element, starttime) {
 		source += '<source src="https://ccrma.stanford.edu/~craig/piano-roll-project/supra-mp4s/' + druid + '.m4a" ';
 		source += 'type="audio/mp4"/>\n';
 		AUDIO.innerHTML = source;
-console.log("source set to", source);
 
 		AUDIOdruid = druid;
 		AUDIO.load();
