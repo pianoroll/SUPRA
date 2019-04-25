@@ -1,0 +1,138 @@
+@@ This is a list of musicians useful to create 
+@@ hyperlinks to information about them.  The NAME
+@@ field is in the same format as the entry in the roll
+@@ database (not accented characters).
+
+@@BEGIN: PERSON
+@NAME:		Reinecke, Carl
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Carl_Reinecke
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Albert, Eugen d' 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Eugen_d%27Albert
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Backhaus, Wilhelm
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Wilhelm_Backhaus
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Beethoven, Ludwig van
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ludwig_van_Beethoven
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Bloomfield-Zeisler, Fannie
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Busoni, Ferruccio
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ferruccio_Busoni
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Epstein, Richard
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Julius_Epstein_(pianist)
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Kleeberg, Clotilde
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Chopin, Fr&#xE9;d&#xE9;ric
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Ganz, Rudolph
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolph_Ganz
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Grieg, Edvard
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Edvard_Grieg
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Gr&#xFC;nfeld, Alfred
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Gr%C3%BCnfeld
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Hofmann, Josef
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Hofmann
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Lamond, Frederic
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Liszt, Franz
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Liszt
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Mero, Yolanda
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Yolanda_Mero
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Pachmann, Vladimir de
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Vladimir_de_Pachmann
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Paderewski, Ignace Jan
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ignacy_Jan_Paderewski
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Paur, Emil
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Emil_Paur
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Reisenauer, Alfred
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Reisenauer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Samaroff Stokowski, Olga
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Olga_Samaroff
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Scharwenka, Xaver
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Xaver_Scharwenka
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Schelling, Ernest
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernest_Schelling
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Schubert, Franz
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Schubert
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Schumann, Robert
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Robert_Schumann
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Wagner, Richard
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Wagner
+@@END: PERSON
+
+
+
+

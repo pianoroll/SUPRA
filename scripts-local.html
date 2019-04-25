@@ -40,12 +40,12 @@ function displayList(index, query) {
 		output += "<td style='max-width:250px;'>" + index[i].TITLE + "</td>";
 		output += "<td style='min-width:250px;'>";
 		if (index[i].COMPOSER) {
-		 	output += index[i].COMPOSER.replace("-1", "&ndash;1");
+		 	output += preparePerson(index[i].COMPOSER);
 		}
 		output += "</td>";
 		output += "<td>";
 		if (index[i].PERFORMER) {
-		 	output += index[i].PERFORMER.replace("-1", "&ndash;1");
+		 	output += preparePerson(index[i].PERFORMER);
 		}
 		output += "</td>";
 
@@ -86,6 +86,46 @@ function displayList(index, query) {
 	if (query) {
 		element.style.display = "block";
 	}
+}
+
+
+
+//////////////////////////////
+//
+// preparePerson --
+//
+
+function preparePerson(entry) {
+	entry = entry.replace("-1", "&ndash;1");
+	var nombre = entry;
+	var dates = "";
+	var matches;
+	if (matches = entry.match(/^\s*(.*)\s+(\(.*\))\s*$/)) {
+		nombre = matches[1];
+		dates = matches[2];
+	}
+	var link = PEEPS[nombre];
+	if (nombre.match(/, [A-Z]$/)) {
+		nombre += ".";
+	}
+	if (!link) {
+		if (!dates.match(/^\s*$/)) {
+			return nombre + " " + dates;
+		} else {
+			return nombre;
+		}
+	}
+	var output = "";
+	output += "<a class='person' target='person' href='";
+	output += link;
+	output += "'>";
+	output += nombre;
+	output += "</a>";
+	if (!dates.match(/^\s*$/)) {
+		output += " ";
+		output += dates;
+	}
+	return output;
 }
 
 

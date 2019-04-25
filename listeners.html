@@ -4,6 +4,13 @@
 <script>
 // vim: ts=3
 
+var PEOPLE = {% include data/people.json %}.PERSON;
+var PEEPS = {};
+for (var i=0; i<PEOPLE.length; i++) {
+	PEEPS[PEOPLE[i].NAME] = PEOPLE[i].WIKIPEDIA;
+}
+console.log("PEEPS", PEEPS);
+
 var CGI = {};      // CGI parameters from URL
 var ROLLINFO = [];
 var SORTCOLUMN = 1;
