@@ -76,7 +76,7 @@ function PlayAudioFile(druid, element, starttime) {
 		var newelement = document.getElementById(AUDIOid);
 
 		AUDIO.addEventListener("ended", function() {
-			newelement.className = "play";
+			newelement.className = "play-big";
 		});
 
 		if (newelement.className.match(/mp4/)) {

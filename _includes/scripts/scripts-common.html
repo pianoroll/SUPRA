@@ -119,5 +119,47 @@ function GetRollLength(database) {
 	return sum;
 }
 
+
+
+//////////////////////////////
+//
+// PreparePerson --
+//
+
+function PreparePerson(entry) {
+	entry = entry.replace("-1", "&ndash;1");
+	entry = entry.replace("-\)", "&ndash;)");
+	var nombre = entry;
+	var dates = "";
+	var matches;
+	if (matches = entry.match(/^\s*(.*)\s+(\(.*\))\s*$/)) {
+		nombre = matches[1];
+		dates = matches[2];
+	}
+	var link = PEEPS[nombre];
+	if (nombre.match(/ [A-Z]$/)) {
+		nombre += ".";
+	}
+	if (!link) {
+		if (!dates.match(/^\s*$/)) {
+			return nombre + " " + dates;
+		} else {
+			return nombre;
+		}
+	}
+	var output = "";
+	output += "<a class='person' target='person' href='";
+	output += link;
+	output += "'>";
+	output += nombre;
+	output += "</a>";
+	if (!dates.match(/^\s*$/)) {
+		output += " ";
+		output += dates;
+	}
+	return output;
+}
+
+
 </script>
 

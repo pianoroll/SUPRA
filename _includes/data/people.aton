@@ -4,11 +4,6 @@
 @@ database (not accented characters).
 
 @@BEGIN: PERSON
-@NAME:		Reinecke, Carl
-@WIKIPEDIA:	https://en.wikipedia.org/wiki/Carl_Reinecke
-@@END: PERSON
-
-@@BEGIN: PERSON
 @NAME:		Albert, Eugen d' 
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Eugen_d%27Albert
 @@END: PERSON
@@ -29,8 +24,23 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Brahms, Johannes
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Johannes_Brahms
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Busoni, Ferruccio
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ferruccio_Busoni
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Chopin, Fr&#xE9;d&#xE9;ric
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Debussy, Claude
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Claude_Debussy
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -39,13 +49,13 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Kleeberg, Clotilde
-@WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
+@NAME:		Europe, James Reese
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/James_Reese_Europe
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Chopin, Fr&#xE9;d&#xE9;ric
-@WIKIPEDIA:	https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin
+@NAME:		Fryer, Herbert
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Herbert_Fryer
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -64,8 +74,23 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Hambourg, Mark
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Mark_Hambourg
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Hofmann, Josef
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Hofmann
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Kleeberg, Clotilde
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Koczalski, Raoul
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Koczalski
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -79,8 +104,18 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Mendelssohn-Bartholdy, Felix
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mendelssohn
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Mero, Yolanda
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Yolanda_Mero
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Novaes, Guiomar
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Guiomar_Novaes
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -99,13 +134,28 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Reinecke, Carl
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Carl_Reinecke
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Reisenauer, Alfred
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Reisenauer
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Rubinstein, Anton
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Anton_Rubinstein
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Samaroff Stokowski, Olga
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Olga_Samaroff
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Sauer, Emil von
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Emil_von_Sauer
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -119,6 +169,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Schnabel, Artur
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Artur_Schnabel
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Schubert, Franz
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Schubert
 @@END: PERSON
@@ -129,10 +184,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Stavenhagen, Bernhard
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Bernhard_Stavenhagen
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Wagner, Richard
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Wagner
 @@END: PERSON
-
 
 
 

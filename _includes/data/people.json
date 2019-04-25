@@ -1,10 +1,6 @@
 {
    "PERSON": [
       {
-         "NAME": "Reinecke, Carl",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Carl_Reinecke"
-      },
-      {
          "NAME": "Albert, Eugen d'",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Eugen_d%27Albert"
       },
@@ -21,20 +17,32 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler"
       },
       {
+         "NAME": "Brahms, Johannes",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Johannes_Brahms"
+      },
+      {
          "NAME": "Busoni, Ferruccio",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ferruccio_Busoni"
+      },
+      {
+         "NAME": "Chopin, Fr&#xE9;d&#xE9;ric",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
+      },
+      {
+         "NAME": "Debussy, Claude",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Claude_Debussy"
       },
       {
          "NAME": "Epstein, Richard",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Julius_Epstein_(pianist)"
       },
       {
-         "NAME": "Kleeberg, Clotilde",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Clotilde_Kleeberg"
+         "NAME": "Europe, James Reese",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/James_Reese_Europe"
       },
       {
-         "NAME": "Chopin, Fr&#xE9;d&#xE9;ric",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
+         "NAME": "Fryer, Herbert",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Herbert_Fryer"
       },
       {
          "NAME": "Ganz, Rudolph",
@@ -49,8 +57,20 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alfred_Gr%C3%BCnfeld"
       },
       {
+         "NAME": "Hambourg, Mark",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Mark_Hambourg"
+      },
+      {
          "NAME": "Hofmann, Josef",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Hofmann"
+      },
+      {
+         "NAME": "Kleeberg, Clotilde",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Clotilde_Kleeberg"
+      },
+      {
+         "NAME": "Koczalski, Raoul",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Raoul_Koczalski"
       },
       {
          "NAME": "Lamond, Frederic",
@@ -61,8 +81,16 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Liszt"
       },
       {
+         "NAME": "Mendelssohn-Bartholdy, Felix",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mendelssohn"
+      },
+      {
          "NAME": "Mero, Yolanda",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Yolanda_Mero"
+      },
+      {
+         "NAME": "Novaes, Guiomar",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Guiomar_Novaes"
       },
       {
          "NAME": "Pachmann, Vladimir de",
@@ -77,12 +105,24 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_Paur"
       },
       {
+         "NAME": "Reinecke, Carl",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Carl_Reinecke"
+      },
+      {
          "NAME": "Reisenauer, Alfred",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alfred_Reisenauer"
       },
       {
+         "NAME": "Rubinstein, Anton",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Anton_Rubinstein"
+      },
+      {
          "NAME": "Samaroff Stokowski, Olga",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Olga_Samaroff"
+      },
+      {
+         "NAME": "Sauer, Emil von",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_von_Sauer"
       },
       {
          "NAME": "Scharwenka, Xaver",
@@ -93,12 +133,20 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ernest_Schelling"
       },
       {
+         "NAME": "Schnabel, Artur",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Artur_Schnabel"
+      },
+      {
          "NAME": "Schubert, Franz",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Schubert"
       },
       {
          "NAME": "Schumann, Robert",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Robert_Schumann"
+      },
+      {
+         "NAME": "Stavenhagen, Bernhard",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Bernhard_Stavenhagen"
       },
       {
          "NAME": "Wagner, Richard",

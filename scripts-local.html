@@ -5,9 +5,10 @@
 <script>
 // vim: ts=3
 
-function displayList(index, query) {
-	reportMatches(index);
+function displayList(list, query) {
+	reportMatches(list);
 	var output = "";
+
 	output += "<table id='red-welte-list'>";
 	output += "<thead>";
 	output += "<tr>";
@@ -21,13 +22,13 @@ function displayList(index, query) {
 	output += "</tr>";
 	output += "</thead>";
 	output += "<tbody>";
-	for (var i=0; i<index.length; i++) {
-		if (!index[i].TITLE) {
+	for (var i=0; i<list.length; i++) {
+		if (!list[i].TITLE) {
 			continue;
 		}
 		output += "<tr class='data'>";
 
-		var druid = index[i].DRUID.trim();
+		var druid = list[i].DRUID.trim();
 		output += "<td>";
 		output += "<div id='audio_" + druid + "' ";
 		output += "style='cursor:pointer;' ";
@@ -35,24 +36,24 @@ function displayList(index, query) {
 		output += "class='play audio'>play</div>";
 		output += "</td>";
 
-		output += "<td style='white-space:pre;'>" + index[i].LABEL.replace("Welte-Mignon", "WM") + "</td>";
+		output += "<td style='white-space:pre;'>" + list[i].LABEL.replace("Welte-Mignon", "WM") + "</td>";
 
-		output += "<td style='max-width:250px;'>" + index[i].TITLE + "</td>";
+		output += "<td style='max-width:250px;'>" + list[i].TITLE + "</td>";
 		output += "<td style='min-width:250px;'>";
-		if (index[i].COMPOSER) {
-		 	output += preparePerson(index[i].COMPOSER);
+		if (list[i].COMPOSER) {
+		 	output += PreparePerson(list[i].COMPOSER);
 		}
 		output += "</td>";
 		output += "<td>";
-		if (index[i].PERFORMER) {
-		 	output += preparePerson(index[i].PERFORMER);
+		if (list[i].PERFORMER) {
+		 	output += PreparePerson(list[i].PERFORMER);
 		}
 		output += "</td>";
 
 		output += "<td>";
 		output += "<span class='searchworks'>";
 		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
-		output += index[i].SEARCHWORKS;
+		output += list[i].SEARCHWORKS;
 		output += "'>SW</a>";
 		output += "</span>";
 		output += "</td>";
@@ -60,7 +61,7 @@ function displayList(index, query) {
 		output += "<td>";
 		output += "<span class='purl'>";
 		output += "<a title='Link to scan (when available)' target='purl' href='";
-		output += index[i].PURL;
+		output += list[i].PURL;
 		output += "'>Scan</a>";
 		output += "</span>";
 		output += "</td>";
@@ -78,6 +79,8 @@ function displayList(index, query) {
 			inp.value = query;
 			doSearch(query);
 		}
+	} else if (list.length == 0) {
+		element.innerHTML = "";
 	} else {
 		element.innerHTML = output;
 	}
@@ -86,46 +89,6 @@ function displayList(index, query) {
 	if (query) {
 		element.style.display = "block";
 	}
-}
-
-
-
-//////////////////////////////
-//
-// preparePerson --
-//
-
-function preparePerson(entry) {
-	entry = entry.replace("-1", "&ndash;1");
-	var nombre = entry;
-	var dates = "";
-	var matches;
-	if (matches = entry.match(/^\s*(.*)\s+(\(.*\))\s*$/)) {
-		nombre = matches[1];
-		dates = matches[2];
-	}
-	var link = PEEPS[nombre];
-	if (nombre.match(/, [A-Z]$/)) {
-		nombre += ".";
-	}
-	if (!link) {
-		if (!dates.match(/^\s*$/)) {
-			return nombre + " " + dates;
-		} else {
-			return nombre;
-		}
-	}
-	var output = "";
-	output += "<a class='person' target='person' href='";
-	output += link;
-	output += "'>";
-	output += nombre;
-	output += "</a>";
-	if (!dates.match(/^\s*$/)) {
-		output += " ";
-		output += dates;
-	}
-	return output;
 }
 
 
