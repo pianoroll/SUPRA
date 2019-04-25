@@ -19,6 +19,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Berlin, Irving
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Irving_Berlin
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Bloomfield-Zeisler, Fannie
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler
 @@END: PERSON
@@ -26,6 +31,11 @@
 @@BEGIN: PERSON
 @NAME:		Brahms, Johannes
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Johannes_Brahms
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Burmeister, Richard
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Burmeister
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -41,6 +51,11 @@
 @@BEGIN: PERSON
 @NAME:		Debussy, Claude
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Claude_Debussy
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Elvyn, Myrtle
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Myrtle_Elvyn
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -64,8 +79,23 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Gomes, Carlos
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Gomes
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Grainger, Percy
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Percy_Grainger
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Grieg, Edvard
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Edvard_Grieg
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Grosz, Gisella
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Gisella_Grosz
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -99,8 +129,23 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Landowska, Wanda
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Wanda_Landowska
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Leoncavallo, Ruggiero
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ruggero_Leoncavallo
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Liszt, Franz
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Liszt
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		MacDowell, Edward
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Edward_MacDowell
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -111,6 +156,26 @@
 @@BEGIN: PERSON
 @NAME:		Mero, Yolanda
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Yolanda_Mero
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Mottl, Felix 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mottl
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Neitzel, Otto
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Otto_Neitzel
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Ney, Elly
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Elly_Ney
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Nikisch, Arthur
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Nikisch
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -179,8 +244,18 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Schumann, Georg 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Georg_Schumann_(composer)
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Schumann, Robert
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Robert_Schumann
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Sinding, Christian
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Christian_Sinding
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -189,8 +264,23 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Sullivan, Arthur
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Sullivan
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Tchaikovsky, Peter Ilich
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Wagner, Richard
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Wagner
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Youmans, Vincent
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Vincent_Youmans
 @@END: PERSON
 
 

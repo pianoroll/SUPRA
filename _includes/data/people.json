@@ -13,12 +13,20 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven"
       },
       {
+         "NAME": "Berlin, Irving",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Irving_Berlin"
+      },
+      {
          "NAME": "Bloomfield-Zeisler, Fannie",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler"
       },
       {
          "NAME": "Brahms, Johannes",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Johannes_Brahms"
+      },
+      {
+         "NAME": "Burmeister, Richard",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Burmeister"
       },
       {
          "NAME": "Busoni, Ferruccio",
@@ -31,6 +39,10 @@
       {
          "NAME": "Debussy, Claude",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Claude_Debussy"
+      },
+      {
+         "NAME": "Elvyn, Myrtle",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Myrtle_Elvyn"
       },
       {
          "NAME": "Epstein, Richard",
@@ -49,8 +61,20 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolph_Ganz"
       },
       {
+         "NAME": "Gomes, Carlos",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Gomes"
+      },
+      {
+         "NAME": "Grainger, Percy",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Percy_Grainger"
+      },
+      {
          "NAME": "Grieg, Edvard",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edvard_Grieg"
+      },
+      {
+         "NAME": "Grosz, Gisella",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Gisella_Grosz"
       },
       {
          "NAME": "Gr&#xFC;nfeld, Alfred",
@@ -77,8 +101,20 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)"
       },
       {
+         "NAME": "Landowska, Wanda",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wanda_Landowska"
+      },
+      {
+         "NAME": "Leoncavallo, Ruggiero",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ruggero_Leoncavallo"
+      },
+      {
          "NAME": "Liszt, Franz",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Liszt"
+      },
+      {
+         "NAME": "MacDowell, Edward",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edward_MacDowell"
       },
       {
          "NAME": "Mendelssohn-Bartholdy, Felix",
@@ -87,6 +123,22 @@
       {
          "NAME": "Mero, Yolanda",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Yolanda_Mero"
+      },
+      {
+         "NAME": "Mottl, Felix",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mottl"
+      },
+      {
+         "NAME": "Neitzel, Otto",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Otto_Neitzel"
+      },
+      {
+         "NAME": "Ney, Elly",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Elly_Ney"
+      },
+      {
+         "NAME": "Nikisch, Arthur",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Arthur_Nikisch"
       },
       {
          "NAME": "Novaes, Guiomar",
@@ -141,16 +193,36 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Schubert"
       },
       {
+         "NAME": "Schumann, Georg",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Georg_Schumann_(composer)"
+      },
+      {
          "NAME": "Schumann, Robert",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Robert_Schumann"
+      },
+      {
+         "NAME": "Sinding, Christian",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Christian_Sinding"
       },
       {
          "NAME": "Stavenhagen, Bernhard",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Bernhard_Stavenhagen"
       },
       {
+         "NAME": "Sullivan, Arthur",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Arthur_Sullivan"
+      },
+      {
+         "NAME": "Tchaikovsky, Peter Ilich",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
+      },
+      {
          "NAME": "Wagner, Richard",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Wagner"
+      },
+      {
+         "NAME": "Youmans, Vincent",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Vincent_Youmans"
       }
    ]
 }
