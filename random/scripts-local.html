@@ -1,0 +1,108 @@
+
+{% include_relative listeners.html %}
+{% include_relative scripts-audio.html %}
+
+<script>
+// vim: ts=3
+
+
+
+//////////////////////////////
+//
+// displayRandom --
+//
+
+function displayRandom(list) {
+	var rindex = Math.floor(Math.random() * list.length);
+	if (!list[rindex].DRUID) {
+		return;
+	}
+ 	var druid = list[rindex].DRUID.trim();
+
+	var output = "";
+	output += "<table class='random'>";
+	output += "<tr>";
+
+	output += "<td>";
+	output += "<div id='audio_" + druid + "' ";
+	output += "style='width:150px; height:150px; cursor:hand; cursor:pointer;' ";
+	output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
+	output += "class='play-big audio'>play</div>";
+	output += "</td>";
+
+	output += "<td>";
+
+	output += "<table class='key-value'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Title:";
+	output += "</td>";
+	output += "<td>";
+	if (list[rindex].TITLE) {
+		output += list[rindex].TITLE;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Composer:";
+	output += "</td>";
+	output += "<td>";
+	if (list[rindex].COMPOSER) {
+		output += list[rindex].COMPOSER;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Performer:";
+	output += "</td>";
+	output += "<td>";
+	if (list[rindex].PERFORMER) {
+		output += list[rindex].PERFORMER;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "</table>";
+
+	output += "</td>";
+
+	output += "</tr>";
+	output += "</table>";
+
+	var element = document.querySelector("div#random");
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// getRollLength -- return a sum of the IMAGE_LENGTH parameter from
+//    each entry.
+//
+
+function getRollLength(database) {
+	var sum = 0;
+	for (var i=0; i<database.length; i++) {
+		if (!database[i].IMAGE_LENGTH) {
+			continue;
+		}
+		var matches;
+		if (matches = database[i].IMAGE_LENGTH.match(/(\d+)px/)) {
+			sum += parseInt(matches[1]);
+		}
+	}
+	return sum;
+}
+
+
+
+</script>
+
+
+

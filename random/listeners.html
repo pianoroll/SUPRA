@@ -6,45 +6,22 @@
 
 var CGI = {};      // CGI parameters from URL
 var ROLLINFO = [];
-var SORTCOLUMN = 1;
 var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
 
 document.addEventListener("DOMContentLoaded", function () {
-	var matches;
+	HighlightLinkInHeader();
 	CGI = GetCgiParameters();
-	if (CGI.s) {
-		if (matches = CGI.s.match(/(\d+)/)) {
-			SORTCOLUMN = parseInt(matches[1]);
-		}
-	}
-
-	var element = document.querySelector("input#search");
-	if (element) {
-		element.addEventListener("input", function() {
-			doSearch(element.value);
-		});
-	}
 
 	if (sessionStorage.ROLLINFO) {
 		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
-		if (CGI.q && !CGI.q.match(/^\s*$/)) {
-			displayList(ROLLINFO, CGI.q);
-		} else {
-			displayList(ROLLINFO);
-		}
+		displayRandom(ROLLINFO);
 		DisplayStats(ROLLINFO);
-
 	} else {
 		var request = new XMLHttpRequest();
 		request.addEventListener("load", function () {
 			var aton = new ATON;
 			ROLLINFO = aton.parse(this.responseText).ROLL;
-			sessionStorage.ROLLINFO = JSON.stringify(ROLLINFO);
-			if (CGI.q && !CGI.q.match(/^\s*$/)) {
-				displayList(ROLLINFO, CGI.q);
-			} else {
-				displayList(ROLLINFO);
-			}
+			displayRandom(ROLLINFO);
 			DisplayStats(ROLLINFO);
 		});
 		request.open("GET", ATONINDEX);

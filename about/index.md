@@ -7,9 +7,12 @@ summary:
 ---
 
 
-## TEST ##
+# About SUPRA #
 
 A description of SUPRA will go here.
 
+<div style="height:500px"></div>
 
+{% include_relative scripts-local.html %}
+{% include_relative styles-local.html %}
 

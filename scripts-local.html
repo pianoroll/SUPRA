@@ -18,6 +18,8 @@ function displayList(index, query) {
 	output += "<th onclick='sortByText(2)'>Title</th>";
 	output += "<th onclick='sortByText(3)'>Composer</th>";
 	output += "<th onclick='sortByText(4)'>Performer</th>";
+	output += "<th></th>";  // Searchworks link
+	output += "<th></th>";  // PURL link
 	output += "</tr>";
 	output += "</thead>";
 	output += "<tbody>";
@@ -44,6 +46,23 @@ function displayList(index, query) {
 		}
 		output += "</td>";
 		output += "<td>" + index[i].PERFORMER + "</td>";
+
+		output += "<td>";
+		output += "<span class='searchworks'>";
+		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
+		output += index[i].SEARCHWORKS;
+		output += "'>SW</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='purl'>";
+		output += "<a title='Link to scan (when available)' target='purl' href='";
+		output += index[i].PURL;
+		output += "'>Scan</a>";
+		output += "</span>";
+		output += "</td>";
+
 		output += "</tr>";
 	}
 	output += "</tbody>";
@@ -164,70 +183,6 @@ function sortByNumber(index, selector) {
 }
 
 
-//////////////////////////////
-//
-// displayStats --
-//
-
-function displayStats(database) {
-	var element = document.querySelector("#stats");
-	if (!element) {
-		return;
-	}
-	var content = "";
-	content += database.length + " scanned piano rolls<br/>";
-	rolllen = getRollLength(database);
-	content += (rolllen * 4096).toLocaleString() + " pixels<br/>";
-	var miles = rolllen / 300.0 / 12.0 / 5280.0;
-	var rmiles = parseInt(miles * 100.0 + 0.5)/100.0;
-	var km = miles * 1.60934;
-	var rkm = parseInt(km * 100.0 + 0.5)/100.0;
-	content += rmiles + " miles (";
-	content += rkm + " km)<br/>";
-
-	var notes = 1596721;  // for 386
-	content += notes.toLocaleString() + " notes<br/>";
-
-	var sec = 167349; // for 386
-	var hours = parseInt(sec/3600);
-	sec = sec - hours * 3600;
-	var min = parseInt(sec/60);
-	sec = sec - min * 60;
-	content += hours + ":";
-	if (min < 10) {
-		content += "0";
-	}
-	content += min + ":";
-	if (sec < 10) {
-		content += "0";
-	}
-	content += sec;
-	content += " hours of music";
-
-	element.innerHTML = content;
-}
-
-
-//////////////////////////////
-//
-// getRollLength -- return a sum of the IMAGE_LENGTH parameter from
-//    each entry.
-//
-
-function getRollLength(database) {
-	var sum = 0;
-	for (var i=0; i<database.length; i++) {
-		if (!database[i].IMAGE_LENGTH) {
-			continue;
-		}
-		var matches;
-		if (matches = database[i].IMAGE_LENGTH.match(/(\d+)px/)) {
-			sum += parseInt(matches[1]);
-		}
-	}
-	return sum;
-}
-
 
 //////////////////////////////
 //
@@ -294,33 +249,6 @@ function reportMatches(list) {
 	element.innerHTML = output;
 }
 
-
-
-//////////////////////////////
-//
-// GetCgiParameters -- Returns an associative array containing the
-//     page's URL's CGI parameters
-//
-
-function GetCgiParameters() {
-   var url = window.location.search.substring(1);
-   var output = {};
-   var settings = url.split('&');
-   for (var i=0; i<settings.length; i++) {
-      var pair = settings[i].split('=');
-      pair[0] = decodeURIComponent(pair[0]);
-      pair[1] = decodeURIComponent(pair[1]);
-      if (typeof output[pair[0]] === 'undefined') {
-         output[pair[0]] = pair[1];
-      } else if (typeof output[pair[0]] === 'string') {
-         var arr = [ output[pair[0]], pair[1] ];
-         output[pair[0]] = arr;
-      } else {
-         output[pair[0]].push(pair[1]);
-      }
-   }
-   return output;
-}
 
 </script>
 

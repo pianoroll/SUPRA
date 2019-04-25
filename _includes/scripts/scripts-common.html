@@ -1,0 +1,123 @@
+<script>
+// vim: ts=3
+
+//////////////////////////////
+//
+// HighlightLinkInHeader --
+//   border-bottom: 2px solid #8c1515;
+//
+
+function HighlightLinkInHeader() {
+	var element = document.querySelector("ul.highlight");
+	if (!element) {
+		return;
+	}
+	var list = element.querySelectorAll("li a");
+	var target = window.location.pathname.replace(/\/$/, "");
+	for (var i=0; i<list.length; i++) {
+		var location = list[i].pathname.replace(/\/$/, "");
+		if (location === target) {
+			list[i].style.borderBottom = "2px solid #8c1515";
+		} else {
+			list[i].style.borderBottom = "2px solid #f2f1eb";
+		}
+	}
+}
+
+
+
+//////////////////////////////
+//
+// GetCgiParameters -- Returns an associative array containing the
+//     page's URL's CGI parameters
+//
+
+function GetCgiParameters() {
+   var url = window.location.search.substring(1);
+   var output = {};
+   var settings = url.split('&');
+   for (var i=0; i<settings.length; i++) {
+      var pair = settings[i].split('=');
+      pair[0] = decodeURIComponent(pair[0]);
+      pair[1] = decodeURIComponent(pair[1]);
+      if (typeof output[pair[0]] === 'undefined') {
+         output[pair[0]] = pair[1];
+      } else if (typeof output[pair[0]] === 'string') {
+         var arr = [ output[pair[0]], pair[1] ];
+         output[pair[0]] = arr;
+      } else {
+         output[pair[0]].push(pair[1]);
+      }
+   }
+   return output;
+}
+
+
+
+//////////////////////////////
+//
+// DisplayStats --
+//
+
+function DisplayStats(database) {
+	var element = document.querySelector("#stats");
+	if (!element) {
+		return;
+	}
+	var content = "";
+	content += database.length + " scanned piano rolls<br/>";
+	rolllen = GetRollLength(database);
+	content += (rolllen * 4096).toLocaleString() + " pixels<br/>";
+	var miles = rolllen / 300.0 / 12.0 / 5280.0;
+	var rmiles = parseInt(miles * 100.0 + 0.5)/100.0;
+	var km = miles * 1.60934;
+	var rkm = parseInt(km * 100.0 + 0.5)/100.0;
+	content += rmiles + " miles (";
+	content += rkm + " km)<br/>";
+
+	var notes = 1596721;  // for 386
+	content += notes.toLocaleString() + " notes<br/>";
+
+	var sec = 167349; // for 386
+	var hours = parseInt(sec/3600);
+	sec = sec - hours * 3600;
+	var min = parseInt(sec/60);
+	sec = sec - min * 60;
+	content += hours + ":";
+	if (min < 10) {
+		content += "0";
+	}
+	content += min + ":";
+	if (sec < 10) {
+		content += "0";
+	}
+	content += sec;
+	content += " hours of music";
+
+	element.innerHTML = content;
+}
+
+
+
+//////////////////////////////
+//
+// GetRollLength -- return a sum of the IMAGE_LENGTH parameter from
+//    each entry.
+//
+
+function GetRollLength(database) {
+	var sum = 0;
+	for (var i=0; i<database.length; i++) {
+		if (!database[i].IMAGE_LENGTH) {
+			continue;
+		}
+		var matches;
+		if (matches = database[i].IMAGE_LENGTH.match(/(\d+)px/)) {
+			sum += parseInt(matches[1]);
+		}
+	}
+	return sum;
+}
+
+</script>
+

@@ -4,7 +4,6 @@
 	display: inline-block;
 	text-indent: -19999px;
 	background: url(../images/mp4.svg) no-repeat 0 0;
-	width: 50px;
 	width: 56px;
 	height: 27px;
 	margin-left: 15px;
@@ -23,5 +22,47 @@
 	position: relative;
 	top: 3px;
 }
+
+
+
+.play-big {
+	display: inline-block;
+	text-indent: -19999px;
+	background: url(../images/mp4.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 15px;
+	position: relative;
+	top: 3px;
+}
+
+
+.pause-big {
+	display: inline-block;
+	text-indent: -19999px;
+	background: url(../images/mp4-pause.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 15px;
+	position: relative;
+	top: 3px;
+}
+
+div#stats {
+	float: right;
+	color: #aa8888;
+	margin-top: -10px;
+	padding-right: 10px;
+	text-align: right;
+	padding-bottom: 0;
+	margin-bottom: -50px;
+	line-height: 145%;
+}
+
+h1 {
+	font-weight: 500;
+	color: #8c1515;
+}
+
 
 
