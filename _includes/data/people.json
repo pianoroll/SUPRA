@@ -1,8 +1,16 @@
 {
    "PERSON": [
       {
+         "NAME": "Adam, Adolphe",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Adolphe_Adam"
+      },
+      {
          "NAME": "Albert, Eugen d'",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Eugen_d%27Albert"
+      },
+      {
+         "NAME": "Alkan, Charles-Valentin",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Charles-Valentin_Alkan"
       },
       {
          "NAME": "Backhaus, Wilhelm",
@@ -17,12 +25,24 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Irving_Berlin"
       },
       {
+         "NAME": "Berlioz, Hector",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Hector_Berlioz"
+      },
+      {
+         "NAME": "Bizet, Georges",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Georges_Bizet"
+      },
+      {
          "NAME": "Bloomfield-Zeisler, Fannie",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler"
       },
       {
          "NAME": "Brahms, Johannes",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Johannes_Brahms"
+      },
+      {
+         "NAME": "Brassin, Louis",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Louis_Brassin"
       },
       {
          "NAME": "Burmeister, Richard",
@@ -37,12 +57,28 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o"
       },
       {
+         "NAME": "Chaminade, C&#xE9;cile",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/C%C3%A9cile_Chaminade"
+      },
+      {
          "NAME": "Chopin, Fr&#xE9;d&#xE9;ric",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
       },
       {
+         "NAME": "Cuvillier, Charles",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Charles_Cuvillier"
+      },
+      {
+         "NAME": "Czerny, Carl",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Carl_Czerny"
+      },
+      {
          "NAME": "Debussy, Claude",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Claude_Debussy"
+      },
+      {
+         "NAME": "Delibes, L&#xE9;o",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/L%C3%A9o_Delibes"
       },
       {
          "NAME": "Droucker, Sandra",
@@ -65,6 +101,22 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/James_Reese_Europe"
       },
       {
+         "NAME": "Fall, Leo",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Leo_Fall"
+      },
+      {
+         "NAME": "Fall, Richard",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Fall"
+      },
+      {
+         "NAME": "Foster, Stephen Collins",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Stephen_Foster"
+      },
+      {
+         "NAME": "Friml, Rudolf",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolf_Friml"
+      },
+      {
          "NAME": "Fryer, Herbert",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Herbert_Fryer"
       },
@@ -77,12 +129,28 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolph_Ganz"
       },
       {
+         "NAME": "German, Edward",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edward_German"
+      },
+      {
+         "NAME": "Gilbert, Jean",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jean_Gilbert"
+      },
+      {
          "NAME": "Glazunov, Aleksandr Konstantinovich",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alexander_Glazunov"
       },
       {
          "NAME": "Gomes, Carlos",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Gomes"
+      },
+      {
+         "NAME": "Gottschalk, Louis Moreau",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Louis_Moreau_Gottschalk"
+      },
+      {
+         "NAME": "Gounod, Charles",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Charles_Gounod"
       },
       {
          "NAME": "Grainger, Percy",
@@ -103,6 +171,14 @@
       {
          "NAME": "Hambourg, Mark",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Mark_Hambourg"
+      },
+      {
+         "NAME": "Henderson, Ray",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ray_Henderson"
+      },
+      {
+         "NAME": "Henselt, Adolf von",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Adolf_von_Henselt"
       },
       {
          "NAME": "Hofmann, Josef",
