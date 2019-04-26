@@ -33,12 +33,24 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ferruccio_Busoni"
       },
       {
+         "NAME": "Carre&#xF1;o, Teresa",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o"
+      },
+      {
          "NAME": "Chopin, Fr&#xE9;d&#xE9;ric",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
       },
       {
          "NAME": "Debussy, Claude",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Claude_Debussy"
+      },
+      {
+         "NAME": "Droucker, Sandra",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sandra_Droucker"
+      },
+      {
+         "NAME": "Dohn&#xE1;nyi, Ern&#x151;",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ernst_von_Dohn%C3%A1nyi"
       },
       {
          "NAME": "Elvyn, Myrtle",
@@ -57,8 +69,16 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Herbert_Fryer"
       },
       {
+         "NAME": "Gabrilowitsch, Ossip",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ossip_Gabrilowitsch"
+      },
+      {
          "NAME": "Ganz, Rudolph",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolph_Ganz"
+      },
+      {
+         "NAME": "Glazunov, Aleksandr Konstantinovich",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alexander_Glazunov"
       },
       {
          "NAME": "Gomes, Carlos",
@@ -89,6 +109,10 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Hofmann"
       },
       {
+         "NAME": "Humperdinck, Engelbert",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Engelbert_Humperdinck_(composer)"
+      },
+      {
          "NAME": "Kleeberg, Clotilde",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Clotilde_Kleeberg"
       },
@@ -105,8 +129,16 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wanda_Landowska"
       },
       {
-         "NAME": "Leoncavallo, Ruggiero",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ruggero_Leoncavallo"
+         "NAME": "Lemba, Artur",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Artur_Lemba"
+      },
+      {
+         "NAME": "Leschetizky, Theodor",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Theodor_Leschetizky"
+      },
+      {
+         "NAME": "Lh&#xE9;vinne, Josef",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne"
       },
       {
          "NAME": "Liszt, Franz",
@@ -117,12 +149,25 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edward_MacDowell"
       },
       {
+         "NAME": "Marx-Goldschmidt, Berthe",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Berthe_Marx"
+      },
+      {
          "NAME": "Mendelssohn-Bartholdy, Felix",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mendelssohn"
       },
       {
          "NAME": "Mero, Yolanda",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Yolanda_Mero"
+      },
+      {
+         "NAME": "Meyer-Helmund, Erik",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Erik_Meyer-Helmund"
+      },
+      {
+         "NAME": "Motta, Jos&#xE9; Vianna da",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jos%C3%A9_Vianna_da_Motta",
+         "NOTE": "One of the last pupils of Franz Liszt."
       },
       {
          "NAME": "Mottl, Felix",
@@ -155,6 +200,10 @@
       {
          "NAME": "Paur, Emil",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_Paur"
+      },
+      {
+         "NAME": "Pugno, Raoul",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Raoul_Pugno"
       },
       {
          "NAME": "Reinecke, Carl",

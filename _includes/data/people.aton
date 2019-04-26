@@ -44,6 +44,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Carre&#xF1;o, Teresa
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Chopin, Fr&#xE9;d&#xE9;ric
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin
 @@END: PERSON
@@ -51,6 +56,16 @@
 @@BEGIN: PERSON
 @NAME:		Debussy, Claude
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Claude_Debussy
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Droucker, Sandra
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Sandra_Droucker
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Dohn&#xE1;nyi, Ern&#x151;
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernst_von_Dohn%C3%A1nyi
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -74,8 +89,18 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Gabrilowitsch, Ossip
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ossip_Gabrilowitsch
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Ganz, Rudolph
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolph_Ganz
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Glazunov, Aleksandr Konstantinovich
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Glazunov
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -114,6 +139,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Humperdinck, Engelbert
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Engelbert_Humperdinck_(composer)
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Kleeberg, Clotilde
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
 @@END: PERSON
@@ -134,8 +164,18 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Leoncavallo, Ruggiero
-@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ruggero_Leoncavallo
+@NAME:		Lemba, Artur
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Artur_Lemba
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Leschetizky, Theodor
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Theodor_Leschetizky
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Lh&#xE9;vinne, Josef
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -149,6 +189,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Marx-Goldschmidt, Berthe
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Berthe_Marx
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Mendelssohn-Bartholdy, Felix
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mendelssohn
 @@END: PERSON
@@ -156,6 +201,17 @@
 @@BEGIN: PERSON
 @NAME:		Mero, Yolanda
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Yolanda_Mero
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Meyer-Helmund, Erik 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Erik_Meyer-Helmund
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Motta, Jos&#xE9; Vianna da
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Jos%C3%A9_Vianna_da_Motta
+@NOTE:		One of the last pupils of Franz Liszt.
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -196,6 +252,11 @@
 @@BEGIN: PERSON
 @NAME:		Paur, Emil
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Emil_Paur
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Pugno, Raoul
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Pugno
 @@END: PERSON
 
 @@BEGIN: PERSON

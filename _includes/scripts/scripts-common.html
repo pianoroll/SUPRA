@@ -136,7 +136,10 @@ function PreparePerson(entry) {
 		nombre = matches[1];
 		dates = matches[2];
 	}
-	var link = PEEPS[nombre];
+	var link = "";
+	if (PEEPS[nombre] && PEEPS[nombre].WIKIPEDIA) {
+		link = PEEPS[nombre].WIKIPEDIA;
+	}
 	if (nombre.match(/ [A-Z]$/)) {
 		nombre += ".";
 	}
@@ -148,7 +151,11 @@ function PreparePerson(entry) {
 		}
 	}
 	var output = "";
-	output += "<a class='person' target='person' href='";
+	output += "<a class='person' ";
+	if (PEEPS[nombre] && PEEPS[nombre].NOTE && !PEEPS[nombre].NOTE.match(/^\s*$/)) {
+		output += "title='" + PEEPS[nombre].NOTE + "' ";
+	}
+	output += "target='person' href='";
 	output += link;
 	output += "'>";
 	output += nombre;

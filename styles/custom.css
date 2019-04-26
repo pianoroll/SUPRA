@@ -1,4 +1,8 @@
 
+#content {
+	min-height: 800px;
+}
+
 a.person {
 	color: #8c1515;
 }

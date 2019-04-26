@@ -7,7 +7,7 @@
 var PEOPLE = {% include data/people.json %}.PERSON;
 var PEEPS = {};
 for (var i=0; i<PEOPLE.length; i++) {
-	PEEPS[PEOPLE[i].NAME] = PEOPLE[i].WIKIPEDIA;
+	PEEPS[PEOPLE[i].NAME] = PEOPLE[i];
 }
 
 var CGI = {};      // CGI parameters from URL
