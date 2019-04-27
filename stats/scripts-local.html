@@ -1,0 +1,351 @@
+
+{% include_relative listeners.html %}
+{% include_relative scripts-audio.html %}
+
+<script>
+// vim: ts=3
+
+
+
+//////////////////////////////
+//
+// displayStatsOnPage --
+//
+
+function displayStatsOnPage(database, selector) {
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+
+	var rollcount = database.length;
+	var rolllength = GetRollLength(database);
+
+	var content = "";
+	content += "<table class='stats'>";
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Number of scanned rolls:";
+	content += "</td>";
+	content += "<td>";
+	content += rollcount
+	content += "</td>";
+	content += "</tr>";
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Number of image pixels:";
+	content += "</td>";
+	content += "<td>";
+	content += (rolllength * 4096).toLocaleString();
+	content += "</td>";
+	content += "</tr>";
+
+	var miles = rolllength / 300.0 / 12.0 / 5280.0;
+	var rmiles = parseInt(miles * 100.0 + 0.5)/100.0;
+	var km = miles * 1.60934;
+	var rkm = parseInt(km * 100.0 + 0.5)/100.0;
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Total length of rolls:";
+	content += "</td>";
+	content += "<td>";
+	content += rmiles + " miles (";
+	content += rkm + " km)<br/>";
+	content += "</td>";
+	content += "</tr>";
+
+	var feet = rolllength / 300.0 / 12.0 / rollcount;
+	var rfeet = parseInt(feet * 10.0 + 0.5)/10.0;
+	var meters = feet / 3.28084;
+	var rmeters = parseInt(meters * 10.0 + 0.5)/10.0;
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Average length of roll:";
+	content += "</td>";
+	content += "<td>";
+	content += rfeet + " feet (";
+	content += rmeters + " meters)<br/>";
+	content += "</td>";
+	content += "</tr>";
+
+	var areaff = rolllength * 4096 / 300 / 300 / 1.32 / 6273000;
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Total area of rolls:";
+	content += "</td>";
+	content += "<td>";
+	content += parseInt(areaff*100.0+0.5)/100.0 + " American football fields";
+	content += "</td>";
+	content += "</tr>";
+
+	var notes = 1596721;  // for 386
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Total number of notes:";
+	content += "</td>";
+	content += "<td>";
+	content += notes.toLocaleString();
+	content += "</td>";
+	content += "</tr>";
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Average number of notes:";
+	content += "</td>";
+	content += "<td>";
+	content += (parseInt(notes/rollcount + 0.5)).toLocaleString();
+	content += "</td>";
+	content += "</tr>";
+
+	var sec = 167349; // for 386
+	var osec = sec;
+	var hours = parseInt(sec/3600);
+	sec = sec - hours * 3600;
+	var min = parseInt(sec/60);
+	sec = sec - min * 60;
+	var totaltime = hours + ":";
+	if (min < 10) {
+		totaltime += "0";
+	}
+	totaltime += min + ":";
+	if (sec < 10) {
+		totaltime += "0";
+	}
+	totaltime += sec;
+	totaltime += " hours";
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Total duration of rolls:";
+	content += "</td>";
+	content += "<td>";
+	content += totaltime;
+	content += "</td>";
+	content += "</tr>";
+
+	var xsec = osec / rollcount;
+	var xmin = parseInt(xsec / 60.0);
+	xsec = xsec - xmin * 60;
+	var oneroll = xmin + ":";
+	if (xsec < 10) {
+		oneroll += "0";
+	}
+	oneroll += parseInt(xsec+0.5) + " minutes";
+
+	content += "<tr>";
+	content += "<td>";
+	content += "Average duration of roll:";
+	content += "</td>";
+	content += "<td>";
+	content += oneroll;
+	content += "</td>";
+	content += "</tr>";
+
+	content += "</table>";
+
+
+	element.innerHTML = content;
+}
+
+
+//////////////////////////////
+//
+// displayDuplicates --
+//
+
+function displayDuplicates(list, selector) {
+	var labels = {};
+	var label
+	var i;
+	for (i=0; i<list.length; i++) {
+		label = list[i].LABEL;
+		if (!label) {
+			continue;
+		}
+		if (label.match(/^\s*$/)) {
+			continue;
+		}
+		if (!labels[label]) {
+			labels[label] = [];
+		}
+		labels[label].push(list[i]);
+	}
+	var dupes = [];
+	for (label in labels) {
+		if (labels[label].length > 1) {
+			dupes.push(labels[label]);
+		}
+	}
+	console.log("dupes", dupes);
+
+	var output = "";
+	output += "There are " + dupes.length + " rolls that share manufacurer's";
+	output += " catalog numbers with one or more other scans.";
+	output += " In other words, copies of the same recording that may or";
+	output += " may not have differences.";
+	
+
+	output += "<table class='dupes'>";
+	for (i=0; i<dupes.length; i++) {
+		output += MakeRollTableRows(dupes[i]);
+		if (i < dupes.length - 1) {
+			output += "<tr style='padding:0; margin:0;'><td style='padding:0; margin:0;' colspan='9'><hr></td></tr>";
+		}
+	}
+	output += "</table>";
+
+
+
+	output += "</table>";
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = output;
+
+}
+
+
+
+//////////////////////////////
+//
+// displayPianists --
+//
+
+function displayPianists(list, selector) {
+	var labels = {};
+	var pianists = {};
+	var label;
+	var i;
+	for (i=0; i<list.length; i++) {
+		if (!list[i].LABEL) {
+			continue;
+		}
+		label = list[i].LABEL;
+		if (labels[label]) {
+			continue;
+		}
+		labels[label] = 1;
+		if (!list[i].PERFORMER) {
+			continue;
+		}
+		if (!pianists[list[i].PERFORMER]) {
+			pianists[list[i].PERFORMER] = 0;
+		}
+		pianists[list[i].PERFORMER]++;
+	}
+
+	var plist = [];
+	for (var pianist in pianists) {
+		plist.push([pianists[pianist], pianist]);
+	}
+	plist.sort(function(a, b) {
+		return b[0] - a[0];
+	});
+
+	var output = "";
+	output += "<table class='count'>";
+
+	for (i=0; i<plist.length; i++) {
+		output += "<tr>"
+		output += "<td>"
+		output += plist[i][0];
+		output += "</td>"
+		output += "<td>"
+		output += "<a href='/?q=";
+		output += encodeURI(plist[i][1].replace(/\s*\(.*/, ""))
+		output += "&f=PERFORMER'>";
+		output += PreparePerson(plist[i][1]);
+		output += "</a>";
+		output += "</td>"
+		output += "</tr>"
+	}
+
+	output += "</table>";
+
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = output;
+}
+
+
+//////////////////////////////
+//
+// displayComposers --
+//
+
+function displayComposers(list, selector) {
+	var labels = {};
+	var pianists = {};
+	var label;
+	var i;
+	for (i=0; i<list.length; i++) {
+		if (!list[i].LABEL) {
+			continue;
+		}
+		label = list[i].LABEL;
+		if (labels[label]) {
+			continue;
+		}
+		labels[label] = 1;
+		if (!list[i].COMPOSER) {
+			continue;
+		}
+		if (!pianists[list[i].COMPOSER]) {
+			pianists[list[i].COMPOSER] = 0;
+		}
+		pianists[list[i].COMPOSER]++;
+	}
+
+	var plist = [];
+	for (var pianist in pianists) {
+		plist.push([pianists[pianist], pianist]);
+	}
+	plist.sort(function(a, b) {
+		return b[0] - a[0];
+	});
+
+	var output = "";
+	output += "<table class='count'>";
+
+	for (i=0; i<plist.length; i++) {
+		output += "<tr>"
+		output += "<td>"
+		output += plist[i][0];
+		output += "</td>"
+		output += "<td>"
+		output += "<a href='/?q=";
+		output += encodeURI(plist[i][1].replace(/\s*\(.*/, ""))
+		output += "&f=COMPOSER'>";
+		output += PreparePerson(plist[i][1]);
+		output += "</a>";
+		output += "</td>"
+		output += "</tr>"
+	}
+
+	output += "</table>";
+
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = output;
+}
+
+
+
+</script>
+
+
+

@@ -139,6 +139,8 @@ function PreparePerson(entry) {
 	var link = "";
 	if (PEEPS[nombre] && PEEPS[nombre].WIKIPEDIA) {
 		link = PEEPS[nombre].WIKIPEDIA;
+	} else if (PEEPS[nombre] && PEEPS[nombre].LINK) {
+		link = PEEPS[nombre].LINK;
 	}
 	if (nombre.match(/ [A-Z]$/)) {
 		nombre += ".";
@@ -163,6 +165,96 @@ function PreparePerson(entry) {
 	if (!dates.match(/^\s*$/)) {
 		output += " ";
 		output += dates;
+	}
+	return output;
+}
+
+function MakeRollTableRows(list) {
+	var output = "";
+	for (var i=0; i<list.length; i++) {
+		if (!list[i].TITLE) {
+			continue;
+		}
+		output += "<tr class='data'>";
+
+		var druid = list[i].DRUID.trim();
+		output += "<td>";
+		output += "<div id='audio_" + druid + "' ";
+		output += "style='cursor:pointer;' ";
+		output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
+		output += "class='play audio'>play</div>";
+		output += "</td>";
+
+		output += "<td style='white-space:pre;'>" + list[i].LABEL.replace("Welte-Mignon", "WM") + "</td>";
+
+		output += "<td style='max-width:250px;'>" + list[i].TITLE + "</td>";
+		output += "<td style='min-width:250px;'>";
+		if (list[i].COMPOSER) {
+		 	output += PreparePerson(list[i].COMPOSER);
+		}
+		output += "</td>";
+		output += "<td>";
+		if (list[i].PERFORMER) {
+		 	output += PreparePerson(list[i].PERFORMER);
+		}
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='searchworks'>";
+		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
+		output += list[i].SEARCHWORKS;
+		output += "'>SW</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='purl'>";
+		output += "<a title='Link to scan (when available)' target='purl' href='";
+		output += list[i].PURL;
+		output += "'>Scan</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		if (list[i].ROLL_TYPE) {
+			// https://github.com/pianoroll/SUPRA/blob/master/welte-red/midi-exp/bc072xf6791-exp.mid?raw=true
+			output += "<span class='midi'>";
+			output += "<a title='Link to Expressive MIDI file' target='midi' href='";
+			output += "https://github.com/pianoroll/SUPRA/blob/master/";
+			output += list[i].ROLL_TYPE.trim();
+			output += "/midi-exp/";
+			output += list[i].DRUID.trim() + "-exp.mid?raw=true";
+			output += "'>Mexp</a>";
+			output += "</span>";
+		}
+		output += "</td>";
+
+		output += "<td>";
+		if (list[i].ROLL_TYPE) {
+			// https://github.com/pianoroll/SUPRA/blob/master/welte-red/midi-raw/bc072xf6791-raw.mid?raw=true
+			output += "<span class='midi'>";
+			output += "<a title='Link to Raw MIDI file' target='midi' href='";
+			output += "https://github.com/pianoroll/SUPRA/blob/master/";
+			output += list[i].ROLL_TYPE.trim();
+			output += "/midi-raw/";
+			output += list[i].DRUID.trim() + "-raw.mid?raw=true";
+			output += "'>Mraw</a>";
+			output += "</span>";
+		}
+		output += "</td>";
+
+		output += "<td>";
+		// http://ccrma.stanford.edu/~craig/piano-roll-project/supra-mp4s/bc072xf6791.m4a
+		output += "<span class='mp4'>";
+		output += "<a title='Link to MP4 audio file' target='audio' href='";
+		output += "https://ccrma.stanford.edu/~craig/piano-roll-project/supra-mp4s/";
+		output += list[i].DRUID.trim() + ".m4a'>";
+		output += "MP4";
+		output += "</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "</tr>";
 	}
 	return output;
 }

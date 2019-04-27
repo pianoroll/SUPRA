@@ -9,6 +9,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Adam-Bernard, Eugenie
+@DATES:		1861-1925
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Albert, Eugen d' 
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Eugen_d%27Albert
 @@END: PERSON
@@ -19,8 +24,19 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Ansorge, Konrad
+@DATES:		1862-1930
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Backhaus, Wilhelm
+@DATES:		1884-1969
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Wilhelm_Backhaus
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Barinowa, Marie
+@DATES:		1878-1956
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -45,12 +61,18 @@
 
 @@BEGIN: PERSON
 @NAME:		Bloomfield-Zeisler, Fannie
+@DATES:		1863-1927
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Brahms, Johannes
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Johannes_Brahms
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Brightwell, Edward
+@DATES:		1876-
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -210,6 +232,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Gr&#xFC;nfeld, Alfred
+@DATES:		1852-1924
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Gr%C3%BCnfeld
 @@END: PERSON
 
@@ -234,8 +257,18 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Holzmann, Abe
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Abe_Holzmann
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Humperdinck, Engelbert
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Engelbert_Humperdinck_(composer)
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Joyce, Archibald
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Archibald_Joyce
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -274,6 +307,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Lincke, Paul
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_Lincke
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Liszt, Franz
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Liszt
 @@END: PERSON
@@ -286,6 +324,21 @@
 @@BEGIN: PERSON
 @NAME:		Marx-Goldschmidt, Berthe
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Berthe_Marx
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Mason, Lowell
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Lowell_Mason
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Mascagni, Pietro
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Pietro_Mascagni
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Massenet, Jules
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Jules_Massenet
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -304,6 +357,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Moszkowski, Moritz
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Moritz_Moszkowski
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Motta, Jos&#xE9; Vianna da
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jos%C3%A9_Vianna_da_Motta
 @NOTE:		One of the last pupils of Franz Liszt.
@@ -311,7 +369,13 @@
 
 @@BEGIN: PERSON
 @NAME:		Mottl, Felix 
+@DATES:		1856-1911
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mottl
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Mozart, Wolfgang Amadeus
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -335,6 +399,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Offenbach, Jacques
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Jacques_Offenbach
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Pachmann, Vladimir de
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vladimir_de_Pachmann
 @@END: PERSON
@@ -346,12 +415,33 @@
 
 @@BEGIN: PERSON
 @NAME:		Paur, Emil
+@DATES:		1855-1932
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Emil_Paur
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Poldini, Ede
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ede_Poldini
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Puccini, Giacomo
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Giacomo_Puccini
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Pugno, Raoul
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Pugno
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Rachmaninoff, Sergei 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Sergei_Rachmaninoff
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Raff, Joachim
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Joachim_Raff
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -362,6 +452,11 @@
 @@BEGIN: PERSON
 @NAME:		Reisenauer, Alfred
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Reisenauer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Rossini, Gioacchino
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Gioachino_Rossini
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -410,13 +505,51 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Schulz-Evler, Andrei
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Adolf_Schulz-Evler
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Schytte, Ludvig
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ludvig_Schytte
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Scott, Cyril
+@DATES:		1879-1970
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Cyril_Scott
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Scriabin, Aleksandr Nikolayevich
+@DATES:		1872-1915
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Scriabin
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Sibelius, Jean 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Jean_Sibelius
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Sinding, Christian
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Christian_Sinding
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Stavenhagen, Bernhard
+@DATES:		1862-1914
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Bernhard_Stavenhagen
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Stebel, Paula
+@DATES:		1885-1932
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Straus, Oscar
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Oscar_Straus_(composer)
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -430,13 +563,59 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Thalberg, Sigismond 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Sigismond_Thalberg
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Toselli, Enrico
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Enrico_Toselli
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Verdi, Giuseppe
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Giuseppe_Verdi
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Vogrich, Max 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Max_Vogrich
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Wagner, Richard
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Wagner
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Waldteufel, Emil
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Weiss, Josef
+@DATES:		1864-1945
+@LINK:		https://www.bach-cantatas.com/Lib/Weiss-Josef.htm
+@NOTE:		One of the more eccentric Franz Liszt pupils.
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Wendling, Karl
+@DATES:		1857-1918
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Whiteman, Paul 
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_Whiteman
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Youmans, Vincent
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vincent_Youmans
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Zschemeck, Georg
 @@END: PERSON
 
 

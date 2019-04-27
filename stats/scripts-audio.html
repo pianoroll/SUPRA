@@ -1,0 +1,130 @@
+
+<script>
+// vim: ts=3
+
+var AUDIO          = null;						 // HTML5 audio interface ID.
+var AUDIOdruid     = '';  						 // currently playing audio file.
+var AUDIOid        = '';                   // currently playing audio button.
+
+
+
+//////////////////////////////
+//
+// PlayAudioFile -- play/pause an audio file.
+//
+
+function PlayAudioFile(druid, element, starttime) {
+	// The JRPID is not the same as the currently playing file
+	// (or there is no file playing).  So start the new one.
+
+
+	if (!AUDIO) {
+	   AUDIO = document.getElementById('audio');
+   }
+	if (!AUDIO) {
+	   AUDIO = document.createElement("AUDIO");
+		AUDIO.id = "audio";
+		document.body.appendChild(AUDIO);
+	}
+   if (!AUDIO) {
+		console.log('Error: could not set up audio interface\n');
+		return false;
+   }
+	AUDIO.setAttribute('controls', 'controls');
+	AUDIO.style.position = 'fixed';
+	AUDIO.style.bottom = '0';
+	AUDIO.style.right = '0';
+	AUDIO.style.zIndex = '1';
+
+	AUDIO.onpause = function () {
+		// TurnOffAllNotes();
+	}
+
+	var audiobutton;
+   if (druid != AUDIOdruid) {
+		if (!!AUDIOid) {
+			// turn of previously playing audio file:
+			audiobutton = document.getElementById(AUDIOid);
+			if (!!audiobutton && !!audiobutton.className) {
+				if (audiobutton.className.match(/mp4/)) {
+					audiobutton.className = 'mp4play';
+				} else {
+					audiobutton.className = 'play';
+				}
+			}
+		}
+		AUDIO.removeAttribute('controls');
+      AUDIO.pause();
+		
+      AUDIOid = element.id;
+		var source = '';
+		// Can't have seekable dynamic content in audio element:
+		//source += '<source src="/data?a=mp3&id=' + druid + '" ';
+		source += '<source src="https://ccrma.stanford.edu/~craig/piano-roll-project/supra-mp4s/' + druid + '.m4a" ';
+		source += 'type="audio/mp4"/>\n';
+		AUDIO.innerHTML = source;
+
+		AUDIOdruid = druid;
+		AUDIO.load();
+		if (starttime) {
+			AUDIO.currentTime = starttime;
+		}
+
+		AUDIO.play();
+		// InitializeTimemap();
+
+		AUDIO.setAttribute('controls', 'controls');
+		var newelement = document.getElementById(AUDIOid);
+
+		AUDIO.addEventListener("ended", function() {
+			newelement.className = "play";
+		});
+
+		if (newelement.className.match(/mp4/)) {
+			newelement.className = 'mp4pause';
+		} else {
+			newelement.className = 'pause';
+		}
+
+		return;
+	}
+
+	// The audio file is the same, so start it or pause it depending
+	// on its current state:
+	if (AUDIO.paused) {
+		audiobutton = document.getElementById(AUDIOid);
+ 		if (!audiobutton) {
+			return;
+		}
+
+		if (audiobutton.className.match(/mp4/)) {
+			audiobutton.className = 'mp4play';
+		} else {
+			audiobutton.className = 'play';
+		}
+		AUDIO.play();
+		// InitializeTimemap();
+		AUDIO.setAttribute('controls', 'controls');
+	} else {
+		audiobutton = document.getElementById(AUDIOid);
+ 		if (!audiobutton) {
+			return;
+		}
+
+		if (audiobutton.className.match(/mp4/)) {
+			audiobutton.className = 'mp4pause';
+		} else {
+			audiobutton.className = 'pause';
+		}
+		if (element.className.match(/mp4/)) {
+			element.className = 'mp4play';
+		} else {
+			element.className = 'play';
+		}
+		AUDIO.pause();
+		AUDIO.removeAttribute('controls');
+	}
+}
+
+
+</script>

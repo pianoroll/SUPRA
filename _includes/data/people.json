@@ -185,8 +185,16 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Hofmann"
       },
       {
+         "NAME": "Holzmann, Abe",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Abe_Holzmann"
+      },
+      {
          "NAME": "Humperdinck, Engelbert",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Engelbert_Humperdinck_(composer)"
+      },
+      {
+         "NAME": "Joyce, Archibald",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Archibald_Joyce"
       },
       {
          "NAME": "Kleeberg, Clotilde",
@@ -217,6 +225,10 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne"
       },
       {
+         "NAME": "Lincke, Paul",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Paul_Lincke"
+      },
+      {
          "NAME": "Liszt, Franz",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Liszt"
       },
@@ -227,6 +239,18 @@
       {
          "NAME": "Marx-Goldschmidt, Berthe",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Berthe_Marx"
+      },
+      {
+         "NAME": "Mason, Lowell",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Lowell_Mason"
+      },
+      {
+         "NAME": "Mascagni, Pietro",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Pietro_Mascagni"
+      },
+      {
+         "NAME": "Massenet, Jules",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jules_Massenet"
       },
       {
          "NAME": "Mendelssohn-Bartholdy, Felix",
@@ -241,6 +265,10 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Erik_Meyer-Helmund"
       },
       {
+         "NAME": "Moszkowski, Moritz",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Moritz_Moszkowski"
+      },
+      {
          "NAME": "Motta, Jos&#xE9; Vianna da",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jos%C3%A9_Vianna_da_Motta",
          "NOTE": "One of the last pupils of Franz Liszt."
@@ -248,6 +276,10 @@
       {
          "NAME": "Mottl, Felix",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mottl"
+      },
+      {
+         "NAME": "Mozart, Wolfgang Amadeus",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
       },
       {
          "NAME": "Neitzel, Otto",
@@ -266,6 +298,10 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Guiomar_Novaes"
       },
       {
+         "NAME": "Offenbach, Jacques",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jacques_Offenbach"
+      },
+      {
          "NAME": "Pachmann, Vladimir de",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Vladimir_de_Pachmann"
       },
@@ -278,8 +314,24 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_Paur"
       },
       {
+         "NAME": "Poldini, Ede",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ede_Poldini"
+      },
+      {
+         "NAME": "Puccini, Giacomo",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Giacomo_Puccini"
+      },
+      {
          "NAME": "Pugno, Raoul",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Raoul_Pugno"
+      },
+      {
+         "NAME": "Rachmaninoff, Sergei",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff"
+      },
+      {
+         "NAME": "Raff, Joachim",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Joachim_Raff"
       },
       {
          "NAME": "Reinecke, Carl",
@@ -288,6 +340,10 @@
       {
          "NAME": "Reisenauer, Alfred",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alfred_Reisenauer"
+      },
+      {
+         "NAME": "Rossini, Gioacchino",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Gioachino_Rossini"
       },
       {
          "NAME": "Rubinstein, Anton",
@@ -326,12 +382,36 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Robert_Schumann"
       },
       {
+         "NAME": "Schulz-Evler, Andrei",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Adolf_Schulz-Evler"
+      },
+      {
+         "NAME": "Schytte, Ludvig",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ludvig_Schytte"
+      },
+      {
+         "NAME": "Scott, Cyril",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Cyril_Scott"
+      },
+      {
+         "NAME": "Scriabin, Aleksandr Nikolayevich",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alexander_Scriabin"
+      },
+      {
+         "NAME": "Sibelius, Jean",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jean_Sibelius"
+      },
+      {
          "NAME": "Sinding, Christian",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Christian_Sinding"
       },
       {
          "NAME": "Stavenhagen, Bernhard",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Bernhard_Stavenhagen"
+      },
+      {
+         "NAME": "Straus, Oscar",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Oscar_Straus_(composer)"
       },
       {
          "NAME": "Sullivan, Arthur",
@@ -342,8 +422,32 @@
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
       },
       {
+         "NAME": "Thalberg, Sigismond",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sigismond_Thalberg"
+      },
+      {
+         "NAME": "Toselli, Enrico",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Enrico_Toselli"
+      },
+      {
+         "NAME": "Verdi, Giuseppe",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Giuseppe_Verdi"
+      },
+      {
+         "NAME": "Vogrich, Max",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Max_Vogrich"
+      },
+      {
          "NAME": "Wagner, Richard",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Wagner"
+      },
+      {
+         "NAME": "Waldteufel, Emil",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel"
+      },
+      {
+         "NAME": "Whiteman, Paul",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Paul_Whiteman"
       },
       {
          "NAME": "Youmans, Vincent",
