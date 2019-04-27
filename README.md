@@ -1,7 +1,7 @@
 # SUPRA
 Stanford University Piano Roll Archive
 
-This repository contains MIDI files extracted from scans of piano rolls collected by the Stanford Libraries, a majority coming from the [Condon Collection](https://library.stanford.edu/collections/denis-condon-collection-reproducing-pianos-and-rolls). The [SUPRA](https://supra.stanford.edu) website contains links to the original scans of the rolls, and this repository collects the individual MIDI files from each scan.
+This repository contains MIDI files extracted from scans of piano rolls collected by the Stanford Libraries, a majority coming from the [Condon Collection](https://library.stanford.edu/collections/denis-condon-collection-reproducing-pianos-and-rolls). The [SUPRA](https://supra.stanford.edu) website contains links to the original scans of the rolls in the Libraries's digital repository, and this repository collects the individual MIDI files of notes extracted from each scan.
 
 There are two types of MIDI files in the repository: 
 
