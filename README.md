@@ -11,4 +11,4 @@ There are two types of MIDI files in the repository:
 
 Renderings of the expression MIDI files into audio recordings are also available.  These can currently be listened to on the [SUPRA](https://supra.stanford.edu) website, but will be made available for download soon.
 
-MIDI files are organized into directories based on the format of the roll (which type of piano the original roll is compatible with).  Currently only the earliest Welte-Mignon rolls are available in the `welte-red`, meaning "red-colored paper" Welte-Mignon rolls, or more specifically T-100 WM rolls, since there are 100 tracker bar holes on the pianos that play these rolls.
+MIDI files are organized into directories based on the format of the roll (which type of piano the original roll is compatible with).  Currently only the earliest Welte-Mignon rolls are available in the `welte-red` directory, meaning "red-colored paper" Welte-Mignon rolls, or more specifically T-100 WM rolls, since there are 100 tracker bar holes on the pianos that play these rolls.
