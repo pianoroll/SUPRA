@@ -266,7 +266,10 @@ function displayPianists(list, selector) {
 		output += "</td>"
 		output += "<td>"
 		output += "<a href='/?q=";
-		output += encodeURI(flipName(plist[i][1].replace(/\s*\(.*/, "")))
+		output += encodeURI(
+						flipName(plist[i][1].replace(/\s*\(.*/, ""))
+							.replace(/-Benard/, "")
+					);
 		output += "&f=PERFORMER'>";
 		output += PreparePerson(plist[i][1]);
 		output += "</a>";

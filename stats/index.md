@@ -38,7 +38,8 @@ summary:
 
 Here is a list of the pianists sorted by number of rolls they
 recorded Click on the name of the performer to see the list of their
-recordings (not working for names with accented characters yet).
+recordings. Roll duplications are excluded from the counts. 
+(Not working for names with accented characters yet.)
 
 <div id="pianists"></div>
 </article>
@@ -49,8 +50,9 @@ recordings (not working for names with accented characters yet).
 
 Here is a list of the composers sorted by number of rolls their
 compositions were performed on.  Click on the name of the composer
-to see the list of their recordings (not working for names with
-accented characters yet).
+to see the list of their recordings.  Roll duplications
+are excluded from the counts. (Not working for names with
+accented characters yet.)
 
 <div id="composers"></div>
 </article>
