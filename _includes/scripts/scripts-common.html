@@ -12,6 +12,7 @@ function HighlightLinkInHeader() {
 	if (!element) {
 		return;
 	}
+
 	var list = element.querySelectorAll("li a");
 	var target = window.location.pathname.replace(/\/$/, "");
 	for (var i=0; i<list.length; i++) {
@@ -19,6 +20,9 @@ function HighlightLinkInHeader() {
 		if (location === target) {
 			list[i].style.borderBottom = "2px solid #8c1515";
 		} else {
+			list[i].style.borderBottom = "2px solid #f2f1eb";
+		}
+		if (list[i].textContent.match(/About/)) {
 			list[i].style.borderBottom = "2px solid #f2f1eb";
 		}
 	}
@@ -257,6 +261,255 @@ function MakeRollTableRows(list) {
 		output += "</tr>";
 	}
 	return output;
+}
+
+
+
+//////////////////////////////
+//
+// DisplayPianists --
+//
+
+function DisplayPianists(list, selector) {
+	var labels = {};
+	var pianists = {};
+	var label;
+	var i;
+	var performer;
+	for (i=0; i<list.length; i++) {
+		if (!list[i].LABEL) {
+			continue;
+		}
+		label = list[i].LABEL;
+		if (labels[label]) {
+			continue;
+		}
+		labels[label] = 1;
+		if (!list[i].PERFORMER) {
+			continue;
+		}
+		performer = list[i].PERFORMER;
+		if (performer === "Adam, Eugenie") {
+			// Spelled in two ways in the list
+			performer = "Adam-Benard, Eugenie";
+		}
+		if (!pianists[performer]) {
+			pianists[performer] = 0;
+		}
+		pianists[performer]++;
+	}
+
+	var plist = [];
+	for (var pianist in pianists) {
+		plist.push([pianists[pianist], pianist]);
+	}
+	plist.sort(function(a, b) {
+		return b[0] - a[0];
+	});
+
+	var output = "";
+	output += "<table class='count'>";
+
+	for (i=0; i<plist.length; i++) {
+		output += "<tr>"
+		output += "<td>"
+		output += plist[i][0];
+		output += "</td>"
+		output += "<td>"
+		output += "<a href='/?q=";
+		output += encodeURI(
+						FlipName(plist[i][1].replace(/\s*\(.*/, ""))
+							.replace(/-Benard/, "")
+					);
+		output += "&f=PERFORMER'>";
+		output += PreparePerson(plist[i][1]);
+		output += "</a>";
+		output += "</td>"
+		output += "</tr>"
+	}
+
+	output += "</table>";
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// DisplayComposers --
+//
+
+function DisplayComposers(list, selector) {
+	var labels = {};
+	var pianists = {};
+	var label;
+	var i;
+	for (i=0; i<list.length; i++) {
+		if (!list[i].LABEL) {
+			continue;
+		}
+		label = list[i].LABEL;
+		if (labels[label]) {
+			continue;
+		}
+		labels[label] = 1;
+		if (!list[i].COMPOSER) {
+			continue;
+		}
+		if (!pianists[list[i].COMPOSER]) {
+			pianists[list[i].COMPOSER] = 0;
+		}
+		pianists[list[i].COMPOSER]++;
+	}
+
+	var plist = [];
+	for (var pianist in pianists) {
+		plist.push([pianists[pianist], pianist]);
+	}
+	plist.sort(function(a, b) {
+		return b[0] - a[0];
+	});
+
+	var output = "";
+	output += "<table class='count'>";
+
+	for (i=0; i<plist.length; i++) {
+		output += "<tr>"
+		output += "<td>"
+		output += plist[i][0];
+		output += "</td>"
+		output += "<td>"
+		output += "<a href='/?q=";
+		output += encodeURI(FlipName(plist[i][1].replace(/\s*\(.*/, "")))
+		output += "&f=COMPOSER'>";
+		output += PreparePerson(plist[i][1]);
+		output += "</a>";
+		output += "</td>"
+		output += "</tr>"
+	}
+
+	output += "</table>";
+
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// DisplayPerformerComposers --
+//
+
+function DisplayPerformerComposers(list, selector) {
+	var performers = {};
+	var composers = {};
+	var labels = {};
+	var i;
+	for (i=0; i<list.length; i++) {
+		if (!list[i].COMPOSER) {
+			continue;
+		}
+		if (!list[i].PERFORMER) {
+			continue;
+		}
+		if (!list[i].LABEL) {
+			continue;
+		}
+
+		if (labels[list[i].LABEL]) {
+			continue;
+		}
+		labels[list[i].LABLE] = 1;
+
+
+		if (performers[list[i].PERFORMER]) {
+			performers[list[i].PERFORMER]++;
+		} else {
+			performers[list[i].PERFORMER] = 1;
+		}
+
+		if (composers[list[i].COMPOSER]) {
+			composers[list[i].COMPOSER]++;
+		} else {
+			composers[list[i].COMPOSER] = 1;
+		}
+	}
+
+	var combined = [];
+	var composer;
+	for (composer in composers) {
+		if (performers[composer]) {
+			combined.push(composer);
+		}
+	}
+	combined = combined.sort();
+
+	var output = "";
+	output += "<table class='triple'>";
+
+	output += "<tr>";
+	output += "<th>";
+	output += "Compositions";
+	output += "</th>";
+	output += "<th>";
+	output += "Performances";
+	output += "</th>";
+	output += "<th>";
+	output += "Name";
+	output += "</th>";
+	output += "</tr>";
+
+	for (i=0; i<combined.length; i++) {
+		output += "<tr>"
+		output += "<td>"
+		output += composers[combined[i]];
+		output += "</td>"
+		output += "<td>"
+		output += performers[combined[i]];
+		output += "</td>"
+		output += "<td>"
+		output += "<a href='/?q=";
+		output += encodeURI(FlipName(combined[i].replace(/\s*\(.*/, "")))
+		output += "'>";
+		output += PreparePerson(combined[i]);
+		output += "</a>";
+		output += "</td>"
+		output += "</tr>"
+	}
+
+	output += "</table>";
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// FlipName --
+//
+
+function FlipName(bname) {
+	var matches = bname.match(/^([^,]+),\s+([^,]+)$/);
+	if (!matches) {
+		return bname;
+	} else {
+		return matches[2] + " " + matches[1];
+	}
 }
 
 

@@ -15,6 +15,7 @@ summary:
 <li> <a href="#Duplicates">Duplicate recordings of same manufacturer's roll number</a> </li>
 <li> <a href="#Pianists">List of pianists sorted by most recordings</a> </li>
 <li> <a href="#Composers">List of composer sorted by most recordings</a> </li>
+<li> <a href="#Dual">List of performers who are also composers</a> </li>
 </ul>
 </article>
 <div style="height:10px;"></div>
@@ -35,26 +36,31 @@ summary:
 <a name="Pianists"></a>
 <article>
 <h2> List of pianists by roll count</h2>
-
 Here is a list of the pianists sorted by number of rolls they
-recorded Click on the name of the performer to see the list of their
+recorded.  Click on the name of the performer to see the list of their
 recordings. Roll duplications are excluded from the counts. 
 (Not working for names with accented characters yet.)
-
 <div id="pianists"></div>
 </article>
 
 <a name="Composers"></a>
 <article>
 <h2> List of composers by roll count</h2>
-
 Here is a list of the composers sorted by number of rolls their
 compositions were performed on.  Click on the name of the composer
 to see the list of their recordings.  Roll duplications
 are excluded from the counts. (Not working for names with
 accented characters yet.)
-
 <div id="composers"></div>
+</article>
+
+<a name="Dual"></a>
+<article>
+<h2> List of performers who are also composers </h2>
+Here is a list of performers who are also composer's of rolls (that are currently scanned).
+Click on the name of the composer to see the list of their recordings.  Roll duplications
+are excluded from the counts. (Not working for names with accented characters yet.)
+<div id="dual"></div>
 </article>
 
 {% include_relative styles-local.html %}

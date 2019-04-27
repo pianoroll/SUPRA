@@ -2,51 +2,90 @@
    "PERSON": [
       {
          "NAME": "Adam, Adolphe",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Adolphe_Adam"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Adolphe_Adam",
+         "ROLE": "composer"
+      },
+      {
+         "NAME": "Adam-Benard, Eugenie",
+         "DATES": "1861-1925",
+         "ROLE": "performer"
       },
       {
          "NAME": "Albert, Eugen d'",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Eugen_d%27Albert"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Eugen_d%27Albert",
+         "ROLE": "composer, performer"
       },
       {
          "NAME": "Alkan, Charles-Valentin",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Charles-Valentin_Alkan"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Charles-Valentin_Alkan",
+         "ROLE": "composer"
+      },
+      {
+         "NAME": "Ansorge, Konrad",
+         "DATES": "1862-1930",
+         "ROLE": "performer"
       },
       {
          "NAME": "Backhaus, Wilhelm",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wilhelm_Backhaus"
+         "DATES": "1884-1969",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wilhelm_Backhaus",
+         "ROLE": "performer"
+      },
+      {
+         "NAME": "Barinowa, Marie",
+         "DATES": "1878-1956",
+         "ROLE": "performer"
       },
       {
          "NAME": "Beethoven, Ludwig van",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven",
+         "ROLE": "composer"
+      },
+      {
+         "NAME": "Benici, Tosta di",
+         "DATES": "1867-1961",
+         "ROLE": "performer"
       },
       {
          "NAME": "Berlin, Irving",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Irving_Berlin"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Irving_Berlin",
+         "ROLE": "composer"
       },
       {
          "NAME": "Berlioz, Hector",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Hector_Berlioz"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Hector_Berlioz",
+         "ROLE": "composer"
       },
       {
          "NAME": "Bizet, Georges",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Georges_Bizet"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Georges_Bizet",
+         "ROLE": "composer"
       },
       {
          "NAME": "Bloomfield-Zeisler, Fannie",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler"
+         "DATES": "1863-1927",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler",
+         "ROLE": "performer"
       },
       {
          "NAME": "Brahms, Johannes",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Johannes_Brahms"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Johannes_Brahms",
+         "ROLE": "composer"
+      },
+      {
+         "NAME": "Brightwell, Edward",
+         "DATES": "1876-",
+         "ROLE": "performer"
       },
       {
          "NAME": "Brassin, Louis",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Louis_Brassin"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Louis_Brassin",
+         "ROLE": "performer"
       },
       {
          "NAME": "Burmeister, Richard",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Burmeister"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Burmeister",
+         "ROLE": "performer"
       },
       {
          "NAME": "Busoni, Ferruccio",
@@ -54,7 +93,8 @@
       },
       {
          "NAME": "Carre&#xF1;o, Teresa",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o",
+         "ROLE": "performer"
       },
       {
          "NAME": "Chaminade, C&#xE9;cile",
@@ -62,7 +102,8 @@
       },
       {
          "NAME": "Chopin, Fr&#xE9;d&#xE9;ric",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin",
+         "ROLE": "composer"
       },
       {
          "NAME": "Cuvillier, Charles",
@@ -70,63 +111,88 @@
       },
       {
          "NAME": "Czerny, Carl",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Carl_Czerny"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Carl_Czerny",
+         "ROLE": "composer"
       },
       {
          "NAME": "Debussy, Claude",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Claude_Debussy"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Claude_Debussy",
+         "ROLE": "composer, performer"
       },
       {
          "NAME": "Delibes, L&#xE9;o",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/L%C3%A9o_Delibes"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/L%C3%A9o_Delibes",
+         "ROLE": "composer"
       },
       {
          "NAME": "Droucker, Sandra",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sandra_Droucker"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sandra_Droucker",
+         "ROLE": "performer"
       },
       {
          "NAME": "Dohn&#xE1;nyi, Ern&#x151;",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ernst_von_Dohn%C3%A1nyi"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ernst_von_Dohn%C3%A1nyi",
+         "ROLE": "composer"
+      },
+      {
+         "NAME": "Petri, Egon",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Egon_Petri",
+         "ROLE": "performer"
       },
       {
          "NAME": "Elvyn, Myrtle",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Myrtle_Elvyn"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Myrtle_Elvyn",
+         "ROLE": "performer"
       },
       {
          "NAME": "Epstein, Richard",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Julius_Epstein_(pianist)"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Julius_Epstein_(pianist)",
+         "ROLE": "performer"
       },
       {
          "NAME": "Europe, James Reese",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/James_Reese_Europe"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/James_Reese_Europe",
+         "ROLE": "composer, performer"
       },
       {
          "NAME": "Fall, Leo",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Leo_Fall"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Leo_Fall",
+         "ROLE": "performer"
       },
       {
          "NAME": "Fall, Richard",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Fall"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Fall",
+         "ROLE": "performer"
       },
       {
          "NAME": "Foster, Stephen Collins",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Stephen_Foster"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Stephen_Foster",
+         "ROLE": "composer"
       },
       {
          "NAME": "Friml, Rudolf",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolf_Friml"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolf_Friml",
+         "ROLE": "performer"
       },
       {
          "NAME": "Fryer, Herbert",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Herbert_Fryer"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Herbert_Fryer",
+         "ROLE": "performer"
       },
       {
          "NAME": "Gabrilowitsch, Ossip",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ossip_Gabrilowitsch"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ossip_Gabrilowitsch",
+         "ROLE": "performer"
+      },
+      {
+         "NAME": "Galston, Gottfried",
+         "DATES": "1879-1950",
+         "WIKIPEDIA": "https://de.wikipedia.org/wiki/Gottfried_Galston"
       },
       {
          "NAME": "Ganz, Rudolph",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolph_Ganz"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Rudolph_Ganz",
+         "ROLE": "performer"
       },
       {
          "NAME": "German, Edward",
@@ -142,7 +208,8 @@
       },
       {
          "NAME": "Gomes, Carlos",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Gomes"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Gomes",
+         "ROLE": "performer"
       },
       {
          "NAME": "Gottschalk, Louis Moreau",
@@ -154,27 +221,34 @@
       },
       {
          "NAME": "Grainger, Percy",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Percy_Grainger"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Percy_Grainger",
+         "ROLE": "composer"
       },
       {
          "NAME": "Grieg, Edvard",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edvard_Grieg"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edvard_Grieg",
+         "ROLE": "composer"
       },
       {
          "NAME": "Grosz, Gisella",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Gisella_Grosz"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Gisella_Grosz",
+         "ROLE": "performer"
       },
       {
          "NAME": "Gr&#xFC;nfeld, Alfred",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alfred_Gr%C3%BCnfeld"
+         "DATES": "1852-1924",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alfred_Gr%C3%BCnfeld",
+         "ROLE": "performer"
       },
       {
          "NAME": "Hambourg, Mark",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Mark_Hambourg"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Mark_Hambourg",
+         "ROLE": "performer"
       },
       {
          "NAME": "Henderson, Ray",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ray_Henderson"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ray_Henderson",
+         "ROLE": "performer"
       },
       {
          "NAME": "Henselt, Adolf von",
@@ -182,63 +256,78 @@
       },
       {
          "NAME": "Hofmann, Josef",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Hofmann"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Hofmann",
+         "ROLE": "performer"
       },
       {
          "NAME": "Holzmann, Abe",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Abe_Holzmann"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Abe_Holzmann",
+         "ROLE": "performer"
       },
       {
          "NAME": "Humperdinck, Engelbert",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Engelbert_Humperdinck_(composer)"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Engelbert_Humperdinck_(composer)",
+         "ROLE": "composer"
       },
       {
          "NAME": "Joyce, Archibald",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Archibald_Joyce"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Archibald_Joyce",
+         "ROLE": "performer"
       },
       {
          "NAME": "Kleeberg, Clotilde",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Clotilde_Kleeberg"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Clotilde_Kleeberg",
+         "ROLE": "performer"
       },
       {
          "NAME": "Koczalski, Raoul",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Raoul_Koczalski"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Raoul_Koczalski",
+         "ROLE": "performer"
       },
       {
          "NAME": "Lamond, Frederic",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)",
+         "ROLE": "performer"
       },
       {
          "NAME": "Landowska, Wanda",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wanda_Landowska"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wanda_Landowska",
+         "ROLE": "performer"
       },
       {
          "NAME": "Lemba, Artur",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Artur_Lemba"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Artur_Lemba",
+         "ROLE": "performer"
       },
       {
          "NAME": "Leschetizky, Theodor",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Theodor_Leschetizky"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Theodor_Leschetizky",
+         "ROLE": "performer"
       },
       {
          "NAME": "Lh&#xE9;vinne, Josef",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne",
+         "ROLE": "performer"
       },
       {
          "NAME": "Lincke, Paul",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Paul_Lincke"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Paul_Lincke",
+         "ROLE": "performer"
       },
       {
          "NAME": "Liszt, Franz",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Liszt"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Liszt",
+         "ROLE": "composer"
       },
       {
          "NAME": "MacDowell, Edward",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edward_MacDowell"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Edward_MacDowell",
+         "ROLE": "composer"
       },
       {
          "NAME": "Marx-Goldschmidt, Berthe",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Berthe_Marx"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Berthe_Marx",
+         "ROLE": "performer"
       },
       {
          "NAME": "Mason, Lowell",
@@ -246,7 +335,8 @@
       },
       {
          "NAME": "Mascagni, Pietro",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Pietro_Mascagni"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Pietro_Mascagni",
+         "ROLE": "performer"
       },
       {
          "NAME": "Massenet, Jules",
@@ -254,96 +344,122 @@
       },
       {
          "NAME": "Mendelssohn-Bartholdy, Felix",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mendelssohn"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mendelssohn",
+         "ROLE": "composer"
       },
       {
          "NAME": "Mero, Yolanda",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Yolanda_Mero"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Yolanda_Mero",
+         "ROLE": "performer"
       },
       {
          "NAME": "Meyer-Helmund, Erik",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Erik_Meyer-Helmund"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Erik_Meyer-Helmund",
+         "ROLE": "performer"
       },
       {
          "NAME": "Moszkowski, Moritz",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Moritz_Moszkowski"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Moritz_Moszkowski",
+         "ROLE": "performer"
       },
       {
          "NAME": "Motta, Jos&#xE9; Vianna da",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jos%C3%A9_Vianna_da_Motta",
-         "NOTE": "One of the last pupils of Franz Liszt."
+         "NOTE": "One of the last pupils of Franz Liszt.",
+         "ROLE": "performer",
+         "TEACHER": "Liszt, Franz"
       },
       {
          "NAME": "Mottl, Felix",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mottl"
+         "DATES": "1856-1911",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Felix_Mottl",
+         "ROLE": "performer"
       },
       {
          "NAME": "Mozart, Wolfgang Amadeus",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+         "ROLE": "composer"
       },
       {
          "NAME": "Neitzel, Otto",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Otto_Neitzel"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Otto_Neitzel",
+         "ROLE": "performer"
       },
       {
          "NAME": "Ney, Elly",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Elly_Ney"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Elly_Ney",
+         "ROLE": "performer"
       },
       {
          "NAME": "Nikisch, Arthur",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Arthur_Nikisch"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Arthur_Nikisch",
+         "ROLE": "performer"
       },
       {
          "NAME": "Novaes, Guiomar",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Guiomar_Novaes"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Guiomar_Novaes",
+         "ROLE": "performer"
       },
       {
          "NAME": "Offenbach, Jacques",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jacques_Offenbach"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jacques_Offenbach",
+         "ROLE": "composer"
       },
       {
          "NAME": "Pachmann, Vladimir de",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Vladimir_de_Pachmann"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Vladimir_de_Pachmann",
+         "ROLE": "performer"
       },
       {
          "NAME": "Paderewski, Ignace Jan",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ignacy_Jan_Paderewski"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ignacy_Jan_Paderewski",
+         "ROLE": "composer, performer"
       },
       {
          "NAME": "Paur, Emil",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_Paur"
+         "DATES": "1855-1932",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_Paur",
+         "ROLE": "performer"
       },
       {
          "NAME": "Poldini, Ede",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ede_Poldini"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ede_Poldini",
+         "ROLE": "performer"
       },
       {
          "NAME": "Puccini, Giacomo",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Giacomo_Puccini"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Giacomo_Puccini",
+         "ROLE": "composer"
       },
       {
          "NAME": "Pugno, Raoul",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Raoul_Pugno"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Raoul_Pugno",
+         "ROLE": "performer"
       },
       {
          "NAME": "Rachmaninoff, Sergei",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+         "ROLE": "composer"
       },
       {
          "NAME": "Raff, Joachim",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Joachim_Raff"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Joachim_Raff",
+         "ROLE": "performer"
       },
       {
          "NAME": "Reinecke, Carl",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Carl_Reinecke"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Carl_Reinecke",
+         "ROLE": "performer"
       },
       {
          "NAME": "Reisenauer, Alfred",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alfred_Reisenauer"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alfred_Reisenauer",
+         "ROLE": "performer"
       },
       {
          "NAME": "Rossini, Gioacchino",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Gioachino_Rossini"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Gioachino_Rossini",
+         "ROLE": "composer"
       },
       {
          "NAME": "Rubinstein, Anton",
@@ -351,63 +467,85 @@
       },
       {
          "NAME": "Samaroff Stokowski, Olga",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Olga_Samaroff"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Olga_Samaroff",
+         "ROLE": "performer"
       },
       {
          "NAME": "Sauer, Emil von",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_von_Sauer"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Emil_von_Sauer",
+         "ROLE": "performer"
       },
       {
          "NAME": "Scharwenka, Xaver",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Xaver_Scharwenka"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Xaver_Scharwenka",
+         "ROLE": "performer"
       },
       {
          "NAME": "Schelling, Ernest",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ernest_Schelling"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ernest_Schelling",
+         "ROLE": "performer"
       },
       {
          "NAME": "Schnabel, Artur",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Artur_Schnabel"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+         "ROLE": "performer"
       },
       {
          "NAME": "Schubert, Franz",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Schubert"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Franz_Schubert",
+         "ROLE": "composer"
       },
       {
          "NAME": "Schumann, Georg",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Georg_Schumann_(composer)"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Georg_Schumann_(composer)",
+         "ROLE": "performer"
       },
       {
          "NAME": "Schumann, Robert",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Robert_Schumann"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Robert_Schumann",
+         "ROLE": "composer"
       },
       {
          "NAME": "Schulz-Evler, Andrei",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Adolf_Schulz-Evler"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Adolf_Schulz-Evler",
+         "ROLE": "performer"
       },
       {
          "NAME": "Schytte, Ludvig",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ludvig_Schytte"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Ludvig_Schytte",
+         "ROLE": "performer"
       },
       {
          "NAME": "Scott, Cyril",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Cyril_Scott"
+         "DATES": "1879-1970",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Cyril_Scott",
+         "ROLE": "performer"
       },
       {
          "NAME": "Scriabin, Aleksandr Nikolayevich",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alexander_Scriabin"
+         "DATES": "1872-1915",
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Alexander_Scriabin",
+         "ROLE": "composer, performer"
       },
       {
          "NAME": "Sibelius, Jean",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jean_Sibelius"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Jean_Sibelius",
+         "ROLE": "composer"
       },
       {
          "NAME": "Sinding, Christian",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Christian_Sinding"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Christian_Sinding",
+         "ROLE": "composer"
       },
       {
          "NAME": "Stavenhagen, Bernhard",
+         "DATES": "1862-1914",
          "WIKIPEDIA": "https://en.wikipedia.org/wiki/Bernhard_Stavenhagen"
+      },
+      {
+         "NAME": "Stebel, Paula",
+         "DATES": "1885-1932",
+         "ROLE": "performer"
       },
       {
          "NAME": "Straus, Oscar",
@@ -415,43 +553,77 @@
       },
       {
          "NAME": "Sullivan, Arthur",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Arthur_Sullivan"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Arthur_Sullivan",
+         "ROLE": "composer"
       },
       {
          "NAME": "Tchaikovsky, Peter Ilich",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky",
+         "ROLE": "composer"
       },
       {
          "NAME": "Thalberg, Sigismond",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sigismond_Thalberg"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Sigismond_Thalberg",
+         "ROLE": "performer"
       },
       {
          "NAME": "Toselli, Enrico",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Enrico_Toselli"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Enrico_Toselli",
+         "ROLE": "performer"
       },
       {
          "NAME": "Verdi, Giuseppe",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Giuseppe_Verdi"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
+         "ROLE": "composer"
       },
       {
          "NAME": "Vogrich, Max",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Max_Vogrich"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Max_Vogrich",
+         "ROLE": "performer"
       },
       {
          "NAME": "Wagner, Richard",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Wagner"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Richard_Wagner",
+         "ROLE": "composer"
       },
       {
          "NAME": "Waldteufel, Emil",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel",
+         "ROLE": "performer"
+      },
+      {
+         "NAME": "Weiss, Josef",
+         "DATES": "1864-1945",
+         "LINK": "https://www.bach-cantatas.com/Lib/Weiss-Josef.htm",
+         "NOTE": "One of the more eccentric Franz Liszt pupils.",
+         "ROLE": "performer",
+         "TEACHER": "Liszt, Franz"
+      },
+      {
+         "NAME": "Wendling, Carl",
+         "ALTNAME": "Wendling, Karl",
+         "DATES": "1857-1918",
+         "ROLE": "performer"
       },
       {
          "NAME": "Whiteman, Paul",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Paul_Whiteman"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Paul_Whiteman",
+         "ROLE": "performer"
       },
       {
          "NAME": "Youmans, Vincent",
-         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Vincent_Youmans"
+         "WIKIPEDIA": "https://en.wikipedia.org/wiki/Vincent_Youmans",
+         "ROLE": "performer"
+      },
+      {
+         "NAME": "Zadora, Michael",
+         "DATES": "1882-1946",
+         "LINK": "http://www.bach-cantatas.com/Lib/Zadora-Michael.htm",
+         "ROLE": "performer"
+      },
+      {
+         "NAME": "Zschemeck, Georg",
+         "ROLE": "performer"
       }
    ]
 }
