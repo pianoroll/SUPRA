@@ -224,6 +224,7 @@ function displayPianists(list, selector) {
 	var pianists = {};
 	var label;
 	var i;
+	var performer;
 	for (i=0; i<list.length; i++) {
 		if (!list[i].LABEL) {
 			continue;
@@ -236,10 +237,15 @@ function displayPianists(list, selector) {
 		if (!list[i].PERFORMER) {
 			continue;
 		}
-		if (!pianists[list[i].PERFORMER]) {
-			pianists[list[i].PERFORMER] = 0;
+		performer = list[i].PERFORMER;
+		if (performer === "Adam, Eugenie") {
+			// Spelled in two ways in the list
+			performer = "Adam-Benard, Eugenie";
 		}
-		pianists[list[i].PERFORMER]++;
+		if (!pianists[performer]) {
+			pianists[performer] = 0;
+		}
+		pianists[performer]++;
 	}
 
 	var plist = [];
@@ -260,7 +266,7 @@ function displayPianists(list, selector) {
 		output += "</td>"
 		output += "<td>"
 		output += "<a href='/?q=";
-		output += encodeURI(plist[i][1].replace(/\s*\(.*/, ""))
+		output += encodeURI(flipName(plist[i][1].replace(/\s*\(.*/, "")))
 		output += "&f=PERFORMER'>";
 		output += PreparePerson(plist[i][1]);
 		output += "</a>";
@@ -325,7 +331,7 @@ function displayComposers(list, selector) {
 		output += "</td>"
 		output += "<td>"
 		output += "<a href='/?q=";
-		output += encodeURI(plist[i][1].replace(/\s*\(.*/, ""))
+		output += encodeURI(flipName(plist[i][1].replace(/\s*\(.*/, "")))
 		output += "&f=COMPOSER'>";
 		output += PreparePerson(plist[i][1]);
 		output += "</a>";
@@ -341,6 +347,22 @@ function displayComposers(list, selector) {
 		return;
 	}
 	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// flipName --
+//
+
+function flipName(bname) {
+	var matches = bname.match(/^([^,]+),\s+([^,]+)$/);
+	if (!matches) {
+		return bname;
+	} else {
+		return matches[2] + " " + matches[1];
+	}
 }
 
 

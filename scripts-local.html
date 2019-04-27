@@ -173,21 +173,28 @@ function doSearch(text) {
 		entries = [];
 		var regexp = new RegExp(fields[i], "i");
 		for (var j=0; j<oldentries.length; j++) {
-			if (oldentries[j].TITLE && oldentries[j].TITLE.match(regexp)) {
-				entries.push(oldentries[j]);
-				continue;
-			}
-			if (oldentries[j].COMPOSER && oldentries[j].COMPOSER.match(regexp)) {
-				entries.push(oldentries[j]);
-				continue;
-			}
-			if (oldentries[j].PERFORMER && oldentries[j].PERFORMER.match(regexp)) {
-				entries.push(oldentries[j]);
-				continue;
-			}
-			if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
-				entries.push(oldentries[j]);
-				continue;
+			if (CGI.f) {
+				if (oldentries[j][CGI.f] && oldentries[j][CGI.f].match(regexp)) {
+					entries.push(oldentries[j]);
+					continue;
+				}
+			} else {
+				if (oldentries[j].TITLE && oldentries[j].TITLE.match(regexp)) {
+					entries.push(oldentries[j]);
+					continue;
+				}
+				if (oldentries[j].COMPOSER && oldentries[j].COMPOSER.match(regexp)) {
+					entries.push(oldentries[j]);
+					continue;
+				}
+				if (oldentries[j].PERFORMER && oldentries[j].PERFORMER.match(regexp)) {
+					entries.push(oldentries[j]);
+					continue;
+				}
+				if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
+					entries.push(oldentries[j]);
+					continue;
+				}
 			}
 		}
 		
