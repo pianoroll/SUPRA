@@ -131,11 +131,18 @@ function GetRollLength(database) {
 //
 
 function PreparePerson(entry) {
+
+	var matches;
+	if (matches = entry.match(/^(.*\)); (.*)$/)) {
+		var person1 = PreparePerson(matches[1]);
+		var person2 = PreparePerson(matches[2]);
+		return person1 + "; " + person2;
+	}
+
 	entry = entry.replace("-1", "&ndash;1");
 	entry = entry.replace("-\)", "&ndash;)");
 	var nombre = entry;
 	var dates = "";
-	var matches;
 	if (matches = entry.match(/^\s*(.*)\s+(\(.*\))\s*$/)) {
 		nombre = matches[1];
 		dates = matches[2];
@@ -148,6 +155,9 @@ function PreparePerson(entry) {
 	}
 	if (nombre.match(/ [A-Z]$/)) {
 		nombre += ".";
+	}
+	if (PEEPS[nombre] && PEEPS[nombre].DATES && !PEEPS[nombre].DATES.match(/^\s*$/)) {
+		dates = "(" + PEEPS[nombre].DATES.replace("-1", "&ndash;1") + ")";
 	}
 	if (!link) {
 		if (!dates.match(/^\s*$/)) {

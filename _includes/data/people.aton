@@ -84,6 +84,15 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Borel-Clerc, Charles
+@REALNAME:	Clerc, Charles Louis Raymond François
+@DATES:		1879-1959
+@WIKIPEDIA:	https://fr.wikipedia.org/wiki/Charles_Borel-Clerc
+@ROLE:		composer
+@NATIONALITY:	French
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Brahms, Johannes
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Johannes_Brahms
 @ROLE:		composer
@@ -141,6 +150,20 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		D'Egville, Louis H
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Claude_Debussy
+@ROLE:		composer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Daly, William
+@DATES:		1887-1936
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/William_Merrigan_Daly
+@ROLE:		composer
+@NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Debussy, Claude
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Claude_Debussy
 @ROLE:		composer, performer
@@ -166,14 +189,19 @@
 
 @@BEGIN: PERSON
 @NAME:		Petri, Egon
+@DATES:		1881-1962
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Egon_Petri
 @ROLE:		performer
+@NATOINALITY:	Dutch; American
+@TEACHER:	Busoni
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Elvyn, Myrtle
+@DATES:		c1887-1975
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Myrtle_Elvyn
 @ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -280,6 +308,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Grof&#xE9;, Ferde
+@DATES:		1892-1972
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ferde_Grof%C3%A9
+@ROLE:		performer
+@NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Grosz, Gisella
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Gisella_Grosz
 @ROLE:		performer
@@ -290,6 +326,14 @@
 @DATES:		1852-1924
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Gr%C3%BCnfeld
 @ROLE:		performer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Hal&#xE9;vy, F.
+@DATES:		1799-1862
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Fromental_Hal%C3%A9vy
+@ROLE:		composer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -346,6 +390,20 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Korngold, Erich Wolfgang
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Erich_Wolfgang_Korngold
+@ROLE:		composer
+@NATIONALITY:	Austrian; American
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Kreisler, Fritz
+@DATES:		1875-1962
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Fritz_Kreisler
+@ROLE:		composer
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Lamond, Frederic
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)
 @ROLE:		performer
@@ -358,9 +416,33 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Lecocq, Charles
+@DATES:		1832-1918
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Charles_Lecocq
+@ROLE:		composer
+@NATIONALITY:	French
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Leh&#xE1;r, Franz
+@DATES:		1870-1948
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Leh%C3%A1r
+@ROLE:		composer
+@NATIONALITY:	Austro-Hungarian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Lemba, Artur
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Artur_Lemba
 @ROLE:		performer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Leoncavallo, Ruggiero
+@DATES:		1857-1919
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ruggero_Leoncavallo
+@ROLE:		performer
+@NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -373,6 +455,14 @@
 @NAME:		Lh&#xE9;vinne, Josef
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne
 @ROLE:		performer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Li&#x361;apunov, S. M
+@DATES:		1859-1924
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Sergei_Lyapunov
+@ROLE:		composer
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -391,6 +481,14 @@
 @NAME:		MacDowell, Edward
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Edward_MacDowell
 @ROLE:		composer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Malderen, &#xC9;douard van
+@DATES:		1883-1963
+@LINK:		https://secondhandsongs.com/artist/123856
+@ROLE:		composer
+@NATIONALITY:	Belgian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -552,6 +650,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Rosoff, Charles
+@DATES:		1895-1988
+@LINK:		https://www.imdb.com/name/nm0743140/
+@ROLE:		composer
+@NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Rossini, Gioacchino
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Gioachino_Rossini
 @ROLE:		composer
@@ -560,6 +666,14 @@
 @@BEGIN: PERSON
 @NAME:		Rubinstein, Anton
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Anton_Rubinstein
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Saint-Sa&#xEB;ns, Camille
+@DATES:		1825-1921
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Camille_Saint-Sa%C3%ABns
+@ROLE:		composer, performer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -584,6 +698,13 @@
 @NAME:		Schelling, Ernest
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernest_Schelling
 @ROLE:		performer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Schl&#xF6;zer, Paul de
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_de_Schl%C3%B6zer
+@ROLE:		performer
+@NATIONALITY:	Polish
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -617,6 +738,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Sch&#xFC;tt, Eduard
+@DATES:		1856-1933
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Eduard_Sch%C3%BCtt
+@ROLE:		composer
+@NATIONALITY:	Russian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Schytte, Ludvig
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ludvig_Schytte
 @ROLE:		performer
@@ -643,6 +772,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Sil&#xE9;su, Lao
+@DATES:		1883-1953
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Lao_Silesu
+@ROLE:		composer
+@NATIONALITY:	Italian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Sinding, Christian
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Christian_Sinding
 @ROLE:		composer
@@ -661,8 +798,32 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Steinway, Charles H
+@DATES:		1857-1919
+@WIKIPEDIA:	https://de.wikipedia.org/wiki/Charles_Herman_Steinway
+@ROLE:		composer
+@NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Straus, Oscar
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Oscar_Straus_(composer)
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Strauss, Johann
+@DATES:		1825-1899
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Johann_Strauss_II
+@ROLE:		composer
+@NATIONALITY: 	Austrian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Strauss, Josef
+@DATES:		1827-1870
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Strauss
+@ROLE:		composer
+@NATIONALITY: 	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
