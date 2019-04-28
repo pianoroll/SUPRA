@@ -172,7 +172,7 @@ Click again on the same button to show the horizontal scale again.
 
 <p>
 Save the MIDI file that generated this audio, by downloading from 
-<a target="_blank" href="https://github.com/pianoroll/SUPRA/blob/master/welte-red/midi-exp/ws250sr1272-exp.mid?raw=true">this link</a>.  Then go to file&rarr;Import
+<a target="_blank" href="https://github.com/pianoroll/SUPRA/blob/master/welte-red/midi-exp/ws250sr1272_exp.mid?raw=true">this link</a>.  Then go to file&rarr;Import
 annotation layer... and then select the downloaded MIDI file.  There will
 be a dialog window appearing next, which you should select the default behavior
 of "Merge all tracks".  After pressing OK, the view in the SV window should be:
