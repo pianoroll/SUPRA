@@ -86,7 +86,7 @@ the top of the SV window which are discussed later.
 <h2> Loading an audio file </h2>
 
 SV can load both uncompressed (WAV) and compressed (MP3, MP4, etc.) audio 
-files.  Download <a target="_blank" href="https://ccrma.stanford.edu/~craig/piano-roll-project/supra-mp4s/ws250sr1272.m4a">this audio file</a>
+files.  Download <a target="_blank" href="https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/ws250sr1272.m4a">this audio file</a>
 and load it into SV by going to the file&rarr;Open... menu.  After loading the
 SV interface should look like this:
 
