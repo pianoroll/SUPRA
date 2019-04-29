@@ -1,0 +1,116 @@
+
+{% include_relative listeners.html %}
+
+<script>
+// vim: ts=3
+
+
+//////////////////////////////
+//
+// displayReferences --
+//
+
+function displayReferences(list, selector) {
+	if (!Array.isArray(list)) {
+		list = [ list ];
+	}
+	list.sort(function(a, b) {
+		if (!a) {
+			return -1;
+		}
+		if (!b) {
+			return -1;
+		}
+		if (Array.isArray(a)) {
+			a = a[0];
+		}
+		if (Array.isArray(b)) {
+			b = b[0];
+		}
+		var Aauthor = a.AUTHOR;
+		var Bauthor = b.AUTHOR;
+		if (!Aauthor) {
+			return +1;
+		}
+		if (!Bauthor) {
+			return -1;
+		}
+		return Aauthor.localeCompare(Bauthor);
+	});
+
+	var output = "";
+	for (var i=0; i<list.length; i++) {
+		output += "<p class='hangingindent'>";
+		output += prepareEntry(list, i);
+		output += "</p>";
+	}
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		console.log("COULD NOT FIND SELECTOR", selector);
+		return;
+	}
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+//  prepareEntry --
+//
+
+function prepareEntry(list, index) {
+	var entry = list[index];
+	if (!entry) {
+		return "";
+	}
+	var output = "";
+	var author = "";
+	if (entry.AUTHOR) {
+		author = entry.AUTHOR.replace(/[{}]/g, "");
+	}
+	if (author) {
+		output += author + ". ";
+	}
+	var title = entry.TITLE;
+	var subtitle = entry.SUBTITLE;
+	var url = entry.URL;
+	if (url) {
+		output += "<a target='_blank' href='" + url + "'>";
+	}
+	output += title;
+	if (subtitle) {
+		output += ": ";
+		output += subtitle;
+	}
+	if (url) {
+		output += "</a>";
+	}
+	var rtype = entry.TYPE;
+	if (rtype && rtype.match(/dissertation/i)) {
+		output += ", Ph.D. diss.";
+	}
+	var location = entry.LOCATION;
+	var publisher = entry.PUBLISHER;
+	if (location && publisher) {
+		output += ", " + location + ": " + publisher;
+	} else if (location) {
+		output += ", " + location;
+	} else if (publisher) {
+		output += ", " + publisher;
+	}
+	var year = entry.YEAR;
+	if (year) {
+		output += "; " + year;
+	}
+	// page range goes here
+	
+	output += ".";
+	return output;
+}
+
+</script>
+
+
+

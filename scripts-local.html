@@ -14,10 +14,10 @@ function displayList(list, query) {
 	output += "<thead>";
 	output += "<tr>";
 	output += "<th></th>";
-	output += "<th onclick='sortByNumber(1)'>Label</th>";
-	output += "<th onclick='sortByText(2)'>Title</th>";
-	output += "<th onclick='sortByText(3)'>Composer</th>";
-	output += "<th onclick='sortByText(4)'>Performer</th>";
+	output += "<th onclick='SortByNumber(1, \"#red-welte-list\")'>Label</th>";
+	output += "<th onclick='SortByText(2, \"#red-welte-list\")'>Title</th>";
+	output += "<th onclick='SortByText(3, \"#red-welte-list\")'>Composer</th>";
+	output += "<th onclick='SortByText(4, \"#red-welte-list\")'>Performer</th>";
 	output += "<th colspan='5' >Data and Metadata Links</th>";  // PURL/Searchworks links, etc
 	output += "</tr>";
 	output += "</thead>";
@@ -42,109 +42,10 @@ function displayList(list, query) {
 	} else {
 		element.innerHTML = output;
 	}
-	sortByNumber(SORTCOLUMN);
+	SortByNumber(SORTCOLUMN, "#red-welte-list");
 
 	if (query) {
 		element.style.display = "block";
-	}
-}
-
-
-
-//////////////////////////////
-//
-// sortByText --
-//
-
-function sortByText(index, selector) {
-	var data = document.querySelectorAll(".data");
-	var datalist = [];
-	var i;
-	for (i=0; i<data.length; i++) {
-		datalist.push(data[i]);
-	}
-	datalist.sort(function(a, b) {
-		var A;
-		var B;
-		if (selector) {
-			A = a.cells[index].querySelector(selector).innerHTML;
-			B = b.cells[index].querySelector(selector).innerHTML;
-		} else {
-			A = a.cells[index].textContent;
-			B = b.cells[index].textContent;
-		}
-		if (A.match(/^\s*$/)) {
-			return +1;
-		}
-		if (B.match(/^\s*$/)) {
-			return -1;
-		}
-		var result = A.localeCompare(B);
-		return result;
-	});
-
-	var body = document.querySelector("table#red-welte-list tbody");
-	if (body) {
-		body.innerHTML = "";
-		for (i=0; i<datalist.length; i++) {
-			body.appendChild(datalist[i]);
-		}
-	}
-}
-
-
-
-
-//////////////////////////////
-//
-// sortByNumber --
-//
-
-function sortByNumber(index, selector) {
-	SORTCOLUMN = index;
-	var data = document.querySelectorAll(".data");
-	var datalist = [];
-	var i;
-	for (i=0; i<data.length; i++) {
-		datalist.push(data[i]);
-	}
-	datalist.sort(function(a, b) {
-		var A;
-		var B;
-		if (selector) {
-			A = a.cells[index].querySelector(selector).innerHTML;
-			B = b.cells[index].querySelector(selector).innerHTML;
-		} else {
-			A = a.cells[index].textContent;
-			B = b.cells[index].textContent;
-		}
-
-		if (A.match(/^\s*$/)) {
-			return +1;
-		}
-		if (B.match(/^\s*$/)) {
-			return -1;
-		}
-
-		var Anum = 0;
-		var Bnum = 0;
-		var matches;
-		if (matches = A.match(/(\d+)/)) {
-			Anum = parseInt(matches[1]);
-		}
-		if (matches = B.match(/(\d+)/)) {
-			Bnum = parseInt(matches[1]);
-		}
-
-		return Anum - Bnum;
-	});
-
-	var body = document.querySelector("table#red-welte-list tbody");
-	if (body) {
-		body.innerHTML = "";
-		for (i=0; i<datalist.length; i++) {
-			body.appendChild(datalist[i]);
-		}
 	}
 }
 

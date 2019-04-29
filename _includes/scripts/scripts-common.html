@@ -318,7 +318,15 @@ function DisplayPianists(list, selector) {
 	});
 
 	var output = "";
-	output += "<table class='count'>";
+	output += "<table id='performerList' class='count'>";
+
+	output += "<thead>";
+	output += "<tr>";
+	output += "<th onclick='SortByNumber(0, \"#performerList\", true)' style='padding-right:20px;'>Count</th>";
+	output += "<th onclick='SortByText(1, \"#performerList\")'>Performer</th>";
+	output += "</tr>";
+	output += "</thead>";
+	output += "<tbody>";
 
 	for (i=0; i<plist.length; i++) {
 		output += "<tr>"
@@ -338,6 +346,7 @@ function DisplayPianists(list, selector) {
 		output += "</tr>"
 	}
 
+	output += "</tbody>";
 	output += "</table>";
 
 	var element = document.querySelector(selector);
@@ -386,7 +395,15 @@ function DisplayComposers(list, selector) {
 	});
 
 	var output = "";
-	output += "<table class='count'>";
+	output += "<table id='composerList' class='count'>";
+
+	output += "<thead>";
+	output += "<tr>";
+	output += "<th onclick='SortByNumber(0, \"#composerList\", true)' style='padding-right:20px;'>Count</th>";
+	output += "<th onclick='SortByText(1, \"#composerList\")'>Composer</th>";
+	output += "</tr>";
+	output += "</thead>";
+	output += "<tbody>";
 
 	for (i=0; i<plist.length; i++) {
 		output += "<tr>"
@@ -465,19 +482,16 @@ function DisplayPerformerComposers(list, selector) {
 	combined = combined.sort();
 
 	var output = "";
-	output += "<table class='triple'>";
+	output += "<table id='dualList' class='triple'>";
 
+	output += "<thead>";
 	output += "<tr>";
-	output += "<th>";
-	output += "Compositions";
-	output += "</th>";
-	output += "<th>";
-	output += "Performances";
-	output += "</th>";
-	output += "<th>";
-	output += "Name";
-	output += "</th>";
+	output += "<th onclick='SortByNumber(0, \"#dualList\", true)' style='padding-right:20px;'>Compositions</th>";
+	output += "<th onclick='SortByNumber(1, \"#dualList\", true)' style='padding-right:20px;'>Performances</th>";
+	output += "<th onclick='SortByText(2, \"#dualList\")'>Name</th>";
 	output += "</tr>";
+	output += "</thead>";
+	output += "<tbody>";
 
 	for (i=0; i<combined.length; i++) {
 		output += "<tr>"
@@ -519,6 +533,94 @@ function FlipName(bname) {
 		return bname;
 	} else {
 		return matches[2] + " " + matches[1];
+	}
+}
+
+
+
+//////////////////////////////
+//
+// SortByNumber --
+//
+
+function SortByNumber(index, selector, reverse) {
+	SORTCOLUMN = index;
+	var data = document.querySelectorAll(selector + " > tbody > tr");
+	var datalist = [];
+	var i;
+	for (i=0; i<data.length; i++) {
+		datalist.push(data[i]);
+	}
+	datalist.sort(function(a, b) {
+		var A = a.cells[index].textContent;
+		var B = b.cells[index].textContent;
+
+		if (A.match(/^\s*$/)) {
+			return +1;
+		}
+		if (B.match(/^\s*$/)) {
+			return -1;
+		}
+
+		var Anum = 0;
+		var Bnum = 0;
+		var matches;
+		if (matches = A.match(/(\d+)/)) {
+			Anum = parseInt(matches[1]);
+		}
+		if (matches = B.match(/(\d+)/)) {
+			Bnum = parseInt(matches[1]);
+		}
+
+		if (reverse) {
+			return Bnum - Anum;
+		} else {
+			return Anum - Bnum;
+		}
+	});
+
+	var body = document.querySelector(selector + " tbody");
+	if (body) {
+		body.innerHTML = "";
+		for (i=0; i<datalist.length; i++) {
+			body.appendChild(datalist[i]);
+		}
+	}
+}
+
+
+
+//////////////////////////////
+//
+// SortByText --
+//
+
+function SortByText(index, selector) {
+	var data = document.querySelectorAll(selector + " > tbody > tr");
+	var datalist = [];
+	var i;
+	for (i=0; i<data.length; i++) {
+		datalist.push(data[i]);
+	}
+	datalist.sort(function(a, b) {
+		var A = a.cells[index].textContent;
+		var B = b.cells[index].textContent;
+		if (A.match(/^\s*$/)) {
+			return +1;
+		}
+		if (B.match(/^\s*$/)) {
+			return -1;
+		}
+		var result = A.localeCompare(B);
+		return result;
+	});
+
+	var body = document.querySelector(selector + " tbody");
+	if (body) {
+		body.innerHTML = "";
+		for (i=0; i<datalist.length; i++) {
+			body.appendChild(datalist[i]);
+		}
 	}
 }
 
