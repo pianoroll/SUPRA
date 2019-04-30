@@ -154,62 +154,251 @@ function displayStatsOnPage(database, selector) {
 }
 
 
+
 //////////////////////////////
 //
-// displayDuplicates --
+// displayScanStats
 //
 
-function displayDuplicates(list, selector) {
-	var labels = {};
-	var label
-	var i;
-	for (i=0; i<list.length; i++) {
-		label = list[i].LABEL;
-		if (!label) {
-			continue;
-		}
-		if (label.match(/^\s*$/)) {
-			continue;
-		}
-		if (!labels[label]) {
-			labels[label] = [];
-		}
-		labels[label].push(list[i]);
-	}
-	var dupes = [];
-	for (label in labels) {
-		if (labels[label].length > 1) {
-			dupes.push(labels[label]);
-		}
-	}
-
-	var output = "";
-	output += "There are " + dupes.length + " rolls that share manufacurer's";
-	output += " catalog numbers with one or more other scans.";
-	output += " In other words, copies of the same recording that may or";
-	output += " may not have differences.";
-	
-
-	output += "<table class='dupes'>";
-	for (i=0; i<dupes.length; i++) {
-		output += MakeRollTableRows(dupes[i]);
-		if (i < dupes.length - 1) {
-			output += "<tr style='padding:0; margin:0;'><td style='padding:0; margin:0;' colspan='9'><hr></td></tr>";
-		}
-	}
-	output += "</table>";
-
-
-
-	output += "</table>";
-
+function displayScanStats(list, selector) {
 	var element = document.querySelector(selector);
 	if (!element) {
 		return;
 	}
-	element.innerHTML = output;
+	var output = "";
 
+	output += "<table id='scanStats'>";
+	output += "<thead>";
+	output += "<tr>";
+	output += "<th></th>";
+	output += "<th title='Sort by Digital Repository Unique ID' onclick='SortByText(1, \"#scanStats\")'>DRUID</th>";
+	output += "<th title='Sort by Digital Repository Unique ID' onclick='SortByText(2, \"#scanStats\")'>CATKEY</th>";
+	output += "<th title='Sort by manufacturer catalog number' onclick='SortByText(3, \"#scanStats\")'>Label</th>";
+	output += "<th title='Sort by title' onclick='SortByText(4, \"#scanStats\")'>Title</th>";
+	output += "<th title='Sort by composer' onclick='SortByText(5, \"#scanStats\")'>Composer</th>";
+	output += "<th title='Sort by performer' onclick='SortByText(6, \"#scanStats\")'>Performer</th>";
+	output += "<th title='Sort by edge tear count' onclick='SortByNumber(7, \"#scanStats\", true)'>Edge tears</th>";
+	output += "<th title='Sort by suspicious hole count' onclick='SortByNumber(8, \"#scanStats\", true)'>Bad holes</th>";
+	output += "<th title='Sort by operator shifts count' onclick='SortByNumber(9, \"#scanStats\", true)'>Shifts</th>";
+	output += "<th title='Sort by operator shifts count' onclick='SortByNumber(10, \"#scanStats\", true)'>Drift&nbsp;px</th>";
+	output += "<th title='Sort by tiny-hole count (holes less than 1/6 the size of a punch)' onclick='SortByNumber(11, \"#scanStats\", true)'>Tiny&nbsp;holes</th>";
+	output += "<th title='Sort by dust score (parts-per-million)' onclick='SortByNumber(12, \"#scanStats\", true)'>Dust</th>";
+	output += "<th title='Sort by rendered tempo' onclick='SortByNumber(13, \"#scanStats\", true)'>Tempo</th>";
+	output += "</tr>";
+	output += "</thead>";
+
+	output += "<tbody>";
+	for (var i=0; i<list.length; i++) {
+		if (!list[i].DRUID) {
+			continue;
+		}
+		output += "<tr>";
+
+		var druid = list[i].DRUID.trim();
+		output += "<td>";
+		output += "<div id='audio_" + druid + "' ";
+		output += "style='cursor:pointer;' ";
+		output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
+		output += "class='play audio'>play</div>";
+		output += "</td>";
+
+
+		output += "<td>";
+		if (list[i].PURL) {
+			output += "<a target='_blank' href='" + list[i].PURL + "'>";
+			output += list[i].DRUID;
+			output += "</a>";
+		} else {
+			output += list[i].DRUID;
+		}
+		output += "</td>";
+
+		if (list[i].SEARCHWORKS) {
+			output += "<td>";
+			output += "<a target='_blank' href='" + list[i].SEARCHWORKS + "'>";
+			output += list[i].CATKEY;
+			output += "</a>";
+		} else {
+			output += "<td class='warning3'>";
+			output += list[i].CATKEY;
+		}
+		output += "</td>";
+
+
+		output += "<td>";
+		if (list[i].LABEL) {
+			output += list[i].LABEL.replace("Welte-Mignon", "WM");
+		}
+		output += "</td>";
+		
+
+		output += "<td style='width:100px;'>";
+		if (list[i].TITLE) {
+			output += list[i].TITLE;
+		}
+		output += "</td>";
+		
+
+		output += "<td>";
+		if (list[i].COMPOSER) {
+			output += list[i].COMPOSER.replace(/,.*/, "");
+		}
+		output += "</td>";
+		
+
+		output += "<td>";
+		if (list[i].PERFORMER) {
+			output += list[i].PERFORMER.replace(/,.*/, "");
+		}
+		output += "</td>";
+
+
+		var tears = -1;
+		if (list[i].EDGE_TEAR_COUNT) {
+			tears = parseInt(list[i].EDGE_TEAR_COUNT);
+			if (tears >= 50) {
+				output += "<td class='warning3' style='text-align:center;'>";
+			} else if (tears >= 20) {
+				output += "<td class='warning2' style='text-align:center;'>";
+			} else if (tears >= 10) {
+				output += "<td class='warning1' style='text-align:center;'>";
+			} else {
+				output += "<td style='text-align:center;'>";
+			}
+		} else {
+			output += "<td style='text-align:center;'>";
+		}
+		if (list[i].EDGE_TEAR_COUNT) {
+			output += tears;
+		}
+		output += "</td>";
+
+
+		var badholes = -1;
+		if (list[i].BAD_HOLE_COUNT) {
+			badholes = parseInt(list[i].BAD_HOLE_COUNT);
+			if (badholes >= 50) {
+				output += "<td class='warning3' style='text-align:center;'>";
+			} else if (badholes >= 20) {
+				output += "<td class='warning2' style='text-align:center;'>";
+			} else if (badholes >= 10) {
+				output += "<td class='warning1' style='text-align:center;'>";
+			} else {
+				output += "<td style='text-align:center;'>";
+			}
+		} else {
+			output += "<td style='text-align:center;'>";
+		}
+		if (list[i].BAD_HOLE_COUNT) {
+			output += badholes;
+		}
+		output += "</td>";
+
+
+		var shifts = -1;
+		if (list[i].SHIFTS) {
+			shifts = parseInt(list[i].SHIFTS);
+			if (shifts >= 9) {
+				output += "<td class='warning3' style='text-align:center;'>";
+			} else if (shifts >= 6) {
+				output += "<td class='warning2' style='text-align:center;'>";
+			} else if (shifts >= 3) {
+				output += "<td class='warning1' style='text-align:center;'>";
+			} else {
+				output += "<td style='text-align:center;'>";
+			}
+		} else {
+			output += "<td style='text-align:center;'>";
+		}
+		if (list[i].SHIFTS) {
+			output += shifts;
+		}
+		output += "</td>";
+
+
+		var drift = -1;
+		if (list[i].DRIFT_RANGE) {
+			drift = parseInt(list[i].DRIFT_RANGE);
+			if (drift >= 35) {
+				output += "<td class='warning3' style='text-align:center;'>";
+			} else if (drift >= 25) {
+				output += "<td class='warning2' style='text-align:center;'>";
+			} else if (drift >= 15) {
+				output += "<td class='warning1' style='text-align:center;'>";
+			} else {
+				output += "<td style='text-align:center;'>";
+			}
+		} else {
+			output += "<td style='text-align:center;'>";
+		}
+		if (list[i].DRIFT_RANGE) {
+			output += drift;
+		}
+		output += "</td>";
+
+
+		var antidust = -1;
+		if (list[i].ANTIDUST_COUNT) {
+			antidust = parseInt(list[i].ANTIDUST_COUNT);
+			if (antidust >= 1000) {
+				output += "<td class='warning3' style='text-align:center;'>";
+			} else if (antidust >= 500) {
+				output += "<td class='warning2' style='text-align:center;'>";
+			} else if (antidust >= 200) {
+				output += "<td class='warning1' style='text-align:center;'>";
+			} else {
+				output += "<td style='text-align:center;'>";
+			}
+		} else {
+			output += "<td style='text-align:center;'>";
+		}
+		if (list[i].ANTIDUST_COUNT) {
+			output += antidust;
+		}
+		output += "</td>";
+
+		var dust = -1;
+		if (list[i].DUST_SCORE) {
+			dust = parseInt(list[i].DUST_SCORE);
+			if (dust >= 2000) {
+				output += "<td class='warning3' style='text-align:center;'>";
+			} else if (dust >= 1000) {
+				output += "<td class='warning2' style='text-align:center;'>";
+			} else if (dust >= 250) {
+				output += "<td class='warning1' style='text-align:center;'>";
+			} else {
+				output += "<td style='text-align:center;'>";
+			}
+		} else {
+			output += "<td style='text-align:center;'>";
+		}
+		if (list[i].DUST_SCORE) {
+			output += dust;
+		}
+		output += "</td>";
+
+		if (list[i].RENDERED_TEMPO) {
+			output += "<td style='text-align:center;'>";
+			output += list[i].RENDERED_TEMPO;
+		} else {
+			output += "<td class='warning3' style='text-align:center;'>";
+		}
+		output += "</td>";
+
+
+
+	}
+
+
+
+	output += "</tr>";
+	output += "</tbody>";
+	output += "</table>";
+
+	element.innerHTML = output;
 }
+
+
 
 
 

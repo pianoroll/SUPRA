@@ -1,0 +1,74 @@
+
+{% include_relative listeners.html %}
+{% include_relative scripts-audio.html %}
+
+<script>
+// vim: ts=3
+
+
+//////////////////////////////
+//
+// displayDuplicates --
+//
+
+function displayDuplicates(list, selector) {
+	var labels = {};
+	var label
+	var i;
+	for (i=0; i<list.length; i++) {
+		label = list[i].LABEL;
+		if (!label) {
+			continue;
+		}
+		if (label.match(/^\s*$/)) {
+			continue;
+		}
+		if (!labels[label]) {
+			labels[label] = [];
+		}
+		labels[label].push(list[i]);
+	}
+	var dupes = [];
+	for (label in labels) {
+		if (labels[label].length > 1) {
+			dupes.push(labels[label]);
+		}
+	}
+
+	var output = "";
+	output += "There are " + dupes.length + " rolls that share manufacurer's";
+	output += " catalog numbers with one or more other scans.";
+	output += " In other words, copies of the same recording that may or";
+	output += " may not have differences.";
+	output += " In otherwords, there can be (as has been seen), different";
+	output += " expresion tracking on different rolls with the same ";
+	output += " manufacturer catalog number.";
+	
+
+	output += "<table class='dupes'>";
+	for (i=0; i<dupes.length; i++) {
+		output += MakeRollTableRows(dupes[i]);
+		if (i < dupes.length - 1) {
+			output += "<tr style='padding:0; margin:0;'><td style='padding:0; margin:0;' colspan='9'><hr></td></tr>";
+		}
+	}
+	output += "</table>";
+
+
+
+	output += "</table>";
+
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = output;
+
+}
+
+
+
+</script>
+
+
+

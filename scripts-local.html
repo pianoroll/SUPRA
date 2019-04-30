@@ -14,11 +14,11 @@ function displayList(list, query) {
 	output += "<thead>";
 	output += "<tr>";
 	output += "<th></th>";
-	output += "<th onclick='SortByNumber(1, \"#red-welte-list\")'>Label</th>";
-	output += "<th onclick='SortByText(2, \"#red-welte-list\")'>Title</th>";
-	output += "<th onclick='SortByText(3, \"#red-welte-list\")'>Composer</th>";
-	output += "<th onclick='SortByText(4, \"#red-welte-list\")'>Performer</th>";
-	output += "<th colspan='5' >Data and Metadata Links</th>";  // PURL/Searchworks links, etc
+	output += "<th title='Sort by manufacturer catalog number' onclick='SortByNumber(1, \"#red-welte-list\")'>Label</th>";
+	output += "<th title='Sort by title' onclick='SortByText(2, \"#red-welte-list\")'>Title</th>";
+	output += "<th title='Sort by composer' onclick='SortByText(3, \"#red-welte-list\")'>Composer</th>";
+	output += "<th title='Sort by performer' onclick='SortByText(4, \"#red-welte-list\")'>Performer</th>";
+	output += "<th title='Sort by DRUID' onclick='SortByDruid(6, \"#red-welte-list\")'colspan='5'>Data and Metadata Links</th>";  // PURL/Searchworks links, etc
 	output += "</tr>";
 	output += "</thead>";
 

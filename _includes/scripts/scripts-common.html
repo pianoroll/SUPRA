@@ -322,8 +322,8 @@ function DisplayPianists(list, selector) {
 
 	output += "<thead>";
 	output += "<tr>";
-	output += "<th onclick='SortByNumber(0, \"#performerList\", true)' style='padding-right:20px;'>Count</th>";
-	output += "<th onclick='SortByText(1, \"#performerList\")'>Performer</th>";
+	output += "<th title='Sort by performance count' onclick='SortByNumber(0, \"#performerList\", true)' style='padding-right:20px;'>Count</th>";
+	output += "<th title='Sort by performer' onclick='SortByText(1, \"#performerList\")'>Performer</th>";
 	output += "</tr>";
 	output += "</thead>";
 	output += "<tbody>";
@@ -399,8 +399,8 @@ function DisplayComposers(list, selector) {
 
 	output += "<thead>";
 	output += "<tr>";
-	output += "<th onclick='SortByNumber(0, \"#composerList\", true)' style='padding-right:20px;'>Count</th>";
-	output += "<th onclick='SortByText(1, \"#composerList\")'>Composer</th>";
+	output += "<th title='Sort by composition count' onclick='SortByNumber(0, \"#composerList\", true)' style='padding-right:20px;'>Count</th>";
+	output += "<th title='Sort by composer' onclick='SortByText(1, \"#composerList\")'>Composer</th>";
 	output += "</tr>";
 	output += "</thead>";
 	output += "<tbody>";
@@ -486,9 +486,9 @@ function DisplayPerformerComposers(list, selector) {
 
 	output += "<thead>";
 	output += "<tr>";
-	output += "<th onclick='SortByNumber(0, \"#dualList\", true)' style='padding-right:20px;'>Compositions</th>";
-	output += "<th onclick='SortByNumber(1, \"#dualList\", true)' style='padding-right:20px;'>Performances</th>";
-	output += "<th onclick='SortByText(2, \"#dualList\")'>Name</th>";
+	output += "<th title='Sort by composition count' onclick='SortByNumber(0, \"#dualList\", true)' style='padding-right:20px;'>Compositions</th>";
+	output += "<th title='Sort by performance count' onclick='SortByNumber(1, \"#dualList\", true)' style='padding-right:20px;'>Performances</th>";
+	output += "<th title='Sort by name of performer/composer' onclick='SortByText(2, \"#dualList\")'>Name</th>";
 	output += "</tr>";
 	output += "</thead>";
 	output += "<tbody>";
@@ -576,6 +576,66 @@ function SortByNumber(index, selector, reverse) {
 			return Bnum - Anum;
 		} else {
 			return Anum - Bnum;
+		}
+	});
+
+	var body = document.querySelector(selector + " tbody");
+	if (body) {
+		body.innerHTML = "";
+		for (i=0; i<datalist.length; i++) {
+			body.appendChild(datalist[i]);
+		}
+	}
+}
+
+
+
+//////////////////////////////
+//
+// SortByDruid --
+//
+
+function SortByDruid(index, selector, reverse) {
+	SORTCOLUMN = index;
+	var data = document.querySelectorAll(selector + " > tbody > tr");
+	var datalist = [];
+	var i;
+	for (i=0; i<data.length; i++) {
+		datalist.push(data[i]);
+	}
+	datalist.sort(function(a, b) {
+		var A = a.cells[index].querySelector("a").href;
+		var B = b.cells[index].querySelector("a").href;
+
+		if (!A) {
+			return +1;
+		}
+		if (!B) {
+			return -1;
+		}
+
+		if (A.match(/^\s*$/)) {
+			return +1;
+		}
+		if (B.match(/^\s*$/)) {
+			return -1;
+		}
+
+		var Anum = "";
+		var Bnum = "";
+		var matches;
+		var regex = new RegExp(/([a-z]{2}\d{3}[a-z]{2}\d{4})/, 'i');
+		if (matches = regex.exec(A)) {
+			Anum = matches[1];
+		}
+		if (matches = regex.exec(B)) {
+			Bnum = matches[1];
+		}
+
+		if (reverse) {
+			return Bnum.localeCompare(Anum);
+		} else {
+			return Anum.localeCompare(Bnum);
 		}
 	});
 
