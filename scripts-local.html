@@ -5,7 +5,7 @@
 <script>
 // vim: ts=3
 
-function displayList(list, query) {
+function displayList(list, query, peeps) {
 	reportMatches(list);
 	var output = "";
 
@@ -24,7 +24,7 @@ function displayList(list, query) {
 
 	output += "<tbody>";
 
-	output += MakeRollTableRows(list);
+	output += MakeRollTableRows(list, peeps);
 
 	output += "</tbody>";
 	output += "</table>";
@@ -101,7 +101,7 @@ function doSearch(text) {
 		
 	}
 
-	displayList(entries);
+	displayList(entries, null, PEEPS);
 }
 
 

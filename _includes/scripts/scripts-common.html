@@ -130,12 +130,11 @@ function GetRollLength(database) {
 // PreparePerson --
 //
 
-function PreparePerson(entry) {
-
+function PreparePerson(entry, peeps) {
 	var matches;
 	if (matches = entry.match(/^(.*\)); (.*)$/)) {
-		var person1 = PreparePerson(matches[1]);
-		var person2 = PreparePerson(matches[2]);
+		var person1 = PreparePerson(matches[1], peeps);
+		var person2 = PreparePerson(matches[2], peeps);
 		return person1 + "; " + person2;
 	}
 
@@ -148,16 +147,16 @@ function PreparePerson(entry) {
 		dates = matches[2];
 	}
 	var link = "";
-	if (PEEPS[nombre] && PEEPS[nombre].WIKIPEDIA) {
-		link = PEEPS[nombre].WIKIPEDIA;
-	} else if (PEEPS[nombre] && PEEPS[nombre].LINK) {
-		link = PEEPS[nombre].LINK;
+	if (peeps && peeps[nombre] && peeps[nombre].WIKIPEDIA) {
+		link = peeps[nombre].WIKIPEDIA;
+	} else if (peeps && peeps[nombre] && peeps[nombre].LINK) {
+		link = peeps[nombre].LINK;
 	}
 	if (nombre.match(/ [A-Z]$/)) {
 		nombre += ".";
 	}
-	if (PEEPS[nombre] && PEEPS[nombre].DATES && !PEEPS[nombre].DATES.match(/^\s*$/)) {
-		dates = "(" + PEEPS[nombre].DATES.replace("-1", "&ndash;1") + ")";
+	if (peeps && peeps[nombre] && peeps[nombre].DATES && !peeps[nombre].DATES.match(/^\s*$/)) {
+		dates = "(" + peeps[nombre].DATES.replace("-1", "&ndash;1") + ")";
 	}
 	if (!link) {
 		if (!dates.match(/^\s*$/)) {
@@ -168,8 +167,8 @@ function PreparePerson(entry) {
 	}
 	var output = "";
 	output += "<a class='person' ";
-	if (PEEPS[nombre] && PEEPS[nombre].NOTE && !PEEPS[nombre].NOTE.match(/^\s*$/)) {
-		output += "title='" + PEEPS[nombre].NOTE + "' ";
+	if (peeps && peeps[nombre] && peeps[nombre].NOTE && !peeps[nombre].NOTE.match(/^\s*$/)) {
+		output += "title='" + peeps[nombre].NOTE + "' ";
 	}
 	output += "target='person' href='";
 	output += link;
@@ -183,7 +182,7 @@ function PreparePerson(entry) {
 	return output;
 }
 
-function MakeRollTableRows(list) {
+function MakeRollTableRows(list, peeps) {
 	var output = "";
 	for (var i=0; i<list.length; i++) {
 		if (!list[i].TITLE) {
@@ -204,12 +203,12 @@ function MakeRollTableRows(list) {
 		output += "<td style='max-width:250px;'>" + list[i].TITLE + "</td>";
 		output += "<td style='min-width:250px;'>";
 		if (list[i].COMPOSER) {
-		 	output += PreparePerson(list[i].COMPOSER);
+		 	output += PreparePerson(list[i].COMPOSER, peeps);
 		}
 		output += "</td>";
 		output += "<td>";
 		if (list[i].PERFORMER) {
-		 	output += PreparePerson(list[i].PERFORMER);
+		 	output += PreparePerson(list[i].PERFORMER, peeps);
 		}
 		output += "</td>";
 
@@ -280,7 +279,7 @@ function MakeRollTableRows(list) {
 // DisplayPianists --
 //
 
-function DisplayPianists(list, selector) {
+function DisplayPianists(list, selector, peeps) {
 	var labels = {};
 	var pianists = {};
 	var label;
@@ -317,6 +316,9 @@ function DisplayPianists(list, selector) {
 		return b[0] - a[0];
 	});
 
+	var birth = "";
+	var death = "";
+	var matches;
 	var output = "";
 	output += "<table id='performerList' class='count'>";
 
@@ -324,6 +326,9 @@ function DisplayPianists(list, selector) {
 	output += "<tr>";
 	output += "<th title='Sort by performance count' onclick='SortByNumber(0, \"#performerList\", true)' style='padding-right:20px;'>Count</th>";
 	output += "<th title='Sort by performer' onclick='SortByText(1, \"#performerList\")'>Performer</th>";
+	output += "<th style='padding-right:10px;' title='Sort by birth year' onclick='SortByText(2, \"#performerList\")'>Birth</th>";
+	output += "<th style='padding-right:10px;' title='Sort by death year' onclick='SortByText(3, \"#performerList\")'>Death</th>";
+	output += "<th title='Sort by nationality' onclick='SortByText(4, \"#performerList\")'>Nationality</th>";
 	output += "</tr>";
 	output += "</thead>";
 	output += "<tbody>";
@@ -340,9 +345,44 @@ function DisplayPianists(list, selector) {
 							.replace(/-Benard/, "")
 					);
 		output += "&f=PERFORMER'>";
-		output += PreparePerson(plist[i][1]);
+		var person  = PreparePerson(plist[i][1], null);
+
+		matches = person.match(/\((\d{4})&ndash;(\d{4})\)/);
+		if (matches) {
+			birth = matches[1];
+			death = matches[2];
+			person = person.replace(/\(\d{4}&ndash;\d{4}\)/, "");
+		} else if (matches = person.match(/\(&ndash;(\d{4})\)/)) {
+			death = matches[1];
+			birth = "";
+			person = person.replace(/\(&ndash;\d{4}\)/, "");
+		} else if (matches = person.match(/\((\d{4})&ndash;\)/)) {
+			birth = matches[1];
+			death = "";
+			person = person.replace(/\(\d{4}&ndash;\)/, "");
+		} else {
+			birth = "";
+			death = "";
+		}
+		output += person;
 		output += "</a>";
 		output += "</td>"
+
+		output += "<td>"
+		output += birth;
+		output += "</td>"
+
+		output += "<td>"
+		output += death;
+		output += "</td>"
+
+		output += "<td>"
+		var onlyname = plist[i][1].replace(/\s*\(.*/, "");
+		if (PEEPS && PEEPS[onlyname] && PEEPS[onlyname].NATIONALITY) {
+			output += PEEPS[onlyname].NATIONALITY;
+		}
+		output += "</td>"
+
 		output += "</tr>"
 	}
 
@@ -363,7 +403,7 @@ function DisplayPianists(list, selector) {
 // DisplayComposers --
 //
 
-function DisplayComposers(list, selector) {
+function DisplayComposers(list, selector, peeps) {
 	var labels = {};
 	var pianists = {};
 	var label;
@@ -394,6 +434,9 @@ function DisplayComposers(list, selector) {
 		return b[0] - a[0];
 	});
 
+	var birth = "";
+	var death = "";
+	var matches;
 	var output = "";
 	output += "<table id='composerList' class='count'>";
 
@@ -401,22 +444,62 @@ function DisplayComposers(list, selector) {
 	output += "<tr>";
 	output += "<th title='Sort by composition count' onclick='SortByNumber(0, \"#composerList\", true)' style='padding-right:20px;'>Count</th>";
 	output += "<th title='Sort by composer' onclick='SortByText(1, \"#composerList\")'>Composer</th>";
+	output += "<th style='padding-right:10px;' title='Sort by birth year' onclick='SortByText(2, \"#composerList\")'>Birth</th>";
+	output += "<th style='padding-right:10px;' title='Sort by death year' onclick='SortByText(3, \"#composerList\")'>Death</th>";
+	output += "<th title='Sort by nationality' onclick='SortByText(4, \"#composerList\")'>Nationality</th>";
 	output += "</tr>";
 	output += "</thead>";
 	output += "<tbody>";
 
 	for (i=0; i<plist.length; i++) {
 		output += "<tr>"
+
 		output += "<td>"
 		output += plist[i][0];
 		output += "</td>"
+
 		output += "<td>"
 		output += "<a href='/?q=";
 		output += encodeURI(FlipName(plist[i][1].replace(/\s*\(.*/, "")))
 		output += "&f=COMPOSER'>";
-		output += PreparePerson(plist[i][1]);
+		var person = PreparePerson(plist[i][1], null);
+
+		matches = person.match(/\((\d{4})&ndash;(\d{4})\)/);
+		if (matches) {
+			birth = matches[1];
+			death = matches[2];
+			person = person.replace(/\(\d{4}&ndash;\d{4}\)/, "");
+		} else if (matches = person.match(/\(&ndash;(\d{4})\)/)) {
+			death = matches[1];
+			birth = "";
+			person = person.replace(/\(&ndash;\d{4}\)/, "");
+		} else if (matches = person.match(/\((\d{4})&ndash;\)/)) {
+			birth = matches[1];
+			death = "";
+			person = person.replace(/\(\d{4}&ndash;\)/, "");
+		} else {
+			birth = "";
+			death = "";
+		}
+		output += person;
 		output += "</a>";
 		output += "</td>"
+
+		output += "<td>"
+		output += birth;
+		output += "</td>"
+
+		output += "<td>"
+		output += death;
+		output += "</td>"
+
+		output += "<td>"
+		var onlyname = plist[i][1].replace(/\s*\(.*/, "");
+		if (PEEPS && PEEPS[onlyname] && PEEPS[onlyname].NATIONALITY) {
+			output += PEEPS[onlyname].NATIONALITY;
+		}
+		output += "</td>"
+
 		output += "</tr>"
 	}
 
@@ -437,7 +520,7 @@ function DisplayComposers(list, selector) {
 // DisplayPerformerComposers --
 //
 
-function DisplayPerformerComposers(list, selector) {
+function DisplayPerformerComposers(list, selector, peeps) {
 	var performers = {};
 	var composers = {};
 	var labels = {};
@@ -505,7 +588,7 @@ function DisplayPerformerComposers(list, selector) {
 		output += "<a href='/?q=";
 		output += encodeURI(FlipName(combined[i].replace(/\s*\(.*/, "")))
 		output += "'>";
-		output += PreparePerson(combined[i]);
+		output += PreparePerson(combined[i], peeps);
 		output += "</a>";
 		output += "</td>"
 		output += "</tr>"

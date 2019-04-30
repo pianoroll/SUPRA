@@ -12,7 +12,7 @@
 // displayRandom --
 //
 
-function displayRandom(list) {
+function displayRandom(list, selector, peeps) {
 	var rindex = Math.floor(Math.random() * list.length);
 	if (!list[rindex].DRUID) {
 		console.log("RANDOM INDEX", rindex);
@@ -53,7 +53,7 @@ function displayRandom(list) {
 	output += "</td>";
 	output += "<td>";
 	if (list[rindex].COMPOSER) {
-	 	output += PreparePerson(list[rindex].COMPOSER);
+	 	output += PreparePerson(list[rindex].COMPOSER, peeps);
 	}
 	output += "</td>";
 	output += "</tr>";
@@ -64,7 +64,7 @@ function displayRandom(list) {
 	output += "</td>";
 	output += "<td>";
 	if (list[rindex].PERFORMER) {
-	 	output += PreparePerson(list[rindex].PERFORMER);
+	 	output += PreparePerson(list[rindex].PERFORMER, peeps);
 	}
 	output += "</td>";
 	output += "</tr>";
@@ -87,30 +87,8 @@ function displayRandom(list) {
 	output += "</tr>";
 	output += "</table>";
 
-	var element = document.querySelector("div#random");
+	var element = document.querySelector(selector);
 	element.innerHTML = output;
-}
-
-
-
-//////////////////////////////
-//
-// getRollLength -- return a sum of the IMAGE_LENGTH parameter from
-//    each entry.
-//
-
-function getRollLength(database) {
-	var sum = 0;
-	for (var i=0; i<database.length; i++) {
-		if (!database[i].IMAGE_LENGTH) {
-			continue;
-		}
-		var matches;
-		if (matches = database[i].IMAGE_LENGTH.match(/(\d+)px/)) {
-			sum += parseInt(matches[1]);
-		}
-	}
-	return sum;
 }
 
 

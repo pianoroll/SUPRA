@@ -7,12 +7,18 @@
 var PEOPLE = {% include data/people.json %}.PERSON;
 var PEEPS = {};
 for (var i=0; i<PEOPLE.length; i++) {
-	PEEPS[PEOPLE[i].NAME] = PEOPLE[i].WIKIPEDIA;
+	PEEPS[PEOPLE[i].NAME] = PEOPLE[i];
 }
 
 var CGI = {};      // CGI parameters from URL
 var ROLLINFO = [];
 var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
 
 document.addEventListener("DOMContentLoaded", function () {
 	HighlightLinkInHeader();
@@ -20,20 +26,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (sessionStorage.ROLLINFO) {
 		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
-		displayRandom(ROLLINFO);
-		DisplayStats(ROLLINFO);
+		doAction(ROLLINFO);
 	} else {
 		var request = new XMLHttpRequest();
 		request.addEventListener("load", function () {
 			var aton = new ATON;
 			ROLLINFO = aton.parse(this.responseText).ROLL;
-			displayRandom(ROLLINFO);
-			DisplayStats(ROLLINFO);
+			doAction(ROLLINFO);
 		});
 		request.open("GET", ATONINDEX);
 		request.send();
 	}
 
 });
+
+
+
+//////////////////////////////
+//
+// doAction --
+//
+
+function doAction(rollInfo) {
+	displayRandom(ROLLINFO, "#random", PEEPS);
+	DisplayStats(ROLLINFO);
+}
+
+
 
 </script>
