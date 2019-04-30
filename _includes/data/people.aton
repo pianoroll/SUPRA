@@ -5,32 +5,40 @@
 
 @@BEGIN: PERSON
 @NAME:		Adam, Adolphe
+@DATES:		1803-1856
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Adolphe_Adam
 @ROLE:		composer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Adam-Benard, Eugenie
 @DATES:		1861-1925
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Albert, Eugen d' 
+@DATES:		1864-1932
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Eugen_d%27Albert
 @ROLE:		composer, performer
+@NATIONALITY:	Scottish, German, Swiss
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Alkan, Charles-Valentin
+@DATES:		1813-1888
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Charles-Valentin_Alkan
 @ROLE:		composer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Ansorge, Konrad
 @DATES:		1862-1930
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -38,42 +46,53 @@
 @DATES:		1884-1969
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Wilhelm_Backhaus
 @ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Barinowa, Marie
 @DATES:		1878-1956
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Beethoven, Ludwig van
+@DATES:		1770-1827
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ludwig_van_Beethoven
 @ROLE:		composer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Benici, Tosta di
 @DATES:		1867-1961
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Berlin, Irving
+@DATES:		1888-1989
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Irving_Berlin
 @ROLE:		composer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Berlioz, Hector
+@DATES:		1803-1869
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Hector_Berlioz
 @ROLE:		composer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Bizet, Georges
+@DATES:		1838-1875
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Georges_Bizet
 @ROLE:		composer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -81,6 +100,7 @@
 @DATES:		1863-1927
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler
 @ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -94,64 +114,80 @@
 
 @@BEGIN: PERSON
 @NAME:		Brahms, Johannes
+@DATES:		1833-1897
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Johannes_Brahms
 @ROLE:		composer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Brightwell, Edward
 @DATES:		1876-
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Brassin, Louis
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Louis_Brassin
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Burmeister, Richard
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Burmeister
 @ROLE:		performer
+@NATIONALITY:	German, American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Busoni, Ferruccio
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ferruccio_Busoni
+@NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Carre&#xF1;o, Teresa
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o
 @ROLE:		performer
+@NATIONALITY:	Venezuelan
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Chaminade, C&#xE9;cile
+@DATES:		1857-1944
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/C%C3%A9cile_Chaminade
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Chopin, Fr&#xE9;d&#xE9;ric
+@DATES:		1810-1849
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin
 @ROLE:		composer
+@NATIONALITY:	Polish, French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Cuvillier, Charles
+@DATES:		1877-1955
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Charles_Cuvillier
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Czerny, Carl
+@DATES:		1791-1857
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Carl_Czerny
 @ROLE:		composer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		D'Egville, Louis H
-@WIKIPEDIA:	https://en.wikipedia.org/wiki/Claude_Debussy
+@WIKIPEDIA:	
+@NATIONALITY:	
 @ROLE:		composer
 @@END: PERSON
 
@@ -165,35 +201,33 @@
 
 @@BEGIN: PERSON
 @NAME:		Debussy, Claude
+@DATES:		1862-1918
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Claude_Debussy
 @ROLE:		composer, performer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Delibes, L&#xE9;o
+@DATES:		1836-1891
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/L%C3%A9o_Delibes
 @ROLE:		composer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Droucker, Sandra
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sandra_Droucker
 @ROLE:		performer
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Dohn&#xE1;nyi, Ern&#x151;
+@DATES:		1877-1960
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernst_von_Dohn%C3%A1nyi
 @ROLE:		composer
-@@END: PERSON
-
-@@BEGIN: PERSON
-@NAME:		Petri, Egon
-@DATES:		1881-1962
-@WIKIPEDIA:	https://en.wikipedia.org/wiki/Egon_Petri
-@ROLE:		performer
-@NATOINALITY:	Dutch; American
-@TEACHER:	Busoni
+@NATIONALITY:	Hungarian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -208,103 +242,136 @@
 @NAME:		Epstein, Richard
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Julius_Epstein_(pianist)
 @ROLE:		performer
+@NATIONALITY:	Croatian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Europe, James Reese
+@DATES:		1880-1919
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/James_Reese_Europe
 @ROLE:		composer, performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Fall, Leo
+@FULLNAME:	Fall, Leopold
+@DATES:		1873-1925
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Leo_Fall
 @ROLE:		performer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Fall, Richard
+@DATES:		1882-1945
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Fall
 @ROLE:		performer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Foster, Stephen Collins
+@DATES:		1826-1864
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Stephen_Foster
 @ROLE:		composer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Friml, Rudolf
+@DATES:		1879-1972
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolf_Friml
 @ROLE:		performer
+@NATIONALITY:	Czech, American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Fryer, Herbert
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Herbert_Fryer
 @ROLE:		performer
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Gabrilowitsch, Ossip
+@DATES:		1878-1936
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ossip_Gabrilowitsch
 @ROLE:		performer
+@NATIONALITY:	Russian, American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Galston, Gottfried
 @DATES:		1879-1950
 @WIKIPEDIA:	https://de.wikipedia.org/wiki/Gottfried_Galston
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Ganz, Rudolph
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolph_Ganz
 @ROLE:		performer
+@NATIONALITY:	Swiss, American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		German, Edward
+@DATES:		1862-1936
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Edward_German
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Gilbert, Jean
+@DATES:		1879-1942
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jean_Gilbert
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Glazunov, Aleksandr Konstantinovich
+@DATES:		1865-1936
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Glazunov
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Gomes, Carlos
+@DATES:		1836-1896
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Gomes
-@ROLE:		performer
+@ROLE:		composer
+@NATIONALITY:	Brazilian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Gottschalk, Louis Moreau
+@DATES:		1829-1869
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Louis_Moreau_Gottschalk
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Gounod, Charles 
+@DATES:		1818-1893
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Charles_Gounod
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Grainger, Percy
+@DATES:		1882-1961
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Percy_Grainger
 @ROLE:		composer
+@NATIONALITY:	Australian, American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Grieg, Edvard
+@DATES:		1843-1907
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Edvard_Grieg
 @ROLE:		composer
+@NATIONALITY:	Norwegian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -319,6 +386,7 @@
 @NAME:		Grosz, Gisella
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Gisella_Grosz
 @ROLE:		performer
+@NATIONALITY:	Hungarian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -326,6 +394,7 @@
 @DATES:		1852-1924
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Gr%C3%BCnfeld
 @ROLE:		performer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -340,60 +409,75 @@
 @NAME:		Hambourg, Mark
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Mark_Hambourg
 @ROLE:		performer
+@NATIONALITY:	Russian, British
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Henderson, Ray
+@DATES:		1896-1970
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ray_Henderson
 @ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Henselt, Adolf von
+@DATES:		1814-1889
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Adolf_von_Henselt
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Hofmann, Josef
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Hofmann
 @ROLE:		performer
+@NATIONALITY:	Polish, American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Holzmann, Abe
+@DATES:		1874-1939
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Abe_Holzmann
 @ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Humperdinck, Engelbert
+@DATES:		1854-1921
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Engelbert_Humperdinck_(composer)
 @ROLE:		composer
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Joyce, Archibald
+@DATES:		1873-1963
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Archibald_Joyce
 @ROLE:		performer
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Kleeberg, Clotilde
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
 @ROLE:		performer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Koczalski, Raoul
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Koczalski
 @ROLE:		performer
+@NATIONALITY:	Polish
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Korngold, Erich Wolfgang
+@DATES:		1897-1957
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Erich_Wolfgang_Korngold
 @ROLE:		composer
-@NATIONALITY:	Austrian; American
+@NATIONALITY:	Austrian, American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -401,17 +485,29 @@
 @DATES:		1875-1962
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Fritz_Kreisler
 @ROLE:		composer
+@NATIONALITY:	Austrian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Kwast-Hodapp, Frieda
+@DATES:		1880-1949
+@LINK:	https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/kwast-frieda-hodapp-1880-1949
+@ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Lamond, Frederic
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)
 @ROLE:		performer
+@NATIONALITY:	Scottish
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Landowska, Wanda
+@DATES:		1979-1959
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Wanda_Landowska
+@NATIONALITY:	Polish, French
 @ROLE:		performer
 @@END: PERSON
 
@@ -435,6 +531,7 @@
 @NAME:		Lemba, Artur
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Artur_Lemba
 @ROLE:		performer
+@NATIONALITY:	Estonian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -449,12 +546,14 @@
 @NAME:		Leschetizky, Theodor
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Theodor_Leschetizky
 @ROLE:		performer
+@NATIONALITY:	Polish
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Lh&#xE9;vinne, Josef
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne
 @ROLE:		performer
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -469,18 +568,21 @@
 @NAME:		Lincke, Paul
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_Lincke
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Liszt, Franz
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Liszt
 @ROLE:		composer
+@NATIONALITY:	Humgarian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		MacDowell, Edward
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Edward_MacDowell
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -495,46 +597,54 @@
 @NAME:		Marx-Goldschmidt, Berthe
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Berthe_Marx
 @ROLE:		performer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Mason, Lowell
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Lowell_Mason
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Mascagni, Pietro
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Pietro_Mascagni
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Massenet, Jules
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jules_Massenet
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Mendelssohn-Bartholdy, Felix
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mendelssohn
 @ROLE:		composer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Mero, Yolanda
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Yolanda_Mero
 @ROLE:		performer
+@NATIONALITY:	Hungarian, American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Meyer-Helmund, Erik 
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Erik_Meyer-Helmund
 @ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Moszkowski, Moritz
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Moritz_Moszkowski
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -543,6 +653,7 @@
 @NOTE:		One of the last pupils of Franz Liszt.
 @ROLE:		performer
 @TEACHER:	Liszt, Franz
+@NATIONALITY:	Portuguese
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -550,54 +661,63 @@
 @DATES:		1856-1911
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mottl
 @ROLE:		performer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Mozart, Wolfgang Amadeus
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Neitzel, Otto
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Otto_Neitzel
 @ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Ney, Elly
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Elly_Ney
 @ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Nikisch, Arthur
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Nikisch
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Novaes, Guiomar
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Guiomar_Novaes
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Offenbach, Jacques
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jacques_Offenbach
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Pachmann, Vladimir de
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vladimir_de_Pachmann
 @ROLE:		performer
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Paderewski, Ignace Jan
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ignacy_Jan_Paderewski
 @ROLE:		composer, performer
+@NATIONALITY:	Polish
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -605,47 +725,66 @@
 @DATES:		1855-1932
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Emil_Paur
 @ROLE:		performer
+@NATIONALITY:	Austro-Hungarian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Petri, Egon
+@DATES:		1881-1962
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Egon_Petri
+@ROLE:		performer
+@NATIONALITY:	Dutch, American
+@TEACHER:	Busoni
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Poldini, Ede
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ede_Poldini
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Puccini, Giacomo
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Giacomo_Puccini
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Pugno, Raoul
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Pugno
 @ROLE:		performer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Rachmaninoff, Sergei 
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sergei_Rachmaninoff
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Raff, Joachim
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Joachim_Raff
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Reinecke, Carl
+@DATES:		1824-1910
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Carl_Reinecke
 @ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Reisenauer, Alfred
+@DATES:		1863-1907
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alfred_Reisenauer
+@NATIONALITY:	German
 @ROLE:		performer
 @@END: PERSON
 
@@ -661,16 +800,18 @@
 @NAME:		Rossini, Gioacchino
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Gioachino_Rossini
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Rubinstein, Anton
+@NATIONALITY:	
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Anton_Rubinstein
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Saint-Sa&#xEB;ns, Camille
-@DATES:		1825-1921
+@DATES:		1835-1921
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Camille_Saint-Sa%C3%ABns
 @ROLE:		composer, performer
 @NATIONALITY:	French
@@ -678,26 +819,35 @@
 
 @@BEGIN: PERSON
 @NAME:		Samaroff Stokowski, Olga
+@BIRTHNAME:	Hikenlooper, Lucy Mary Olga Agnes
+@DATES:		1880-1948
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Olga_Samaroff
 @ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Sauer, Emil von
+@DATES:		1862-1942
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Emil_von_Sauer
 @ROLE:		performer
+@NATIONALITY:	German
+@TEACHER:	Liszt
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Scharwenka, Xaver
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Xaver_Scharwenka
 @ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Schelling, Ernest
+@DATES:		1876-1939
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernest_Schelling
 @ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -709,31 +859,40 @@
 
 @@BEGIN: PERSON
 @NAME:		Schnabel, Artur
+@DATES:		1882-1951
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Artur_Schnabel
 @ROLE:		performer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Schubert, Franz
+@DATES:		1797-1828
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Schubert
 @ROLE:		composer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Schumann, Georg 
+@DATES:		1866-1952
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Georg_Schumann_(composer)
 @ROLE:		performer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Schumann, Robert
+@DATES:		1810-1856
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Robert_Schumann
 @ROLE:		composer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Schulz-Evler, Andrei
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Adolf_Schulz-Evler
+@NATIONALITY:	
 @ROLE:		performer
 @@END: PERSON
 
@@ -749,6 +908,7 @@
 @NAME:		Schytte, Ludvig
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ludvig_Schytte
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -756,6 +916,7 @@
 @DATES:		1879-1970
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Cyril_Scott
 @ROLE:		performer
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -763,12 +924,23 @@
 @DATES:		1872-1915
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Scriabin
 @ROLE:		composer, performer
+@NATIONALITY:	Russian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Serkin, Rudolf
+@DATES:		1903-1991
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolf_Serkin
+@ROLE:		performer
+@NATIONALITY:	Czech
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Sibelius, Jean 
+@DATES:		1865-1957
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jean_Sibelius
 @ROLE:		composer
+@NATIONALITY:	Finnish
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -783,18 +955,21 @@
 @NAME:		Sinding, Christian
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Christian_Sinding
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Stavenhagen, Bernhard
 @DATES:		1862-1914
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Bernhard_Stavenhagen
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Stebel, Paula
 @DATES:		1885-1932
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -808,6 +983,7 @@
 @@BEGIN: PERSON
 @NAME:		Straus, Oscar
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Oscar_Straus_(composer)
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -830,48 +1006,58 @@
 @NAME:		Sullivan, Arthur
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Sullivan
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Tchaikovsky, Peter Ilich
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Thalberg, Sigismond 
+@DATES:		1812-1871
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sigismond_Thalberg
-@ROLE:		performer
+@ROLE:		composer
+@NATIONALITY:	Swiss
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Toselli, Enrico
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Enrico_Toselli
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Verdi, Giuseppe
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Giuseppe_Verdi
 @ROLE:		composer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Vogrich, Max 
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Max_Vogrich
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Wagner, Richard
+@DATES:		1813-1883
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Wagner
 @ROLE:		composer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Waldteufel, Emil
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -881,6 +1067,7 @@
 @NOTE:		One of the more eccentric Franz Liszt pupils.
 @ROLE:		performer
 @TEACHER:	Liszt, Franz
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -888,18 +1075,21 @@
 @ALTNAME:	Wendling, Karl
 @DATES:		1857-1918
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Whiteman, Paul 
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_Whiteman
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Youmans, Vincent
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vincent_Youmans
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -907,11 +1097,13 @@
 @DATES:		1882-1946
 @LINK:		http://www.bach-cantatas.com/Lib/Zadora-Michael.htm
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Zschemeck, Georg
 @ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 

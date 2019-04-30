@@ -11,7 +11,7 @@
 // displayDuplicates --
 //
 
-function displayDuplicates(list, selector) {
+function displayDuplicates(list, selector, peeps) {
 	var labels = {};
 	var label
 	var i;
@@ -47,7 +47,7 @@ function displayDuplicates(list, selector) {
 
 	output += "<table class='dupes'>";
 	for (i=0; i<dupes.length; i++) {
-		output += MakeRollTableRows(dupes[i]);
+		output += MakeRollTableRows(dupes[i], peeps);
 		if (i < dupes.length - 1) {
 			output += "<tr style='padding:0; margin:0;'><td style='padding:0; margin:0;' colspan='9'><hr></td></tr>";
 		}

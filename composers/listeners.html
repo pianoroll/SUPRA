@@ -7,12 +7,18 @@
 var PEOPLE = {% include data/people.json %}.PERSON;
 var PEEPS = {};
 for (var i=0; i<PEOPLE.length; i++) {
-	PEEPS[PEOPLE[i].NAME] = PEOPLE[i].WIKIPEDIA;
+	PEEPS[PEOPLE[i].NAME] = PEOPLE[i];
 }
 
 var CGI = {};      // CGI parameters from URL
 var ROLLINFO = [];
 var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
 
 document.addEventListener("DOMContentLoaded", function () {
 	HighlightLinkInHeader();
@@ -35,10 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+//////////////////////////////
+//
+// doAction --
+//
+
 function doActions(listOfRolls) {
 	DisplayStats(listOfRolls);
-	DisplayComposers(listOfRolls, "#composers");
-	DisplayPerformerComposers(listOfRolls, "#dual");
+	DisplayComposers(listOfRolls, "#composers", PEEPS);
+	DisplayPerformerComposers(listOfRolls, "#dual", PEEPS);
 }
 
 

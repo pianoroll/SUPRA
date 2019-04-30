@@ -1,6 +1,6 @@
 
 
-all: people bib
+all: people bib links
 
 people:
 	# To install aton2json:
@@ -12,3 +12,6 @@ people:
 
 bib:
 	aton2json -p bibliography.aton > bibliography.json
+
+links:
+	aton2json -p links.aton > links.json

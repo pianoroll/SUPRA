@@ -15,6 +15,12 @@ var ROLLINFO = [];
 var SORTCOLUMN = 1;
 var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
 
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
+
 document.addEventListener("DOMContentLoaded", function () {
 	var matches;
 	CGI = GetCgiParameters();
@@ -33,30 +39,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (sessionStorage.ROLLINFO) {
 		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
-		if (CGI.q && !CGI.q.match(/^\s*$/)) {
-			displayList(ROLLINFO, CGI.q);
-		} else {
-			displayList(ROLLINFO);
-		}
-		DisplayStats(ROLLINFO);
-
+		doAction(ROLLINFO);
 	} else {
 		var request = new XMLHttpRequest();
 		request.addEventListener("load", function () {
 			var aton = new ATON;
 			ROLLINFO = aton.parse(this.responseText).ROLL;
 			sessionStorage.ROLLINFO = JSON.stringify(ROLLINFO);
-			if (CGI.q && !CGI.q.match(/^\s*$/)) {
-				displayList(ROLLINFO, CGI.q);
-			} else {
-				displayList(ROLLINFO);
-			}
-			DisplayStats(ROLLINFO);
+			doAction(ROLLINFO);
 		});
 		request.open("GET", ATONINDEX);
 		request.send();
 	}
-
 });
+
+
+
+//////////////////////////////
+//
+// doAction --
+//
+
+function doAction(rollInfo) {
+	if (CGI.q && !CGI.q.match(/^\s*$/)) {
+		displayList(ROLLINFO, CGI.q, PEEPS);
+	} else {
+		displayList(ROLLINFO, null, PEEPS);
+	}
+	DisplayStats(ROLLINFO);
+}
+
+
 
 </script>
