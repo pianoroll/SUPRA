@@ -129,13 +129,15 @@
 
 @@BEGIN: PERSON
 @NAME:		Brassin, Louis
+@DATES:		1840-1884
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Louis_Brassin
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	Belgian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Burmeister, Richard
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Burmeister
 @ROLE:		performer
 @NATIONALITY:	German, American
@@ -143,12 +145,14 @@
 
 @@BEGIN: PERSON
 @NAME:		Busoni, Ferruccio
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ferruccio_Busoni
 @NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Carre&#xF1;o, Teresa
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o
 @ROLE:		performer
 @NATIONALITY:	Venezuelan
@@ -186,6 +190,7 @@
 
 @@BEGIN: PERSON
 @NAME:		D'Egville, Louis H
+@DATES:		
 @WIKIPEDIA:	
 @NATIONALITY:	
 @ROLE:		composer
@@ -217,6 +222,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Droucker, Sandra
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sandra_Droucker
 @ROLE:		performer
 @NATIONALITY:	Russian
@@ -240,6 +246,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Epstein, Richard
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Julius_Epstein_(pianist)
 @ROLE:		performer
 @NATIONALITY:	Croatian
@@ -288,6 +295,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Fryer, Herbert
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Herbert_Fryer
 @ROLE:		performer
 @NATIONALITY:	English
@@ -310,6 +318,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Ganz, Rudolph
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolph_Ganz
 @ROLE:		performer
 @NATIONALITY:	Swiss, American
@@ -384,6 +393,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Grosz, Gisella
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Gisella_Grosz
 @ROLE:		performer
 @NATIONALITY:	Hungarian
@@ -407,6 +417,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Hambourg, Mark
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Mark_Hambourg
 @ROLE:		performer
 @NATIONALITY:	Russian, British
@@ -429,6 +440,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Hofmann, Josef
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Hofmann
 @ROLE:		performer
 @NATIONALITY:	Polish, American
@@ -460,6 +472,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Kleeberg, Clotilde
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
 @ROLE:		performer
 @NATIONALITY:	French
@@ -467,6 +480,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Koczalski, Raoul
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Koczalski
 @ROLE:		performer
 @NATIONALITY:	Polish
@@ -498,6 +512,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Lamond, Frederic
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)
 @ROLE:		performer
 @NATIONALITY:	Scottish
@@ -529,6 +544,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Lemba, Artur
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Artur_Lemba
 @ROLE:		performer
 @NATIONALITY:	Estonian
@@ -544,6 +560,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Leschetizky, Theodor
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Theodor_Leschetizky
 @ROLE:		performer
 @NATIONALITY:	Polish
@@ -551,6 +568,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Lh&#xE9;vinne, Josef
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne
 @ROLE:		performer
 @NATIONALITY:	Russian
@@ -566,23 +584,26 @@
 
 @@BEGIN: PERSON
 @NAME:		Lincke, Paul
+@DATES:		1866-1946
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_Lincke
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Liszt, Franz
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Liszt
 @ROLE:		composer
-@NATIONALITY:	Humgarian
+@NATIONALITY:	Hungarian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		MacDowell, Edward
+@DATES:		1860-1908
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Edward_MacDowell
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -595,6 +616,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Marx-Goldschmidt, Berthe
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Berthe_Marx
 @ROLE:		performer
 @NATIONALITY:	French
@@ -602,25 +624,29 @@
 
 @@BEGIN: PERSON
 @NAME:		Mason, Lowell
+@DATES:		1792-1872
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Lowell_Mason
-@NATIONALITY:	
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Mascagni, Pietro
+@DATES:		1863-1945
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Pietro_Mascagni
-@ROLE:		performer
-@NATIONALITY:	
+@ROLE:		composer
+@NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Massenet, Jules
+@DATES:		1842-1912
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jules_Massenet
-@NATIONALITY:	
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Mendelssohn-Bartholdy, Felix
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mendelssohn
 @ROLE:		composer
 @NATIONALITY:	German
@@ -628,6 +654,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Mero, Yolanda
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Yolanda_Mero
 @ROLE:		performer
 @NATIONALITY:	Hungarian, American
@@ -635,6 +662,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Meyer-Helmund, Erik 
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Erik_Meyer-Helmund
 @ROLE:		performer
 @NATIONALITY:	German
@@ -642,9 +670,10 @@
 
 @@BEGIN: PERSON
 @NAME:		Moszkowski, Moritz
+@DATES:		1854-1925
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Moritz_Moszkowski
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -666,13 +695,15 @@
 
 @@BEGIN: PERSON
 @NAME:		Mozart, Wolfgang Amadeus
+@DATES:		1756-1791
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Neitzel, Otto
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Otto_Neitzel
 @ROLE:		performer
 @NATIONALITY:	German
@@ -680,6 +711,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Ney, Elly
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Elly_Ney
 @ROLE:		performer
 @NATIONALITY:	German
@@ -687,6 +719,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Nikisch, Arthur
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Nikisch
 @ROLE:		performer
 @NATIONALITY:	
@@ -694,6 +727,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Novaes, Guiomar
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Guiomar_Novaes
 @ROLE:		performer
 @NATIONALITY:	
@@ -701,13 +735,15 @@
 
 @@BEGIN: PERSON
 @NAME:		Offenbach, Jacques
+@DATES:		1819-1880
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jacques_Offenbach
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	German, French
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Pachmann, Vladimir de
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vladimir_de_Pachmann
 @ROLE:		performer
 @NATIONALITY:	Russian
@@ -715,6 +751,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Paderewski, Ignace Jan
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ignacy_Jan_Paderewski
 @ROLE:		composer, performer
 @NATIONALITY:	Polish
@@ -739,20 +776,23 @@
 
 @@BEGIN: PERSON
 @NAME:		Poldini, Ede
+@DATES:		1869-1957
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ede_Poldini
-@ROLE:		performer
-@NATIONALITY:	
+@ROLE:		composer
+@NATIONALITY:	Hungarian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Puccini, Giacomo
+@DATES:		1858-1924
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Giacomo_Puccini
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Pugno, Raoul
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Pugno
 @ROLE:		performer
 @NATIONALITY:	French
@@ -760,16 +800,18 @@
 
 @@BEGIN: PERSON
 @NAME:		Rachmaninoff, Sergei 
+@DATES:		1873-1943
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sergei_Rachmaninoff
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Raff, Joachim
+@DATES:		1822-1882
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Joachim_Raff
-@ROLE:		performer
-@NATIONALITY:	
+@ROLE:		composer
+@NATIONALITY:	Swiss
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -798,15 +840,17 @@
 
 @@BEGIN: PERSON
 @NAME:		Rossini, Gioacchino
+@DATES:		1792-1868
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Gioachino_Rossini
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Rubinstein, Anton
-@NATIONALITY:	
+@DATES:		1829-1894
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Anton_Rubinstein
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -837,6 +881,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Scharwenka, Xaver
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Xaver_Scharwenka
 @ROLE:		performer
 @NATIONALITY:	German
@@ -852,6 +897,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Schl&#xF6;zer, Paul de
+@DATES:		
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_de_Schl%C3%B6zer
 @ROLE:		performer
 @NATIONALITY:	Polish
@@ -891,8 +937,9 @@
 
 @@BEGIN: PERSON
 @NAME:		Schulz-Evler, Andrei
+@DATES:		1852-1905
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Adolf_Schulz-Evler
-@NATIONALITY:	
+@NATIONALITY:	Polish
 @ROLE:		performer
 @@END: PERSON
 
@@ -906,9 +953,10 @@
 
 @@BEGIN: PERSON
 @NAME:		Schytte, Ludvig
+@DATES:		1848-1909
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ludvig_Schytte
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	Danish
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -953,9 +1001,10 @@
 
 @@BEGIN: PERSON
 @NAME:		Sinding, Christian
+@DATES:		1856-1941
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Christian_Sinding
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	Norwegian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -982,8 +1031,9 @@
 
 @@BEGIN: PERSON
 @NAME:		Straus, Oscar
+@DATES:		1870-1954
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Oscar_Straus_(composer)
-@NATIONALITY:	
+@NATIONALITY:	Austria
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1004,16 +1054,18 @@
 
 @@BEGIN: PERSON
 @NAME:		Sullivan, Arthur
+@DATES:		1842-1900
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Sullivan
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Tchaikovsky, Peter Ilich
+@DATES:		1840-1893
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1026,23 +1078,26 @@
 
 @@BEGIN: PERSON
 @NAME:		Toselli, Enrico
+@DATES:		1883-1926
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Enrico_Toselli
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Verdi, Giuseppe
+@DATES:		1813-1901
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Giuseppe_Verdi
 @ROLE:		composer
-@NATIONALITY:	
+@NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Vogrich, Max 
+@DATES:		1852-1916
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Max_Vogrich
-@ROLE:		performer
-@NATIONALITY:	
+@ROLE:		composer
+@NATIONALITY:	Austrian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1055,9 +1110,10 @@
 
 @@BEGIN: PERSON
 @NAME:		Waldteufel, Emil
+@DATES:		1837-1915
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel
-@ROLE:		performer
-@NATIONALITY:	
+@ROLE:		composer
+@NATIONALITY:	French
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1080,16 +1136,18 @@
 
 @@BEGIN: PERSON
 @NAME:		Whiteman, Paul 
+@DATES:		1890-1967
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_Whiteman
-@ROLE:		performer
-@NATIONALITY:	
+@ROLE:		composer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Youmans, Vincent
+@DATES:		1898-1946
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vincent_Youmans
-@ROLE:		performer
-@NATIONALITY:	
+@ROLE:		composer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1102,6 +1160,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Zschemeck, Georg
+@DATES:		
 @ROLE:		performer
 @NATIONALITY:	
 @@END: PERSON

@@ -42,9 +42,7 @@ function displayLinks(list, selector) {
 
 	var output = "";
 	for (var i=0; i<list.length; i++) {
-		output += "<p> &bullet;&nbsp;&nbsp;&nbsp;</i>";
 		output += prepareLinkEntry(list, i);
-		output += "</p>";
 	}
 
 	var element = document.querySelector(selector);
@@ -100,8 +98,14 @@ function prepareLinkEntry(list, index) {
 	if (entry.URL5) {
 		title = title.replace(/XplaceholderX/, "<a target='_blank' href='" + entry.URL5 + "'>");
 	}
-	output = title;
-console.log("OUTPUT", output);
+	output += "<details>";
+	output += "<summary>";
+	output += title;
+	output += "</summary>";
+	if (entry.ANNOTATION) {
+		output += entry.ANNOTATION;
+	}
+	output += "</details>";
 
 	return output;
 }

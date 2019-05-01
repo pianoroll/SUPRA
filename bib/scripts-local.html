@@ -107,7 +107,20 @@ function prepareEntry(list, index) {
 	// page range goes here
 	
 	output += ".";
-	return output;
+
+	var newoutput = "";
+	newoutput += "<details>";
+	newoutput += "<summary>";
+	newoutput += output;
+	newoutput += "</summary>";
+
+	if (entry.ANNOTATION) {
+		newoutput += entry.ANNOTATION;
+	}
+
+	newoutput += "</details>";
+
+	return newoutput;
 }
 
 </script>

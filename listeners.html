@@ -1,10 +1,12 @@
 
 {% include scripts/scripts-common.html %}
+<script>{% include scripts/aton.js %}</script>
 
 <script>
 // vim: ts=3
 
-var PEOPLE = {% include data/people.json %}.PERSON;
+var aton = new ATON;
+var PEOPLE = aton.parse(`{% include data/people.aton %}`).PERSON;
 var PEEPS = {};
 for (var i=0; i<PEOPLE.length; i++) {
 	PEEPS[PEOPLE[i].NAME] = PEOPLE[i];

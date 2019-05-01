@@ -155,8 +155,8 @@ function PreparePerson(entry, peeps) {
 	if (nombre.match(/ [A-Z]$/)) {
 		nombre += ".";
 	}
-	if (peeps && peeps[nombre] && peeps[nombre].DATES && !peeps[nombre].DATES.match(/^\s*$/)) {
-		dates = "(" + peeps[nombre].DATES.replace("-1", "&ndash;1") + ")";
+	if (PEEPS && PEEPS[nombre] && PEEPS[nombre].DATES && !PEEPS[nombre].DATES.match(/^\s*$/)) {
+		dates = "(" + PEEPS[nombre].DATES.replace("-1", "&ndash;1") + ")";
 	}
 	if (!link) {
 		if (!dates.match(/^\s*$/)) {
@@ -167,8 +167,8 @@ function PreparePerson(entry, peeps) {
 	}
 	var output = "";
 	output += "<a class='person' ";
-	if (peeps && peeps[nombre] && peeps[nombre].NOTE && !peeps[nombre].NOTE.match(/^\s*$/)) {
-		output += "title='" + peeps[nombre].NOTE + "' ";
+	if (PEEPS && PEEPS[nombre] && PEEPS[nombre].NOTE && !PEEPS[nombre].NOTE.match(/^\s*$/)) {
+		output += "title='" + PEEPS[nombre].NOTE + "' ";
 	}
 	output += "target='person' href='";
 	output += link;
