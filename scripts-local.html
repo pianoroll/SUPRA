@@ -63,6 +63,9 @@ function doSearch(text) {
 	}
 
 	text = text.trim();
+	text = escape(text).replace(/%([A-F0-9][A-F0-9])/g, "&#x$1;");
+	text = text.replace(/\&#x([0-7][0-9A-F]);/, "%$1");
+	text = unescape(text);
 	var fields = text.split(/\s+/);
 	var entries = ROLLINFO;
 	var oldentries;

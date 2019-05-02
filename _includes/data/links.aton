@@ -1,5 +1,14 @@
 
 @@BEGIN: LINK
+@URL:		
+@URL2:		
+@TITLE:		
+@ANNOTATION:	
+@TOPIC:		
+@SUBTOPIC:	
+@@END: LINK
+
+@@BEGIN: LINK
 @URL:		https://digital.deutsches-museum.de/projekte/notenrollen/rollentypen/welte_rot_t100
 @URL2:		https://digital.deutsches-museum.de/projekte/notenrollen
 @TITLE:		{Description of Red/T100 Welte rolls} at the {Notenrollensammlung des Deutches Museum} website.
@@ -9,4 +18,16 @@
 @TOPIC:		Roll Formats
 @SUBTOPIC:	Red Welte roll
 @@END: LINK
+
+
+@@BEGIN: LINK
+@URL:		https://www.mmdigest.com/Gallery/MMMedia/pseudonyms.html
+@URL2:		https://www.mmdigest.com
+@TITLE:		{List of Pseudonyms - Reproducing Piano Roll Artists } Compiled by Steve Rattle and Peter Phillips on the {Mechanical Music Digest} forum.
+@ANNOTATION:	
+@TOPIC:		
+@SUBTOPIC:	
+@@END: LINK
+
+
 

@@ -140,6 +140,10 @@ function PreparePerson(entry, peeps) {
 
 	entry = entry.replace("-1", "&ndash;1");
 	entry = entry.replace("-\)", "&ndash;)");
+	entry = entry
+		.replace(" Nikolayevich", "")
+		.replace(" Konstantinovich", "")
+		.replace("-Bartholdy", "");
 	var nombre = entry;
 	var dates = "";
 	if (matches = entry.match(/^\s*(.*)\s+(\(.*\))\s*$/)) {
@@ -173,7 +177,11 @@ function PreparePerson(entry, peeps) {
 	output += "target='person' href='";
 	output += link;
 	output += "'>";
-	output += nombre;
+	var n = nombre
+		.replace(" Konstantinovich", "")
+		.replace("-Bartholdy", "")
+		.replace(" Nikolayevich", "");
+	output += n;
 	output += "</a>";
 	if (!dates.match(/^\s*$/)) {
 		output += " ";
@@ -344,6 +352,9 @@ function DisplayPianists(list, selector, peeps) {
 	output += "</thead>";
 	output += "<tbody>";
 
+	var pbirth;
+	var pdeath;
+
 	for (i=0; i<plist.length; i++) {
 		output += "<tr>"
 		output += "<td>"
@@ -356,8 +367,19 @@ function DisplayPianists(list, selector, peeps) {
 							.replace(/-Benard/, "")
 					);
 		output += "&f=PERFORMER'>";
-		var person  = PreparePerson(plist[i][1], null);
 
+		pbirth = 0;
+		pdeath = 0;
+
+		if (PEEPS[plist[i][1]] && PEEPS[plist[i][1]].DATES) {
+			matches = PEEPS[plist[i][1]].DATES.match(/(\d{4})-(\d{4})/);
+			if (matches) {
+				pbirth = matches[1];
+				pdeath = matches[2];
+			}
+		}
+
+		var person  = PreparePerson(plist[i][1], null);
 		matches = person.match(/\((\d{4})&ndash;(\d{4})\)/);
 		if (matches) {
 			birth = matches[1];
@@ -378,6 +400,21 @@ function DisplayPianists(list, selector, peeps) {
 		output += person;
 		output += "</a>";
 		output += "</td>"
+
+		if (PEEPS[person] && PEEPS[person].DATES) {
+			matches = PEEPS[person].DATES.match(/(\d{4})-(\d{4})/);
+			if (matches) {
+				birth = matches[1];
+				death = matches[2];
+			}
+		}
+
+		if (pbirth > 0) {
+			birth = pbirth;
+		}
+		if (pdeath > 0) {
+			death = pdeath;
+		}
 
 		output += "<td>"
 		output += birth;
@@ -462,6 +499,9 @@ function DisplayComposers(list, selector, peeps) {
 	output += "</thead>";
 	output += "<tbody>";
 
+	var pbirth;
+	var pdeath;
+
 	for (i=0; i<plist.length; i++) {
 		output += "<tr>"
 
@@ -473,8 +513,20 @@ function DisplayComposers(list, selector, peeps) {
 		output += "<a href='/?q=";
 		output += encodeURI(FlipName(plist[i][1].replace(/\s*\(.*/, "")))
 		output += "&f=COMPOSER'>";
-		var person = PreparePerson(plist[i][1], null);
 
+		pbirth = 0;
+		pdeath = 0;
+
+		if (PEEPS[plist[i][1]] && PEEPS[plist[i][1]].DATES) {
+			matches = PEEPS[plist[i][1]].DATES.match(/(\d{4})-(\d{4})/);
+			if (matches) {
+				pbirth = matches[1];
+				pdeath = matches[2];
+			}
+		}
+
+		var preperson = plist[i][1].replace(/; Grof.*/, "");
+		var person = PreparePerson(preperson, null);
 		matches = person.match(/\((\d{4})&ndash;(\d{4})\)/);
 		if (matches) {
 			birth = matches[1];
@@ -492,9 +544,19 @@ function DisplayComposers(list, selector, peeps) {
 			birth = "";
 			death = "";
 		}
-		output += person;
+		output += person
+			.replace(" Konstantinovich", "")
+			.replace("-Bartholdy", "")
+			.replace(" Nikolayevich", "");
 		output += "</a>";
 		output += "</td>"
+
+		if (pbirth > 0) {
+			birth = pbirth;
+		}
+		if (pdeath > 0) {
+			death = pdeath;
+		}
 
 		output += "<td>"
 		output += birth;
@@ -566,6 +628,7 @@ function DisplayPerformerComposers(list, selector, peeps) {
 		}
 	}
 
+	var matches;
 	var combined = [];
 	var composer;
 	for (composer in composers) {
@@ -599,8 +662,15 @@ function DisplayPerformerComposers(list, selector, peeps) {
 		output += "<a href='/?q=";
 		output += encodeURI(FlipName(combined[i].replace(/\s*\(.*/, "")))
 		output += "'>";
-		output += PreparePerson(combined[i], peeps);
+		var value = PreparePerson(combined[i], null);
+		if (matches = value.match(/(.*)\s+\((.*)\)\s*$/)) {
+			value = matches[1];
+		}
+		output += value;
 		output += "</a>";
+		if (matches) {
+			output += " (" + matches[2] + ")";
+		}
 		output += "</td>"
 		output += "</tr>"
 	}

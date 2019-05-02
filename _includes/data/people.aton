@@ -23,6 +23,7 @@
 @DATES:		1864-1932
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Eugen_d%27Albert
 @ROLE:		composer, performer
+@TEACHER:	Liszt, Franz
 @NATIONALITY:	Scottish, German, Swiss
 @@END: PERSON
 
@@ -113,6 +114,15 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Conne, Paul de
+@DATES:		1874-1959
+@LINK:		http://www.schenkerdocumentsonline.org/profiles/person/entity-000138.html
+@ROLE:		performer
+@TEACHER:	Rubinstein, Anton
+@NATIONALITY:	Russian, Austrian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Brahms, Johannes
 @DATES:		1833-1897
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Johannes_Brahms
@@ -190,9 +200,10 @@
 
 @@BEGIN: PERSON
 @NAME:		D'Egville, Louis H
+@NOTE:		Died after 1902
 @DATES:		
 @WIKIPEDIA:	
-@NATIONALITY:	
+@NATIONALITY:	English
 @ROLE:		composer
 @@END: PERSON
 
@@ -325,6 +336,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Gayraud, Paul
+@DATES:		
+@WIKIPEDIA:	
+@ROLE:		performer
+@NATIONALITY:	
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		German, Edward
 @DATES:		1862-1936
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Edward_German
@@ -424,6 +443,13 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Haass, Hans
+@DATES:		1897-1955
+@ROLE:		performer
+@NATIONALITY:	German
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Henderson, Ray
 @DATES:		1896-1970
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ray_Henderson
@@ -468,6 +494,13 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Archibald_Joyce
 @ROLE:		performer
 @NATIONALITY:	English
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Keefer, George
+@DATES:		
+@ROLE:		composer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -523,6 +556,14 @@
 @DATES:		1979-1959
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Wanda_Landowska
 @NATIONALITY:	Polish, French
+@ROLE:		performer
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		&#xE1;szl&#xF2;, S&#xE1;ndor
+@DATES:		1895-1970
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Laszlo_(composer)
+@NATIONALITY:	Hungarian, American
 @ROLE:		performer
 @@END: PERSON
 
@@ -876,7 +917,7 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Emil_von_Sauer
 @ROLE:		performer
 @NATIONALITY:	German
-@TEACHER:	Liszt
+@TEACHER:	Liszt, Franz
 @@END: PERSON
 
 @@BEGIN: PERSON
