@@ -132,6 +132,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Brightwell, Edward
+@ALIAS:		Francklyn, Bernard
 @DATES:		1876-
 @ROLE:		performer
 @NATIONALITY:	
@@ -202,9 +203,8 @@
 @NAME:		D'Egville, Louis H
 @NOTE:		Died after 1902
 @DATES:		
-@WIKIPEDIA:	
-@NATIONALITY:	English
 @ROLE:		composer
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -257,7 +257,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Epstein, Richard
-@DATES:		
+@DATES:		1832-1926
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Julius_Epstein_(pianist)
 @ROLE:		performer
 @NATIONALITY:	Croatian
@@ -306,7 +306,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Fryer, Herbert
-@DATES:		
+@DATES:		1877-1957
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Herbert_Fryer
 @ROLE:		performer
 @NATIONALITY:	English
@@ -373,6 +373,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Gora&#xEF;noff, Irina
+@DATES:		1897-1980
+@LINK:		https://en.schott-music.com/shop/suite-variee-no353133.html
+@ROLE:		performer
+@NATIONALITY:	Russian, French
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Gottschalk, Louis Moreau
 @DATES:		1829-1869
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Louis_Moreau_Gottschalk
@@ -412,7 +420,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Grosz, Gisella
-@DATES:		
+@DATES:		1875-1942
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Gisella_Grosz
 @ROLE:		performer
 @NATIONALITY:	Hungarian
@@ -436,7 +444,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Hambourg, Mark
-@DATES:		
+@DATES:		1879-1960
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Mark_Hambourg
 @ROLE:		performer
 @NATIONALITY:	Russian, British
@@ -466,7 +474,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Hofmann, Josef
-@DATES:		
+@DATES:		1876-1957
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Hofmann
 @ROLE:		performer
 @NATIONALITY:	Polish, American
@@ -505,7 +513,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Kleeberg, Clotilde
-@DATES:		
+@DATES:		1866-1909
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
 @ROLE:		performer
 @NATIONALITY:	French
@@ -513,7 +521,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Koczalski, Raoul
-@DATES:		
+@DATES:		1884-1948
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Koczalski
 @ROLE:		performer
 @NATIONALITY:	Polish
@@ -545,7 +553,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Lamond, Frederic
-@DATES:		
+@DATES:		1868-1948
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)
 @ROLE:		performer
 @NATIONALITY:	Scottish
@@ -560,11 +568,11 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		&#xE1;szl&#xF2;, S&#xE1;ndor
+@NAME:		L&#xE1;szl&#xF2;, S&#xE1;ndor
 @DATES:		1895-1970
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Laszlo_(composer)
-@NATIONALITY:	Hungarian, American
 @ROLE:		performer
+@NATIONALITY:	Hungarian, American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -585,7 +593,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Lemba, Artur
-@DATES:		
+@DATES:		1885-1963
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Artur_Lemba
 @ROLE:		performer
 @NATIONALITY:	Estonian
@@ -601,7 +609,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Leschetizky, Theodor
-@DATES:		
+@DATES:		1830-1915
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Theodor_Leschetizky
 @ROLE:		performer
 @NATIONALITY:	Polish
@@ -609,7 +617,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Lh&#xE9;vinne, Josef
-@DATES:		
+@DATES:		1874-1944
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Josef_Lh%C3%A9vinne
 @ROLE:		performer
 @NATIONALITY:	Russian
@@ -633,7 +641,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Liszt, Franz
-@DATES:		
+@DATES:		1811-1886
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Liszt
 @ROLE:		composer
 @NATIONALITY:	Hungarian
@@ -657,7 +665,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Marx-Goldschmidt, Berthe
-@DATES:		
+@DATES:		1859-1925
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Berthe_Marx
 @ROLE:		performer
 @NATIONALITY:	French
@@ -667,6 +675,7 @@
 @NAME:		Mason, Lowell
 @DATES:		1792-1872
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Lowell_Mason
+@ROLE:		composer
 @NATIONALITY:	American
 @@END: PERSON
 
@@ -687,7 +696,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Mendelssohn-Bartholdy, Felix
-@DATES:		
+@DATES:		1809-1847
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mendelssohn
 @ROLE:		composer
 @NATIONALITY:	German
@@ -695,7 +704,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Mero, Yolanda
-@DATES:		
+@DATES:		1887-1963
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Yolanda_Mero
 @ROLE:		performer
 @NATIONALITY:	Hungarian, American
@@ -703,7 +712,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Meyer-Helmund, Erik 
-@DATES:		
+@DATES:		1861-1932
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Erik_Meyer-Helmund
 @ROLE:		performer
 @NATIONALITY:	German
@@ -744,7 +753,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Neitzel, Otto
-@DATES:		
+@DATES:		1852-1920
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Otto_Neitzel
 @ROLE:		performer
 @NATIONALITY:	German
@@ -752,7 +761,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Ney, Elly
-@DATES:		
+@DATES:		1882-1968
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Elly_Ney
 @ROLE:		performer
 @NATIONALITY:	German
@@ -760,18 +769,18 @@
 
 @@BEGIN: PERSON
 @NAME:		Nikisch, Arthur
-@DATES:		
+@DATES:		1855-1922
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Nikisch
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	Hungarian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Novaes, Guiomar
-@DATES:		
+@DATES:		1895-1979
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Guiomar_Novaes
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	Brazilian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -784,7 +793,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Pachmann, Vladimir de
-@DATES:		
+@DATES:		1848-1933
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vladimir_de_Pachmann
 @ROLE:		performer
 @NATIONALITY:	Russian
@@ -792,7 +801,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Paderewski, Ignace Jan
-@DATES:		
+@DATES:		1860-1941
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ignacy_Jan_Paderewski
 @ROLE:		composer, performer
 @NATIONALITY:	Polish
@@ -833,7 +842,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Pugno, Raoul
-@DATES:		
+@DATES:		1852-1914
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Raoul_Pugno
 @ROLE:		performer
 @NATIONALITY:	French
@@ -891,6 +900,7 @@
 @NAME:		Rubinstein, Anton
 @DATES:		1829-1894
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Anton_Rubinstein
+@ROLE:		composer
 @NATIONALITY:	Russian
 @@END: PERSON
 
@@ -921,8 +931,16 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Savino, Domenico
+@DATES:		1882-1973
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Domenico_Savino
+@ROLE:		conductor
+@NATIONALITY:	Italian, American
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Scharwenka, Xaver
-@DATES:		
+@DATES:		1850-1924
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Xaver_Scharwenka
 @ROLE:		performer
 @NATIONALITY:	German
@@ -938,9 +956,9 @@
 
 @@BEGIN: PERSON
 @NAME:		Schl&#xF6;zer, Paul de
-@DATES:		
+@DATES:		1841/2-1898
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_de_Schl%C3%B6zer
-@ROLE:		performer
+@ROLE:		composer
 @NATIONALITY:	Polish
 @@END: PERSON
 
@@ -1126,6 +1144,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Vengerova, Isabelle
+@DATES:		1877-1956
+@WIKIPEDIA:	hhttps://en.wikipedia.org/wiki/Isabelle_Vengerova
+@ROLE:		performer
+@NATIONALITY:	Russian, American
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Verdi, Giuseppe
 @DATES:		1813-1901
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Giuseppe_Verdi
@@ -1170,9 +1196,10 @@
 @@BEGIN: PERSON
 @NAME:		Wendling, Carl
 @ALTNAME:	Wendling, Karl
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Karl_Wendling
 @DATES:		1857-1918
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
