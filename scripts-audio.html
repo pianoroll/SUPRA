@@ -30,6 +30,7 @@ function PlayAudioFile(druid, element, starttime) {
 		console.log('Error: could not set up audio interface\n');
 		return false;
    }
+	AUDIO.preload = "none"; // don't try to prefetch the audio data (there could be lots on page).
 	AUDIO.setAttribute('controls', 'controls');
 	AUDIO.style.position = 'fixed';
 	AUDIO.style.bottom = '0';
@@ -62,6 +63,9 @@ function PlayAudioFile(druid, element, starttime) {
 		//source += '<source src="/data?a=mp3&id=' + druid + '" ';
 		source += '<source src="https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/' + druid + '.m4a" ';
 		source += 'type="audio/mp4"/>\n';
+		// MP3 alternate source (in cdase MP4 cannot be played):
+		source += '<source src="https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp/' + druid + '.mp3" ';
+		source += 'type="audio/mpeg"/>\n';
 		AUDIO.innerHTML = source;
 
 		AUDIOdruid = druid;
