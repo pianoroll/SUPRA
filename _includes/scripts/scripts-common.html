@@ -139,6 +139,7 @@ function PreparePerson(entry, peeps) {
 	}
 
 	entry = entry.replace("-1", "&ndash;1");
+	entry = entry.replace("-2", "&ndash;2");
 	entry = entry.replace("-\)", "&ndash;)");
 	entry = entry
 		.replace(" Nikolayevich", "")
@@ -266,12 +267,10 @@ function MakeRollTableRows(list, peeps) {
 
 		output += "<td>";
 		// http://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/bc072xf6791.m4a
-		// https://stacks.stanford.edu/file/xq762nt7491/xq762nt7491_sl.m4a
 		output += "<span class='mp4'>";
 		output += "<a title='Link to MP4 audio file' target='audio' href='";
-		//output += "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/";
-		output += "https://stacks.stanford.edu/file/" + list[i].DRUID.trim() + "/";
-		output += list[i].DRUID.trim() + "_sl.m4a'>";
+		output += "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/";
+		output += list[i].DRUID.trim() + ".m4a'>";
 		output += "MP4";
 		output += "</a>";
 		output += "</span>";

@@ -73,6 +73,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Berend, Fritz
+@DATES:		1889-1955
+@WIKIPEDIA:	https://de.wikipedia.org/wiki/Fritz_Berend_(Dirigent)
+@ROLE:		performer
+@NATIONALITY:	German, English
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Berlin, Irving
 @DATES:		1888-1989
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Irving_Berlin
@@ -111,6 +119,32 @@
 @WIKIPEDIA:	https://fr.wikipedia.org/wiki/Charles_Borel-Clerc
 @ROLE:		composer
 @NATIONALITY:	French
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Buhlig, Richard
+@FULLNAME:	Buhlig, Richard Moritz
+@DATES:		1880-1952
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Buhlig
+@ROLE:		performer
+@NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Burkard, Heinrich
+@ALIAS:		Burkard, Henry
+@DATES:		1888-1950
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Buhlig
+@ROLE:		performer
+@NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Cone, Carolyne
+@DATES:		1894-1946
+@LINK:		http://pianorolls.blogspot.com/2016/08/carolyn-cone-baldwin-born-june-1894.html
+@ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -240,11 +274,27 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Drozdov, Vladimir
+@DATES:		1882-1960
+@LINK:		https://www.wikidata.org/wiki/Q18112067
+@ROLE:		performer
+@NATIONALITY:	Russian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Dohn&#xE1;nyi, Ern&#x151;
 @DATES:		1877-1960
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernst_von_Dohn%C3%A1nyi
 @ROLE:		composer
 @NATIONALITY:	Hungarian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Dyck, Ernest van
+@DATES:		1861-1923
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernest_van_Dyck
+@ROLE:		performer
+@NATIONALITY:	Belgian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -905,6 +955,17 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Rybner, Cornelius
+@DATES:		1853-1929
+@WIKIPEDIA:	https://de.wikipedia.org/wiki/Cornelius_R%C3%BCbner
+@ROLE:		performer
+@TEACHER:	Reinecke, Carl
+@TEACHER:	B&uuml;low, Hans von
+@TEACHER:	Rubinstein, Anton
+@NATIONALITY:	Danish
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Saint-Sa&#xEB;ns, Camille
 @DATES:		1835-1921
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Camille_Saint-Sa%C3%ABns
@@ -919,6 +980,15 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Olga_Samaroff
 @ROLE:		performer
 @NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Sapellnikoff, W
+@FULLNAME:	Wassily Sapellnikoff
+@DATES:		1867-1941
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Wassily_Sapellnikoff
+@ROLE:		performer
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -971,6 +1041,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Schnitzer, Germaine
+@DATES:		1888-1982
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Germaine_Schnitzer
+@ROLE:		performer
+@NATIONALITY:	French, American
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Schubert, Franz
 @DATES:		1797-1828
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Franz_Schubert
@@ -1008,6 +1086,14 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Eduard_Sch%C3%BCtt
 @ROLE:		composer
 @NATIONALITY:	Russian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Schytte, Anna Jutta
+@DATES:		1877-1953
+@WIKIPEDIA:	https://sv.wikipedia.org/wiki/Anna_Schytte
+@ROLE:		performer
+@NATIONALITY:	Danish
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1067,6 +1153,13 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Sommer, Hans
+@DATES:		1904-2000
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Hans_Sommer_(composer,_born_1904)
+@NATIONALITY:	
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Stavenhagen, Bernhard
 @DATES:		1862-1914
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Bernhard_Stavenhagen
@@ -1076,8 +1169,9 @@
 @@BEGIN: PERSON
 @NAME:		Stebel, Paula
 @DATES:		1885-1932
+@LINK:		https://www.staatsanzeiger.de/staatsanzeiger/nachricht/artikel/die-pianistin-paula-stebel-rosalie-paula/?sword_list[]=der&no_cache=1
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1139,6 +1233,14 @@
 @NAME:		Toselli, Enrico
 @DATES:		1883-1926
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Enrico_Toselli
+@ROLE:		performer
+@NATIONALITY:	Italian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Uzielli, Lazzaro
+@DATES:		1861-1943
+@WIKIPEDIA:	https://de.wikipedia.org/wiki/Lazzaro_Uzielli
 @ROLE:		performer
 @NATIONALITY:	Italian
 @@END: PERSON
