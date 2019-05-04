@@ -161,7 +161,7 @@ function PreparePerson(entry, peeps) {
 		nombre += ".";
 	}
 	if (PEEPS && PEEPS[nombre] && PEEPS[nombre].DATES && !PEEPS[nombre].DATES.match(/^\s*$/)) {
-		dates = "(" + PEEPS[nombre].DATES.replace("-1", "&ndash;1") + ")";
+		dates = "(" + PEEPS[nombre].DATES.replace("-1", "&ndash;1").replace("-2", "&ndash;2") + ")";
 	}
 	if (!link) {
 		if (!dates.match(/^\s*$/)) {

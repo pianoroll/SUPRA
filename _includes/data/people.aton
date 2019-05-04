@@ -105,6 +105,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Black, Sidney
+@REALNAME:	Haass, Hans
+@DATES:		1897-1955
+@ROLE:		performer
+@NATIONALITY:	German
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Bloomfield-Zeisler, Fannie
 @DATES:		1863-1927
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler
@@ -122,6 +130,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Brzezi&#x144;ski, Franciszek
+@DATES:		1867-1944
+@WIKIPEDIA:	https://de.wikipedia.org/wiki/Franciszek_Brzeziński
+@ROLE:		performer
+@NATIONALITY:	Polish
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Buhlig, Richard
 @FULLNAME:	Buhlig, Richard Moritz
 @DATES:		1880-1952
@@ -133,10 +149,22 @@
 @@BEGIN: PERSON
 @NAME:		Burkard, Heinrich
 @ALIAS:		Burkard, Henry
+@ALIAS:		M. Dubois
+@ALIAS:		Lisle W. Embree
+@ALIAS:		Richard Wheeler
 @DATES:		1888-1950
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Buhlig
 @ROLE:		performer
 @NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Collins, H. B
+@FULLNAME:	Collins, Henry Bird
+@DATES:		1870-1941
+@LINK:		http://worldcat.org/identities/lccn-no93011732
+@ROLE:		performer
+@NATIONALITY:	
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -204,6 +232,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Carreras, Maria
+@DATES:		c1877-1966
+@WIKIPEDIA:	https://www.nytimes.com/1966/04/18/archives/maria-carreras-89-a-pianist-teacher.html
+@ROLE:		performer
+@NATIONALITY:	Italian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Chaminade, C&#xE9;cile
 @DATES:		1857-1944
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/C%C3%A9cile_Chaminade
@@ -247,6 +283,14 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/William_Merrigan_Daly
 @ROLE:		composer
 @NATIONALITY:	American
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Davies, Fanny
+@DATES:		1861-1934
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Fanny_Davies
+@ROLE:		performer
+@NATIONALITY:	British
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -314,6 +358,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Esipova, Anna Nikolaevna
+@DATES:		1851-1914
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Anna_Yesipova
+@ROLE:		performer
+@NATIONALITY:	Russian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Europe, James Reese
 @DATES:		1880-1919
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/James_Reese_Europe
@@ -336,6 +388,14 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Fall
 @ROLE:		performer
 @NATIONALITY:	Austrian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Flohr, Hubert
+@DATES:		1869-1940
+@WIKIPEDIA:	https://de.wikipedia.org/wiki/Hubert_Flohr
+@ROLE:		pianist
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -502,7 +562,27 @@
 
 @@BEGIN: PERSON
 @NAME:		Haass, Hans
+@ALIAS:		Edward Fox
+@ALIAS:		Edward Johnson
+@ALIAS:		F. Keller
+@ALIAS:		Felix Fox
+@ALIAS:		George Milner
+@ALIAS:		Hans Haeuser
+@ALIAS:		Hans Renner
+@ALIAS:		Hans Sommer
+@ALIAS:		Henry Dark
+@ALIAS:		Jean Maison
+@ALIAS:		John Hare
+@ALIAS:		Sidney Black
 @DATES:		1897-1955
+@ROLE:		performer
+@NATIONALITY:	German
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Heinemann, K&#xE4;the
+@DATES:		1891-1975
+@WIKIPEDIA:	https://de.wikipedia.org/wiki/Käthe_Heinemann
 @ROLE:		performer
 @NATIONALITY:	German
 @@END: PERSON
@@ -562,6 +642,13 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Kiek, Georges
+@DATES:		1882-1972
+@ROLE:		performer
+@NATIONALITY:	
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Kleeberg, Clotilde
 @DATES:		1866-1909
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Clotilde_Kleeberg
@@ -599,6 +686,14 @@
 @LINK:	https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/kwast-frieda-hodapp-1880-1949
 @ROLE:		performer
 @NATIONALITY:	German
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		La Forge, Frank
+@DATES:		1879-1953
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Frank_La_Forge
+@ROLE:		performer
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -866,6 +961,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Peppercorn, Gertrude
+@DATES:		1879-1966
+@LINK:	https://www.digitalcommonwealth.org/search/commonwealth:vh53xk45b
+@ROLE:		performer
+@NATIONALITY:	English
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Petri, Egon
 @DATES:		1881-1962
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Egon_Petri
@@ -875,11 +978,28 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Pintel, Jacques
+@DATES:		1880-
+@ROLE:		performer
+@NATIONALITY:	Ukrainian
+@TEACHER:	Busoni
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Poldini, Ede
 @DATES:		1869-1957
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ede_Poldini
 @ROLE:		composer
 @NATIONALITY:	Hungarian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Pouishnoff, Leff
+@FULLNAME:	Pouishnoff, Leff Nicolas
+@DATES:		1891-1959
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Leff_Pouishnoff
+@ROLE:		performer
+@NATIONALITY:	Ukrainian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1046,6 +1166,13 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Germaine_Schnitzer
 @ROLE:		performer
 @NATIONALITY:	French, American
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Schorr, David
+@DATES:		1867-1942
+@ROLE:		performer
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1230,6 +1357,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Timanoff, Vera
+@DATES:		1855-1924
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Vera_Timanova
+@ROLE:		performer
+@NATIONALITY:	Russian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Toselli, Enrico
 @DATES:		1883-1926
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Enrico_Toselli
@@ -1313,6 +1448,15 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Wurmser, Lucien
+@DATES:		1877-1967
+@WIKIPEDIA:	
+@VIAF:		https://viaf.org/viaf/10114199
+@ROLE:		performer
+@NATIONALITY:	French
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Youmans, Vincent
 @DATES:		1898-1946
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Vincent_Youmans
@@ -1323,9 +1467,9 @@
 @@BEGIN: PERSON
 @NAME:		Zadora, Michael
 @DATES:		1882-1946
-@LINK:		http://www.bach-cantatas.com/Lib/Zadora-Michael.htm
+@WIKIPEDIA:	https://es.wikipedia.org/wiki/Michael_Zadora
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:	American
 @@END: PERSON
 
 @@BEGIN: PERSON
