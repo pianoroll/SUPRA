@@ -1,0 +1,58 @@
+
+{% include scripts/scripts-common.html %}
+<script>{% include scripts/aton.js %}</script>
+
+<script>
+// vim: ts=3
+
+var aton = new ATON;
+var PEOPLE = aton.parse(`{% include data/people.aton %}`).PERSON;
+var PEEPS = {};
+for (var i=0; i<PEOPLE.length; i++) {
+	PEEPS[PEOPLE[i].NAME] = PEOPLE[i];
+}
+
+var CGI = {};      // CGI parameters from URL
+var ROLLINFO = [];
+var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+	HighlightLinkInHeader();
+	CGI = GetCgiParameters();
+
+	if (sessionStorage.ROLLINFO) {
+		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
+		doAction(ROLLINFO);
+	} else {
+		var request = new XMLHttpRequest();
+		request.addEventListener("load", function () {
+			var aton = new ATON;
+			ROLLINFO = aton.parse(this.responseText).ROLL;
+			doAction(ROLLINFO);
+		});
+		request.open("GET", ATONINDEX);
+		request.send();
+	}
+
+});
+
+
+
+//////////////////////////////
+//
+// doAction --
+//
+
+function doAction(rollInfo) {
+	DisplayStats(ROLLINFO);
+}
+
+
+
+</script>
