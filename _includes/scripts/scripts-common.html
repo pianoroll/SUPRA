@@ -139,6 +139,7 @@ function PreparePerson(entry, peeps) {
 	}
 
 	entry = entry.replace("-1", "&ndash;1");
+	entry = entry.replace("-2", "&ndash;2");
 	entry = entry.replace("-\)", "&ndash;)");
 	entry = entry
 		.replace(" Nikolayevich", "")
@@ -382,23 +383,35 @@ function DisplayPianists(list, selector, peeps) {
 		}
 
 		var person  = PreparePerson(plist[i][1], null);
-		matches = person.match(/\(([\d\/]+)&ndash;([\d\/]+)\)/);
+if (person.match("Sommer")) {
+console.log("PERSON", person);
+}
+		matches = person.match(/\((c?[\d\/]+)&ndash;([\d\/]+)\)/);
 		if (matches) {
 			birth = matches[1];
 			death = matches[2];
-			person = person.replace(/\([\d\/]+&ndash;[\d\/]+\)/, "");
+			person = person.replace(/\(c?[\d\/]+&ndash;[\d\/]+\)/, "");
 		} else if (matches = person.match(/\(&ndash;([\d\/]+)\)/)) {
 			death = matches[1];
 			birth = "";
 			person = person.replace(/\(&ndash;[\d\/]+\)/, "");
+		} else if (matches = person.match(/\(([\d\/]+)-\)/)) {
+			birth = matches[1];
+			death = "";
+			person = person.replace(/\([\d\/]+-\)/, "");
 		} else if (matches = person.match(/\(([\d\/]+)&ndash;\)/)) {
 			birth = matches[1];
 			death = "";
+console.log("XPERSON", person);
 			person = person.replace(/\([\d\/]+&ndash;\)/, "");
+console.log("YPERSON", person);
 		} else {
 			birth = "";
 			death = "";
 		}
+if (person.match("Sommer")) {
+console.log("    PERSON ", person);
+}
 		output += person;
 		output += "</a>";
 		output += "</td>"
