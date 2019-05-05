@@ -12,7 +12,7 @@ summary:
 This page describes the format for MIDI files available in the
 SUPRA archive.  There are two types of MIDI files: (1) "raw" MIDI files
 where each musical hole on the physical roll is represented by a
-note in the MIDI data, and (2) "expression" MIDI files, where the individual
+note in the MIDI data, and (2) "expressive" MIDI files, where the individual
 holes have been merged into single notes (debridged), note durations have
 been extended slightly due to the width of the tracker bar, and expression
 controls on the left/right sides of the roll are interpreted as attack
@@ -23,7 +23,7 @@ MIDI files can be accessed with three methods:
 <ol>
 <li> <a target="_blank" href="https://github.com/pianoroll/SUPRA">SUPRA Github repository</a>: This repository allows for downloading all files, either via the <i>git</i> program, or via a link to a zip file found on the repository homepage. </li>
 <li> <a target="_blank" href="/">SUPRA homepage</a>: For each entry on the list of music on the SUPRA homepage, there are links to the "raw" and "expressive" MIDI files on the right side of the listings.  Right click on the "Mraw" or "Mexp" links to save the MIDI file to your local computer. </li>
-<li> <a target="_blank" href="https://purl.stanford.edu/zw904vm6502">PURL pages</a>: the expression MIDI file is available in the download section of the Universal Viewer found on the PURL pages (bottom left corner of the image window).  </li>
+<li> <a target="_blank" href="https://purl.stanford.edu/zw904vm6502">PURL pages</a>: the expressive MIDI file is available in the download section of the Universal Viewer found on the PURL pages (bottom left corner of the image window).  </li>
 </ol>
 
 ## Raw MIDI files ##
@@ -51,7 +51,7 @@ to the "raw" MIDI file.
 
 ### Timing ###
 
-In both the "raw" and "expression" MIDI files, the tempo of the roll is stored
+In both the "raw" and "expressive" MIDI files, the tempo of the roll is stored
 in the ticks-per-quarter-note (pulses-per-quarter-note) parameter in the 
 header of the MIDI file.  This value is usually 5 times the performance tempo
 of the roll (such as 500 if the tempo is 100).  DEA rolls will have a different
@@ -59,9 +59,9 @@ multiplication factor other than 5.  Each MIDI tick is equivalent to one pixel
 row in the original image.  Time 0 in the MIDI file is the position of the
 first musical note hole in the image, which is at the image row given 
 in the <b>FIRST_HOLE</b> metadata parameter.  If the first "musical" hole is
-an expression hole, the final "expression" MIDI file may have silence 
+an expression hole, the final "expressive" MIDI file may have silence 
 at the start of the MIDI file, since the expression holes are silenced or 
-removed from the expression MIDI files.
+removed from the expressive MIDI files.
 
 ### Acceleration emulation ###
 
@@ -93,8 +93,8 @@ in the metadata found in track 0; (2) tracker-bar holes have a height which
 will increase the effective length of holes after bridging has been removed.
 After these two steps have been done, the dynamics of each register are
 modeled and applied to the velocities of the sounding notes.  Typically the
-expression tracks (tracks 3 and 4 will be removed from the final expression
-MIDI file), so there are usually 3 MIDI tracks in the expression MIDI files:
+expression tracks (tracks 3 and 4 will be removed from the final expressive
+MIDI file), so there are usually 3 MIDI tracks in the expressive MIDI files:
 
 <ul>
 <li> Track 0: tempo indications and metadata parameters.</li>
