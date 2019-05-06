@@ -231,9 +231,17 @@ function MakeRollTableRows(list, peeps) {
 
 		output += "<td>";
 		output += "<span class='purl'>";
-		output += "<a title='Link to scan (when available)' target='purl' href='";
+		output += "<a title='Scan in Universal Viewer' target='purl' href='";
 		output += list[i].PURL;
-		output += "'>Scan</a>";
+		output += "'>UV</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='purl'>";
+		output += "<a title='Scan and audio' target='purl' href='/uv/?id=";
+		output += list[i].DRUID;
+		output += "'>UV+</a>";
 		output += "</span>";
 		output += "</td>";
 

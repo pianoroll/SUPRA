@@ -1,0 +1,121 @@
+
+{% include_relative listeners.html %}
+{% include_relative scripts-audio.html %}
+
+<script>
+// vim: ts=3
+
+
+
+//////////////////////////////
+//
+// displayViewer --
+//
+
+function displayViewer(druid, rollinfo, peeps) {
+	if (!druid) {
+		druid = "sp773vt2651";
+	}
+	druid = druid.trim();
+	var iframe = document.querySelector("iframe");
+	var url = "https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/";
+	url += druid  + "&hide_title=true"
+	iframe.src = url;
+	displayInfo(druid, rollinfo, peeps, "#info");
+}
+
+
+//////////////////////////////
+//
+// displayInfo --
+//
+
+function displayInfo(druid, rollinfo, peeps, selector) {
+	var rindex = -1
+	for (var i=0; i<rollinfo.length; i++) {
+		if (rollinfo.DRUID !== druid) {
+			rindex = i;
+			break;
+		}
+	}
+	if (rindex < 0) {
+		console.log("Error: druid", druid, "is not in database");
+		return;
+	}
+
+	var output = "";
+	output += "<table class='info'>";
+	output += "<tr>";
+
+	output += "<td>";
+	output += "<div id='audio_" + druid + "' ";
+	output += "style='width:150px; height:150px; cursor:hand; cursor:pointer;' ";
+	output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
+	output += "class='play-big audio'>play</div>";
+	output += "</td>";
+
+	output += "<td>";
+
+	output += "<table class='key-value'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Title:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].TITLE) {
+		output += rollinfo[rindex].TITLE;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Composer:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].COMPOSER) {
+	 	output += PreparePerson(rollinfo[rindex].COMPOSER, peeps);
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Performer:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].PERFORMER) {
+	 	output += PreparePerson(rollinfo[rindex].PERFORMER, peeps);
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Label:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].LABEL) {
+		output += rollinfo[rindex].LABEL;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "</table>";
+
+	output += "</td>";
+
+	output += "</tr>";
+	output += "</table>";
+
+	var element = document.querySelector(selector);
+	element.innerHTML = output;
+}
+
+
+
+</script>
+
+
+
