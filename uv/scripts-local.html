@@ -33,7 +33,7 @@ function displayViewer(druid, rollinfo, peeps) {
 function displayInfo(druid, rollinfo, peeps, selector) {
 	var rindex = -1
 	for (var i=0; i<rollinfo.length; i++) {
-		if (rollinfo.DRUID !== druid) {
+		if (rollinfo[i].DRUID === druid) {
 			rindex = i;
 			break;
 		}

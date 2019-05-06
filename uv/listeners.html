@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function doAction(rollInfo) {
 	DisplayStats(ROLLINFO);
-	displayViewer(CGI.id || CGI.druid || CGI.d, ROLLINFO, PEEPS);
+	var id = CGI.id || CGI.druid || CGI.d;
+	displayViewer(id, ROLLINFO, PEEPS);
 }
 
 
