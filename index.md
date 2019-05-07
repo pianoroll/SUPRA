@@ -8,7 +8,6 @@ summary:
 ---
 
 
-
 <input id="search" placeholder="search" value="" autocomplete="off">
 <span id="search-count"></span>
 
