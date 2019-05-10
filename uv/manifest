@@ -1,0 +1,210 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://purl.stanford.edu/dp563zh2166/iiif/manifest",
+  "@type": "sc:Manifest",
+  "label": "Rakoczy-Marsch",
+  "attribution": "Provided by the Stanford University Libraries",
+  "logo": {
+    "@id": "https://stacks.stanford.edu/image/iiif/wy534zh7137%2FSULAIR_rosette/full/400,/0/default.jpg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "https://stacks.stanford.edu/image/iiif/wy534zh7137%2FSULAIR_rosette",
+      "profile": "http://iiif.io/api/image/2/level2.json"
+    }
+  },
+  "seeAlso": {
+    "@id": "https://purl.stanford.edu/dp563zh2166.mods",
+    "format": "application/mods+xml"
+  },
+  "metadata": [
+    {
+      "label": "Available Online",
+      "value": "<a href='https://purl.stanford.edu/dp563zh2166'>https://purl.stanford.edu/dp563zh2166</a>"
+    },
+    {
+      "label": "Title",
+      "value": "Z Rakoczy-Marsch"
+    },
+    {
+      "label": "Title",
+      "value": "Rhapsodies hongroises. No 15"
+    },
+    {
+      "label": "Contributor",
+      "value": "Liszt, Franz, 1811-1886 (composer)"
+    },
+    {
+      "label": "Contributor",
+      "value": "Dohnányi, Ernő, 1877-1960 (instrumentalist)"
+    },
+    {
+      "label": "Contributor",
+      "value": "Welte-Mignon Corporation (publisher)"
+    },
+    {
+      "label": "Type",
+      "value": "Sound"
+    },
+    {
+      "label": "Type",
+      "value": "performed music"
+    },
+    {
+      "label": "Type",
+      "value": "Marches (Music)"
+    },
+    {
+      "label": "Type",
+      "value": "Rhapsodies (Music)"
+    },
+    {
+      "label": "Type",
+      "value": "Reproducing piano rolls."
+    },
+    {
+      "label": "Date",
+      "value": "1907"
+    },
+    {
+      "label": "Publisher",
+      "value": "M. Welte & Söhne, [1907]"
+    },
+    {
+      "label": "Language",
+      "value": "zxx"
+    },
+    {
+      "label": "Format",
+      "value": "1 audio roll ; 14 1/2 in. x 2 1/2 in."
+    },
+    {
+      "label": "Format",
+      "value": "sound recording"
+    },
+    {
+      "label": "Description",
+      "value": "Fr. Liszt."
+    },
+    {
+      "label": "Description",
+      "value": "Title from roll."
+    },
+    {
+      "label": "Description",
+      "value": "Welte-Mignon red roll (T-100)."
+    },
+    {
+      "label": "Description",
+      "value": "Ernst von Dohnányi, piano."
+    },
+    {
+      "label": "Description",
+      "value": "Recorded 1905 September 13."
+    },
+    {
+      "label": "Subject",
+      "value": "Rhapsodies (Music)"
+    },
+    {
+      "label": "Subject",
+      "value": "Marches (Piano)"
+    },
+    {
+      "label": "Subject",
+      "value": "Piano music"
+    },
+    {
+      "label": "Subject",
+      "value": "Player piano rolls"
+    },
+    {
+      "label": "Subject",
+      "value": "M25.M"
+    },
+    {
+      "label": "Relation",
+      "value": "Smith, Charles Davis & Richard J. Howe. The Welte-Mignon, 1994,"
+    },
+    {
+      "label": "Relation",
+      "value": "Stitsky, Larry. The classical reproducing piano roll, 1990,"
+    },
+    {
+      "label": "Relation",
+      "value": "Dangel, Gerhard & Hans-W. Schmitz. Welte-Mignon Klavierrollen, 2006."
+    },
+    {
+      "label": "Identifier",
+      "value": "492 Welte-Mignon"
+    },
+    {
+      "label": "PublishDate",
+      "value": "2019-05-03T22:56:51Z"
+    }
+  ],
+  "description": "Fr. Liszt.",
+  "thumbnail": {
+    "@id": "https://stacks.stanford.edu/image/iiif/dp563zh2166%2Fdp563zh2166_0001/full/!400,400/270/default.jpg",
+    "@type": "dctypes:Image",
+    "format": "image/jpeg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "https://stacks.stanford.edu/image/iiif/270/dp563zh2166%2Fdp563zh2166_0001",
+      "profile": "http://iiif.io/api/image/2/level2.json"
+    }
+  },
+  "sequences": [
+    {
+      "@id": "https://purl.stanford.edu/dp563zh2166#sequence-1",
+      "@type": "sc:Sequence",
+      "label": "Current order",
+      "viewingDirection": "left-to-right",
+      "rendering": [
+        {
+          "@id": "https://stacks.stanford.edu/file/dp563zh2166/dp563zh2166_0001_gr.tif",
+          "label": "Download green channel tiff",
+          "format": "image/tiff"
+        },
+        {
+          "@id": "https://stacks.stanford.edu/file/dp563zh2166/dp563zh2166_sl.m4a",
+          "label": "Download m4a",
+          "format": "video/mp4"
+        },
+        {
+          "@id": "https://stacks.stanford.edu/file/dp563zh2166/dp563zh2166_pm.wav",
+          "label": "Download expressive midi",
+          "format": "audio/x-wav"
+        }
+      ],
+      "canvases": [
+        {
+          "@id": "https://purl.stanford.edu/dp563zh2166/iiif/canvas/270/dp563zh2166_1",
+          "@type": "sc:Canvas",
+          "label": "display image",
+          "height": 223320,
+          "width": 4096,
+          "images": [
+            {
+              "@id": "https://purl.stanford.edu/dp563zh2166/iiif/annotation/dp563zh2166_1",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://stacks.stanford.edu/image/iiif/dp563zh2166%2Fdp563zh2166_0001/full/full/270/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 223320,
+                "width": 4096,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://stacks.stanford.edu/image/iiif/dp563zh2166%2Fdp563zh2166_0001",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                }
+              },
+              "on": "https://purl.stanford.edu/dp563zh2166/iiif/canvas/270/dp563zh2166_1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

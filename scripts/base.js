@@ -48,14 +48,14 @@ $(document).ready(function() {
     // show or hide the hamburger based on window size
     var size = CARDINAL.size(); // what size is our window (xs, sm, md or lg)
     if (size == 'md' || size == 'lg') { // if size is md or lg, unhide search and gateway blocks
-      $('.navbar-collapse').collapse('hide');
+      // $('.navbar-collapse').collapse('hide');
       // $('.navbar-collapse').removeClass('in').addClass('collapse');
     }
     // re-stick the footer in case its height has changed
     CARDINAL.stickFooter();
   });
   
-  $('.navbar-collapse').collapse({toggle: false}); // activate collapsibility without toggling state
+  // $('.navbar-collapse').collapse({toggle: false}); // activate collapsibility without toggling state
   
   $('#skip > a').click(function(e){
     var href = $(this).attr('href').substr(1); // remove the #

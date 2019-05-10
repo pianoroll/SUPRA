@@ -19,6 +19,7 @@ function PlayAudioFile(druid, element, starttime) {
 	if (!AUDIO) {
 	   AUDIO = document.getElementById('audio');
    }
+console.log("AUDIO IS", AUDIO);
 	if (!AUDIO) {
 	   AUDIO = document.createElement("AUDIO");
 		AUDIO.id = "audio";
@@ -38,12 +39,6 @@ function PlayAudioFile(druid, element, starttime) {
 	AUDIO.onpause = function () {
 		// TurnOffAllNotes();
 	}
-
-	$(function() {
-		var $AUDIO = $('#audio');
-		var windowWidth = window.innerWidth;
-		$AUDIO.width(windowWidth);
-	});
 
 	var audiobutton;
    if (druid != AUDIOdruid) {
@@ -69,12 +64,6 @@ function PlayAudioFile(druid, element, starttime) {
 		// source += '<source src="https://stacks.stanford.edu/file/' + druid + '/'  + druid + '_sl.m4a" ';
 		source += 'type="audio/mp4"/>\n';
 		AUDIO.innerHTML = source;
-
- 		$(function() {
-			var $AUDIO = $('#audio');
-			var windowWidth = window.innerWidth;
-			$AUDIO.width(windowWidth);
-		});
 
 		AUDIOdruid = druid;
 		AUDIO.load();

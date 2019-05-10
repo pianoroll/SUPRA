@@ -17,32 +17,10 @@ function displayViewer(druid, rollinfo, peeps) {
 		druid = "sp773vt2651";
 	}
 	druid = druid.trim();
-	console.log("DISPLAY ", druid, "HERE");
-	// var iframe = document.querySelector("iframe");
-	// var url = "https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/";
-	// url += druid  + "&hide_title=true&r=270"
-	// iframe.src = url;
-
-	window.addEventListener('uvLoaded', function(e) { 
-         var urlDataProvider = new UV.URLDataProvider(true);
-			var options = {
-				root: '.',
-				iiifResourceUri: 'https://purl.stanford.edu/' + druid + '/iiif/manifest',
-				configUri: undefined,
-				collectionIndex: 0,
-				manifestIndex: 0,
-				sequenceIndex: 0,
-				canvasIndex: 0,
-				rangeId: 0,
-				rotation: 270,
-				xywh: "",
-				embedded: false,
-				locales: [{name: "en-GB"}]
-			}
-			uv = createUV('#uv', options, urlDataProvider);
-	}, false);
-
-
+	var iframe = document.querySelector("iframe");
+	var url = "https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/";
+	url += druid  + "&hide_title=true&r=270"
+	iframe.src = url;
 	displayInfo(druid, rollinfo, peeps, "#info");
 }
 
@@ -71,7 +49,7 @@ function displayInfo(druid, rollinfo, peeps, selector) {
 
 	output += "<td>";
 	output += "<div id='audio_" + druid + "' ";
-	output += "style='width:150px; height:150px; cursor:pointer;' ";
+	output += "style='width:150px; height:150px; cursor:hand; cursor:pointer;' ";
 	output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
 	output += "class='play-big audio'>play</div>";
 	output += "</td>";
