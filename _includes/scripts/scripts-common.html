@@ -870,5 +870,22 @@ function SortByText(index, selector) {
 }
 
 
+//////////////////////////////
+//
+// GetDruidInfo --
+//
+
+function GetDruidInfo (rollinfo, druid) {
+	if (!rollinfo) {
+		return {};
+	}
+	for (var i=0; i<rollinfo.length; i++) {
+		if (rollinfo[i].DRUID === druid) {
+			return rollinfo[i];
+		}
+	}
+	return {};
+}
+
 </script>
 
