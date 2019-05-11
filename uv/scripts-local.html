@@ -23,6 +23,13 @@ function displayViewer(druid, rollinfo, peeps) {
 	// url += druid  + "&hide_title=true&r=270"
 	// iframe.src = url;
 
+	info = GetDruidInfo(rollinfo, druid);
+	console.log("INFO", info);
+	yval = 0;
+	if (info && info.PRELEADER_ROW) {
+		yval = parseInt(info.PRELEADER_ROW);
+	}
+
 	window.addEventListener('uvLoaded', function(e) { 
          var urlDataProvider = new UV.URLDataProvider(true);
 			var options = {
@@ -35,7 +42,7 @@ function displayViewer(druid, rollinfo, peeps) {
 				canvasIndex: 0,
 				rangeId: 0,
 				rotation: 270,
-				xywh: "",
+				xywh: "0," + (yval+500) + ",4096," + (4096*4.67),
 				embedded: false,
 				locales: [{name: "en-GB"}]
 			}
