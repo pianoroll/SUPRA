@@ -1,1 +1,5 @@
 MIDI file parameters need to remove @END: markers.
+
+@@HOLE_HISTOGRAM -> @HOLE_HISTOGRAM
+
+

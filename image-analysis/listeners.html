@@ -45,17 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	var url = "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/analysis/";
-	var file = "zw904vm6502_analysis.txt.bz2";
+	var file = "zw904vm6502_analysis.txt";
 	url = file;
-	url = "https://github.com/pianoroll/SUPRA/blob/gh-pages/image-analysis/zw904vm6502_analysis.txt.bz2?raw=true";
+	// url = "https://github.com/pianoroll/SUPRA/blob/gh-pages/image-analysis/zw904vm6502_analysis.txt.bz2?raw=true";
 
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
-	request.responseType = 'arraybuffer';
+	// request.responseType = 'arraybuffer';
 	request.send();
 	request.addEventListener("load", function () {
-		var bytes = new Uint8Array(request.response);
-		var content = bzip2.simple(bzip2.array(bytes));
+		//var bytes = new Uint8Array(request.response);
+		//var content = bzip2.simple(bzip2.array(bytes));
 		var aton2 = new ATON;
 		ANALYSIS = aton2.parse(this.responseText).ROLLINFO;
 		doAction2(ANALYSIS);
