@@ -1,0 +1,93 @@
+
+{% include scripts/scripts-common.html %}
+
+<script>{% include scripts/aton.js %}</script>
+<script>{% include_relative bzip2.js %}</script>
+
+<script>
+// vim: ts=3
+
+var aton = new ATON;
+var PEOPLE = aton.parse(`{% include data/people.aton %}`).PERSON;
+var PEEPS = {};
+for (var i=0; i<PEOPLE.length; i++) {
+	PEEPS[PEOPLE[i].NAME] = PEOPLE[i];
+}
+
+var CGI = {};      // CGI parameters from URL
+var ROLLINFO = [];
+var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+var ANALYSIS = {};
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+	HighlightLinkInHeader();
+	CGI = GetCgiParameters();
+
+
+	if (sessionStorage.ROLLINFO) {
+		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
+		doAction(ROLLINFO);
+	} else {
+		var request = new XMLHttpRequest();
+		request.addEventListener("load", function () {
+			var aton = new ATON;
+			ROLLINFO = aton.parse(this.responseText).ROLL;
+			doAction(ROLLINFO);
+		});
+		request.open("GET", ATONINDEX);
+		request.send();
+	}
+
+	var url = "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/analysis/";
+	var file = "zw904vm6502_analysis.txt.bz2";
+	url = file;
+
+	var request = new XMLHttpRequest();
+	request.open("GET", url);
+	request.responseType = 'arraybuffer';
+	request.send();
+	request.addEventListener("load", function () {
+		var bytes = new Uint8Array(request.response);
+		var content = bzip2.simple(bzip2.array(bytes));
+		var aton2 = new ATON;
+		ANALYSIS = aton2.parse(this.responseText).ROLLINFO;
+		doAction2(ANALYSIS);
+	});
+
+});
+
+
+
+//////////////////////////////
+//
+// doAction2 --
+//
+
+function doAction2(analysis) {
+	var element = document.querySelector("#analysis");
+	if (!element) {
+		return;
+	}
+	element.appendChild(renderjson(analysis));
+}
+
+
+
+//////////////////////////////
+//
+// doAction --
+//
+
+function doAction(rollInfo) {
+	DisplayStats(ROLLINFO);
+}
+
+
+
+</script>
