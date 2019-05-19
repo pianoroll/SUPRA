@@ -586,7 +586,7 @@ function displayHoleHistogram(analysis, region) {
 
 	var data;
 	var first = 1;
-	var max = 1024;
+	var max = 512;
 	for (var i=region*max; i<(region+1)*max; i++) {
 		data = histlist[i].split(/\t/);
 		if (!first) {

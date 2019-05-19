@@ -48,6 +48,10 @@ the plot cannot be displayed).
 <div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-1"></div>
 <div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-2"></div>
 <div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-3"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-4"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-5"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-6"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-7"></div>
 
 <div style="height:300px"></div>
 
