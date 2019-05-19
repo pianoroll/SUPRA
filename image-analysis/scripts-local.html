@@ -1,4 +1,8 @@
 
+<script src="https://cdn.jsdelivr.net/npm/vega@4.4.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc12"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@3.29.1"></script>
+
 {% include_relative renderjson.html %}
 {% include_relative listeners.html %}
 
@@ -406,6 +410,84 @@ function addOption(obj) {
 
 
 
+//////////////////////////////
+//
+// displayHoleHistogram --
+//
+
+
+function displayHoleHistogram(analysis) {
+	console.log("DISPLAY HOLE HISTOGRAM");
+
+	var histtext = analysis.DEBUGGING.HOLE_HISTOGRAM;
+	var histlist = histtext.split(/\r?\n/);
+
+	var found = 0;
+	var jj = "";
+
+	jj += '{\n';
+	jj += '  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc12.json",\n';
+	jj += '  "title": "Hole centroid distributions before and after drift correction",\n';
+	jj += '    "layer": [{\n';
+	jj += '\n';
+	jj += '	"data": {\n';
+	jj += '		"values": [\n';
+
+	var data;
+	var first = 1;
+	var max = histlist.length;
+	var zerocount = 0;
+	for (var i=0; i<max; i++) {
+		data = histlist[i].split(/\t/);
+		if ((data[1] == 0) && (data[2] == 0)) {
+			zerocount++;
+			if (zerocount > 3 || i < 3) {
+				continue;
+			}
+		}
+		if ((data[1] != 0) || (data[2] != 0)) {
+			zerocount = 0;
+		}
+		// found = 1;
+		if (!first) {
+			jj += ",\n";
+		}
+		jj += '{"category": "' + i  + '",\t';
+		jj += '"count": ' + data[1] + ',\t';
+		jj += '"countB": ' + data[2] + '}';
+		first = 0;
+	}
+
+	//		{"category": "-7",  "count": 0,   "countB": 0},
+	//		{"category": "-6",  "count": 10,  "countB": 0},
+	//		{"category": "-5",  "count": 12,  "countB": 0},
+	//		{"category": "-4",  "count": 15,  "countB": 0},
+	//		{"category": "-3",  "count": 19,  "countB": 0},
+	//		{"category": "-2",  "count": 39,  "countB": 0},
+
+	jj += '		]},\n';
+	jj += '\n';
+	jj += '      "layer": [{\n';
+	jj += '        "mark": "bar",\n';
+	jj += '        "encoding": {\n';
+	jj += '          "x": {"field": "category", "type": "ordinal", "axis": {"labelAngle": 90}, "sort": "count"},\n';
+	jj += '          "y": {"field": "count", "type": "quantitative"}\n';
+	jj += '        }\n';
+	jj += '      }, {\n';
+	jj += '        "mark": {"type": "bar", "opacity":0.7},\n';
+	jj += '        "encoding": {\n';
+	jj += '          "x": {"field": "category", "title": "pixel (0 indicates final position assignment of hole position for a pitch)", "type": "ordinal", "sort": "count"},\n';
+	jj += '          "y": {"field": "countB", "title": "hole count", "type": "quantitative"},\n';
+	jj += '          "color": {"value": "#dd0044"}\n';
+	jj += '        }\n';
+	jj += '      }\n';
+	jj += '    ]}\n';
+	jj += '  ]\n';
+	jj += '}\n';
+
+	var mydata = JSON.parse(jj);
+	vegaEmbed("#hole-histogram", mydata);
+}
 
 
 

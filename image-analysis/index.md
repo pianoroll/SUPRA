@@ -24,10 +24,19 @@ href="/midi-spec">MIDI file description page</a>.
 
 <div id="analysis"></div>
 
+<h1> Hole-position histogram</h1>
+
+The following plot shows histograms of hole centroid positions along the width of the
+piano roll.  The blue plot are the raw hole positions in the scan, the red plot shows
+their positions after drift correction.  The x-axis labels indicates the pixel position
+along the width of the image from bass side to treble side of the roll.  Scroll to the right
+to see histogram positions for more tracker bar positions. Intermediate spaces between
+tracker bar positions with 0 histogram counts are removed from the plot (otherwise
+the plot cannot be displayed).
+
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram"></div>
+
 <div style="height:1000px"></div>
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
-
-
-

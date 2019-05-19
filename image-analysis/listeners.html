@@ -97,6 +97,7 @@ function displayReport(id) {
 
 function doAction2(analysis) {
 	printInfo(analysis);
+	displayHoleHistogram(analysis);
 	var element = document.querySelector("#analysis");
 	if (!element) {
 		return;
