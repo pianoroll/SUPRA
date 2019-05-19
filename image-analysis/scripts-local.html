@@ -24,7 +24,7 @@ function printInfo(analysis) {
 	output += "<table>";
 
 	var druid = analysis.DRUID;
-	var tears = parseInt(analysis.EDGE_TEAR_COUNT);
+	var tearcount = parseInt(analysis.EDGE_TEAR_COUNT);
 	var badholes = parseInt(analysis.BAD_HOLE_COUNT);
 	var shifts = 0;
 	if (analysis.SHIFTS) {
@@ -55,13 +55,49 @@ function printInfo(analysis) {
 	output += "</td>";
 	output += "</tr>";
 
-	if (tears > 0) {
+	if (tearcount > 0) {
+		var maxtear = -1;
+		if (!analysis.TEARS) {
+			maxtear = 0;
+		}
+		var treble_tears = analysis.TEARS.TREBLE_TEARS;
+		var bass_tears = analysis.TEARS.BASS_TEARS;
+		if (treble_tears) {
+			treble_tears = treble_tears.TEAR;
+		}
+		if (bass_tears) {
+			bass_tears = bass_tears.TEAR;
+		}
+		if (treble_tears && !Array.isArray(treble_tears)) {
+			treble_tears = [ treble_tears ];
+		}
+		if (bass_tears && !Array.isArray(bass_tears)) {
+			bass_tears = [ bass_tears ];
+		}
+		var tears = [];
+		if (treble_tears) {
+			tears = tears.concat(treble_tears);
+		}
+		if (bass_tears) {
+			tears = tears.concat(bass_tears);
+		}
+		for (var j=0; j<tears.length; j++) {
+			var testtear = parseInt(tears[j].WIDTH_COL) / 300.0;
+			testtear = parseInt(Math.abs(testtear) * 100.0 + 0.5) / 100.0;
+			if (testtear > maxtear) { 
+				maxtear = testtear;
+			}
+		}
+
 		output += "<tr>";
 		output += "<td>";
 		output += "Edge tears:"
 		output += "</td>";
 		output += "<td>";
-		output += tears;
+		output += tearcount;
+		output += ", maximum depth: ";
+		output += maxtear;
+		output += " inches";
 		output += " (magenta colored boxes)";
 		output += "</td>";
 		output += "</tr>";
@@ -289,26 +325,24 @@ function printBadHoles(analysis) {
 
 function printTears(analysis) {
 	var output = "";
+
 	if (!analysis.TEARS) {
 		return output;
 	}
 	var treble_tears = analysis.TEARS.TREBLE_TEARS;
 	var bass_tears = analysis.TEARS.BASS_TEARS;
-
 	if (treble_tears) {
 		treble_tears = treble_tears.TEAR;
 	}
 	if (bass_tears) {
 		bass_tears = bass_tears.TEAR;
 	}
-
 	if (treble_tears && !Array.isArray(treble_tears)) {
 		treble_tears = [ treble_tears ];
 	}
 	if (bass_tears && !Array.isArray(bass_tears)) {
 		bass_tears = [ bass_tears ];
 	}
-
 	var tears = [];
 	if (treble_tears) {
 		tears = tears.concat(treble_tears);
@@ -510,13 +544,13 @@ function displayDriftAnalysis(analysis) {
 		data = datalines[i].replace(/^\s+/, "").split("\t");
 		pixel = parseInt(data[0]);
 		drift = parseFloat(data[1]);
-		jj += '{"pixel row": ' + pixel + ', "drift": ' + drift + '}';
+		jj += '{"feet": ' + (pixel/300/12) + ', "drift": ' + drift + '}';
 	}
 	
 	jj += '	]},\n';
 	jj += '  "mark": "line",\n';
 	jj += '  "encoding": {\n';
-	jj += '    "x": {"field": "pixel row", "type": "quantitative"},\n';
+	jj += '    "x": {"field": "feet", "type": "quantitative"},\n';
 	jj += '    "y": {"field": "drift", "type": "quantitative"}\n';
 	jj += '  }\n';
 	jj += '}\n';
