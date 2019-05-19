@@ -321,10 +321,10 @@ function printTears(analysis) {
 	var x, y, w, h;
 	var tearcolor = "#ff00ff";
 	for (var i=0; i<tears.length; i++) {
-		x = parseInt(tears[i].ORIGIN_ROW);
-		y = iw - parseInt(tears[i].ORIGIN_COL);
 		w = parseInt(tears[i].WIDTH_ROW);
 		h = parseInt(tears[i].WIDTH_COL);
+		x = parseInt(tears[i].ORIGIN_ROW);
+		y = iw - parseInt(tears[i].ORIGIN_COL) - h;
 		// display tear more visibly in view if too small:
 		if (w < 50) { w = 50; }
 		if (h < 50) { h = 50; }
