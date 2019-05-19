@@ -6,6 +6,408 @@
 // vim: ts=3
 
 
+//////////////////////////////
+//
+// printInfo --
+//
+
+function printInfo(analysis) {
+	var element = document.querySelector("#info");
+	if (!element) {
+		return;
+	}
+	var output = "";
+	output += "<table>";
+
+	var druid = analysis.DRUID;
+	var tears = parseInt(analysis.EDGE_TEAR_COUNT);
+	var badholes = parseInt(analysis.BAD_HOLE_COUNT);
+
+	var select = document.querySelector("select");
+	if (select) {
+		select.value = druid;
+	}
+
+	output += "<tr>";
+	output += "<td>";
+	output += "DRUID:";
+	output += "</td>";
+	output += "<td>";
+	output += "<a target='_blank' href='/uv/?id=" + druid + "'>";
+	output += druid;
+	output += "</a>";
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Edge tears:"
+	output += "</td>";
+	output += "<td>";
+	output += tears;
+	if (tears > 0) {
+		output += " (magenta colored boxes)";
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Suspicious holes:"
+	output += "</td>";
+	output += "<td>";
+	output += badholes;
+	if (tears > 0) {
+		output += " (green colored circles)";
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "</table>";
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displaySvgImage --
+//
+
+function displaySvgImage(analysis) {
+	var element = document.querySelector("#image");
+	if (!element) {
+		return;
+	}
+	var output = "";
+
+	var image_width = parseInt(analysis.IMAGE_LENGTH);
+	var image_height = parseInt(analysis.IMAGE_WIDTH);
+	var iw = parseInt(image_width);
+	var ih = parseInt(image_height);
+
+	output += "<svg style='height:100%'";
+	output += " viewBox='0 0 " + iw + " " + ih + "'";
+	output += "'>\n";
+
+	// Draw a light gray box for the full image region:
+	var scancolor = "#f0f0f0";
+	output += addRect(0, 0, iw, ih, scancolor);
+
+	var preleader_row = parseInt(analysis.PRELEADER_ROW);
+	var leader_row = parseInt(analysis.LEADER_ROW);
+	var hard_bass = parseInt(analysis.HARD_MARGIN_BASS);
+	var hard_treble = parseInt(analysis.HARD_MARGIN_TREBLE);
+	var rolltype = analysis.ROLL_TYPE;
+	var papercolor = "#aaaaaa";
+	if (rolltype.match(/welte/i) && rolltype.match(/red/i)) {
+		papercolor = "#bb0033";
+	}
+	output += addRect(leader_row, hard_treble, image_width-leader_row, ih - hard_treble - hard_bass, papercolor);
+
+	// draw paper outline
+	var path = "";
+	path += leader_row + "," + hard_treble + " ";
+	path += iw + "," + hard_treble + " ";
+	path += iw + "," + (ih - hard_bass) + " ";
+	path += leader_row + "," + (ih - hard_bass) + " ";
+	path += preleader_row + "," + ((ih - (hard_bass + hard_treble))/2) + " ";
+	path += leader_row + "," + hard_treble;
+	output += addPolygon(path, papercolor);
+
+	// draw music region
+	var first_hole = parseInt(analysis.FIRST_HOLE);
+	var last_hole = parseInt(analysis.LAST_HOLE);
+	var musiccolor = "#888888";
+	if (rolltype.match(/welte/i) && rolltype.match(/red/i)) {
+		musiccolor = "#990011";
+	}
+	var x = first_hole;
+	var y = hard_treble;
+	var w = last_hole - first_hole;
+	var h = ih - hard_bass - hard_treble;
+	output += addRect(x, y, w, h, musiccolor);
+
+	output += printMusicNotes(analysis)
+
+	output += printBadHoles(analysis)
+	output += printTears(analysis)
+
+	output += "</svg>";
+
+	// console.log("output", output);
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// printMusicNotes --
+//
+
+function printMusicNotes(analysis) {
+	var output = "";
+	var holes = analysis.HOLES.HOLE;
+	if (!holes) {
+		return;
+	}
+	var iw = parseInt(analysis.IMAGE_WIDTH);
+	var x, y, h, w;
+	var ontime, offtime;
+	var notecolor = "#000000;";
+
+	var count = 0;
+	for (var i=0; i<holes.length; i++) {
+		if (!holes[i].NOTE_ATTACK) {
+			continue;
+		}
+		count++;
+		ontime = parseInt(holes[i].NOTE_ATTACK);
+		offtime = parseInt(holes[i].OFF_TIME);
+		x = parseInt(holes[i].ORIGIN_ROW);
+		y = iw - parseInt(holes[i].ORIGIN_COL);
+		w = offtime - ontime;
+		h = parseInt(holes[i].WIDTH_COL);
+		output += addRect(x, y, w, h, notecolor, null, "fill-opacity='0.25'");
+	}
+
+console.log("NOTE ON ROLL", count);
+
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// printBadHoles --
+//
+
+function printBadHoles(analysis) {
+	var output = "";
+	if (!analysis.BADHOLES) {
+		return output;
+	}
+	var holes = analysis.BADHOLES.HOLE;
+	if (!Array.isArray(holes)) {
+		holes = [ holes ];
+	}
+	// var x, y, w, h;
+	var cx, cy;
+	var badcolor = "#00ff00;";
+	// Make large enough to see:
+	var radius = 50;
+	for (var i=0; i<holes.length; i++) {
+		// x = parseInt(holes[i].ORIGIN_ROW);
+		// y = parseInt(holes[i].ORIGIN_COL);
+		// output += addRect(x, y, w*40, h*40, badcolor, badcolor);
+		cx = parseInt(holes[i].CENTROID_ROW);
+		cy = parseInt(holes[i].CENTROID_COL);
+		output += addCircle(cx, cy, radius, badcolor);
+	}
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// printTears --
+//
+
+function printTears(analysis) {
+	var output = "";
+	if (!analysis.TEARS) {
+		return output;
+	}
+	var treble_tears = analysis.TEARS.TREBLE_TEARS;
+	var bass_tears = analysis.TEARS.BASS_TEARS;
+
+	if (treble_tears) {
+		treble_tears = treble_tears.TEAR;
+	}
+	if (bass_tears) {
+		bass_tears = bass_tears.TEAR;
+	}
+
+	if (treble_tears && !Array.isArray(treble_tears)) {
+		treble_tears = [ treble_tears ];
+	}
+	if (bass_tears && !Array.isArray(bass_tears)) {
+		bass_tears = [ bass_tears ];
+	}
+
+	var tears = [];
+	if (treble_tears) {
+		tears = tears.concat(treble_tears);
+	}
+	if (bass_tears) {
+		tears = tears.concat(bass_tears);
+	}
+
+	var iw = parseInt(analysis.IMAGE_WIDTH);
+	var x, y, w, h;
+	var tearcolor = "#ff00ff";
+	for (var i=0; i<tears.length; i++) {
+		x = parseInt(tears[i].ORIGIN_ROW);
+		y = iw - parseInt(tears[i].ORIGIN_COL);
+		w = parseInt(tears[i].WIDTH_ROW);
+		h = parseInt(tears[i].WIDTH_COL);
+		// display tear more visibly in view if too small:
+		if (w < 50) { w = 50; }
+		if (h < 50) { h = 50; }
+		output += addRect(x, y, w, h, tearcolor);
+	}
+
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// addCircle --
+//
+
+function addCircle(cx, cy, radius, fillcolor) {
+	var output = "";
+	output += "<circle cx='";
+	output += cx;
+	output += "' cy='";
+	output += cy;
+	output += "' r='";
+	output += radius;
+	output += "' style='";
+	output += "fill:" + fillcolor;
+	output += "'/>\n";
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// addPolygon --
+//
+
+function addPolygon(path, fillcolor) {
+	var output = "";
+	output += "<polygon points='";
+	output += path;
+	output += "' ";
+	output += "style='"
+	output += "fill: ";
+	output += fillcolor;
+	output += "'";
+	output += "/>\n";
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// addRect --
+//
+
+function addRect(x, y, w, h, fillcolor, strokecolor, parameter) {
+	var output = "";
+	output += " <rect x='";
+	output += x;
+	output += "' y='";
+	output += y;
+	output += "' width='";
+	output += w;
+	output += "' height='";
+	output += h;
+	output += "'";
+	output += " style='";
+	if (fillcolor) {
+		output += " fill: ";
+		output += fillcolor;
+		output += ";";
+	}
+	if (strokecolor) {
+		output += " stroke: ";
+		output += strokecolor;
+		output += ";";
+	}
+	output += "'";
+	if (parameter) {
+		output += " ";
+		output += parameter;
+	}
+	output += "/>\n";
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// displayMenu --
+//
+
+function displayMenu(rollinfo) {
+	var element = document.querySelector("#menu");
+	if (!element) {
+		reutrn;
+	}
+	
+	var output = "<select onchange='displayReport(this.value)'>";
+	for (var i=0; i<rollinfo.length; i++) {
+		output += addOption(rollinfo[i]);
+	}
+	output += "</select>";
+
+	element.innerHTML = output;
+
+}
+
+
+//////////////////////////////
+//
+// addOption --
+//
+
+function addOption(obj) {
+	var output = "";
+	output += "<option value='";
+	output += obj.DRUID;
+	output += "'>";
+
+	output += obj.DRUID;
+	if (obj.LABEL) {
+		output += ": ";
+		output += obj.LABEL.replace("Welte-Mignon", "WM");
+	}
+	output += ": ";
+
+	if (obj.COMPOSER) {
+		output += obj.COMPOSER.replace(/,.*$/, "");
+	}
+	if (obj.COMPOSER && obj.PERFORMER) {
+		output += "/";
+	}
+	if (obj.PERFORMER) {
+		output += obj.PERFORMER.replace(/,.*$/, "");
+	}
+	if (obj.TITLE) {
+		if (obj.COMPOSER || obj.PERFORMER) {
+			output += ": ";
+		}
+		output += obj.TITLE;
+	}
+
+	output += "</option>";
+	return output;
+}
+
+
+
+
+
 
 </script>
 

@@ -184,6 +184,7 @@ function displayScanStats(list, selector) {
 	output += "<th title='Sort by tiny-hole count (holes less than 1/6 the size of a punch)' onclick='SortByNumber(11, \"#scanStats\", true)'>Tiny&nbsp;holes</th>";
 	output += "<th title='Sort by dust score (parts-per-million)' onclick='SortByNumber(12, \"#scanStats\", true)'>Dust</th>";
 	output += "<th title='Sort by rendered tempo' onclick='SortByNumber(13, \"#scanStats\", true)'>Tempo</th>";
+	output += "<th title='Link to Image analysis report'>Report</th>";
 	output += "</tr>";
 	output += "</thead>";
 
@@ -385,11 +386,14 @@ function displayScanStats(list, selector) {
 		}
 		output += "</td>";
 
-
-
+		output += "<td style='text-align:center;'>";
+		output += "<a target='_blank' href='/image-analysis/?id=";
+		output += list[i].DRUID;
+		output += "'>";
+		output += "X";
+		output += "</a>";
+		output += "</td>";
 	}
-
-
 
 	output += "</tr>";
 	output += "</tbody>";

@@ -44,24 +44,49 @@ document.addEventListener("DOMContentLoaded", function () {
 		request.send();
 	}
 
-	var url = "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/analysis/";
-	var file = "zw904vm6502_analysis.txt";
-	url = file;
-	// url = "https://github.com/pianoroll/SUPRA/blob/gh-pages/image-analysis/zw904vm6502_analysis.txt.bz2?raw=true";
+	if (CGI.id) {
+		displayReport(CGI.id);
+	} else {
+		displayReport("fg074rf2950");
+	}
+
+});
+
+
+
+//////////////////////////////
+//
+// displayReport --
+//
+
+function displayReport(id) {
+	if (!id) {
+		id = "zw904vm6502";
+	}
+
+	if (id) {
+		var select = document.querySelector("select");
+		if (select) {
+			select.value = id;
+		}
+	}
+
+	var url = "https://bitbucket.org/craigsapp/piano-roll-analyses/raw/master/";
+	url += id;
+	url += "_analysis.txt.bz2";
 
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
-	// request.responseType = 'arraybuffer';
-	request.send();
+	request.responseType = 'arraybuffer';
 	request.addEventListener("load", function () {
-		//var bytes = new Uint8Array(request.response);
-		//var content = bzip2.simple(bzip2.array(bytes));
 		var aton2 = new ATON;
-		ANALYSIS = aton2.parse(this.responseText).ROLLINFO;
+		var bytes = new Uint8Array(request.response);
+		var content = bzip2.simple(bzip2.array(bytes));
+		ANALYSIS = aton2.parse(content).ROLLINFO;
 		doAction2(ANALYSIS);
 	});
-
-});
+	request.send();
+}
 
 
 
@@ -71,11 +96,18 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 
 function doAction2(analysis) {
+	printInfo(analysis);
 	var element = document.querySelector("#analysis");
 	if (!element) {
 		return;
 	}
+	element.innerHTML = "";
+
+	renderjson.set_show_to_level(1);
+	// renderjson.set_icons("+", "-");
+
 	element.appendChild(renderjson(analysis));
+	displaySvgImage(analysis);
 }
 
 
@@ -87,6 +119,7 @@ function doAction2(analysis) {
 
 function doAction(rollInfo) {
 	DisplayStats(ROLLINFO);
+	displayMenu(ROLLINFO);
 }
 
 
