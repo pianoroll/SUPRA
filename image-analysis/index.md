@@ -24,6 +24,16 @@ href="/midi-spec">MIDI file description page</a>.
 
 <div id="analysis"></div>
 
+
+
+
+<h1> Drift analysis</h1>
+
+<div style="width:100%;" id="drift"></div>
+
+
+
+
 <h1> Hole-position histogram</h1>
 
 The following plot shows histograms of hole centroid positions along the width of the
@@ -34,9 +44,15 @@ to see histogram positions for more tracker bar positions. Intermediate spaces b
 tracker bar positions with 0 histogram counts are removed from the plot (otherwise
 the plot cannot be displayed).
 
-<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-0"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-1"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-2"></div>
+<div style="overflow-y:visible; overflow-x: scroll; width:100%;" id="hole-histogram-3"></div>
 
-<div style="height:1000px"></div>
+<div style="height:300px"></div>
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
+
+
+

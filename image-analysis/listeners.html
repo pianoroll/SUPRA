@@ -97,7 +97,11 @@ function displayReport(id) {
 
 function doAction2(analysis) {
 	printInfo(analysis);
-	displayHoleHistogram(analysis);
+	displayDriftAnalysis(analysis);
+	displayHoleHistogram(analysis, 0);
+	displayHoleHistogram(analysis, 1);
+	displayHoleHistogram(analysis, 2);
+	displayHoleHistogram(analysis, 3);
 	var element = document.querySelector("#analysis");
 	if (!element) {
 		return;

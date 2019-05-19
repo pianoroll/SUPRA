@@ -26,6 +26,13 @@ function printInfo(analysis) {
 	var druid = analysis.DRUID;
 	var tears = parseInt(analysis.EDGE_TEAR_COUNT);
 	var badholes = parseInt(analysis.BAD_HOLE_COUNT);
+	var shifts = 0;
+	if (analysis.SHIFTS) {
+		if (Array.isArray(analysis.SHIFTS)) {
+			shifts = parseInt(analysis.SHIFTS[0]);
+			
+		}
+	}
 
 	var select = document.querySelector("select");
 	if (select) {
@@ -40,32 +47,49 @@ function printInfo(analysis) {
 	output += "<a target='_blank' href='/uv/?id=" + druid + "'>";
 	output += druid;
 	output += "</a>";
+	output += "(";
+	output += "<a target='_blank' href='/uv/?id=" + druid + "'>";
+	output += "view image";
+	output += "</a>";
+	output += ")";
 	output += "</td>";
 	output += "</tr>";
 
-	output += "<tr>";
-	output += "<td>";
-	output += "Edge tears:"
-	output += "</td>";
-	output += "<td>";
-	output += tears;
 	if (tears > 0) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Edge tears:"
+		output += "</td>";
+		output += "<td>";
+		output += tears;
 		output += " (magenta colored boxes)";
+		output += "</td>";
+		output += "</tr>";
 	}
-	output += "</td>";
-	output += "</tr>";
 
-	output += "<tr>";
-	output += "<td>";
-	output += "Suspicious holes:"
-	output += "</td>";
-	output += "<td>";
-	output += badholes;
-	if (tears > 0) {
+	if (badholes > 0) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Suspicious holes:"
+		output += "</td>";
+		output += "<td>";
+		output += badholes;
 		output += " (green colored circles)";
+		output += "</td>";
+		output += "</tr>";
 	}
-	output += "</td>";
-	output += "</tr>";
+
+	if (shifts > 0) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Shifts:"
+		output += "</td>";
+		output += "<td>";
+		output += shifts;
+		output += " (vertical cyan lines)";
+		output += "</td>";
+		output += "</tr>";
+	}
 
 	output += "</table>";
 	element.innerHTML = output;
@@ -132,10 +156,10 @@ function displaySvgImage(analysis) {
 	var h = ih - hard_bass - hard_treble;
 	output += addRect(x, y, w, h, musiccolor);
 
-	output += printMusicNotes(analysis)
-
-	output += printBadHoles(analysis)
-	output += printTears(analysis)
+	output += printShifts(analysis);
+	output += printBadHoles(analysis);
+	output += printTears(analysis);
+	output += printMusicNotes(analysis);
 
 	output += "</svg>";
 
@@ -147,11 +171,53 @@ function displaySvgImage(analysis) {
 
 //////////////////////////////
 //
+// printShifts --
+//
+
+function printShifts(analysis) {
+	var output = "";
+	var SHIFTS = analysis.SHIFTS;
+	if (!SHIFTS) {
+		return output;
+	}
+	if (!Array.isArray(SHIFTS)) {
+		return output;
+	}
+	var shifts = SHIFTS[1].SHIFT;
+	if (!shifts) {
+		return output;
+	}
+	if (!Array.isArray(shifts)) {
+		shifts = [ shifts ];
+	}
+
+	var shiftcolor = "#00ffff;";
+	var iw = parseInt(analysis.IMAGE_WIDTH);
+	var movement;
+	// make vertical line more visible:
+	var mfactor = 3;
+	var x;
+	for (var i=0; i<shifts.length; i++) {
+		movement = Math.abs(parseInt(shifts[i].MOVEMENT));
+		x = parseInt(shifts[i].ROW);
+		output += "<line x1='" + x + "' y1='" + 0 + "' x2='" + x + "'y2='" + iw + "' ";
+		output += "style='";
+		output += "stroke: " + shiftcolor + "stroke-width: " + (movement*mfactor);
+		output += "' />\n";
+	}
+
+	return output;
+}
+
+
+
+//////////////////////////////
+//
 // printMusicNotes --
 //
 
 function printMusicNotes(analysis) {
-	var output = "";
+	var output = [];
 	var holes = analysis.HOLES.HOLE;
 	if (!holes) {
 		return;
@@ -173,12 +239,12 @@ function printMusicNotes(analysis) {
 		y = iw - parseInt(holes[i].ORIGIN_COL);
 		w = offtime - ontime;
 		h = parseInt(holes[i].WIDTH_COL);
-		output += addRect(x, y, w, h, notecolor, null, "fill-opacity='0.25'");
+		output.push(addRect(x, y, w, h, notecolor, null, "fill-opacity='0.25'"));
 	}
 
-console.log("NOTE ON ROLL", count);
+	console.log("NOTE COUNT ON ROLL", count);
 
-	return output;
+	return output.join("\n");
 }
 
 
@@ -199,6 +265,7 @@ function printBadHoles(analysis) {
 	}
 	// var x, y, w, h;
 	var cx, cy;
+	var iw = parseInt(analysis.IMAGE_WIDTH);
 	var badcolor = "#00ff00;";
 	// Make large enough to see:
 	var radius = 50;
@@ -207,7 +274,7 @@ function printBadHoles(analysis) {
 		// y = parseInt(holes[i].ORIGIN_COL);
 		// output += addRect(x, y, w*40, h*40, badcolor, badcolor);
 		cx = parseInt(holes[i].CENTROID_ROW);
-		cy = parseInt(holes[i].CENTROID_COL);
+		cy = iw - parseInt(holes[i].CENTROID_COL);
 		output += addCircle(cx, cy, radius, badcolor);
 	}
 	return output;
@@ -412,11 +479,61 @@ function addOption(obj) {
 
 //////////////////////////////
 //
+// displayDriftAnalysis --
+//
+
+function displayDriftAnalysis(analysis) {
+	if (!analysis.DRIFT) {
+		return;
+	}
+	var dstring = analysis.DRIFT.DATA;
+	if (!dstring) {
+		return;
+	}
+
+	var datalines = dstring.split(/\r?\n/);
+	var jj = "";
+	var pixel, drift;
+	var first = 1;
+	jj += '{\n';
+	jj += '"$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc12.json",\n';
+	jj += '"width": 1000,\n';
+	jj += '"description": "Drift analysis",\n';
+	jj += '"data": {\n';
+	jj += '	"values": [\n';
+
+	for (var i=0; i<datalines.length; i++) {
+		if (!first) {
+			jj += ",\n";
+		}
+		first = 0;
+		data = datalines[i].replace(/^\s+/, "").split("\t");
+		pixel = parseInt(data[0]);
+		drift = parseFloat(data[1]);
+		jj += '{"pixel row": ' + pixel + ', "drift": ' + drift + '}';
+	}
+	
+	jj += '	]},\n';
+	jj += '  "mark": "line",\n';
+	jj += '  "encoding": {\n';
+	jj += '    "x": {"field": "pixel row", "type": "quantitative"},\n';
+	jj += '    "y": {"field": "drift", "type": "quantitative"}\n';
+	jj += '  }\n';
+	jj += '}\n';
+
+	var mydata = JSON.parse(jj);
+	vegaEmbed("#drift", mydata);
+}
+
+
+
+//////////////////////////////
+//
 // displayHoleHistogram --
 //
 
 
-function displayHoleHistogram(analysis) {
+function displayHoleHistogram(analysis, region) {
 	console.log("DISPLAY HOLE HISTOGRAM");
 
 	var histtext = analysis.DEBUGGING.HOLE_HISTOGRAM;
@@ -435,20 +552,9 @@ function displayHoleHistogram(analysis) {
 
 	var data;
 	var first = 1;
-	var max = histlist.length;
-	var zerocount = 0;
-	for (var i=0; i<max; i++) {
+	var max = 1024;
+	for (var i=region*max; i<(region+1)*max; i++) {
 		data = histlist[i].split(/\t/);
-		if ((data[1] == 0) && (data[2] == 0)) {
-			zerocount++;
-			if (zerocount > 3 || i < 3) {
-				continue;
-			}
-		}
-		if ((data[1] != 0) || (data[2] != 0)) {
-			zerocount = 0;
-		}
-		// found = 1;
 		if (!first) {
 			jj += ",\n";
 		}
@@ -486,7 +592,7 @@ function displayHoleHistogram(analysis) {
 	jj += '}\n';
 
 	var mydata = JSON.parse(jj);
-	vegaEmbed("#hole-histogram", mydata);
+	vegaEmbed("#hole-histogram-" + region, mydata);
 }
 
 
