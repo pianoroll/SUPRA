@@ -9,7 +9,9 @@ summary:
 
 # About SUPRA #
 
-A description of SUPRA will go here.
+[Paper](https://ccrma.stanford.edu/~kittyshi/pianoroll/Supra-ISMIR2019.pdf)
+<a href "https://ccrma.stanford.edu/~kittyshi/pianoroll/Supra-ISMIR2019.pdf"> SUPRA Paper </a>
+
 
 <div style="height:500px"></div>
 
