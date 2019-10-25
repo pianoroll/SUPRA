@@ -1,0 +1,11 @@
+Copyright 2019 Zhengshan (Kitty) Shi and Craig Stuart Sapp
+
+SUPRA MIDI files and audio renderings may be used under the CC
+BY-NC-SA 4.0 License:
+     https://creativecommons.org/licenses/by-nc-sa/4.0
+
+Image rights reside with the Stanford Libraries' digital repository.
+To obtain permission to publish or reproduce the piano-roll images,
+please contact the Stanford Archive of Recorded Sound at
+soundarchive@stanford.edu.
+
