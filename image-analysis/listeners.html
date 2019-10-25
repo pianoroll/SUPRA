@@ -1,0 +1,136 @@
+
+{% include scripts/scripts-common.html %}
+
+<script>{% include scripts/aton.js %}</script>
+<script>{% include_relative bzip2.js %}</script>
+
+<script>
+// vim: ts=3
+
+var aton = new ATON;
+var PEOPLE = aton.parse(`{% include data/people.aton %}`).PERSON;
+var PEEPS = {};
+for (var i=0; i<PEOPLE.length; i++) {
+	PEEPS[PEOPLE[i].NAME] = PEOPLE[i];
+}
+
+var CGI = {};      // CGI parameters from URL
+var ROLLINFO = [];
+var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+var ANALYSIS = {};
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+	HighlightLinkInHeader();
+	CGI = GetCgiParameters();
+
+
+	if (sessionStorage.ROLLINFO) {
+		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
+		doAction(ROLLINFO);
+	} else {
+		var request = new XMLHttpRequest();
+		request.addEventListener("load", function () {
+			var aton = new ATON;
+			ROLLINFO = aton.parse(this.responseText).ROLL;
+			doAction(ROLLINFO);
+		});
+		request.open("GET", ATONINDEX);
+		request.send();
+	}
+
+	if (CGI.id) {
+		displayReport(CGI.id);
+	} else {
+		displayReport("fg074rf2950");
+	}
+
+});
+
+
+
+//////////////////////////////
+//
+// displayReport --
+//
+
+function displayReport(id) {
+	if (!id) {
+		id = "zw904vm6502";
+	}
+
+	if (id) {
+		var select = document.querySelector("select");
+		if (select) {
+			select.value = id;
+		}
+	}
+
+	var url = "https://bitbucket.org/craigsapp/piano-roll-analyses/raw/master/";
+	url += id;
+	url += "_analysis.txt.bz2";
+
+	var request = new XMLHttpRequest();
+	request.open("GET", url);
+	request.responseType = 'arraybuffer';
+	request.addEventListener("load", function () {
+		var aton2 = new ATON;
+		var bytes = new Uint8Array(request.response);
+		var content = bzip2.simple(bzip2.array(bytes));
+		ANALYSIS = aton2.parse(content).ROLLINFO;
+		doAction2(ANALYSIS);
+	});
+	request.send();
+}
+
+
+
+//////////////////////////////
+//
+// doAction2 --
+//
+
+function doAction2(analysis) {
+	printInfo(analysis);
+	displayDriftAnalysis(analysis);
+	displayHoleHistogram(analysis, 0);
+	displayHoleHistogram(analysis, 1);
+	displayHoleHistogram(analysis, 2);
+	displayHoleHistogram(analysis, 3);
+	displayHoleHistogram(analysis, 4);
+	displayHoleHistogram(analysis, 5);
+	displayHoleHistogram(analysis, 6);
+	displayHoleHistogram(analysis, 7);
+	var element = document.querySelector("#analysis");
+	if (!element) {
+		return;
+	}
+	element.innerHTML = "";
+
+	renderjson.set_show_to_level(1);
+	// renderjson.set_icons("+", "-");
+
+	element.appendChild(renderjson(analysis));
+	displaySvgImage(analysis);
+}
+
+
+
+//////////////////////////////
+//
+// doAction --
+//
+
+function doAction(rollInfo) {
+	DisplayStats(ROLLINFO);
+	displayMenu(ROLLINFO);
+}
+
+
+
+</script>
