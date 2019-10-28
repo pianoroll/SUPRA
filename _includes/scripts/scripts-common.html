@@ -295,6 +295,20 @@ function MakeRollTableRows(list, peeps) {
 		output += "</span>";
 		output += "</td>";
 
+		output += "<td>";
+		// http://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp/bc072xf6791.mp3
+		output += "<span class='mp3'>";
+		output += "<a title='Link to MP3 audio file' target='audio' href='";
+		output += "https://stacks.stanford.edu/file/";
+		output += list[i].DRUID.trim();
+		output += "/";
+		output += list[i].DRUID.trim();
+		output += "_pm.wav'>";
+		output += "WAV";
+		output += "</a>";
+		output += "</span>";
+		output += "</td>";
+
 		output += "</tr>";
 	}
 	return output;
