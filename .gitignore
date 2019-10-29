@@ -9,3 +9,5 @@ Icon*
 _site
 Gemfile.lock
 .jekyll-metadata
+midi-exp0
+*.zip

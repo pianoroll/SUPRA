@@ -1,0 +1,110 @@
+#!/usr/bin/perl
+#
+# Description: The script creates type-0 MIDI files for
+#     rendering MIDI files to audio (the program we used
+#     has problems with timing in type-1 format).
+#
+# vim: ts=3
+#
+
+use File::Path 'rmtree';
+use strict;
+
+# The type0 program is part of the https://pianoroll/midiroll repository:
+# https://github.com/pianoroll/midiroll/blob/master/tools/type0.cppo
+# The reason for creating the type-0 MIDI file versions is for rendering
+# into audio:  the rendering program does not handle tempo changes properly,
+# so this type-0 MIDI file conversion converts the tempo meta messages into
+# tick values at tempo 60.
+my $type0 = `which type0`;
+chomp $type0;
+if ($type0 =~ /^\s*$/) {
+	$type0 = "../midiroll/bin/type0";
+}
+die "cannot find type0 program" if $type0 =~ /^\s*$/;
+# type0 -a is equivalent to type0 -sMTXPC -c0
+$type0 .= " -a";
+
+my $basedir = $ARGV[0];
+my $sourcedir = "midi-exp";
+my $targetdir = "midi-exp0";
+
+die "Too dangerous: $targetdir" if $targetdir =~ /^\./;
+die "Very dangerous: $targetdir" if $targetdir =~ /^\//;
+
+processDirectory($basedir);
+
+sub processDirectory {
+	my ($dir) = @_;
+	my @dirlist = getDirectories($dir);
+	for (my $i=0; $i<@dirlist; $i++) {
+		my $subdir = $dirlist[$i];
+		if ($subdir eq $sourcedir) {
+			createMidi0($dir, $sourcedir, $targetdir);
+		} elsif ($subdir eq $targetdir) {
+			next;
+		} elsif ($subdir =~ /-raw$/) {
+			next;
+		} else {
+			processDirectory("$dir/$subdir");
+		}
+	}
+}
+
+
+##############################
+##
+## createMidi0 --
+##
+
+sub createMidi0 {
+	my ($base, $srcdir, $targdir) = @_;
+	my $sdir = "$base/$srcdir";
+	die "$sdir expected to exist" if !-d $sdir;
+	my $tdir = "$base/$targdir";
+	die "Bad target $tdir" if $tdir eq "";
+	die "Bad target $tdir" if $tdir =~ /^\./;
+	die "Bad target $tdir" if $tdir =~ /^\//;
+	die "Bad target $tdir" if $tdir =~ /\*/;
+	die "Bad target $tdir" if $tdir =~ /\?/;
+	die "Bad target $tdir" if $tdir !~ /$targdir/;
+	if (-d $tdir) {
+		rmtree([$tdir]);
+	}
+	mkdir($tdir, 0755);
+	die "Cannot create directory $tdir" if !-d $tdir;
+
+	my @files = glob("$sdir/*_exp.mid");
+	foreach my $file (@files) {
+		my $basename = $file;
+		$basename =~ s/.*\///;
+		$basename =~ s/_exp\.mid$//;
+		my $outname = $basename . "_exp0.mid";
+		my $targname = "$tdir/$outname";
+		print "Creating $targname from $file...\n";
+		`$type0 $file $targname`;
+	}
+}
+
+
+
+##############################
+##
+## getDirectories --
+##
+
+sub getDirectories {
+	my ($dir) = @_;
+	opendir(DIR, $dir) or die "Cannot open $dir";
+	my @list;
+	while (my $file = readdir(DIR)) {
+		next if $file =~ /^\./;
+		next if !-d "$dir/$file";
+		$list[@list] = $file;
+	}
+	closedir(DIR);
+	return sort @list;
+}
+
+
+
