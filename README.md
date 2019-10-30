@@ -6,7 +6,7 @@ This repository contains MIDI files extracted from scans of piano
 rolls collected by the Stanford Libraries, a majority coming from
 the [Condon Collection](https://library.stanford.edu/collections/denis-condon-collection-reproducing-pianos-and-rolls).
 The [SUPRA](https://supra.stanford.edu) website contains links to
-the original scans of the rolls in the Libraries's digital repository,
+the original scans of the rolls in the Libraries' digital repository,
 and this repository collects the individual MIDI files of notes
 extracted from each scan.
 
@@ -47,13 +47,56 @@ MIDI files.  This section describes these two version of MIDI files
 as how to create other derivatives of the MIDI files.  Here is a schematic 
 of the productions of the MIDI files:
 
+<img width="1143" alt="Screen Shot 2019-10-29 at 8 30 24 PM" src="https://user-images.githubusercontent.com/3487289/67826796-fbe48880-fa8a-11e9-9e49-d5799142dc3e.png">
+
+### Raw MIDI files ###
+
+For each roll brand/format, there is a subdirectory called `midi-raw`,
+such as for the [Welte-Mignon red
+rolls](https://github.com/pianoroll/SUPRA/tree/master/welte-red).
+This directory contains the MIDI files that represent each hole on
+the piano roll as a separate note.  There are usually multiple holes
+representing each musical note.  The raw MIDI files also represent
+the expression holes (dynamics and pedaling) as audible notes.
+
+The raw MIDI files are suitable for (1) projects that want to
+implement their own expressive MIDI files, and (2) audio-to-image
+alignment applications.  The raw MIDI files are not intended for
+listening, although it is interesting to listen to the machine-gun
+version of the music that is produced.  The automatically identified
+note attacks are played loudly, while the hole-notes that should
+be merged with the attacks are played quietly to give an approximate
+impression of the music that is contained on the roll.  No dynamics
+are otherwise given to the notes (see the expression MIDI files
+below).
 
 
+### Expression MIDI files ###
+
+The expression MIDI files take the expression holes from the raw MIDI files
+and convert them into note attacks velocities, as well as generate sustain
+and soft pedaling.  Notes representing the expression holes are removed
+from the final expression MIDI file.
 
 
+## Further derivative files ##
 
 
+### Type-0 Expression MIDI files ###
+
+For audio rendering of the expression MIDI files, it was necessary
+for us to convert the files into type-0 MIDI files with the tempo
+changes emulating roll acceleration converted into tick values.
+For projects needing similar accuracy, the [type0](https://github.com/pianoroll/midiroll/blob/master/tools/type0.cpp) utility program can be used
+to generate the type-0 MIDI file from the expression MIDI file.
 
 
+### Audio renderings ###
+
+For the best listening experience you should listen to the 
+audio renderings of the expression MIDI files that are found 
+on the [SUPRA](https://supra.stanford.edu) website.  These
+audio files were rendered using the Ivory Keys II software
+synthesizer.
 
 
