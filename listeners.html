@@ -40,12 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	if (sessionStorage.ROLLINFO) {
+		console.log("STORED ROLL INFO:", sessionStorage.ROLLINFO);
 		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
 		doAction(ROLLINFO);
 	} else {
 		var request = new XMLHttpRequest();
 		request.addEventListener("load", function () {
 			var aton = new ATON;
+			console.log("DOWNLOADED ROLL INFO", this.responseText);
 			ROLLINFO = aton.parse(this.responseText).ROLL;
 			sessionStorage.ROLLINFO = JSON.stringify(ROLLINFO);
 			doAction(ROLLINFO);
