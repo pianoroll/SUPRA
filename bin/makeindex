@@ -2,9 +2,14 @@
 
 use strict;
 
-my $rolltext = "rolltext";
+my $rolltext = `which rolltext`;
+chomp $rolltext;
+die "Cannot find program $rolltext" if $rolltext =~ /^\s*$/;
 
-my @list = sort glob "*/midi-exp/*-exp.mid";
+my @list = sort glob "*/midi-exp/*_exp.mid";
+
+
+print STDERR "FILES TO ADD TO INDEX:\n", join("\n", @list), "\n";
 
 foreach my $item (@list) {
 	print "\@\@BEGIN: ROLL\n";
