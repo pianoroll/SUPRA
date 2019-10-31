@@ -9,22 +9,85 @@ die "Cannot find program $rolltext" if $rolltext =~ /^\s*$/;
 my @list = sort glob "*/midi-exp/*_exp.mid";
 
 
+# required parameters that need to be added if not
+# found in MIDI file metadata:
 my $druid;
+my $label;
+my $title;
+my $composer;
+my $performer;
+my $searchworks;
+my $purl;
+my $roll_type;
+
 foreach my $item (@list) {
 	print "\@\@BEGIN: ROLL\n";
 	my $data = `rolltext $item`;
-	if ($data !~ /\@DRUID/) {
+
+	print $data;
+
+	if ($data !~ /\@DRUID:/) {
 		$druid = $item;
 		$druid =~ s/.*\///;
 		$druid =~ s/_.*//;
 		print STDERR "ITEM $item does not have a druid\n";
 		print STDERR"\tADDING IT AUTOMATICALLY: $druid\n";
-	}
-	print $data;
-	if ($druid !~ /^\s*$/) {
 		print "\@DRUID:\t\t$druid\n";
+		$druid = "";
 	}
-	$druid = "";
+
+	if ($data !~ /\@LABEL:/) {
+		$label = "???";
+		print STDERR "ITEM $item does not have a label\n";
+		print STDERR"\tADDING IT AUTOMATICALLY: $label\n";
+		print "\@LABEL:\t\t$label\n";
+		$label = "";
+	}
+
+	if ($data !~ /\@TITLE:/) {
+		$title = "???";
+		print STDERR "ITEM $item does not have a title\n";
+		print STDERR"\tADDING IT AUTOMATICALLY: $title\n";
+		print "\@TITLE:\t\t$title\n";
+		$title = "";
+	}
+
+	if ($data !~ /\@COMPOSER:/) {
+		$composer = "???";
+		print STDERR "ITEM $item does not have a composer\n";
+		print STDERR"\tADDING IT AUTOMATICALLY: $composer\n";
+		print "\@COMPOSER:\t\t$composer\n";
+		$composer = "";
+	}
+
+	if ($data !~ /\@PERFORMER:/) {
+		$performer = "???";
+		print STDERR "ITEM $item does not have a performer\n";
+		print STDERR"\tADDING IT AUTOMATICALLY: $performer\n";
+		print "\@PERFORMER:\t\t$performer\n";
+		$performer = "";
+	}
+
+	if ($data !~ /\@ROLL_TYPE:/) {
+		$roll_type = "???";
+		print STDERR "ITEM $item does not have a roll_type\n";
+		print STDERR"\tADDING IT AUTOMATICALLY: $roll_type\n";
+		print "\@ROLL_TYPE:\t\t$roll_type\n";
+		$roll_type = "";
+	}
+
+	if ($data !~ /\@SEARCHWORKS:/) {
+		print STDERR "ITEM $item does not have a searchworks link\n";
+		print "\@SEARCHWORKS:\n";
+		$searchworks = "";
+	}
+
+	if ($data !~ /\@PURL:/) {
+		print STDERR "ITEM $item does not have a purl link\n";
+		print "\@PURL:\n";
+		$purl = "";
+	}
+
 	print "\@\@END: ROLL\n\n\n";
 }
 

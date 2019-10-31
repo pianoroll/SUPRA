@@ -58,6 +58,12 @@
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -1306,6 +1312,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -1342,6 +1354,9 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @DRUID:		bz327kz4744
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -1408,6 +1423,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -1726,6 +1747,13 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		ch718mg2581
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -1792,6 +1820,12 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -1977,6 +2011,9 @@
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
 @DRUID:		cs175wr2428
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -2710,6 +2747,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -2850,6 +2893,12 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @LICENSE: 		CC BY-NC-SA 4.0
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -4108,6 +4157,7 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 583
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -5705,6 +5755,9 @@
 @AVG_HOLE_WIDTH: 24.09px
 @HOLE_EXTENSION: 22.500000px
 @DRUID:		fv104hn7521
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -5815,6 +5868,9 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @DRUID:		fy803vj4057
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -6282,6 +6338,13 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		gg384dv5303
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -6493,6 +6556,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -6704,6 +6773,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -7149,6 +7224,7 @@
 @SOURCE: 		SUPRA: Stanford University Piano Roll Archive
 @LICENSE: 		CC BY-NC-SA 4.0
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -7360,6 +7436,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -7433,6 +7515,7 @@
 @PURL: 			https://purl.stanford.edu/gx107hd3026
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/11368226
 @CALLNUM: 		Stanford Libraries CONDON ROLL 769
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -7793,6 +7876,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -8162,6 +8251,7 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -8479,6 +8569,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		hm373bm3807
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -8765,6 +8862,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -8977,6 +9080,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -9115,6 +9224,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -9178,6 +9293,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -9199,6 +9320,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		hx184ww0780
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -9707,6 +9835,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -9950,6 +10084,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		jg699wz4435
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -10014,6 +10155,12 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @LICENSE: 		CC BY-NC-SA 4.0
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -10450,6 +10597,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -10619,6 +10772,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		jn782fq7439
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -10905,6 +11065,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -11042,6 +11208,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -11403,6 +11575,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -11466,6 +11644,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -12304,6 +12488,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		kt852zf4103
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -13111,6 +13302,12 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @EXP_WELTE_LOUD: 	70
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -13430,6 +13627,13 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		mf320jq4997
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -13716,6 +13920,12 @@
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -14374,6 +14584,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -14439,6 +14655,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -14475,6 +14697,9 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		mx460bt7026
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -14622,6 +14847,7 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -14643,6 +14869,13 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		mz508vq7890
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -14664,6 +14897,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		nf274ng7905
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -15171,6 +15411,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -15531,6 +15777,12 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -16115,6 +16367,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -16337,6 +16595,7 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -16697,6 +16956,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -17058,6 +17323,12 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @EXP_WELTE_LOUD: 	70
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -17269,6 +17540,12 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -17364,6 +17641,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		py987gg6088
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -17501,6 +17785,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -17639,6 +17929,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -18150,6 +18446,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -18287,6 +18589,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -19166,6 +19474,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -19230,6 +19544,12 @@
 @ACCEL_PERCENT: 	0.22
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -19370,6 +19690,12 @@
 @MIDIFILE_TYPE: 	exp
 @LICENSE: 		CC BY-NC-SA 4.0
 @HOLE_SHIFT: 		2
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -19508,6 +19834,12 @@
 @MANUAL_EDITS:		no 
 @HOLE_SHIFT: 		-1
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -19870,6 +20202,12 @@
 @ACCEL_PERCENT: 	0.22
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -20761,6 +21099,7 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -20856,6 +21195,13 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		rv790qz2532
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -21449,6 +21795,7 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@COMPOSER:		???
 @@END: ROLL
 
 
@@ -21470,6 +21817,13 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @DRUID:		sj250cc6451
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -22650,6 +23004,12 @@
 @ACCEL_PERCENT: 	0.22
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -22761,6 +23121,9 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		sw740gd4329
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -23046,6 +23409,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -23332,6 +23701,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -24213,6 +24588,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -24350,6 +24731,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -24413,6 +24800,12 @@
 @MIDIFILE_TYPE: 	exp
 @ACCEL_PERCENT: 	0.22
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -24698,6 +25091,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -25132,6 +25531,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -25866,6 +26271,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -25929,6 +26340,12 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -26066,6 +26483,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -26872,6 +27295,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -27084,6 +27513,12 @@
 @EXP_WELTE_F: 		85
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -27743,6 +28178,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -28103,6 +28544,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -28610,6 +29057,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -28899,6 +29352,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -29110,6 +29569,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -29206,6 +29671,13 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		yg150mb0559
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -29417,6 +29889,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -29734,6 +30212,13 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DRUID:		ym420hv4366
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -29918,6 +30403,9 @@
 @AVG_HOLE_WIDTH: 24.39px
 @HOLE_EXTENSION: 22.500000px
 @DRUID:		yr287jf4422
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -30056,6 +30544,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -30166,6 +30660,9 @@
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
 @DRUID:		yt837kd6607
+@LABEL:		???
+@ROLL_TYPE:		???
+@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -30377,6 +30874,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -31257,6 +31760,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -31765,6 +32274,12 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
@@ -32125,6 +32640,12 @@
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@LABEL:		???
+@TITLE:		???
+@COMPOSER:		???
+@PERFORMER:		???
+@SEARCHWORKS:
+@PURL:
 @@END: ROLL
 
 
