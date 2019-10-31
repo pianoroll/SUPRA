@@ -198,7 +198,7 @@ function MakeRollTableRows(list, peeps) {
 			continue;
 		}
 		output += "<tr class='data'>";
-		console.log("PROCESSING list", i, ":", list[i]);
+		// console.log("PROCESSING list", i, ":", list[i]);
 
 		var druid = list[i].DRUID.trim();
 		output += "<td>";
@@ -762,8 +762,16 @@ function SortByNumber(index, selector, reverse) {
 			return -1;
 		}
 
+		if (A.match(/\?\?\?/) {
+			return +1;
+		}
+		if (B.match(/\?\?\?/) {
+			return -1;
+		}
+
 		var Anum = 0;
 		var Bnum = 0;
+
 		var matches;
 		if (matches = A.match(/(\d+)/)) {
 			Anum = parseInt(matches[1]);
