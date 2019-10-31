@@ -1341,6 +1341,7 @@
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
+@DRUID:		bz327kz4744
 @@END: ROLL
 
 
@@ -1724,6 +1725,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		ch718mg2581
 @@END: ROLL
 
 
@@ -1974,6 +1976,7 @@
 @AVG_HOLE_WIDTH: 19.97px
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
+@DRUID:		cs175wr2428
 @@END: ROLL
 
 
@@ -5701,6 +5704,7 @@
 @FIRST_HOLE: 12629px
 @AVG_HOLE_WIDTH: 24.09px
 @HOLE_EXTENSION: 22.500000px
+@DRUID:		fv104hn7521
 @@END: ROLL
 
 
@@ -5810,6 +5814,7 @@
 @EXP_WELTE_P: 		38
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
+@DRUID:		fy803vj4057
 @@END: ROLL
 
 
@@ -6276,6 +6281,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		gg384dv5303
 @@END: ROLL
 
 
@@ -8472,6 +8478,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		hm373bm3807
 @@END: ROLL
 
 
@@ -9191,6 +9198,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		hx184ww0780
 @@END: ROLL
 
 
@@ -9941,6 +9949,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		jg699wz4435
 @@END: ROLL
 
 
@@ -10609,6 +10618,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		jn782fq7439
 @@END: ROLL
 
 
@@ -12293,6 +12303,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		kt852zf4103
 @@END: ROLL
 
 
@@ -13418,6 +13429,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		mf320jq4997
 @@END: ROLL
 
 
@@ -14462,6 +14474,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		mx460bt7026
 @@END: ROLL
 
 
@@ -14629,6 +14642,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		mz508vq7890
 @@END: ROLL
 
 
@@ -14649,6 +14663,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		nf274ng7905
 @@END: ROLL
 
 
@@ -17348,6 +17363,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		py987gg6088
 @@END: ROLL
 
 
@@ -20839,6 +20855,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		rv790qz2532
 @@END: ROLL
 
 
@@ -21452,6 +21469,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
+@DRUID:		sj250cc6451
 @@END: ROLL
 
 
@@ -22742,6 +22760,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		sw740gd4329
 @@END: ROLL
 
 
@@ -29186,6 +29205,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		yg150mb0559
 @@END: ROLL
 
 
@@ -29713,6 +29733,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@DRUID:		ym420hv4366
 @@END: ROLL
 
 
@@ -29896,6 +29917,7 @@
 @FIRST_HOLE: 18926px
 @AVG_HOLE_WIDTH: 24.39px
 @HOLE_EXTENSION: 22.500000px
+@DRUID:		yr287jf4422
 @@END: ROLL
 
 
@@ -30143,6 +30165,7 @@
 @AVG_HOLE_WIDTH: 28.96px
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
+@DRUID:		yt837kd6607
 @@END: ROLL
 
 

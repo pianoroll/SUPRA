@@ -9,12 +9,22 @@ die "Cannot find program $rolltext" if $rolltext =~ /^\s*$/;
 my @list = sort glob "*/midi-exp/*_exp.mid";
 
 
-print STDERR "FILES TO ADD TO INDEX:\n", join("\n", @list), "\n";
-
+my $druid;
 foreach my $item (@list) {
 	print "\@\@BEGIN: ROLL\n";
 	my $data = `rolltext $item`;
+	if ($data !~ /\@DRUID/) {
+		$druid = $item;
+		$druid =~ s/.*\///;
+		$druid =~ s/_.*//;
+		print STDERR "ITEM $item does not have a druid\n";
+		print STDERR"\tADDING IT AUTOMATICALLY: $druid\n";
+	}
 	print $data;
+	if ($druid !~ /^\s*$/) {
+		print "\@DRUID:\t\t$druid\n";
+	}
+	$druid = "";
 	print "\@\@END: ROLL\n\n\n";
 }
 
