@@ -49,6 +49,9 @@ of the productions of the MIDI files:
 
 <img width="1143" alt="Screen Shot 2019-10-29 at 8 30 24 PM" src="https://user-images.githubusercontent.com/3487289/67826796-fbe48880-fa8a-11e9-9e49-d5799142dc3e.png">
 
+More technical information about the MIDI files are available in the
+[MIDI specs](https://supra.stanford.edu/midi-spec/) on the SUPRA website.
+
 ### Raw MIDI files ###
 
 For each roll brand/format, there is a subdirectory called `midi-raw`,
@@ -98,5 +101,6 @@ audio renderings of the expression MIDI files that are found
 on the [SUPRA](https://supra.stanford.edu) website.  These
 audio files were rendered using the Ivory Keys II software
 synthesizer.
+
 
 
