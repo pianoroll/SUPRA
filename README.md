@@ -113,8 +113,8 @@ Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith I
   TITLE={SUPRA: Digitizing the Stanford University Piano Roll Archive.},
   AUTHOR={Shi, Zhengshan and Sapp, Craig Stuart and Arul, Kumaran and McBride, Jerry and Smith, Julius O.},
   BOOKTITLE={Proceedings of the 20th International Society for Music Information Retrieval},
+  address={Delft, The Netherlands},
   pages={517-523},
   year={2019},
 }
 ```
-
