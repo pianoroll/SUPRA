@@ -106,7 +106,7 @@ synthesizer.
 ## Citation ##
 If using this dataset, please cite the following paper:
 
-Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith III. SUPRA: Digitizing the Stanford University Piano Roll Archive. In Proc. of the 20th Int. Soc. for Music Information Retrieval Conf. (ISMIR), pages 517-523, Delft, The Netherlands, 2019.
+Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith III. SUPRA: Digitizing the Stanford University Piano Roll Archive. In Proceedings of the 20th International Society for Music Information Retrieval Conference (ISMIR), pages 517-523, Delft, The Netherlands, 2019.
 
 ```bibtex
 @INPROCEEDINGS{supra2019,
