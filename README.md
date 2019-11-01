@@ -10,13 +10,13 @@ the original scans of the rolls in the Libraries' digital repository,
 and this repository collects the individual MIDI files of notes
 extracted from each scan. Renderings of the expression MIDI files into audio recordings are also available. These can currently be listened to on the
 [SUPRA](https://supra.stanford.edu) website, and are downloadable at
-[Stanford Deigital Repo](https://purl.stanford.edu/xf457dx9166).
+[Stanford Digital Repository](https://purl.stanford.edu/xf457dx9166).
 
 
 ## Citation ##
-If using this dataset, please cite the following [paper](http://archives.ismir.net/ismir2019/paper/000062.pdf):
+If using this dataset, please cite the following paper:
 
-Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith III. SUPRA: Digitizing the Stanford University Piano Roll Archive. In Proceedings of the 20th International Society for Music Information Retrieval Conference (ISMIR), pages 517-523, Delft, The Netherlands, 2019.
+Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith III. [SUPRA: Digitizing the Stanford University Piano Roll Archive](http://archives.ismir.net/ismir2019/paper/000062.pdf). In Proceedings of the 20th International Society for Music Information Retrieval Conference (ISMIR), pages 517-523, Delft, The Netherlands, 2019.
 
 ```bibtex
 @INPROCEEDINGS{supra2019,
@@ -29,24 +29,7 @@ Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith I
 }
 ```
 
-## MIDI files Overview ##
-There are two types of MIDI files in the repository:
-
-(1) "raw" MIDI files, which contain MIDI notes that represent holes
-in the original scan.  This sort of MIDI file is useful for making
-recuts (copies) of piano rolls, as well as for creating your own
-expression realizations.  Software to generate these MIDI files is
-available in [this
-repository](https://github.com/pianoroll/roll-image-parser).
-
-(2) "expression" MIDI files, which have interpreted loudnesses
-applied to notes based on the expression tracks on each side of the
-original piano roll.  This sort of MIDI file is suitable for listening
-and playback as well as for computational performance analysis.
-Software to generate these MIDI files from the raw ones is available
-at [this repository](https://github.com/pianoroll/midi2exp).
-
-
+## MIDI file overview ##
 MIDI files are organized into directories based on the format of
 the roll (which type of piano the original roll is compatible with).
 Currently only the earliest Welte-Mignon rolls are available in the
@@ -54,53 +37,43 @@ Currently only the earliest Welte-Mignon rolls are available in the
 rolls, or more specifically T-100 WM rolls, since there are 100
 tracker bar holes on the pianos that play these rolls.
 
+There are two types of MIDI files in the repository: midi-raw and midi-exp.
 
-## MIDI file types ##
-
-There are two MIDI files for each piano roll in this repository as
-discussed above: (1) raw MIDI files and (2) Expression-enhanced
-MIDI files.  This section describes these two version of MIDI files
-as how to create other derivatives of the MIDI files.  Here is a schematic
-of the productions of the MIDI files:
-
-<img width="1143" alt="Screen Shot 2019-10-29 at 8 30 24 PM" src="https://user-images.githubusercontent.com/3487289/67826796-fbe48880-fa8a-11e9-9e49-d5799142dc3e.png">
-
-More technical information about the MIDI files are available in the
-[MIDI specs](https://supra.stanford.edu/midi-spec/) on the SUPRA website.
-
-### Raw MIDI files ###
-
-For each roll brand/format, there is a subdirectory called `midi-raw`,
-such as for the [Welte-Mignon red
-rolls](https://github.com/pianoroll/SUPRA/tree/master/welte-red).
-This directory contains the MIDI files that represent each hole on
-the piano roll as a separate note.  There are usually multiple holes
-representing each musical note.  The raw MIDI files also represent
-the expression holes (dynamics and pedaling) as audible notes.
-
-The raw MIDI files are suitable for (1) projects that want to
-implement their own expressive MIDI files, and (2) audio-to-image
-alignment applications.  The raw MIDI files are not intended for
-listening, although it is interesting to listen to the machine-gun
-version of the music that is produced.  The automatically identified
-note attacks are played loudly, while the hole-notes that should
+### midi-raw ###
+"raw" MIDI files, which contain MIDI notes that represent holes
+in the original scan. There are usually multiple holes representing
+each musical note.  The raw MIDI files also represent the expression
+holes (dynamics and pedaling) as audible notes.  The raw MIDI files
+are not intended for listening, although it is interesting to listen
+to the machine-gun version of the music that is produced.  The automatically
+identified note attacks are played loudly, while the hole-notes that should
 be merged with the attacks are played quietly to give an approximate
 impression of the music that is contained on the roll.  No dynamics
 are otherwise given to the notes (see the expression MIDI files
-below).
+below). The raw MIDI files are suitable for (1) projects that want to
+implement their own expressive MIDI files, and (2) audio-to-image
+alignment applications. Software to generate these MIDI files is
+available in [this
+repository](https://github.com/pianoroll/roll-image-parser).
 
+### midi-exp ###
+"expression" MIDI files, which have interpreted loudnesses
+applied to notes based on the expression tracks on each side of the
+original piano roll. The expression MIDI files take the expression holes
+from the raw MIDI files and convert them into note attacks velocities,
+as well as generate sustain and soft pedaling.  Notes representing the
+expression holes are removed from the final expression MIDI file.
+This sort of MIDI file is suitable for listening and playback as well as
+for computational performance analysis. Software to generate these MIDI files from the raw ones is available
+at [this repository](https://github.com/pianoroll/midi2exp).
 
-### Expression MIDI files ###
+Here is a schematic
+of the productions of the MIDI files:
+<img width="1143" alt="Screen Shot 2019-10-29 at 8 30 24 PM" src="https://user-images.githubusercontent.com/3487289/67826796-fbe48880-fa8a-11e9-9e49-d5799142dc3e.png">
 
-The expression MIDI files take the expression holes from the raw MIDI files
-and convert them into note attacks velocities, as well as generate sustain
-and soft pedaling.  Notes representing the expression holes are removed
-from the final expression MIDI file.
 
 
 ## Further derivative files ##
-
-
 ### Type-0 Expression MIDI files ###
 
 For audio rendering of the expression MIDI files, it was necessary
