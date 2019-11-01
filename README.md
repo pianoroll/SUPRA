@@ -10,6 +10,23 @@ the original scans of the rolls in the Libraries' digital repository,
 and this repository collects the individual MIDI files of notes
 extracted from each scan.
 
+## Citation ##
+If using this dataset, please cite the following [paper](http://archives.ismir.net/ismir2019/paper/000062.pdf):
+
+Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith III. SUPRA: Digitizing the Stanford University Piano Roll Archive. In Proceedings of the 20th International Society for Music Information Retrieval Conference (ISMIR), pages 517-523, Delft, The Netherlands, 2019.
+
+```bibtex
+@INPROCEEDINGS{supra2019,
+  TITLE={SUPRA: Digitizing the Stanford University Piano Roll Archive.},
+  AUTHOR={Shi, Zhengshan and Sapp, Craig Stuart and Arul, Kumaran and McBride, Jerry and Smith, Julius O.},
+  BOOKTITLE={Proceedings of the 20th International Society for Music Information Retrieval},
+  address={Delft, The Netherlands},
+  pages={517-523},
+  year={2019},
+}
+```
+
+## MIDI Overview ##
 There are two types of MIDI files in the repository:
 
 (1) "raw" MIDI files, which contain MIDI notes that represent holes
@@ -28,8 +45,9 @@ at [this repository](https://github.com/pianoroll/midi2exp).
 
 Renderings of the expression MIDI files into audio recordings are
 also available.  These can currently be listened to on the
-[SUPRA](https://supra.stanford.edu) website, but will be made
-available for download soon.
+[SUPRA](https://supra.stanford.edu) website, and are downloadable at
+[Stanford Deigital Repo](https://purl.stanford.edu/xf457dx9166).
+
 
 MIDI files are organized into directories based on the format of
 the roll (which type of piano the original roll is compatible with).
@@ -103,18 +121,3 @@ audio files were rendered using the Ivory Keys II software
 synthesizer.
 
 
-## Citation ##
-If using this dataset, please cite the following paper:
-
-Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith III. SUPRA: Digitizing the Stanford University Piano Roll Archive. In Proceedings of the 20th International Society for Music Information Retrieval Conference (ISMIR), pages 517-523, Delft, The Netherlands, 2019.
-
-```bibtex
-@INPROCEEDINGS{supra2019,
-  TITLE={SUPRA: Digitizing the Stanford University Piano Roll Archive.},
-  AUTHOR={Shi, Zhengshan and Sapp, Craig Stuart and Arul, Kumaran and McBride, Jerry and Smith, Julius O.},
-  BOOKTITLE={Proceedings of the 20th International Society for Music Information Retrieval},
-  address={Delft, The Netherlands},
-  pages={517-523},
-  year={2019},
-}
-```
