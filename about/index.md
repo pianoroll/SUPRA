@@ -3,14 +3,13 @@ title: SUPRA About page
 author: Craig Stuart Sapp
 keywords: homepage
 permalink: /about/index.html
-summary: 
+summary:
 ---
 
 
 # About SUPRA #
 
-[Paper](https://ccrma.stanford.edu/~kittyshi/pianoroll/Supra-ISMIR2019.pdf)
-<a href "https://ccrma.stanford.edu/~kittyshi/pianoroll/Supra-ISMIR2019.pdf"> SUPRA Paper </a>
+[Paper](http://archives.ismir.net/ismir2019/paper/000062.pdf)
 
 
 <div style="height:500px"></div>

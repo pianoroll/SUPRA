@@ -1,9 +1,21 @@
+@@BEGIN: REFERENCE
+@TYPE:		proceeding
+@PUBLISHER:	Proceedings of the 20th International Society for Music Information Retrieval
+@LOCATION:	Delft, The Netherlands
+@YEAR:		2019
+@TITLE:		SUPRA: Digitizing the Stanford University Piano Roll Archive.
+@AUTHOR:	Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith.
+@PAGE:		517-523
+@URL:		http://archives.ismir.net/ismir2019/paper/000062.pdf
+@ANNOTATION:
+@@END: REFERENCE
+
 
 
 @@BEGIN: REFERENCE
 @TYPE:		dissertation
 @PUBLISHER:	Sydney Conservatorium of Music
-@LOCATION:	University of Sidney
+@LOCATION:	University of Sydney
 @YEAR:		2016
 @TITLE:		Piano Rolls and Contemporary Player Pianos
 @SUBTITLE:	The Catalogues, Technologies, Archiving and Accessibility
@@ -21,7 +33,7 @@
 @URL:		https://babel.hathitrust.org/cgi/pt?id=nyp.33433009966049;view=1up;seq=6
 @ANNOTATION:	Piano-roll catalog of the Welte-Mignon Corporation up to 1910.
 		The first roll is 2 and the last is 3947.  Original prices are
-		given.  Sections: pianists, opera and operetta, hymns and songs, 
+		given.  Sections: pianists, opera and operetta, hymns and songs,
 		light convert music, accompaniments, composers, numerical list.
 @@END: REFERENCE
 
@@ -33,8 +45,8 @@
 @TITLE:		Condon Collection Master Inventory 20150122
 @URL:		http://bit.ly/condon-collection-inventory
 @ANNOTATION:	Listing of the contents of the Condon Collection
-		In the Stanford University Libraries.  About 7500 
-		piano rolls: 
+		In the Stanford University Libraries.  About 7500
+		piano rolls:
 			1,345 Welte-Mignon (red, green, Licensee, recuts) 1,345 Welte-Mignon (red, green, Licensee, recuts) 1,345 Welte-Mignon (red, green, Licensee, recuts).
 			2665 Duo-Art.
 			2614 Ampico.
@@ -54,7 +66,7 @@
 			2 Broadway.
 			1 Cable Company.
 @@END: REFERENCE
-			
+
 
 
 
