@@ -8,7 +8,10 @@ the [Condon Collection](https://library.stanford.edu/collections/denis-condon-co
 The [SUPRA](https://supra.stanford.edu) website contains links to
 the original scans of the rolls in the Libraries' digital repository,
 and this repository collects the individual MIDI files of notes
-extracted from each scan.
+extracted from each scan. Renderings of the expression MIDI files into audio recordings are also available. These can currently be listened to on the
+[SUPRA](https://supra.stanford.edu) website, and are downloadable at
+[Stanford Deigital Repo](https://purl.stanford.edu/xf457dx9166).
+
 
 ## Citation ##
 If using this dataset, please cite the following [paper](http://archives.ismir.net/ismir2019/paper/000062.pdf):
@@ -26,7 +29,7 @@ Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith I
 }
 ```
 
-## MIDI Overview ##
+## MIDI files Overview ##
 There are two types of MIDI files in the repository:
 
 (1) "raw" MIDI files, which contain MIDI notes that represent holes
@@ -42,11 +45,6 @@ original piano roll.  This sort of MIDI file is suitable for listening
 and playback as well as for computational performance analysis.
 Software to generate these MIDI files from the raw ones is available
 at [this repository](https://github.com/pianoroll/midi2exp).
-
-Renderings of the expression MIDI files into audio recordings are
-also available.  These can currently be listened to on the
-[SUPRA](https://supra.stanford.edu) website, and are downloadable at
-[Stanford Deigital Repo](https://purl.stanford.edu/xf457dx9166).
 
 
 MIDI files are organized into directories based on the format of
