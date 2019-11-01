@@ -1,0 +1,598 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Sun Oct 25 01:28:45 PDT 2015
+# Last Modified: Thu Oct 31 22:42:33 PDT 2019
+# Filename:      https://github.com/pianoroll/SUPRA/bin/marcxml2meta
+# Syntax:        perl 5
+# vim:           ts=3
+#
+# Description:   Convert MarcXML files to commands that will insert meta
+#                data records into MIDI files.
+#
+
+use strict;
+use Getopt::Long;
+
+my $rolltext = `which rolltext`;
+chomp $rolltext;
+if ($rolltext =~ /^\s*$/) {
+	if (-r "../midiroll/bin/rolltext") {
+		$rolltext = "../midiroll/bin/rolltext";
+	} else {
+		die "Cannot find rolltext program\n";
+	}
+}
+
+my $wget = `which wget`;
+chomp $wget;
+if ($wget =~ /^\s*$/) {
+	die "Cannot find wget program\n";
+}
+
+my $xmllint = `which xmllint`;
+chomp $xmllint;
+if ($xmllint =~ /^\s*$/) {
+	die "Cannot find xmllint program\n";
+}
+
+
+my $line;
+my $postfix = "";
+my $dir = "";
+my $druid = "";
+my $CATKEY = "";
+my $options = "--replace";
+my $command = "$rolltext $options";
+
+# $COLUMNSPACE is the text which separates each column of parameters.
+my $COLUMNSPACE = " ";
+my $minimalQ = 0;
+Getopt::Long::Configure("bundling");
+GetOptions (
+   'd|druid=s' => \$druid,
+   'c|catkey=s' => \$CATKEY,
+   'dir=s' => \$dir,
+   'p|postfix=s' => \$postfix
+);
+if ($dir !~ /^\s*$/) {
+	$dir =~ s/\/$//;
+	$dir .= "/";
+}
+
+if (@ARGV > 1) {
+	die "Usage: $0 -d druid catkey.marcxml" if $druid =~ /^\s*$/;
+}
+if (@ARGV == 1) {
+	if ($druid =~ /^\s*$/) {
+		if ($ARGV[0] =~ /([a-z][a-z]\d\d\d[a-z][a-z]\d\d\d\d)/) {
+			$druid = $1;
+		}
+	}
+}
+
+die "Usage: $0 -d druid catkey.marcxml" if $druid =~ /^\s*$/;
+
+my @contents = getContents($CATKEY);
+
+my $performer  = getPerformer(@contents);
+my $composer   = getComposer(@contents);
+my $title      = getTitle(@contents);
+my $catkey = "";
+if ($CATKEY =~ /^\s*$/) {
+	$catkey = getCatKey(@contents);
+} else {
+	$catkey = $CATKEY;
+}
+
+
+my ($label, $catalog, $reissue) = getLabel(@contents);
+my $cn = getCallNumber(@contents);
+
+print "\n";
+print "echo \"Processing $dir$druid$postfix.mid ...\"\n";
+
+if ($cn !~ /^\s*$/) {
+	$cn =~ s/'/\\'/g;
+	print "$command -k CALLNUM -v '\t\tStanford Libraries $cn' $dir$druid$postfix.mid\n";
+}
+
+$catkey =~ s/"/\\'/g;
+print "$command -k CATKEY -v '\t\t$catkey' $dir$druid$postfix.mid\n";
+print "$command -k SEARCHWORKS -v '\t\thttps://searchworks.stanford.edu/view/$catkey' $dir$druid$postfix.mid\n";
+
+$druid =~ s/"/\\'/g;
+print "$command -k DRUID -v '\t\t$druid' $dir$druid$postfix.mid\n";
+print "$command -k PURL -v '\t\t\thttps://purl.stanford.edu/$druid' $dir$druid$postfix.mid\n";
+
+$label =~ s/"/\\'/g;
+$catalog =~ s/"/\\'/g;
+print "$command -k LABEL -v '\t\t$label $catalog' $dir$druid$postfix.mid\n";
+
+if ($reissue !~ /^\s*$/) {
+	$reissue =~ s/"/\\'/g;
+	print "$command -k REISSUE -v '\t\t$reissue' $dir$druid$postfix.mid\n";
+}
+
+if ($title !~ /^\s*$/) {
+	$title =~ s/\s+$//;
+	my $titlestring = "";
+	if ($title =~ /'/) {
+		$title =~ s/"/\\"/g;
+		$titlestring = "\"\t\t$title\"";
+		$titlestring =~ s/\\'/'/g;
+	} else {
+		$titlestring = "'\t\t$title'";
+	}
+	print "$command -k TITLE -v $titlestring $dir$druid$postfix.mid\n";
+}
+
+if ($composer !~ /^\s*$/) {
+	$composer = cleanPerson($composer);
+	my $cstring;
+	if ($composer =~ /'/) {
+		$composer =~ s/"/\\"/g;
+		$cstring = "\"\t\t$composer\"";
+	} else {
+		$cstring = "\'\t\t$composer\'";
+	}
+	print "$command -k COMPOSER -v $cstring $dir$druid$postfix.mid\n";
+}
+
+if ($performer !~ /^\s*$/) {
+	$performer = cleanPerson($performer);
+	my $pstring;
+	if ($performer =~ /'/) {
+		$performer =~ s/"/\\"/g;
+		$pstring = "\"\t\t$performer\"";
+	} else {
+		$pstring = "\'\t\t$performer\'";
+	}
+	print "$command -k PERFORMER -v $pstring $dir$druid$postfix.mid\n";
+}
+
+print "$command -k SOFTWARE_HOLE -v '\thttps://github.com/pianoroll/roll-image-parser' $dir$druid$postfix.mid\n";
+
+print "\n";
+
+exit(0);
+
+
+###########################################################################
+
+
+
+##############################
+##
+## cleanDate --
+##
+
+sub cleanDate {
+   my ($date) = @_;
+	$date =~ s/,\s*$//;
+	$date =~ s/\.\s*$//;
+	$date =~ s/approximately /<i>c<\/i>/;
+	return $date;
+}
+
+
+
+##############################
+##
+## cleanPerson --
+##
+
+sub cleanPerson {
+	my ($person) = @_;
+	$person =~ s/\, piano.*//;
+	$person =~ s/\.$//;
+	$person =~ s/\,\s*$//;
+	# $person =~ s/'/\\'/g;
+	return $person;
+}
+
+
+
+##############################
+##
+## getPerformer --
+##
+
+sub getPerformer {
+	my @contents = @_;
+	my $i;
+
+	## PERFORMER:
+   ## <datafield ind1="0" ind2=" " tag="511">
+   ## 	<subfield code="a">Eugenie Adam-Benard, piano.</subfield>
+   ## </datafield>
+   ##
+   ## Or use 700 for normalized name:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="700">
+   ##  <subfield code="a">Adam-Benard, Eugenie,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>
+   ##
+   ## If no 700$a|700$e==instrumentalist, then try 100$a|100$e==instrumentalist:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="100">
+   ##  <subfield code="a">Gr&#xFC;nfeld, Alfred,</subfield>
+   ##  <subfield code="e">composer,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>  
+
+	my @performers;
+	my @perfdates;
+   my $tperf = "";
+   my $tdate = "";
+   my $realperf = "";
+
+   # Check the 100 field (this is the case when the composer is also the performer):
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="100"/;
+		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
+			} elsif ($line =~ /<subfield code="e">.*instrument.*<\/subfield>/) {
+				$realperf = $tperf;
+				last;
+			}
+			$line = $contents[++$i];
+		}
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
+		}
+	}
+
+
+   # check for 700 code performers:
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		# next if $line !~ /<datafield.*tag="511"/;
+		next if $line !~ /<datafield.*tag="700"/;
+		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
+			} elsif ($line =~ /<subfield code="e">.*instrument.*<\/subfield>/) {
+				$realperf = $tperf;
+				last;
+			}
+			$line = $contents[++$i];
+		}
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
+		}
+	}
+
+	my $output = "";
+	for (my $i=0; $i<@performers; $i++) {
+		if ($perfdates[$i] !~ /^\s*$/) {
+			$output .= "$performers[$i] ($perfdates[$i])";
+		} else {
+			$output .= "$performers[$i]";
+		}
+		if ($i <$#performers) {
+			$output .= "; ";
+		}
+	}
+	
+	return $output;
+}
+
+
+
+##############################
+##
+## getComposer --
+##
+
+sub getComposer {
+	my $contents = @_;
+	my $i;
+
+	## PERFORMER:
+   ## <datafield ind1="0" ind2=" " tag="511">
+   ## 	<subfield code="a">Eugenie Adam-Benard, piano.</subfield>
+   ## </datafield>
+   ##
+   ## Or use 700 for normalized name:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="700">
+   ##  <subfield code="a">Adam-Benard, Eugenie,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>
+   ##
+   ## If no 700$a|700$e==instrumentalist, then try 100$a|100$e==instrumentalist:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="100">
+   ##  <subfield code="a">Gr&#xFC;nfeld, Alfred,</subfield>
+   ##  <subfield code="e">composer,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>  
+
+	my @performers;
+	my @perfdates;
+   my $tperf = "";
+   my $tdate = "";
+   my $realperf = "";
+
+   # Check the 100 field (this is the case when the composer is also the performer):
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="100"/;
+		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
+			} elsif ($line =~ /<subfield code="e">.*composer.*<\/subfield>/) {
+				$realperf = $tperf;
+				last;
+			}
+			$line = $contents[++$i];
+		}
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
+		}
+	}
+
+
+   # check for 700 code performers:
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		# next if $line !~ /<datafield.*tag="511"/;
+		next if $line !~ /<datafield.*tag="700"/;
+		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
+			} elsif ($line =~ /<subfield code="e">.*composer.*<\/subfield>/) {
+				$realperf = $tperf;
+				last;
+			}
+			$line = $contents[++$i];
+		}
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
+		}
+	}
+
+	my $output = "";
+	for (my $i=0; $i<@performers; $i++) {
+		if ($perfdates[$i] !~ /^\s*$/) {
+			$output .= "$performers[$i] ($perfdates[$i])";
+		} else {
+			$output .= "$performers[$i]";
+		}
+		if ($i <$#performers) {
+			$output .= "; ";
+		}
+	}
+	return $output;
+}
+
+
+
+
+##############################
+##
+## getTitle --
+##
+
+sub getTitle {
+	my $contents = @_;
+	my $i;
+
+	##  <datafield ind1="1" ind2="0" tag="245">
+	##    <subfield code="a">Mazurka op. 67, no. 4 /</subfield>
+	##    <subfield code="c">Chopin.</subfield>
+	##  </datafield>
+
+	my $title = "";
+	my $subtitle = "";
+	my $composer = "";
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="245"/;
+		$line = $contents[++$i];
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$title = $1;
+			} elsif ($line =~ /<subfield code="c">(.*)<\/subfield>/) {
+				$composer = $1;
+			} elsif ($line =~ /<subfield code="b">(.*)<\/subfield>/) {
+				$subtitle = $1;
+			}
+			$line = $contents[++$i];
+		}
+		last;
+	}
+   $title .= " $subtitle";
+	$title =~ s/\.\s*$//;
+	$title =~ s/\s+$//;
+	$title =~ s/\/\s*$//;
+	$title =~ s/'/\\'/g;
+
+	# $composer =~ s/\.\s*$//;
+
+	return $title;
+}
+
+
+
+##############################
+##
+## getLabel --
+##
+
+sub getLabel {
+	my @contents = @_;
+	my $i;
+
+  	# <datafield ind1="0" ind2="2" tag="028">
+   #   <subfield code="a">57</subfield>
+   #   <subfield code="b">Welte-Mignon</subfield>
+  	# </datafield>
+
+	my $label = "";
+	my $catalog = "";
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="028"/;
+		$line = $contents[++$i];
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$catalog = $1;
+			} elsif ($line =~ /<subfield code="b">(.*)<\/subfield>/) {
+				$label = $1;
+			}
+			$line = $contents[++$i];
+		}
+		last;
+	}
+
+   my $reissue = "";
+	for ($i=0; $i<@contents; $i++) {
+		if ($contents[$i] =~ /originally released/i) {
+			$reissue = "yes";
+			last;
+		}
+	}
+
+	$label   =~ s/;\s*$//;
+	$catalog =~ s/;\s*$//;
+	$label   =~ s/\.\s*$//;
+	$catalog =~ s/\.\s*$//;
+	$label   =~ s/,\s*$//;
+	$catalog =~ s/,\s*$//;
+	$label =~ s/De Luxe.*/De Luxe/;
+	$label =~ s/\\$//;
+	if ($label eq "Welte Mignon") {
+		$label = "Welte-Mignon";
+	}
+	$label =~ s/  / /g;
+
+#  16 @LABEL:		Paling's Reproducing Records
+#   1 @LABEL:		Play-Rite Music Rolls
+#   1 @LABEL:		Harold L. Powell Associates
+#   1 @LABEL:		Gryphon Company
+#   1 @LABEL:		Automatic Music Roll
+#   1 @LABEL:		Allan's Reproducing Records
+
+	return ($label, $catalog, $reissue);
+}
+
+
+
+##############################
+##
+## getCatKey --
+##
+## <controlfield tag="001">a11366492</controlfield>
+##
+
+sub getCatKey {
+	my @contents = @_;
+	my $i;
+
+	my $output = "";
+
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<controlfield.*tag="001">[a-z]*(\d+)<\/controlfield>/;
+		$output = $1;
+		last;
+	}
+
+	die "Cannot find catkey value in data." if $output =~ /^\s*$/;
+
+	return $output;
+}
+
+
+
+##############################
+##
+## getCallNumber --
+##    <datafield ind1=" " ind2=" " tag="999">
+##      <subfield code="a">CONDON ROLL 750</subfield>
+##
+sub getCallNumber {
+	my @contents = @_;
+	my $i;
+	my $j;
+
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="999"/;
+		$j = $i+1;
+		while ($j < @contents) {
+			if ($contents[$j] =~ /<subfield.*code="a">(.*)<\/subfield>/) {
+				return $1;
+			}
+			if ($contents[$j] =~ /datafield/) {
+				# something went wrong.
+				return "";
+			}
+		}
+		last;
+	}
+	return "";
+}
+
+
+
+##############################
+##
+## getContents -- of MarcXML for catkey.
+##
+
+sub getContents {
+	my ($catkey) = @_;
+	my $baseurl = "https://searchworks.stanford.edu/view";
+	my $result = `$wget $baseurl/$catkey.marcxml -O - 2>/dev/null | $xmllint --format -`;
+	my @output = split(/\n/, $result);
+	return @output;
+}
+
+
+

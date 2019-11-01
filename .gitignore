@@ -11,3 +11,6 @@ Gemfile.lock
 .jekyll-metadata
 midi-exp0
 *.zip
+_includes
+commands
+commands2

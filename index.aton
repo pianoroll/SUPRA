@@ -1,5 +1,5 @@
 @@BEGIN: ROLL
-@DRUID:			bb988jx6754
+@DRUID: 		bb988jx6754
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -36,6 +36,15 @@
 @HOLE_OFFSET:		-10.6583px
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
+@CALLNUM: 		Stanford Libraries CONDON ROLL 115
+@TITLE: 		Ballade op. 47, A flat major
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763719
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@LABEL: 		Welte-Mignon 369
+@PURL: 			https://purl.stanford.edu/bb988jx6754
+@CATKEY: 		10763719
 @ANALYSIS_DATE:		Tue May 21 18:54:24 2019
 @ANALYSIS_TIME:		62.93sec
 @COLOR_CHANNEL:		green
@@ -58,12 +67,6 @@
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -1253,7 +1256,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			by076cz0337
+@DRUID: 		by076cz0337
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -1304,6 +1307,16 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @HOLE_OFFSET:		-7.62356px
 @TRACKER_HOLES:		100
+@CALLNUM: 		Stanford Libraries CONDON ROLL 491
+@REISSUE: 		yes
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11055874
+@PERFORMER: 		Brightwell, Edward (1876-)
+@COMPOSER: 		Gounod, Charles (1818-1893)
+@TITLE: 		Ballet Faust
+@LABEL: 		Welte-Mignon 1528
+@PURL: 			https://purl.stanford.edu/by076cz0337
+@CATKEY: 		11055874
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Tue May 21 19:03:14 2019
 @ANALYSIS_TIME:		95.7sec
@@ -1312,23 +1325,17 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@PURL: http://purl.stanford.edu/bz327kz4744
-@TITLE: What'll I do :
-@COMPOSER: Berlin, Irving
-@PERFORMER: Hare, John
+@PURL: 			https://purl.stanford.edu/bz327kz4744
+@TITLE: 		What'll I do : waltz
+@COMPOSER: 		Berlin, Irving (1888-1989)
+@PERFORMER: 		Hare, John
 @CATALOG: Welte-Mignon 5634
-@CATKEY: 11392079
+@CATKEY: 		11392079
 @SOURCEID: sul:ars0163_36105225789309
 @SCAN_DATE: 5/31/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -1352,16 +1359,18 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@CALLNUM: 		Stanford Libraries CONDON ROLL 939
+@LABEL: 		Welte-Mignon 5634
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11392079
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@DRUID: 		bz327kz4744
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@DRUID:		bz327kz4744
-@LABEL:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
-@DRUID:			cd381jt9273
+@DRUID: 		cd381jt9273
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -1405,6 +1414,15 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @TREBLE_TEAR_COUNT:	1
+@LABEL: 		Welte-Mignon 3172
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11366488
+@PERFORMER: 		Kiek, Georges
+@COMPOSER: 		Mendelssohn-Bartholdy, Felix (1809-1847)
+@TITLE: 		3th symphony
+@PURL: 			https://purl.stanford.edu/cd381jt9273
+@CATKEY: 		11366488
+@CALLNUM: 		Stanford Libraries CONDON ROLL 749
 @DUST_SCORE:		59ppm
 @DUST_SCORE_BASS:	4ppm
 @DUST_SCORE_TREBLE:	114ppm
@@ -1423,12 +1441,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -1730,7 +1742,7 @@
 
 
 @@BEGIN: ROLL
-@MIDIFILE_TYPE: 	exp
+@CATKEY: 		10760259
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:48 2019
@@ -1746,14 +1758,17 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		ch718mg2581
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@MIDIFILE_TYPE: 	exp
+@CALLNUM: 		Stanford Libraries CONDON ROLL 4
+@LABEL: 		Welte-Mignon 284
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760259
+@PERFORMER: 		Lambrino, T&#xE9;l&#xE9;maque
+@COMPOSER: 		Beethoven, Ludwig van (1770-1827)
+@TITLE: 		Menuett (from Sonata op. 31 E flat major)
+@PURL: 			https://purl.stanford.edu/ch718mg2581
+@DRUID: 		ch718mg2581
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -1788,12 +1803,21 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_P: 		38
-@DRUID:			cm852bp8620
+@DRUID: 		cm852bp8620
 @MUSICAL_NOTES:		11018
 @AVG_HOLE_WIDTH:	21.59px
 @ANTIDUST_COUNT:	16
 @BAD_HOLE_COUNT:	0
 @EDGE_TEAR_COUNT:	0
+@CALLNUM: 		Stanford Libraries CONDON ROLL 774
+@TITLE: 		Wanderer-Fantasie
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11368232
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Backhaus, Wilhelm (1884-1969)
+@COMPOSER: 		Schubert, Franz (1797-1828)
+@LABEL: 		Welte-Mignon 3313
+@PURL: 			https://purl.stanford.edu/cm852bp8620
+@CATKEY: 		11368232
 @BASS_TEAR_COUNT:	0
 @TREBLE_TEAR_COUNT:	0
 @DUST_SCORE:		27ppm
@@ -1820,12 +1844,6 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -1980,6 +1998,9 @@
 
 @@BEGIN: ROLL
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
+@LABEL: 		Welte-Mignon 248
+@DRUID: 		cs175wr2428
+@CALLNUM: 		Stanford Libraries CONDON ROLL 63
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
@@ -1994,12 +2015,12 @@
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:48 2019
 @VERSION: 1.1
-@PURL: http://purl.stanford.edu/cs175wr2428
-@TITLE: Kreisleriana
-@COMPOSER: Schumann, Robert
-@PERFORMER: Scharwenka, Xaver
+@PURL: 			https://purl.stanford.edu/cs175wr2428
+@TITLE: 		Kreisleriana
+@COMPOSER: 		Schumann, Robert (1810-1856)
+@PERFORMER: 		Scharwenka, Xaver (1850-1924)
 @CATALOG: Welte-Mignon 248
-@CATKEY: 10763565
+@CATKEY: 		10763565
 @SOURCEID: sul:ars_0163_36105225780647
 @SCAN_DATE: 5/30/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -2010,10 +2031,9 @@
 @AVG_HOLE_WIDTH: 19.97px
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
-@DRUID:		cs175wr2428
-@LABEL:		???
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763565
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -2688,7 +2708,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			dc021nq1464
+@DRUID: 		dc021nq1464
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -2738,6 +2758,15 @@
 @SHIFTS:		1
 @HOLE_SEPARATION:	37.7432px
 @HOLE_OFFSET:		-15.1909px
+@CALLNUM: 		Stanford Libraries CONDON ROLL 384
+@PURL: 			https://purl.stanford.edu/dc021nq1464
+@TITLE: 		Menuett op. 14, no. 1
+@PERFORMER: 		Paderewski, Ignace Jan (1860-1941)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10791201
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Paderewski, Ignace Jan (1860-1941)
+@LABEL: 		Welte-Mignon 1263
+@CATKEY: 		10791201
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Tue May 21 19:10:14 2019
@@ -2747,12 +2776,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -2831,7 +2854,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			dc920rk8870
+@DRUID: 		dc920rk8870
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -2881,6 +2904,15 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @DUST_SCORE_TREBLE:	72ppm
 @SHIFTS:		0
+@CATKEY: 		11064893
+@COMPOSER: 		Debussy, Claude (1862-1918)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11064893
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Debussy, Claude (1862-1918)
+@TITLE: 		Children's corner
+@LABEL: 		Welte-Mignon 2733
+@PURL: 			https://purl.stanford.edu/dc920rk8870
+@CALLNUM: 		Stanford Libraries CONDON ROLL 584
 @HOLE_SEPARATION:	37.7165px
 @HOLE_OFFSET:		7.37523px
 @TRACKER_HOLES:		100
@@ -2893,12 +2925,6 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @LICENSE: 		CC BY-NC-SA 4.0
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -5724,6 +5750,10 @@
 
 @@BEGIN: ROLL
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@LABEL: 		Welte-Mignon 304
+@DRUID: 		fv104hn7521
+@CALLNUM: 		Stanford Libraries CONDON ROLL 79
 @MIDIFILE_TYPE: 	exp
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
@@ -5739,12 +5769,12 @@
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @VERSION: 1.1
 @ACCEL_INCH: 		12
-@PURL: http://purl.stanford.edu/fv104hn7521
-@TITLE: V. Hungarian rhapsody :
-@COMPOSER: Liszt, Franz
-@PERFORMER: R&#xF6;ssel, Anatol von
+@PURL: 			https://purl.stanford.edu/fv104hn7521
+@TITLE: 		V. Hungarian rhapsody : (Heroide elegique)
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@PERFORMER: 		R&#xF6;ssel, Anatol von
 @CATALOG: Welte-Mignon 304
-@CATKEY: 10763552
+@CATKEY: 		10763552
 @SOURCEID: sul:ars_0163_36105225780795
 @SCAN_DATE: 5/29/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -5754,10 +5784,8 @@
 @FIRST_HOLE: 12629px
 @AVG_HOLE_WIDTH: 24.09px
 @HOLE_EXTENSION: 22.500000px
-@DRUID:		fv104hn7521
-@LABEL:		???
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763552
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -5837,12 +5865,12 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@PURL: http://purl.stanford.edu/fy803vj4057
-@TITLE: Mazurka, no. 3
-@COMPOSER: Saint-Sa&#xEB;ns, Camille
-@PERFORMER: Saint-Sa&#xEB;ns, Camille
+@PURL: 			https://purl.stanford.edu/fy803vj4057
+@TITLE: 		Mazurka, no. 3
+@COMPOSER: 		Saint-Sa&#xEB;ns, Camille (1835-1921)
+@PERFORMER: 		Saint-Sa&#xEB;ns, Camille (1835-1921)
 @CATALOG: Welte-Mignon 799
-@CATKEY: 10779814
+@CATKEY: 		10779814
 @SOURCEID: sul:ars0163_36105225782510
 @SCAN_DATE: 5/31/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -5854,6 +5882,12 @@
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_LOUD: 	70
 @EXP_WELTE_F: 		85
+@CALLNUM: 		Stanford Libraries CONDON ROLL 244
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10779814
+@REISSUE: 		yes
+@LABEL: 		Welte-Mignon 799
+@DRUID: 		fy803vj4057
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:49 2019
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
@@ -5867,10 +5901,7 @@
 @EXP_WELTE_P: 		38
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@DRUID:		fy803vj4057
-@LABEL:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -6335,16 +6366,19 @@
 @LEFT_HAND_ADJUST: 	-5
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@CATKEY: 		10763587
+@TITLE: 		Nocturne H-Dur op. 32
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763587
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Gr&#xFC;nfeld, Alfred
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@LABEL: 		Welte-Mignon 194
+@PURL: 			https://purl.stanford.edu/gg384dv5303
+@DRUID: 		gg384dv5303
+@CALLNUM: 		Stanford Libraries CONDON ROLL 34
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		gg384dv5303
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -6497,7 +6531,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			gh272kd2238
+@DRUID: 		gh272kd2238
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -6546,6 +6580,15 @@
 @DUST_SCORE_TREBLE:	71ppm
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.6973px
+@CATKEY: 		10763582
+@LABEL: 		Welte-Mignon 213
+@COMPOSER: 		Grieg, Edvard (1843-1907)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763582
+@PERFORMER: 		M&#xF6;hle, Hermann
+@TITLE: 		Ich liebe dich
+@PURL: 			https://purl.stanford.edu/gh272kd2238
+@CALLNUM: 		Stanford Libraries CONDON ROLL 42
 @HOLE_OFFSET:		3.22923px
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
@@ -6556,12 +6599,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -6714,7 +6751,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			gq169nf1405
+@DRUID: 		gq169nf1405
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -6753,6 +6790,15 @@
 @MUSICAL_HOLES:		4386
 @MUSICAL_NOTES:		1395
 @AVG_HOLE_WIDTH:	21.8px
+@CALLNUM: 		Stanford Libraries CONDON ROLL 161
+@PURL: 			https://purl.stanford.edu/gq169nf1405
+@TITLE: 		Valse mignonne : op. 51
+@PERFORMER: 		Gr&#xFC;nfeld, Alfred
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10772471
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Gr&#xFC;nfeld, Alfred
+@LABEL: 		Welte-Mignon 190
+@CATKEY: 		10772471
 @ANTIDUST_COUNT:	23
 @BAD_HOLE_COUNT:	0
 @EDGE_TEAR_COUNT:	0
@@ -6773,12 +6819,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -7377,7 +7417,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			gt485ys0625
+@DRUID: 		gt485ys0625
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -7428,6 +7468,15 @@
 @HOLE_SEPARATION:	37.5723px
 @HOLE_OFFSET:		-0.241642px
 @TRACKER_HOLES:		100
+@CATKEY: 		11233622
+@LABEL: 		Welte-Mignon 2635
+@COMPOSER: 		Sibelius, Jean (1865-1957)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11233622
+@PERFORMER: 		Di Benici, Tosta
+@TITLE: 		Romance Des Dur, op. 34, no. 9
+@PURL: 			https://purl.stanford.edu/gt485ys0625
+@CALLNUM: 		Stanford Libraries CONDON ROLL 637
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Tue May 21 19:17:54 2019
 @ANALYSIS_TIME:		30.27sec
@@ -7436,12 +7485,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -7817,7 +7860,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			hc909pp9868
+@DRUID: 		hc909pp9868
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -7865,6 +7908,16 @@
 @DUST_SCORE_BASS:	1ppm
 @DUST_SCORE_TREBLE:	83ppm
 @SHIFTS:		2
+@CATKEY: 		10763717
+@LABEL: 		Welte-Mignon 371
+@TITLE: 		Little waltz
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763717
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Carre&#xF1;o, Teresa (1853-1917)
+@REISSUE: 		yes
+@PURL: 			https://purl.stanford.edu/hc909pp9868
+@CALLNUM: 		Stanford Libraries CONDON ROLL 111
 @HOLE_SEPARATION:	37.8123px
 @HOLE_OFFSET:		3.69502px
 @TRACKER_HOLES:		100
@@ -7876,12 +7929,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -8552,6 +8599,7 @@
 
 
 @@BEGIN: ROLL
+@CATKEY: 		10763601
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:49 2019
@@ -8568,14 +8616,16 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		hm373bm3807
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@CALLNUM: 		Stanford Libraries CONDON ROLL 7
+@PURL: 			https://purl.stanford.edu/hm373bm3807
+@PERFORMER: 		Adam-Benard, Eugenie
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763601
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Gounod, Charles (1818-1893)
+@TITLE: 		Faust prelude
+@LABEL: 		Welte-Mignon 57
+@DRUID: 		hm373bm3807
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -8803,7 +8853,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			hp956bx4547
+@DRUID: 		hp956bx4547
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -8839,6 +8889,15 @@
 @LAST_HOLE:		57119px
 @END_MARGIN:		1px
 @MUSICAL_LENGTH:	44478px
+@CALLNUM: 		Stanford Libraries CONDON ROLL 368
+@PURL: 			https://purl.stanford.edu/hp956bx4547
+@TITLE: 		Etude Ges-Dur : Staccato : op. 25, no. 9
+@PERFORMER: 		Paderewski, Ignace Jan (1860-1941)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10791181
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@LABEL: 		Welte-Mignon 1253
+@CATKEY: 		10791181
 @MUSICAL_HOLES:		2657
 @MUSICAL_NOTES:		1442
 @AVG_HOLE_WIDTH:	197.71px
@@ -8862,12 +8921,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -9021,7 +9074,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			hs635sh6729
+@DRUID: 		hs635sh6729
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -9054,6 +9107,13 @@
 @DUST_SCORE_BASS:	9ppm
 @DUST_SCORE_TREBLE:	68ppm
 @SHIFTS:		4
+@LABEL: 		Welte-Mignon 378
+@PERFORMER: 		Wendling, Carl
+@COMPOSER: 		Grieg, Edvard (1843-1907)
+@TITLE: 		Hochzeitstag auf Troldhangen op. 65 no. 1
+@PURL: 			https://purl.stanford.edu/hs635sh6729
+@CATKEY: 		10763712
+@CALLNUM: 		Stanford Libraries CONDON ROLL 124
 @HOLE_SEPARATION:	37.7391px
 @HOLE_OFFSET:		-2.11227px
 @TRACKER_HOLES:		100
@@ -9080,12 +9140,8 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763712
 @@END: ROLL
 
 
@@ -9234,7 +9290,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			hw588xk2111
+@DRUID: 		hw588xk2111
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -9284,6 +9340,15 @@
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
+@CALLNUM: 		Stanford Libraries CONDON ROLL 43
+@TITLE: 		2nd ballade B minor
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763580
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Friedheim, Arthur (1859-1932)
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@LABEL: 		Welte-Mignon 214
+@PURL: 			https://purl.stanford.edu/hw588xk2111
+@CATKEY: 		10763580
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
@@ -9293,17 +9358,19 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
+@PERFORMER: 		Adam-Benard, Eugenie
+@COMPOSER: 		Handel, George Frideric (1685-1759)
+@TITLE: 		The harmonius blacksmith : E major, 5th suite = Le forgeron harmonieux
+@LABEL: 		Welte-Mignon 10
+@PURL: 			https://purl.stanford.edu/hx184ww0780
+@DRUID: 		hx184ww0780
+@CATKEY: 		10760281
+@CALLNUM: 		Stanford Libraries CONDON ROLL 2
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @VERSION: 1.1
 @EXP_DATE:		Tue Oct 29 10:42:49 2019
@@ -9319,14 +9386,9 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		hx184ww0780
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760281
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -9776,7 +9838,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			jd625tw2164
+@DRUID: 		jd625tw2164
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -9832,15 +9894,18 @@
 @ANALYSIS_TIME:		36.52sec
 @COLOR_CHANNEL:		green
 @CHANNEL_MD5:		59229bb0a7ae107458d74c8c57d061d7
+@CALLNUM: 		Stanford Libraries CONDON ROLL 31
+@PURL: 			https://purl.stanford.edu/jd625tw2164
+@TITLE: 		Romance op. 42, no. 1, Des-Dur
+@PERFORMER: 		Gr&#xFC;nfeld, Alfred
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763624
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Gr&#xFC;nfeld, Alfred
+@LABEL: 		Welte-Mignon 191
+@CATKEY: 		10763624
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -10053,7 +10118,7 @@
 @MANUAL_EDITS:		no 
 @CATKEY: 		10763561
 @PURL: 			https://purl.stanford.edu/jf942gh3232
-@TITLE: 		Barcarole aus 'Hoffmann's Erz&#xE4;hlungen'
+@TITLE: 		Barcarole aus "Hoffmann's Erz&#xE4;hlungen"
 @PERFORMER: 		Zscherneck, Georg
 @SOURCE: 		SUPRA: Stanford University Piano Roll Archive
 @LICENSE: 		CC BY-NC-SA 4.0
@@ -10068,6 +10133,14 @@
 
 @@BEGIN: ROLL
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
+@PERFORMER: 		Adam-Benard, Eugenie
+@COMPOSER: 		Leoncavallo, Ruggiero (1858-1919)
+@TITLE: 		Prolog a. Bajazzo
+@LABEL: 		Welte-Mignon 106
+@PURL: 			https://purl.stanford.edu/jg699wz4435
+@DRUID: 		jg699wz4435
+@CATKEY: 		10760616
+@CALLNUM: 		Stanford Libraries CONDON ROLL 11
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @VERSION: 1.1
 @EXP_DATE:		Tue Oct 29 10:42:50 2019
@@ -10083,19 +10156,14 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		jg699wz4435
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760616
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
-@DRUID:			jg717nb8731
+@DRUID: 		jg717nb8731
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -10142,6 +10210,15 @@
 @DUST_SCORE:		30ppm
 @DUST_SCORE_BASS:	1ppm
 @DUST_SCORE_TREBLE:	59ppm
+@LABEL: 		Welte-Mignon 2703
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11461975
+@PERFORMER: 		Lohr, Johanna
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@TITLE: 		II. Ungarische Rhapsodie : mit Cadenz von Prof. H. Vetter
+@PURL: 			https://purl.stanford.edu/jg717nb8731
+@CATKEY: 		11461975
+@CALLNUM: 		Stanford Libraries CONDON ROLL 1360
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.8282px
 @HOLE_OFFSET:		-15.2654px
@@ -10155,12 +10232,6 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @LICENSE: 		CC BY-NC-SA 4.0
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -10536,7 +10607,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			jk842rg9750
+@DRUID: 		jk842rg9750
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -10576,6 +10647,15 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
+@CATKEY: 		11354116
+@COMPOSER: 		Beethoven, Ludwig van (1770-1827)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11354116
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Hofmann, Josef (1876-1957)
+@TITLE: 		Sonate op. 103
+@LABEL: 		Welte-Mignon 3027
+@PURL: 			https://purl.stanford.edu/jk842rg9750
+@CALLNUM: 		Stanford Libraries CONDON ROLL 720
 @BAD_HOLE_COUNT:	0
 @EDGE_TEAR_COUNT:	0
 @BASS_TEAR_COUNT:	0
@@ -10597,12 +10677,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -10755,6 +10829,7 @@
 
 
 @@BEGIN: ROLL
+@CATKEY: 		10760749
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:50 2019
@@ -10771,14 +10846,16 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		jn782fq7439
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@CALLNUM: 		Stanford Libraries CONDON ROLL 18
+@DRUID: 		jn782fq7439
+@COMPOSER: 		Weber, Carl Maria von (1786-1826)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760749
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Adam-Benard, Eugenie
+@TITLE: 		Rondo brillante op. 62
+@LABEL: 		Welte-Mignon 134
+@PURL: 			https://purl.stanford.edu/jn782fq7439
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -11006,7 +11083,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			jt465zc6779
+@DRUID: 		jt465zc6779
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -11051,6 +11128,15 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @LEFT_HAND_ADJUST: 	-5
+@CATKEY: 		11392084
+@LABEL: 		Welte-Mignon 5658
+@COMPOSER: 		Gold, Joe (1894-1978)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11392084
+@PERFORMER: 		Johnson, Edward
+@TITLE: 		Driftwood : fox-trot
+@PURL: 			https://purl.stanford.edu/jt465zc6779
+@CALLNUM: 		Stanford Libraries CONDON ROLL 941
 @EXP_WELTE_LOUD: 	70
 @EXP_WELTE_F: 		85
 @EXP_WELTE_MF: 		60
@@ -11065,12 +11151,6 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -11149,7 +11229,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			jw822wm2644
+@DRUID: 		jw822wm2644
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -11189,6 +11269,15 @@
 @MUSICAL_NOTES:		1503
 @AVG_HOLE_WIDTH:	28.7px
 @ANTIDUST_COUNT:	25
+@CATKEY: 		10839873
+@LABEL: 		Welte-Mignon 1275
+@COMPOSER: 		Grieg, Edvard (1843-1907)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10839873
+@PERFORMER: 		Grieg, Edvard (1843-1907)
+@TITLE: 		Butterfly : op. 43, no. 1
+@PURL: 			https://purl.stanford.edu/jw822wm2644
+@CALLNUM: 		Stanford Libraries CONDON ROLL 401
 @BAD_HOLE_COUNT:	3
 @EDGE_TEAR_COUNT:	0
 @BASS_TEAR_COUNT:	0
@@ -11208,12 +11297,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -11515,7 +11598,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			kg263bn9176
+@DRUID: 		kg263bn9176
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -11567,6 +11650,15 @@
 @EXP_WELTE_P: 		38
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
+@CATKEY: 		10763732
+@COMPOSER: 		Beethoven, Ludwig van (1770-1827)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763732
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@TITLE: 		Waldstein sonata
+@LABEL: 		Welte-Mignon 373
+@PURL: 			https://purl.stanford.edu/kg263bn9176
+@CALLNUM: 		Stanford Libraries CONDON ROLL 118
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
@@ -11575,17 +11667,11 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
-@DRUID:			kg327qk8426
+@DRUID: 		kg327qk8426
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -11625,6 +11711,15 @@
 @MUSICAL_NOTES:		2167
 @AVG_HOLE_WIDTH:	21.85px
 @ANTIDUST_COUNT:	19
+@CALLNUM: 		Stanford Libraries CONDON ROLL 218
+@PURL: 			https://purl.stanford.edu/kg327qk8426
+@TITLE: 		Waltzes op. 39, 1. and 2.
+@PERFORMER: 		Galston, Gottfried (1879-1950)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763628
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Brahms, Johannes (1833-1897)
+@LABEL: 		Welte-Mignon 587
+@CATKEY: 		10763628
 @BAD_HOLE_COUNT:	0
 @EDGE_TEAR_COUNT:	0
 @BASS_TEAR_COUNT:	0
@@ -11644,12 +11739,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -12471,6 +12560,8 @@
 
 
 @@BEGIN: ROLL
+@DRUID: 		kt852zf4103
+@PURL: 			https://purl.stanford.edu/kt852zf4103
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:50 2019
@@ -12487,14 +12578,15 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		kt852zf4103
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@CALLNUM: 		Stanford Libraries CONDON ROLL 19
+@CATKEY: 		10763610
+@LABEL: 		Welte-Mignon 137
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763610
+@PERFORMER: 		Adam-Benard, Eugenie
+@COMPOSER: 		Bizet, Georges (1838-1875)
+@TITLE: 		Carmens Lied : tralalala
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -13275,7 +13367,7 @@
 @EXP_WELTE_P: 		38
 @EXP_WELTE_F: 		85
 @LEFT_HAND_ADJUST: 	-5
-@DRUID:			kz379jn2491
+@DRUID: 		kz379jn2491
 @END_MARGIN:		8905px
 @MUSICAL_LENGTH:	178102px
 @MUSICAL_HOLES:		13888
@@ -13298,16 +13390,19 @@
 @ANALYSIS_TIME:		35.65sec
 @COLOR_CHANNEL:		green
 @CHANNEL_MD5:		67e256821b34f483102cd71c875f9b14
+@CATKEY: 		10763627
+@LABEL: 		Welte-Mignon 570
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763627
+@PERFORMER: 		Lamond, Frederic (1868-1948)
+@TITLE: 		Liebestraum
+@PURL: 			https://purl.stanford.edu/kz379jn2491
+@CALLNUM: 		Stanford Libraries CONDON ROLL 221
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @EXP_WELTE_LOUD: 	70
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -13622,18 +13717,21 @@
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
+@CALLNUM: 		Stanford Libraries CONDON ROLL 47
+@LABEL: 		Welte-Mignon 225
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763574
+@PERFORMER: 		Gr&#xFC;nfeld, Alfred
+@COMPOSER: 		Schumann, Robert (1810-1856)
+@TITLE: 		Tr&#xE4;umerei
+@PURL: 			https://purl.stanford.edu/mf320jq4997
+@DRUID: 		mf320jq4997
+@CATKEY: 		10763574
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		mf320jq4997
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -13861,7 +13959,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			mh120sr5901
+@DRUID: 		mh120sr5901
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -13893,6 +13991,11 @@
 @DUST_SCORE:		30ppm
 @DUST_SCORE_BASS:	0ppm
 @DUST_SCORE_TREBLE:	60ppm
+@CATKEY: 		10763592
+@TITLE: 		Paganini &#xE9;tude no. 2, E flat major
+@LABEL: 		Welte-Mignon 186
+@PURL: 			https://purl.stanford.edu/mh120sr5901
+@CALLNUM: 		Stanford Libraries CONDON ROLL 27
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.6881px
 @HOLE_OFFSET:		0.739304px
@@ -13920,12 +14023,10 @@
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763592
+@PERFORMER: 		Friedheim, Arthur (1859-1932)
 @@END: ROLL
 
 
@@ -14525,7 +14626,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			mw198ym5807
+@DRUID: 		mw198ym5807
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -14570,6 +14671,15 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @LEFT_HAND_ADJUST: 	-5
+@CATKEY: 		11392075
+@LABEL: 		Welte-Mignon 5659
+@COMPOSER: 		Ellis, Vivian (1904-1996)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11392075
+@PERFORMER: 		Johnson, Edward
+@TITLE: 		Hum a little tune : fox-trot
+@PURL: 			https://purl.stanford.edu/mw198ym5807
+@CALLNUM: 		Stanford Libraries CONDON ROLL 938
 @EXP_WELTE_LOUD: 	70
 @EXP_WELTE_F: 		85
 @EXP_WELTE_MF: 		60
@@ -14584,17 +14694,11 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
-@DRUID:			mw870hc7232
+@DRUID: 		mw870hc7232
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -14649,29 +14753,37 @@
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Sun Apr  7 00:37:00 2019
+@PURL: 			https://purl.stanford.edu/mw870hc7232
+@PERFORMER: 		Kiek, Georges
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11366472
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Beethoven, Ludwig van (1770-1827)
+@TITLE: 		2nd symphony
+@LABEL: 		Welte-Mignon 3156
+@CATKEY: 		11366472
+@CALLNUM: 		Stanford Libraries CONDON ROLL 742
 @ANALYSIS_TIME:		124.51sec
 @COLOR_CHANNEL:		green
 @CHANNEL_MD5:		2bdb9d2a4eccdb10ce994d1edabe5a63
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
-@PURL: http://purl.stanford.edu/mx460bt7026
-@TITLE: XII Rhapsodie
-@COMPOSER: Liszt, Franz
-@PERFORMER: Friedheim, Arthur
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763585
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@LABEL: 		Welte-Mignon 198
+@DRUID: 		mx460bt7026
+@CALLNUM: 		Stanford Libraries CONDON ROLL 36
+@PURL: 			https://purl.stanford.edu/mx460bt7026
+@TITLE: 		XII Rhapsodie
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@PERFORMER: 		Friedheim, Arthur (1859-1932)
 @CATALOG: Welte-Mignon 198
-@CATKEY: 10763585
+@CATKEY: 		10763585
 @SOURCEID: sul:ars_0163_36105225780373
 @SCAN_DATE: 5/29/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -14696,10 +14808,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		mx460bt7026
-@LABEL:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -14853,6 +14962,7 @@
 
 @@BEGIN: ROLL
 @MIDIFILE_TYPE: 	exp
+@CALLNUM: 		Stanford Libraries CONDON ROLL 51
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @VERSION: 1.1
 @EXP_DATE:		Tue Oct 29 10:42:50 2019
@@ -14861,6 +14971,12 @@
 @ACCEL_PERCENT: 	0.22
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_P: 		38
+@CATKEY: 		10763539
+@TITLE: 		Scherzo e-Moll
+@COMPOSER: 		Mendelssohn-Bartholdy, Felix (1809-1847)
+@LABEL: 		Welte-Mignon 232
+@PURL: 			https://purl.stanford.edu/mz508vq7890
+@DRUID: 		mz508vq7890
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
@@ -14868,18 +14984,15 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		mz508vq7890
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@PERFORMER: 		Scharwenka, Xaver (1850-1924)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763539
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
+@CATKEY: 		10763583
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:51 2019
@@ -14896,14 +15009,16 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		nf274ng7905
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@CALLNUM: 		Stanford Libraries CONDON ROLL 38
+@PURL: 			https://purl.stanford.edu/nf274ng7905
+@PERFORMER: 		Krah, Alexander 
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763583
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@TITLE: 		Nocturne op. 55, no. 2, E flat major
+@LABEL: 		Welte-Mignon 209
+@DRUID: 		nf274ng7905
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -16308,7 +16423,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			pb477ps9097
+@DRUID: 		pb477ps9097
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -16357,6 +16472,15 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.7621px
+@LABEL: 		Welte-Mignon 138
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763611
+@PERFORMER: 		Adam-Benard, Eugenie
+@COMPOSER: 		Raff, Joachim (1822-1882)
+@TITLE: 		Tannh&#xE4;user-Fantasie
+@PURL: 			https://purl.stanford.edu/pb477ps9097
+@CATKEY: 		10763611
+@CALLNUM: 		Stanford Libraries CONDON ROLL 20
 @HOLE_OFFSET:		9.80492px
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
@@ -16367,12 +16491,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -17296,7 +17414,7 @@
 @EXP_WELTE_P: 		38
 @EXP_WELTE_F: 		85
 @LEFT_HAND_ADJUST: 	-5
-@DRUID:			ps656vb4839
+@DRUID: 		ps656vb4839
 @END_MARGIN:		5168px
 @MUSICAL_LENGTH:	169546px
 @MUSICAL_HOLES:		10937
@@ -17319,16 +17437,19 @@
 @ANALYSIS_TIME:		33.02sec
 @COLOR_CHANNEL:		green
 @CHANNEL_MD5:		56e07bcb88b22a5582c083063603034f
+@CATKEY: 		11064150
+@LABEL: 		Welte-Mignon 2086
+@COMPOSER: 		Schumann, Robert (1810-1856)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11064150
+@PERFORMER: 		Schorr, David
+@TITLE: 		Slumber song
+@PURL: 			https://purl.stanford.edu/ps656vb4839
+@CALLNUM: 		Stanford Libraries CONDON ROLL 573
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @EXP_WELTE_LOUD: 	70
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -17510,12 +17631,21 @@
 @ACCEL_PERCENT: 	0.22
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_P: 		38
-@DRUID:			pv151xx7555
+@DRUID: 		pv151xx7555
 @MUSICAL_HOLES:		13895
 @MUSICAL_NOTES:		7543
 @AVG_HOLE_WIDTH:	20.36px
 @ANTIDUST_COUNT:	40
 @BAD_HOLE_COUNT:	13
+@LABEL: 		Welte-Mignon 1083
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10785445
+@PERFORMER: 		Esipova, Anna Nikolaevna (1851-1914)
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@TITLE: 		Rigoletto (paraphrase)
+@PURL: 			https://purl.stanford.edu/pv151xx7555
+@CATKEY: 		10785445
+@CALLNUM: 		Stanford Libraries CONDON ROLL 312
 @EDGE_TEAR_COUNT:	0
 @BASS_TEAR_COUNT:	0
 @TREBLE_TEAR_COUNT:	0
@@ -17540,12 +17670,6 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -17624,6 +17748,7 @@
 
 
 @@BEGIN: ROLL
+@CATKEY: 		10760282
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:51 2019
@@ -17640,14 +17765,16 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		py987gg6088
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
+@CALLNUM: 		Stanford Libraries CONDON ROLL 1
+@PURL: 			https://purl.stanford.edu/py987gg6088
+@PERFORMER: 		Adam-Benard, Eugenie
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760282
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Gounod, Charles (1818-1893)
+@TITLE: 		Faust prelude
+@LABEL: 		Welte-Mignon 57
+@DRUID: 		py987gg6088
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -17726,7 +17853,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			pz923dx9638
+@DRUID: 		pz923dx9638
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -17778,6 +17905,15 @@
 @HOLE_OFFSET:		12.9215px
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
+@CATKEY: 		10763572
+@LABEL: 		Welte-Mignon 234
+@COMPOSER: 		Rachmaninoff, Sergei (1873-1943)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763572
+@PERFORMER: 		R&#xF6;ssel, Anatol von
+@TITLE: 		Prelude op. 3, no. 2
+@PURL: 			https://purl.stanford.edu/pz923dx9638
+@CALLNUM: 		Stanford Libraries CONDON ROLL 54
 @ANALYSIS_DATE:		Tue May 21 21:31:35 2019
 @ANALYSIS_TIME:		29.83sec
 @COLOR_CHANNEL:		green
@@ -17785,12 +17921,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -17839,7 +17969,7 @@
 @LABEL: 		Welte-Mignon 1226
 @PERFORMER: 		Pachmann, Vladimir de (1848-1933)
 @COMPOSER: 		Pachmann, Vladimir de (1848-1933)
-@TITLE: 		Improvisation on 'The maiden's prayer'
+@TITLE: 		Improvisation on "The maiden's prayer"
 @PURL: 			https://purl.stanford.edu/qb477sd2923
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10839854
 @CATKEY: 		10839854
@@ -17870,7 +18000,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			qc650tp0469
+@DRUID: 		qc650tp0469
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -17917,6 +18047,15 @@
 @DUST_SCORE:		37ppm
 @DUST_SCORE_BASS:	0ppm
 @DUST_SCORE_TREBLE:	74ppm
+@CATKEY: 		10763716
+@LABEL: 		Welte-Mignon 371
+@COMPOSER: 		Carre&#xF1;o, Teresa (1853-1917)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763716
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@TITLE: 		Kleiner Walzer
+@PURL: 			https://purl.stanford.edu/qc650tp0469
+@CALLNUM: 		Stanford Libraries CONDON ROLL 113
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.6963px
 @HOLE_OFFSET:		-18.3856px
@@ -17929,12 +18068,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -18387,7 +18520,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			qg708tz0324
+@DRUID: 		qg708tz0324
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -18445,13 +18578,17 @@
 @CHANNEL_MD5:		85c8967ee5871ef60d9f594d2953fc89
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
+@CALLNUM: 		Stanford Libraries CONDON ROLL 17
+@PURL: 			https://purl.stanford.edu/qg708tz0324
+@REISSUE: 		yes
+@COMPOSER: 		Wagner, Richard (1813-1883)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760751
+@PERFORMER: 		Adam-Benard, Eugenie
+@TITLE: 		Lohengrin
+@LABEL: 		Welte-Mignon 122
+@CATKEY: 		10760751
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -18530,7 +18667,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			qj233tv5549
+@DRUID: 		qj233tv5549
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -18571,6 +18708,16 @@
 @AVG_HOLE_WIDTH:	18.66px
 @ANTIDUST_COUNT:	25
 @BAD_HOLE_COUNT:	2
+@CATKEY: 		10772480
+@LABEL: 		Welte-Mignon 377
+@TITLE: 		Etude mignonne
+@PERFORMER: 		Wendling, Carl
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10772480
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Sch&#xFC;tt, Eduard (1856-1933)
+@REISSUE: 		yes
+@PURL: 			https://purl.stanford.edu/qj233tv5549
+@CALLNUM: 		Stanford Libraries CONDON ROLL 168
 @EDGE_TEAR_COUNT:	0
 @BASS_TEAR_COUNT:	0
 @TREBLE_TEAR_COUNT:	0
@@ -18589,12 +18736,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -19415,7 +19556,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			qz155gk0442
+@DRUID: 		qz155gk0442
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -19470,16 +19611,19 @@
 @ANALYSIS_DATE:		Tue May 21 21:44:42 2019
 @ANALYSIS_TIME:		37.08sec
 @COLOR_CHANNEL:		green
+@CALLNUM: 		Stanford Libraries CONDON ROLL 245
+@PURL: 			https://purl.stanford.edu/qz155gk0442
+@TITLE: 		Finale a. d. I. Akt "Samson und Dalila"
+@PERFORMER: 		Saint-Sa&#xEB;ns, Camille (1835-1921)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10779813
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Saint-Sa&#xEB;ns, Camille (1835-1921)
+@LABEL: 		Welte-Mignon 797
+@CATKEY: 		10779813
 @CHANNEL_MD5:		4a48bb1e116a01ae0fa9050316904935
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -19517,9 +19661,18 @@
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
-@DRUID:			qz671pq0609
+@DRUID: 		qz671pq0609
 @MUSICAL_NOTES:		9305
 @AVG_HOLE_WIDTH:	19.86px
+@CATKEY: 		10763734
+@COMPOSER: 		Beethoven, Ludwig van (1770-1827)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763734
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@TITLE: 		Sonate C-Dur, op. 53 : (Waldstein)
+@LABEL: 		Welte-Mignon 372
+@PURL: 			https://purl.stanford.edu/qz671pq0609
+@CALLNUM: 		Stanford Libraries CONDON ROLL 116
 @ANTIDUST_COUNT:	53
 @BAD_HOLE_COUNT:	0
 @EDGE_TEAR_COUNT:	0
@@ -19544,12 +19697,6 @@
 @ACCEL_PERCENT: 	0.22
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -19629,7 +19776,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			rb861vm6094
+@DRUID: 		rb861vm6094
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -19676,6 +19823,15 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@LABEL: 		Welte-Mignon 3056
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11355057
+@PERFORMER: 		Ganz, Rudolph (1877-1972)
+@COMPOSER: 		Korngold, Erich Wolfgang (1897-1957)
+@TITLE: 		Sonate E-Dur, op. 2, no. 2
+@PURL: 			https://purl.stanford.edu/rb861vm6094
+@CATKEY: 		11355057
+@CALLNUM: 		Stanford Libraries CONDON ROLL 729
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @HOLE_OFFSET:		-1.46558px
@@ -19690,12 +19846,6 @@
 @MIDIFILE_TYPE: 	exp
 @LICENSE: 		CC BY-NC-SA 4.0
 @HOLE_SHIFT: 		2
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -19774,7 +19924,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			rd899zb5188
+@DRUID: 		rd899zb5188
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -19824,6 +19974,15 @@
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.6551px
 @HOLE_OFFSET:		15.0242px
+@CATKEY: 		11392085
+@LABEL: 		Welte-Mignon 5608
+@COMPOSER: 		Rimsky-Korsakov, Nikolay (1844-1908)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11392085
+@PERFORMER: 		Black, Sidney
+@TITLE: 		Play that song of India again : fox-trot-song after "Korsakow's Sadko"
+@PURL: 			https://purl.stanford.edu/rd899zb5188
+@CALLNUM: 		Stanford Libraries CONDON ROLL 942
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Sun Apr  7 05:39:20 2019
@@ -19834,12 +19993,6 @@
 @MANUAL_EDITS:		no 
 @HOLE_SHIFT: 		-1
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -20175,9 +20328,19 @@
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
-@DRUID:			rj799hj0968
+@DRUID: 		rj799hj0968
 @MUSICAL_NOTES:		3302
 @AVG_HOLE_WIDTH:	21.39px
+@CALLNUM: 		Stanford Libraries CONDON ROLL 103
+@REISSUE: 		yes
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763727
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@TITLE: 		Nocturne G major, op. 37, no. 2
+@LABEL: 		Welte-Mignon 364
+@PURL: 			https://purl.stanford.edu/rj799hj0968
+@CATKEY: 		10763727
 @ANTIDUST_COUNT:	68
 @BAD_HOLE_COUNT:	1
 @EDGE_TEAR_COUNT:	0
@@ -20202,12 +20365,6 @@
 @ACCEL_PERCENT: 	0.22
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -21190,18 +21347,21 @@
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
+@CALLNUM: 		Stanford Libraries CONDON ROLL 52
+@LABEL: 		Welte-Mignon 226
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763575
+@PERFORMER: 		Popper, Hugo (1857-1910)
+@COMPOSER: 		Rosenzweig, Wilhelm
+@TITLE: 		Sei mir gut : Walzerlied
+@PURL: 			https://purl.stanford.edu/rv790qz2532
+@DRUID: 		rv790qz2532
+@CATKEY: 		10763575
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		rv790qz2532
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -21801,6 +21961,16 @@
 
 @@BEGIN: ROLL
 @LEFT_HAND_ADJUST: 	-5
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763654
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Brzezi&#x144;ski, Franciszek (1867-19444)
+@COMPOSER: 		Strauss, Johann (1825-1899)
+@TITLE: 		Rosen a. d. S&#xFC;den
+@LABEL: 		Welte-Mignon 277
+@PURL: 			https://purl.stanford.edu/sj250cc6451
+@DRUID: 		sj250cc6451
+@CATKEY: 		10763654
+@CALLNUM: 		Stanford Libraries CONDON ROLL 71
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @VERSION: 1.1
 @EXP_DATE:		Tue Oct 29 10:42:51 2019
@@ -21816,14 +21986,7 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@DRUID:		sj250cc6451
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -22974,11 +23137,20 @@
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_P: 		38
 @EXP_WELTE_MF: 		60
-@DRUID:			st828pc9818
+@DRUID: 		st828pc9818
 @MUSICAL_NOTES:		3322
 @AVG_HOLE_WIDTH:	20.51px
 @ANTIDUST_COUNT:	11
 @BAD_HOLE_COUNT:	2
+@CATKEY: 		10763726
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763726
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@TITLE: 		Nocturne op. 37, no. 2, G major
+@LABEL: 		Welte-Mignon 364
+@PURL: 			https://purl.stanford.edu/st828pc9818
+@CALLNUM: 		Stanford Libraries CONDON ROLL 101
 @EDGE_TEAR_COUNT:	0
 @BASS_TEAR_COUNT:	0
 @TREBLE_TEAR_COUNT:	0
@@ -23004,12 +23176,6 @@
 @ACCEL_PERCENT: 	0.22
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -23090,12 +23256,12 @@
 
 @@BEGIN: ROLL
 @MIDIFILE_TYPE: 	exp
-@PURL: http://purl.stanford.edu/sw740gd4329
-@TITLE: Largo
-@COMPOSER: Handel, George Frideric
-@PERFORMER: Adam-Benard, Eugenie
+@PURL: 			https://purl.stanford.edu/sw740gd4329
+@TITLE: 		Largo
+@COMPOSER: 		Handel, George Frideric (1685-1759)
+@PERFORMER: 		Adam-Benard, Eugenie
 @CATALOG: Welte-Mignon 76
-@CATKEY: 10760613
+@CATKEY: 		10760613
 @SOURCEID: sul:ars_0163_36105225780092
 @SCAN_DATE: 5/29/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -23112,6 +23278,11 @@
 @ACCEL_INCH: 		12
 @ACCEL_PERCENT: 	0.22
 @TRACKER_EXTENSION: 	13px
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760613
+@LABEL: 		Welte-Mignon 76
+@DRUID: 		sw740gd4329
+@CALLNUM: 		Stanford Libraries CONDON ROLL 10
 @EXP_WELTE_P: 		38
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
@@ -23120,10 +23291,7 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		sw740gd4329
-@LABEL:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -23350,7 +23518,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			tb323rh4122
+@DRUID: 		tb323rh4122
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -23382,6 +23550,15 @@
 @EXP_WELTE_F: 		85
 @EXP_WELTE_P: 		38
 @ACCEL_PERCENT: 	0.22
+@CATKEY: 		11355064
+@COMPOSER: 		Mendelssohn-Bartholdy, Felix (1809-1847)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11355064
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Hofmann, Josef (1876-1957)
+@TITLE: 		Rondo capriccioso op. 14
+@LABEL: 		Welte-Mignon 3031
+@PURL: 			https://purl.stanford.edu/tb323rh4122
+@CALLNUM: 		Stanford Libraries CONDON ROLL 732
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:30 2019
@@ -23409,12 +23586,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -23642,7 +23813,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			tj759sv4290
+@DRUID: 		tj759sv4290
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -23691,6 +23862,15 @@
 @DUST_SCORE_TREBLE:	55ppm
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.8486px
+@CATKEY: 		11056970
+@LABEL: 		Welte-Mignon 1544
+@COMPOSER: 		Michaelis, Th (1831-1887)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11056970
+@PERFORMER: 		Brightwell, Edward (1876-)
+@TITLE: 		T&#xFC;rkische Scharwache = The Turkish patrol
+@PURL: 			https://purl.stanford.edu/tj759sv4290
+@CALLNUM: 		Stanford Libraries CONDON ROLL 506
 @HOLE_OFFSET:		5.82396px
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
@@ -23701,12 +23881,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -24527,7 +24701,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			ty382mw3181
+@DRUID: 		ty382mw3181
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -24566,6 +24740,15 @@
 @MUSICAL_HOLES:		26345
 @MUSICAL_NOTES:		8472
 @AVG_HOLE_WIDTH:	21.89px
+@PURL: 			https://purl.stanford.edu/ty382mw3181
+@PERFORMER: 		Hofmann, Josef (1876-1957)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11354117
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Beethoven, Ludwig van (1770-1827)
+@TITLE: 		Sonate A-Dur, op. 101
+@LABEL: 		Welte-Mignon 3026
+@CATKEY: 		11354117
+@CALLNUM: 		Stanford Libraries CONDON ROLL 721
 @ANTIDUST_COUNT:	56
 @BAD_HOLE_COUNT:	3
 @EDGE_TEAR_COUNT:	1
@@ -24588,12 +24771,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -24672,7 +24849,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			vb685pd6967
+@DRUID: 		vb685pd6967
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -24731,12 +24908,15 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
+@CATKEY: 		10763626
+@LABEL: 		Welte-Mignon 192
+@COMPOSER: 		Gr&#xFC;nfeld, Alfred
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763626
+@PERFORMER: 		Gr&#xFC;nfeld, Alfred
+@TITLE: 		Paraphrase &#xFC;ber den Walzer "Fr&#xFC;hlingsstimmen"
+@PURL: 			https://purl.stanford.edu/vb685pd6967
+@CALLNUM: 		Stanford Libraries CONDON ROLL 33
 @@END: ROLL
 
 
@@ -25032,7 +25212,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			vj076nk8220
+@DRUID: 		vj076nk8220
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -25070,6 +25250,15 @@
 @ACCEL_INCH: 		12
 @ACCEL_PERCENT: 	0.22
 @TRACKER_EXTENSION: 	13px
+@CALLNUM: 		Stanford Libraries CONDON ROLL 345
+@PURL: 			https://purl.stanford.edu/vj076nk8220
+@TITLE: 		Prelude op. 28, no. 20, C minor
+@PERFORMER: 		Pachmann, Vladimir de (1848-1933)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10789870
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@LABEL: 		Welte-Mignon 1213
+@CATKEY: 		10789870
 @EXP_WELTE_P: 		38
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
@@ -25091,12 +25280,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -25472,7 +25655,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			vq976gr5492
+@DRUID: 		vq976gr5492
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -25517,6 +25700,15 @@
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
 @LEFT_HAND_ADJUST: 	-5
+@CATKEY: 		10779808
+@LABEL: 		Welte-Mignon 767
+@COMPOSER: 		Mahler, Gustav (1860-1911)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10779808
+@PERFORMER: 		Mahler, Gustav (1860-1911)
+@TITLE: 		Ging heute morgen &#xFC;bers Feld
+@PURL: 			https://purl.stanford.edu/vq976gr5492
+@CALLNUM: 		Stanford Libraries CONDON ROLL 248
 @EXP_WELTE_LOUD: 	70
 @EXP_WELTE_F: 		85
 @EXP_WELTE_MF: 		60
@@ -25531,12 +25723,6 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -26212,7 +26398,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			wc588rr6112
+@DRUID: 		wc588rr6112
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -26249,6 +26435,15 @@
 @END_MARGIN:		2134px
 @MUSICAL_LENGTH:	315389px
 @MUSICAL_HOLES:		17194
+@CATKEY: 		10763724
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763724
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Carre&#xF1;o, Teresa (1853-1917)
+@TITLE: 		VI Ungar. Rhapsodie
+@LABEL: 		Welte-Mignon 365
+@PURL: 			https://purl.stanford.edu/wc588rr6112
+@CALLNUM: 		Stanford Libraries CONDON ROLL 106
 @MUSICAL_NOTES:		8149
 @AVG_HOLE_WIDTH:	26.76px
 @ANTIDUST_COUNT:	302
@@ -26271,17 +26466,11 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
 @@BEGIN: ROLL
-@DRUID:			wf903pd7291
+@DRUID: 		wf903pd7291
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -26325,6 +26514,15 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @EXP_WELTE_MF: 		60
+@CALLNUM: 		Stanford Libraries CONDON ROLL 831
+@PURL: 			https://purl.stanford.edu/wf903pd7291
+@TITLE: 		Pr&#xE8;s du berceau = (By the cradle) : op. 58
+@PERFORMER: 		Danziger, Laura
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11371785
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Moszkowski, Moritz (1854-1925)
+@LABEL: 		Welte-Mignon 3744
+@CATKEY: 		11371785
 @TRACKER_EXTENSION: 	13px
 @ACCEL_PERCENT: 	0.22
 @ACCEL_INCH: 		12
@@ -26340,12 +26538,6 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -26424,7 +26616,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			wh678yv0330
+@DRUID: 		wh678yv0330
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -26462,6 +26654,15 @@
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Tue May 21 22:19:53 2019
+@CALLNUM: 		Stanford Libraries CONDON ROLL 125
+@PURL: 			https://purl.stanford.edu/wh678yv0330
+@TITLE: 		Intermezzo C Dur, op. 119, no. 3
+@PERFORMER: 		Schnabel, Artur (1882-1951)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763711
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Brahms, Johannes (1833-1897)
+@LABEL: 		Welte-Mignon 386
+@CATKEY: 		10763711
 @ANALYSIS_TIME:		5.71sec
 @COLOR_CHANNEL:		green
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
@@ -26483,12 +26684,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -27236,7 +27431,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			ws749sk4778
+@DRUID: 		ws749sk4778
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -27281,6 +27476,15 @@
 @BASS_TEAR_COUNT:	48
 @TREBLE_TEAR_COUNT:	0
 @DUST_SCORE:		33ppm
+@CALLNUM: 		Stanford Libraries CONDON ROLL 341
+@PURL: 			https://purl.stanford.edu/ws749sk4778
+@TITLE: 		The two larks
+@PERFORMER: 		Leschetizky, Theodor (1830-1915)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10789866
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Leschetizky, Theodor (1830-1915)
+@LABEL: 		Welte-Mignon 1203
+@CATKEY: 		10789866
 @DUST_SCORE_BASS:	0ppm
 @DUST_SCORE_TREBLE:	65ppm
 @SHIFTS:		0
@@ -27295,12 +27499,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -27454,7 +27652,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			wv912mm2332
+@DRUID: 		wv912mm2332
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -27500,6 +27698,15 @@
 @MIDIFILE_TYPE: 	exp
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
+@CATKEY: 		10763576
+@LABEL: 		Welte-Mignon 225
+@COMPOSER: 		Schumann, Robert (1810-1856)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763576
+@PERFORMER: 		Gr&#xFC;nfeld, Alfred
+@TITLE: 		Traumerei : op. 15, no. 7
+@PURL: 			https://purl.stanford.edu/wv912mm2332
+@CALLNUM: 		Stanford Libraries CONDON ROLL 48
 @EXP_WELTE_LOUD: 	70
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_P: 		38
@@ -27513,12 +27720,6 @@
 @EXP_WELTE_F: 		85
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -28118,7 +28319,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			xg976jt9573
+@DRUID: 		xg976jt9573
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -28176,14 +28377,17 @@
 @COLOR_CHANNEL:		green
 @CHANNEL_MD5:		8bec9570a5d6d011b15906113bc694a9
 @BRIDGE_FACTOR:		1.37
+@CALLNUM: 		Stanford Libraries CONDON ROLL 936
+@PURL: 			https://purl.stanford.edu/xg976jt9573
+@TITLE: 		My isle of golden dreams : waltz
+@PERFORMER: 		Dark, Henry
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11392073
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Blaufuss, Walter (1883-1945)
+@LABEL: 		Welte-Mignon 5521
+@CATKEY: 		11392073
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -28485,7 +28689,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			xm978sg7252
+@DRUID: 		xm978sg7252
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -28530,6 +28734,15 @@
 @BASS_TEAR_COUNT:	0
 @TREBLE_TEAR_COUNT:	0
 @DUST_SCORE:		34ppm
+@CALLNUM: 		Stanford Libraries CONDON ROLL 222
+@PURL: 			https://purl.stanford.edu/xm978sg7252
+@TITLE: 		Waltzes op. 39, no. 15 and 16
+@PERFORMER: 		Galston, Gottfried (1879-1950)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763634
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Brahms, Johannes (1833-1897)
+@LABEL: 		Welte-Mignon 592
+@CATKEY: 		10763634
 @DUST_SCORE_BASS:	0ppm
 @DUST_SCORE_TREBLE:	68ppm
 @SHIFTS:		0
@@ -28544,12 +28757,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -28998,7 +29205,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			xr682fm1233
+@DRUID: 		xr682fm1233
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -29049,6 +29256,16 @@
 @HOLE_SEPARATION:	37.8111px
 @HOLE_OFFSET:		12.526px
 @TRACKER_HOLES:		100
+@CATKEY: 		10763641
+@LABEL: 		Welte-Mignon 660
+@TITLE: 		Melodie op. 3, F major
+@PERFORMER: 		Hofmann, Josef (1876-1957)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763641
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Rubinstein, Anton (1829-1894)
+@REISSUE: 		yes
+@PURL: 			https://purl.stanford.edu/xr682fm1233
+@CALLNUM: 		Stanford Libraries CONDON ROLL 228
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Tue May 21 22:39:34 2019
 @ANALYSIS_TIME:		28.39sec
@@ -29057,12 +29274,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -29292,7 +29503,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			xy699sy1462
+@DRUID: 		xy699sy1462
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -29338,6 +29549,15 @@
 @TREBLE_TEAR_COUNT:	0
 @DUST_SCORE:		41ppm
 @DUST_SCORE_BASS:	0ppm
+@CATKEY: 		10839888
+@LABEL: 		Welte-Mignon 1324
+@COMPOSER: 		Dvo&#x159;&#xE1;k, Anton&#xED;n (1841-1904)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10839888
+@PERFORMER: 		Fryer, Herbert (1877-1957)
+@TITLE: 		Humoreske op. 10, no. 7
+@PURL: 			https://purl.stanford.edu/xy699sy1462
+@CALLNUM: 		Stanford Libraries CONDON ROLL 412
 @DUST_SCORE_TREBLE:	82ppm
 @SHIFTS:		1
 @HOLE_SEPARATION:	37.7615px
@@ -29352,12 +29572,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -29510,7 +29724,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			yb682jn2494
+@DRUID: 		yb682jn2494
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -29560,6 +29774,15 @@
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.7524px
 @HOLE_OFFSET:		-7.21448px
+@CALLNUM: 		Stanford Libraries CONDON ROLL 417
+@PURL: 			https://purl.stanford.edu/yb682jn2494
+@TITLE: 		Pas des &#xE9;charpes : 3&#xE8;me air de ballet, op. 37
+@PERFORMER: 		K&#xFC;hn, Lenore (1878-1955)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11048241
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Chaminade, C&#xE9;cile (1857-1944)
+@LABEL: 		Welte-Mignon 1357
+@CATKEY: 		11048241
 @TRACKER_HOLES:		100
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Tue May 21 22:42:42 2019
@@ -29569,12 +29792,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -29666,18 +29883,21 @@
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
+@DRUID: 		yg150mb0559
+@COMPOSER: 		Schumann, Robert (1810-1856)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763584
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Gr&#xFC;nfeld, Alfred
+@TITLE: 		Des Abends op. 12
+@LABEL: 		Welte-Mignon 207
+@PURL: 			https://purl.stanford.edu/yg150mb0559
+@CATKEY: 		10763584
+@CALLNUM: 		Stanford Libraries CONDON ROLL 39
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		yg150mb0559
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -29830,7 +30050,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			yg939nd3043
+@DRUID: 		yg939nd3043
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -29884,17 +30104,21 @@
 @SOFTWARE_DATE:		Mar 26 2019 16:32:26
 @ANALYSIS_DATE:		Tue May 21 22:46:04 2019
 @ANALYSIS_TIME:		33.4sec
+@CALLNUM: 		Stanford Libraries CONDON ROLL 199
+@PURL: 			https://purl.stanford.edu/yg939nd3043
+@REISSUE: 		yes
+@COMPOSER: 		Busoni, Ferruccio (1866-1924)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763684
+@PERFORMER: 		Zadora, Michael (1882-1946)
+@TITLE: 		IV Balletscene : op. 33
+@LABEL: 		Welte-Mignon 537
+@CATKEY: 		10763684
 @COLOR_CHANNEL:		green
 @CHANNEL_MD5:		6557809412ce80bce3b092e0831b32cd
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -30207,18 +30431,21 @@
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
+@DRUID: 		ym420hv4366
+@COMPOSER: 		Mendelssohn-Bartholdy, Felix (1809-1847)
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760280
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		M&#xF6;hle, Hermann
+@TITLE: 		Lied ohne Worte, op. 62, [no. 4], no. 28
+@LABEL: 		Welte-Mignon 231
+@PURL: 			https://purl.stanford.edu/ym420hv4366
+@CATKEY: 		10760280
+@CALLNUM: 		Stanford Libraries CONDON ROLL 3
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@DRUID:		ym420hv4366
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -30371,12 +30598,12 @@
 
 
 @@BEGIN: ROLL
-@PURL: http://purl.stanford.edu/yr287jf4422
-@TITLE: Lied a. d. Abendstern :
-@COMPOSER: Wagner, Richard
-@PERFORMER: Adam-Benard, Eugenie
+@PURL: 			https://purl.stanford.edu/yr287jf4422
+@TITLE: 		Lied a. d. Abendstern : a. Tannh&#xE4;user op. 94
+@COMPOSER: 		Wagner, Richard (1813-1883)
+@PERFORMER: 		Adam-Benard, Eugenie
 @CATALOG: Welte-Mignon 144
-@CATKEY: 10760752
+@CATKEY: 		10760752
 @SOURCEID: sul:ars_0163_36105225780217
 @SCAN_DATE: 5/29/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -30390,6 +30617,11 @@
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @VERSION: 1.1
 @ACCEL_INCH: 		12
+@CALLNUM: 		Stanford Libraries CONDON ROLL 21
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760752
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@LABEL: 		Welte-Mignon 144
+@DRUID: 		yr287jf4422
 @ACCEL_PERCENT: 	0.22
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_P: 		38
@@ -30402,10 +30634,7 @@
 @FIRST_HOLE: 18926px
 @AVG_HOLE_WIDTH: 24.39px
 @HOLE_EXTENSION: 22.500000px
-@DRUID:		yr287jf4422
-@LABEL:		???
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -30485,7 +30714,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			ys250pr2232
+@DRUID: 		ys250pr2232
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -30531,6 +30760,15 @@
 @TREBLE_TEAR_COUNT:	0
 @DUST_SCORE:		34ppm
 @DUST_SCORE_BASS:	0ppm
+@CATKEY: 		11391992
+@LABEL: 		Welte-Mignon 5736
+@COMPOSER: 		Friml, Rudolf (1879-1972)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11391992
+@PERFORMER: 		Johnson, Edward
+@TITLE: 		Indian love call : fox-trot
+@PURL: 			https://purl.stanford.edu/ys250pr2232
+@CALLNUM: 		Stanford Libraries CONDON ROLL 913
 @DUST_SCORE_TREBLE:	67ppm
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.7701px
@@ -30544,12 +30782,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -30629,6 +30861,9 @@
 
 @@BEGIN: ROLL
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
+@LABEL: 		Welte-Mignon 244
+@DRUID: 		yt837kd6607
+@CALLNUM: 		Stanford Libraries CONDON ROLL 60
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
@@ -30643,12 +30878,12 @@
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:42:52 2019
 @VERSION: 1.1
-@PURL: http://purl.stanford.edu/yt837kd6607
-@TITLE: Ricordanza
-@COMPOSER: Liszt, Franz
-@PERFORMER: Scharwenka, Xaver
+@PURL: 			https://purl.stanford.edu/yt837kd6607
+@TITLE: 		Ricordanza
+@COMPOSER: 		Liszt, Franz (1811-1886)
+@PERFORMER: 		Scharwenka, Xaver (1850-1924)
 @CATALOG: Welte-Mignon 244
-@CATKEY: 10763568
+@CATKEY: 		10763568
 @SOURCEID: sul:ars_0163_36105225780613
 @SCAN_DATE: 5/30/2018
 @SOFTWARE_DATE: Jun 20 2018 14:37:30
@@ -30659,10 +30894,9 @@
 @AVG_HOLE_WIDTH: 28.96px
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
-@DRUID:		yt837kd6607
-@LABEL:		???
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763568
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @ROLL_TYPE:		???
-@SEARCHWORKS:
 @@END: ROLL
 
 
@@ -30815,7 +31049,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			yx139bt6626
+@DRUID: 		yx139bt6626
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -30846,6 +31080,7 @@
 @EXP_WELTE_P: 		38
 @ACCEL_PERCENT: 	0.22
 @ACCEL_INCH: 		12
+@CALLNUM: 		Stanford Libraries CONDON ROLL 74
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @VERSION: 1.1
@@ -30874,12 +31109,14 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
+@CATKEY: 		10763558
+@LABEL: 		Welte-Mignon 292
+@COMPOSER: 		Schubert, Franz (1797-1828)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763558
+@PERFORMER: 		Ansorge, Conrad (1862-1930)
+@TITLE: 		Du bist die Ruh
+@PURL: 			https://purl.stanford.edu/yx139bt6626
 @@END: ROLL
 
 
@@ -31701,7 +31938,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			zp085nr8664
+@DRUID: 		zp085nr8664
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -31744,6 +31981,15 @@
 @BAD_HOLE_COUNT:	0
 @EDGE_TEAR_COUNT:	0
 @BASS_TEAR_COUNT:	0
+@CATKEY: 		11369790
+@LABEL: 		Welte-Mignon 3558
+@COMPOSER: 		Piern&#xE9;, Gabriel (1863-1937)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11369790
+@PERFORMER: 		Danziger, Laura
+@TITLE: 		Serenade
+@PURL: 			https://purl.stanford.edu/zp085nr8664
+@CALLNUM: 		Stanford Libraries CONDON ROLL 811
 @TREBLE_TEAR_COUNT:	0
 @DUST_SCORE:		32ppm
 @DUST_SCORE_BASS:	0ppm
@@ -31760,12 +32006,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -32215,7 +32455,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			zw485gh6070
+@DRUID: 		zw485gh6070
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -32263,6 +32503,15 @@
 @DUST_SCORE_BASS:	0ppm
 @DUST_SCORE_TREBLE:	77ppm
 @SHIFTS:		0
+@CATKEY: 		10789856
+@LABEL: 		Welte-Mignon 1184
+@COMPOSER: 		Strauss, Richard (1864-1949)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10789856
+@PERFORMER: 		Strauss, Richard (1864-1949)
+@TITLE: 		Liebesscene a. "Heldenleben"
+@PURL: 			https://purl.stanford.edu/zw485gh6070
+@CALLNUM: 		Stanford Libraries CONDON ROLL 333
 @HOLE_SEPARATION:	37.7277px
 @HOLE_OFFSET:		16.5734px
 @TRACKER_HOLES:		100
@@ -32274,12 +32523,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -32581,7 +32824,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			zx463rv8885
+@DRUID: 		zx463rv8885
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -32613,6 +32856,11 @@
 @DUST_SCORE:		33ppm
 @DUST_SCORE_BASS:	0ppm
 @DUST_SCORE_TREBLE:	65ppm
+@CATKEY: 		10763560
+@TITLE: 		Scherzo op. 39
+@LABEL: 		Welte-Mignon 265
+@PURL: 			https://purl.stanford.edu/zx463rv8885
+@CALLNUM: 		Stanford Libraries CONDON ROLL 66
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.7815px
 @HOLE_OFFSET:		-2.2887px
@@ -32640,12 +32888,10 @@
 @TRACKER_EXTENSION: 	13px
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763560
+@PERFORMER: 		Droucker, Sandra (1876-1944)
 @@END: ROLL
 
 

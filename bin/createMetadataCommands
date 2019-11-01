@@ -1,0 +1,71 @@
+#!/usr/bin/perl
+
+use strict;
+use Getopt::Long;
+
+my $datafile = "../pianoroll/ars/condon/condon.aton";;
+Getopt::Long::Configure("bundling");
+GetOptions (
+   'd|datafile=s' => \$datafile
+);
+if ($datafile =~ /^\s*$/) {
+	die "Usage: $0 -d datafile files(s)\n";
+}
+if (!-r $datafile) {
+	die "Cannot read data file $datafile\n";
+}
+
+my @files = @ARGV;
+
+open (DFILE, $datafile) or die "Cannot read $datafile";
+my @DATA = <DFILE>;
+close DFILE;
+
+foreach my $file (@files) {
+	processFile($file);
+}
+
+
+sub processFile {
+	my ($filename) = @_;
+	my $base = $filename;
+	my $predir;
+	$base =~ s/(.*)\///;
+	my $directory = $1;
+	$base =~ s/\.[^.]*$//;
+	my $post = "";
+	if ($base =~ /(_.*)/) {
+		$post = $1;
+	}
+	$base =~ s/-.*//;
+	$base =~ s/_.*//;
+	my $catkey = "";
+	my $druid;
+	for (my $i=0; $i<@DATA; $i++) {
+		if ($DATA[$i] =~ /BEGIN/) {
+			$catkey = "";
+			$druid = "";
+		}
+		if ($DATA[$i] =~ /^\@CATKEY:\s*(\d+)\s*$/) {
+			$catkey = $1;
+		}
+		if ($DATA[$i] =~ /^\@DRUID:\s*([^\s]+)\s*$/) {
+			$druid = $1;
+			if ($druid eq $base) {
+				if ($directory !~ /^\s*$/) {
+					$predir = " --dir \"$directory\"";
+				} else {
+					$predir = "";
+				}
+				if ($post !~ /^\s*$/) {
+					$post = " -p \"$post\" ";
+				} else {
+					$post = "";
+				}
+				print "bin/marcxml2meta $predir $post -d $druid -c $catkey\n";
+			}
+		}
+	}
+}
+
+
