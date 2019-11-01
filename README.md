@@ -10,7 +10,7 @@ the original scans of the rolls in the Libraries' digital repository,
 and this repository collects the individual MIDI files of notes
 extracted from each scan.
 
-There are two types of MIDI files in the repository: 
+There are two types of MIDI files in the repository:
 
 (1) "raw" MIDI files, which contain MIDI notes that represent holes
 in the original scan.  This sort of MIDI file is useful for making
@@ -44,7 +44,7 @@ tracker bar holes on the pianos that play these rolls.
 There are two MIDI files for each piano roll in this repository as
 discussed above: (1) raw MIDI files and (2) Expression-enhanced
 MIDI files.  This section describes these two version of MIDI files
-as how to create other derivatives of the MIDI files.  Here is a schematic 
+as how to create other derivatives of the MIDI files.  Here is a schematic
 of the productions of the MIDI files:
 
 <img width="1143" alt="Screen Shot 2019-10-29 at 8 30 24 PM" src="https://user-images.githubusercontent.com/3487289/67826796-fbe48880-fa8a-11e9-9e49-d5799142dc3e.png">
@@ -96,11 +96,25 @@ to generate the type-0 MIDI file from the expression MIDI file.
 
 ### Audio renderings ###
 
-For the best listening experience you should listen to the 
-audio renderings of the expression MIDI files that are found 
+For the best listening experience you should listen to the
+audio renderings of the expression MIDI files that are found
 on the [SUPRA](https://supra.stanford.edu) website.  These
 audio files were rendered using the Ivory Keys II software
 synthesizer.
 
 
+## Citation ##
+If using this dataset, please cite the following paper:
+
+Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith III. SUPRA: Digitizing the Stanford University Piano Roll Archive. In Proc. of the 20th Int. Soc. for Music Information Retrieval Conf. (ISMIR), pages 517-523, Delft, The Netherlands, 2019.
+
+```bibtex
+@INPROCEEDINGS{supra2019,
+  TITLE={SUPRA: Digitizing the Stanford University Piano Roll Archive.},
+  AUTHOR={Shi, Zhengshan and Sapp, Craig Stuart and Arul, Kumaran and McBride, Jerry and Smith, Julius O., III},
+  BOOKTITLE={Proceedings of the 20th International Society for Music Information Retrieval},
+  pages={517-523},
+  year={2019},
+}
+```
 
