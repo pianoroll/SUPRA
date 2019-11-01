@@ -1,4 +1,4 @@
-@@ This is a list of musicians useful to create 
+@@ This is a list of musicians useful to create
 @@ hyperlinks to information about them.  The NAME
 @@ field is in the same format as the entry in the roll
 @@ database (not accented characters).
@@ -15,11 +15,11 @@
 @NAME:		Adam-Benard, Eugenie
 @DATES:		1861-1925
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Albert, Eugen d' 
+@NAME:		Albert, Eugen d'
 @DATES:		1864-1932
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Eugen_d%27Albert
 @ROLE:		composer, performer
@@ -39,7 +39,7 @@
 @NAME:		Ansorge, Konrad
 @DATES:		1862-1930
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -54,7 +54,7 @@
 @NAME:		Barinowa, Marie
 @DATES:		1878-1956
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -69,7 +69,7 @@
 @NAME:		Benici, Tosta di
 @DATES:		1867-1961
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -164,7 +164,7 @@
 @DATES:		1870-1941
 @LINK:		http://worldcat.org/identities/lccn-no93011732
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -197,7 +197,7 @@
 @ALIAS:		Francklyn, Bernard
 @DATES:		1876-
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -210,7 +210,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Burmeister, Richard
-@DATES:		
+@DATES:
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Burmeister
 @ROLE:		performer
 @NATIONALITY:	German, American
@@ -218,14 +218,14 @@
 
 @@BEGIN: PERSON
 @NAME:		Busoni, Ferruccio
-@DATES:		
+@DATES:
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ferruccio_Busoni
 @NATIONALITY:	Italian
 @@END: PERSON
 
 @@BEGIN: PERSON
 @NAME:		Carre&#xF1;o, Teresa
-@DATES:		
+@DATES:
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o
 @ROLE:		performer
 @NATIONALITY:	Venezuelan
@@ -272,7 +272,7 @@
 @@BEGIN: PERSON
 @NAME:		D'Egville, Louis H
 @NOTE:		Died after 1902
-@DATES:		
+@DATES:
 @ROLE:		composer
 @NATIONALITY:	English
 @@END: PERSON
@@ -311,7 +311,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Droucker, Sandra
-@DATES:		
+@DATES:
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sandra_Droucker
 @ROLE:		performer
 @NATIONALITY:	Russian
@@ -439,7 +439,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Ganz, Rudolph
-@DATES:		
+@DATES:
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolph_Ganz
 @ROLE:		performer
 @NATIONALITY:	Swiss, American
@@ -447,10 +447,10 @@
 
 @@BEGIN: PERSON
 @NAME:		Gayraud, Paul
-@DATES:		
-@WIKIPEDIA:	
+@DATES:
+@WIKIPEDIA:
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -498,7 +498,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Gounod, Charles 
+@NAME:		Gounod, Charles
 @DATES:		1818-1893
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Charles_Gounod
 @NATIONALITY:	French
@@ -580,6 +580,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:      Handel, George Frideric
+@DATES:     1685-1759
+@WIKIPEDIA: https://en.wikipedia.org/wiki/George_Frideric_Handel
+@ROLE:      composer
+@NATIONALITY:   German, English
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Heinemann, K&#xE4;the
 @DATES:		1891-1975
 @WIKIPEDIA:	https://de.wikipedia.org/wiki/Käthe_Heinemann
@@ -636,7 +644,7 @@
 
 @@BEGIN: PERSON
 @NAME:		Keefer, George
-@DATES:		
+@DATES:
 @ROLE:		composer
 @NATIONALITY:	American
 @@END: PERSON
@@ -645,7 +653,7 @@
 @NAME:		Kiek, Georges
 @DATES:		1882-1972
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -856,7 +864,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Meyer-Helmund, Erik 
+@NAME:		Meyer-Helmund, Erik
 @DATES:		1861-1932
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Erik_Meyer-Helmund
 @ROLE:		performer
@@ -881,7 +889,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Mottl, Felix 
+@NAME:		Mottl, Felix
 @DATES:		1856-1911
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Felix_Mottl
 @ROLE:		performer
@@ -1019,7 +1027,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Rachmaninoff, Sergei 
+@NAME:		Rachmaninoff, Sergei
 @DATES:		1873-1943
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sergei_Rachmaninoff
 @ROLE:		composer
@@ -1184,7 +1192,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Schumann, Georg 
+@NAME:		Schumann, Georg
 @DATES:		1866-1952
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Georg_Schumann_(composer)
 @ROLE:		performer
@@ -1256,7 +1264,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Sibelius, Jean 
+@NAME:		Sibelius, Jean
 @DATES:		1865-1957
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Jean_Sibelius
 @ROLE:		composer
@@ -1283,7 +1291,7 @@
 @NAME:		Sommer, Hans
 @DATES:		1904-2000
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Hans_Sommer_(composer,_born_1904)
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1349,7 +1357,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Thalberg, Sigismond 
+@NAME:		Thalberg, Sigismond
 @DATES:		1812-1871
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Sigismond_Thalberg
 @ROLE:		composer
@@ -1397,7 +1405,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Vogrich, Max 
+@NAME:		Vogrich, Max
 @DATES:		1852-1916
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Max_Vogrich
 @ROLE:		composer
@@ -1427,7 +1435,7 @@
 @NOTE:		One of the more eccentric Franz Liszt pupils.
 @ROLE:		performer
 @TEACHER:	Liszt, Franz
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1440,7 +1448,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Whiteman, Paul 
+@NAME:		Whiteman, Paul
 @DATES:		1890-1967
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Paul_Whiteman
 @ROLE:		composer
@@ -1450,7 +1458,7 @@
 @@BEGIN: PERSON
 @NAME:		Wurmser, Lucien
 @DATES:		1877-1967
-@WIKIPEDIA:	
+@WIKIPEDIA:
 @VIAF:		https://viaf.org/viaf/10114199
 @ROLE:		performer
 @NATIONALITY:	French
@@ -1474,9 +1482,9 @@
 
 @@BEGIN: PERSON
 @NAME:		Zschemeck, Georg
-@DATES:		
+@DATES:
 @ROLE:		performer
-@NATIONALITY:	
+@NATIONALITY:
 @@END: PERSON
 
 
