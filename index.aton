@@ -15467,7 +15467,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			nq087cp3030
+@DRUID: 		nq087cp3030
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -15513,6 +15513,15 @@
 @TREBLE_TEAR_COUNT:	1
 @DUST_SCORE:		29ppm
 @DUST_SCORE_BASS:	0ppm
+@CALLNUM: 		Stanford Libraries CONDON ROLL 15
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760748
+@LABEL: 		Welte-Mignon 120
+@COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Adam-Benard, Eugenie
+@TITLE: 		Mazurka op. 67, no. 4
+@PURL: 			https://purl.stanford.edu/nq087cp3030
+@CATKEY: 		10760748
 @DUST_SCORE_TREBLE:	58ppm
 @SHIFTS:		0
 @HOLE_SEPARATION:	37.7312px
@@ -15526,12 +15535,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -15865,9 +15868,18 @@
 @EXP_WELTE_P: 		38
 @EXP_WELTE_MF: 		60
 @EXP_WELTE_F: 		85
-@DRUID:			nv508pk0096
+@DRUID: 		nv508pk0096
 @MUSICAL_NOTES:		8507
 @AVG_HOLE_WIDTH:	19.87px
+@CALLNUM: 		Stanford Libraries CONDON ROLL 84
+@LABEL: 		Welte-Mignon 309
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		R&#xF6;ssel, Anatol von
+@COMPOSER: 		Strauss, Johann (1825-1899)
+@TITLE: 		Tausend und eine Nacht : Walzer
+@PURL: 			https://purl.stanford.edu/nv508pk0096
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763551
+@CATKEY: 		10763551
 @ANTIDUST_COUNT:	2430
 @BAD_HOLE_COUNT:	76
 @EDGE_TEAR_COUNT:	6
@@ -15892,12 +15904,6 @@
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -17015,7 +17021,7 @@
 
 
 @@BEGIN: ROLL
-@DRUID:			pk245pq3468
+@DRUID: 		pk245pq3468
 @ROLL_TYPE:		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
@@ -17056,6 +17062,15 @@
 @AVG_HOLE_WIDTH:	20.13px
 @ANTIDUST_COUNT:	81
 @BAD_HOLE_COUNT:	6
+@PURL: 			https://purl.stanford.edu/pk245pq3468
+@PERFORMER: 		Starke, Gustav (1862-1931)
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@COMPOSER: 		Verdi, Giuseppe (1813-1901)
+@TITLE: 		Troubadour : Potpourri
+@LABEL: 		Welte-Mignon 1340
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11048346
+@CATKEY: 		11048346
+@CALLNUM: 		Stanford Libraries CONDON ROLL 451
 @EDGE_TEAR_COUNT:	14
 @BASS_TEAR_COUNT:	10
 @TREBLE_TEAR_COUNT:	4
@@ -17074,12 +17089,6 @@
 @BRIDGE_FACTOR:		1.37
 @MANUAL_EDITS:		no 
 @MIDIFILE_TYPE: 	exp
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
@@ -24955,8 +24964,18 @@
 @EXP_WELTE_F: 		85
 @EXP_WELTE_LOUD: 	70
 @LEFT_HAND_ADJUST: 	-5
-@DRUID:			vb983gg2310
+@DRUID: 		vb983gg2310
 @MUSICAL_NOTES:		7756
+@CATKEY: 		11111992
+@REISSUE: 		yes
+@SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@PERFORMER: 		Paur, Emil (1855-1932)
+@COMPOSER: 		Wagner, Richard (1813-1883)
+@TITLE: 		Siegfried
+@LABEL: 		Welte-Mignon 2566
+@PURL: 			https://purl.stanford.edu/vb983gg2310
+@SEARCHWORKS: 		https://searchworks.stanford.edu/view/11111992
+@CALLNUM: 		Stanford Libraries CONDON ROLL 617
 @AVG_HOLE_WIDTH:	19.72px
 @ANTIDUST_COUNT:	64
 @BAD_HOLE_COUNT:	3
@@ -24980,12 +24999,6 @@
 @MIDIFILE_TYPE: 	exp
 @ACCEL_PERCENT: 	0.22
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
-@LABEL:		???
-@TITLE:		???
-@COMPOSER:		???
-@PERFORMER:		???
-@SEARCHWORKS:
-@PURL:
 @@END: ROLL
 
 
