@@ -91,4 +91,8 @@ on the [SUPRA](https://supra.stanford.edu) website.  These
 audio files were rendered using the Ivory Keys II software
 synthesizer.
 
+## Contact ##
+For questions about the pianoroll data, please email
+pianoroll_dataset:cyclone:lists.stanford.edu.
+
 
