@@ -31,7 +31,6 @@ In Proc. of the 20th Int. Soc. for Music Information Retrieval Conf. (ISMIR),
 pages 517-523, Delft, The Netherlands, 2019.
 </div> -->
 
-## Citation ##
 If using this dataset, please cite the following [paper](http://archives.ismir.net/ismir2019/paper/000062.pdf):
 
 
@@ -48,6 +47,8 @@ Zhengshan Shi, Craig Stuart Sapp, Kumaran Arul, Jerry McBride, Julius O. Smith. 
 }
 ```
 
+<h1> Contact </h1>
+For questions about the pianoroll data, please email pianoroll_dataset🌀lists.stanford.edu
 
 <div style="height:500px"></div>
 
