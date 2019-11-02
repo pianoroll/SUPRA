@@ -1,0 +1,103 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Fri Nov  1 16:58:24 PDT 2019
+# Last Modified: Fri Nov  1 16:58:30 PDT 2019
+# Filename:      https://github.com/pianoroll/SUPRA/metadata/bin/downloadMarckxml
+# Syntax:        perl 5
+# vim:           ts=3
+#
+# Description:   Download MarcXML data for each DRUID in 
+#                the input list.
+#
+# Usage:            downloadMarcxml [-D target-directory] druid-to-catkey-mapping.txt
+#                or
+#                   cat druid-to-catkey-mapping.txt | downloadMarcxml [-D target-directory]
+#                ../Makefile is used to run this program.
+#
+
+use strict;
+use Getopt::Long;
+
+my $DIR = "marcxml";
+Getopt::Long::Configure("bundling");
+GetOptions (
+   'd|dir|DIR=s' => \$DIR
+);
+print "DIRECTORY IS $DIR\n";
+die "Cannot find directory >>$DIR<<\n" if !-d $DIR;
+
+# Wget is the linux command-line tool for downloading files
+# from the web.  The equivalent in MacOS is curl, but wget
+# can be downloaded for MacOS as well.  
+# See: https://www.gnu.org/software/wget/
+my $wget = `which wget`;
+chomp $wget;
+if ($wget =~ /^\s*$/) {
+	die "Cannot find wget program\n";
+}
+
+# xmllint will place elements one on each line, making
+# basic processing of the data by line without an XML parser
+# possible.  See http://xmlsoft.org/xmllint.html
+my $xmllint = `which xmllint`;
+chomp $xmllint;
+if ($xmllint =~ /^\s*$/) {
+	die "Cannot find xmllint program\n";
+}
+
+my @contents = <>;
+chomp @contents;
+foreach my $line (@contents) {
+	next if $line =~ /^\!/;
+	next if $line =~ /^\*/;
+	my @data = split(/\t+/, $line);
+	next if @data != 2;
+	my $druid = $data[0];
+	my $catkey = $data[1];
+	# form of a druid: wh678yv0330
+	# form of a catkey: 10763711
+print "XDIR = $DIR\n";
+	processEntry($DIR, $druid, $catkey);
+}
+
+
+
+##############################
+##
+## processEntry -- Check to see if a MarcXML file has already
+##     been downloaded.  If so then skip (you will have to manually
+##     delete files if you want them to be updated with a new
+##     download).  If the file does not exist, then download
+##     the MarcXML file for the given DRUID.  The MarcXML files
+##     are accessed by catkey numbers, while the digital files
+##     (MIDI Files, audio files, and original TIFF images) are
+##     indexed by DRUID (Digitial Repository Unique IDs).
+##
+
+sub processEntry {
+	my ($dir, $druid, $catkey) = @_;
+print "YDIR = $dir\n";
+	die "Cannot find directory $dir\n" if !-d $dir;
+	return if -r "$dir/$druid.marcxml";
+	print "Downloading $druid/$catkey ...\n";
+	my @contents = getContents($catkey);
+	my $file = "$dir/$druid.marcxml";
+	open(MFILE, ">$file") or die "Cannot write $file";
+	print MFILE @contents;
+	close MFILE;
+}
+
+##############################
+##
+## getContents -- of MarcXML for catkey.
+##
+
+sub getContents {
+	my ($catkey) = @_;
+	my $baseurl = "https://searchworks.stanford.edu/view";
+	my $result = `$wget $baseurl/$catkey.marcxml -O - 2>/dev/null | $xmllint --format -`;
+	my @output = split(/\n/, $result);
+	return @output;
+}
+
