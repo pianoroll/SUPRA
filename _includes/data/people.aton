@@ -334,11 +334,27 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Anton&#xed;n Dvo&#x159;&#xE1;k
+@DATES:		1841-1904
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k
+@ROLE:		composer
+@NATIONALITY:	Czech
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Dyck, Ernest van
 @DATES:		1861-1923
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Ernest_van_Dyck
 @ROLE:		performer
 @NATIONALITY:	Belgian
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Ellis, Vivian
+@DATES:		1903-1996
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Vivian_Ellis
+@ROLE:		composer
+@NATIONALITY:	English
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -407,6 +423,15 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Friedheim, Arthur
+@DATES:		1859-1932
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Friedheim
+@ROLE:		performer
+@NOTE:          one of Franz Liszt's foremost pupils
+@NATIONALITY:	Russia
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Friml, Rudolf
 @DATES:		1879-1972
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Rudolf_Friml
@@ -468,7 +493,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Glazunov, Aleksandr Konstantinovich
+@NAME:		Glazunov, Aleksandr
 @DATES:		1865-1936
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Glazunov
 @NATIONALITY:	Russian
@@ -809,6 +834,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Mahler, Gustav
+@DATES:		1860-1911
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Gustav_Mahler
+@ROLE:		composer
+@NATIONALITY:	Austro-Bohemian
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Malderen, &#xC9;douard van
 @DATES:		1883-1963
 @LINK:		https://secondhandsongs.com/artist/123856
@@ -986,6 +1019,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Piern&#xE9;, Gabriel
+@DATES:		1863-1937
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Gabriel_Piern%C3%A9
+@ROLE:		composer
+@NATIONALITY:	French
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Pintel, Jacques
 @DATES:		1880-
 @ROLE:		performer
@@ -1040,6 +1081,14 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Joachim_Raff
 @ROLE:		composer
 @NATIONALITY:	Swiss
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Rimsky-Korsakov, Nikolay
+@DATES:		1844-1908
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov
+@ROLE:		composer
+@NATIONALITY:	Russian
 @@END: PERSON
 
 @@BEGIN: PERSON
@@ -1248,7 +1297,7 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
-@NAME:		Scriabin, Aleksandr Nikolayevich
+@NAME:		Scriabin, Aleksandr
 @DATES:		1872-1915
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Alexander_Scriabin
 @ROLE:		composer, performer
@@ -1341,6 +1390,14 @@
 @@END: PERSON
 
 @@BEGIN: PERSON
+@NAME:		Strauss, Richard
+@DATES:		1864-1949
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Richard_Strauss
+@ROLE:		composer
+@NATIONALITY: 	German
+@@END: PERSON
+
+@@BEGIN: PERSON
 @NAME:		Sullivan, Arthur
 @DATES:		1842-1900
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/Arthur_Sullivan
@@ -1426,6 +1483,14 @@
 @WIKIPEDIA:	https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel
 @ROLE:		composer
 @NATIONALITY:	French
+@@END: PERSON
+
+@@BEGIN: PERSON
+@NAME:		Weber, Carl Maria von
+@DATES:		1786-1826
+@WIKIPEDIA:	https://en.wikipedia.org/wiki/Carl_Maria_von_Weber
+@ROLE:		composer
+@NATIONALITY:	German
 @@END: PERSON
 
 @@BEGIN: PERSON

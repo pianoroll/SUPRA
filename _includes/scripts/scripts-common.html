@@ -208,7 +208,16 @@ function MakeRollTableRows(list, peeps) {
 		output += "class='play audio'>play</div>";
 		output += "</td>";
 
-		output += "<td style='white-space:pre;'>" + list[i].LABEL.replace("Welte-Mignon", "WM") + "</td>";
+		var marclink = "https://github.com/pianoroll/SUPRA/blob/master/metadata/marcxml/";
+		marclink += druid.charAt(0);
+		marclink += "/";
+		marclink += druid;
+		marclink += ".marcxml";
+		output += "<td style='white-space:pre;'>";
+		output += "<a target='_blank' href='" + marclink + "'>";
+		output += list[i].LABEL.replace("Welte-Mignon", "WM");
+		output += "</a>";
+		output += "</td>";
 
 		output += "<td style='max-width:250px;'>" + list[i].TITLE + "</td>";
 		output += "<td style='min-width:250px;'>";
