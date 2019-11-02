@@ -70,9 +70,9 @@ tempo track (track 0).  When a roll is performed on a mechanical
 instrument, the winding mechanism pulling the roll around the take-up
 spool is rotating at a constant speed. As the paper builds up the
 diameter of the take-up spool, the speed at which the paper is
-moving will increase.  This is estimated to be 0.04%/foot, so every
+moving will increase.  This is estimated to be 0.22%/foot, so every
 3600 ticks in the MIDI file, there will be an updated tempo value
-which is 0.04% greater than the previous tempo.  The effect of tempo
+which is 0.22% greater than the previous tempo.  The effect of tempo
 acceleration is needed for rolls greater than about 100 feet, since the
 end of the roll will otherwise sound like it is slowing down without
 the emulation.
