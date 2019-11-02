@@ -891,6 +891,13 @@ function SortByText(index, selector) {
 		if (B.match(/^\s*$/)) {
 			return -1;
 		}
+		if (A === "???") {
+			return +1;
+		}
+		if (B === "???") {
+			return -1;
+		}
+
 		var result = A.localeCompare(B);
 		return result;
 	});

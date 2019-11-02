@@ -6,6 +6,7 @@
 <script>
 // vim: ts=3
 
+var SEARCHTIMEOUT = null;
 var aton = new ATON;
 var PEOPLE = aton.parse(`{% include data/people.aton %}`).PERSON;
 var PEEPS = {};
@@ -36,7 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	var element = document.querySelector("input#search");
 	if (element) {
 		element.addEventListener("input", function() {
-			doSearch();
+			clearTimeout(SEARCHTIMEOUT);
+			SEARCHTIMEOUT = setTimeout(function () {
+				doSearch();
+			}, 250);
 		});
 	}
 
