@@ -1,0 +1,43 @@
+#!/usr/local/bin/perl
+# vim: ts=3
+
+use strict;
+
+my $xmlcachedir = "marcxml";
+
+my @dirs = @ARGV;
+
+foreach my $dir (@dirs) {
+	checkDir($xmlcachedir, $dir);
+}
+
+exit(0);
+
+
+###########################################################################
+
+##############################
+##
+## checkDir -- Make sure that MIDI files in the given directory
+##     Have MarcXml with matching DRUID names.
+##
+
+sub checkDir {
+	my ($cachedir, $dir) = @_;
+	my @midis = glob("$dir/*.mid");
+	foreach my $file (@midis) {
+		my $druid = $file;
+		$druid =~ s/.*\///;
+		$druid =~ s/\.[^.]*$//;
+		$druid =~ s/_.*//;
+		$druid =~ /^(.)/;
+		my $letter = $1;
+		my $target = "$cachedir/$letter/$druid.marcxml";
+		if (!-r $target) {
+			print STDERR "Missing $target\n";
+		}
+	}
+}
+
+
+

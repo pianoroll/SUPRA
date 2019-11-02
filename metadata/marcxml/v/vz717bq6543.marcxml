@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02286cjm a2200517Ii 4500</leader>
+  <controlfield tag="001">a11055860</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20191019050002.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">150527s1909    gw sunn           n zxx d</controlfield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">1480</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+    <subfield code="d">UtOrBLW</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="100">
+    <subfield code="a">Grieg, Edvard,</subfield>
+    <subfield code="d">1843-1907,</subfield>
+    <subfield code="e">composer.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="240">
+    <subfield code="a">Peer Gynt.</subfield>
+    <subfield code="p">Suite,</subfield>
+    <subfield code="n">no. 1.</subfield>
+    <subfield code="k">Selections;</subfield>
+    <subfield code="o">arranged</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="245">
+    <subfield code="a">Peer Gynt suite.</subfield>
+    <subfield code="n">No. 1 /</subfield>
+    <subfield code="c">Grieg.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">Freiburg i. Br. :</subfield>
+    <subfield code="b">M. Welte &amp; S&#xF6;hne,</subfield>
+    <subfield code="c">[1909]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">14 1/2 in. x 2 1/2 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Olga Samaroff, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon red roll (T-100).</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="505">
+    <subfield code="t">Anitras dance --</subfield>
+    <subfield code="t">In the hall of the mountain kings.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon roll 1479 contains the first two pieces from this suite.</subfield>
+  </datafield>
+  <datafield ind1="4" ind2=" " tag="510">
+    <subfield code="a">Dangel, Gerhard &amp; Hans-W. Schmitz. Welte-Mignon Klavierrollen, 2006,</subfield>
+    <subfield code="c">page 70.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Suites (Piano)</subfield>
+    <subfield code="v">Excerpts, Arranged.</subfield>
+    <subfield code=" ">^A1065729</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Suites.</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344904</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Excerpts.</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344823</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Arrangements (Music)</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344913</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">^A3371710</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Samaroff Stokowski, Olga,</subfield>
+    <subfield code="d">1882-1948</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A738467</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Grieg, Edvard,</subfield>
+    <subfield code="d">1843-1907.</subfield>
+    <subfield code="t">Peer Gynt.</subfield>
+    <subfield code="p">I dovregubbens hal</subfield>
+    <subfield code="o">arranged.</subfield>
+    <subfield code=" ">^A2135883</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Grieg, Edvard,</subfield>
+    <subfield code="d">1843-1907.</subfield>
+    <subfield code="t">Peer Gynt.</subfield>
+    <subfield code="p">Anitras dans;</subfield>
+    <subfield code="o">arranged.</subfield>
+    <subfield code=" ">^A1915291</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">Welte-Mignon Corporation,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">^A627793</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20150527</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC)910176927</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">31</subfield>
+  </datafield>
+  <datafield ind1="4" ind2="1" tag="856">
+    <subfield code="u">http://purl.stanford.edu/vz717bq6543</subfield>
+    <subfield code="x">SDR-PURL</subfield>
+    <subfield code="x">item</subfield>
+    <subfield code="x">file:vz717bq6543%2Fvz717bq6543_0001.jp2</subfield>
+    <subfield code="x">label:No. 1</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 483</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225785240</subfield>
+    <subfield code="d">7/18/2018</subfield>
+    <subfield code="e">7/18/2018</subfield>
+    <subfield code="k">CHECKEDOUT</subfield>
+    <subfield code="l">PAGE-AS</subfield>
+    <subfield code="m">SAL3</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-INHOUSE</subfield>
+    <subfield code="u">5/28/2015</subfield>
+  </datafield>
+</record>

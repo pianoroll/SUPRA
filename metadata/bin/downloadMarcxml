@@ -19,12 +19,13 @@
 use strict;
 use Getopt::Long;
 
+my %druid2catkey;
+
 my $DIR = "marcxml";
 Getopt::Long::Configure("bundling");
 GetOptions (
    'd|dir|DIR=s' => \$DIR
 );
-print "DIRECTORY IS $DIR\n";
 die "Cannot find directory >>$DIR<<\n" if !-d $DIR;
 
 # Wget is the linux command-line tool for downloading files
@@ -56,8 +57,23 @@ foreach my $line (@contents) {
 	my $druid = $data[0];
 	my $catkey = $data[1];
 	# form of a druid: wh678yv0330
+	if ($druid !~ /^[a-z]{2}\d{3}[a-z]{2}\d{4}$/) {
+		print STDERR "Warning: DRUID $druid is not valid, so skipping\n";
+		next;
+	}
 	# form of a catkey: 10763711
-print "XDIR = $DIR\n";
+	if ($catkey !~ /^\d{8}$/) {
+		print STDERR "Warning: catkey $catkey is not valid, so skipping\n";
+		next;
+	}
+	if ($druid2catkey{$druid}) {
+		if ($catkey ne $druid2catkey{$druid}) {
+			$druid2catkey{$druid} .= " $catkey";
+			print STDERR "Warning: DRUID $druid has multiple catkey targets\n";
+		}
+	} else {
+		$druid2catkey{$druid} .= $catkey;
+	}
 	processEntry($DIR, $druid, $catkey);
 }
 
@@ -77,16 +93,21 @@ print "XDIR = $DIR\n";
 
 sub processEntry {
 	my ($dir, $druid, $catkey) = @_;
-print "YDIR = $dir\n";
 	die "Cannot find directory $dir\n" if !-d $dir;
-	return if -r "$dir/$druid.marcxml";
+	$druid =~ /^(.)/;
+	my $letter = $1;
+	return if -r "$dir/$letter/$druid.marcxml";
 	print "Downloading $druid/$catkey ...\n";
-	my @contents = getContents($catkey);
-	my $file = "$dir/$druid.marcxml";
+	my $contents = getContents($catkey);
+	my $file = "$dir/$letter/$druid.marcxml";
+	my $directory = "$dir/$letter";
+	`mkdir -p $directory`;
 	open(MFILE, ">$file") or die "Cannot write $file";
-	print MFILE @contents;
+	print MFILE $contents;
 	close MFILE;
 }
+
+
 
 ##############################
 ##
@@ -97,7 +118,6 @@ sub getContents {
 	my ($catkey) = @_;
 	my $baseurl = "https://searchworks.stanford.edu/view";
 	my $result = `$wget $baseurl/$catkey.marcxml -O - 2>/dev/null | $xmllint --format -`;
-	my @output = split(/\n/, $result);
-	return @output;
+	return $result;
 }
 
