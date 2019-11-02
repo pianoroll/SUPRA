@@ -7,6 +7,7 @@
 
 var aton = new ATON;
 var BIBLIO = aton.parse(`{% include data/bibliography.aton %}`).REFERENCE;
+var LINKS = aton.parse(`{% include data/links.aton %}`).LINK;
 
 var CGI = {};      // CGI parameters from URL
 var ROLLINFO = [];
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function doAction(rollInfo) {
 	DisplayStats(rollInfo);
 	displayReferences(BIBLIO, "#references");
+	displayLinks(LINKS, "#links");
 }
 
 </script>

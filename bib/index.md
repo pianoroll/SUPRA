@@ -7,13 +7,22 @@ vim: ts=3
 summary: 
 ---
 
-# Bibliography #
-
+<h1> Bibliography </h1>
 
 <div id="references"></div>
 
+<div style="height:50px;"></div>
 
-<div style="height:1000px"></div>
+
+
+<h1> Links  </h1>
+
+Useful links about piano rolls
+
+<div id="links"></div>
+
+
+<div style="height:200px"></div>
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
