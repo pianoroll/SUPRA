@@ -135,7 +135,7 @@ function PreparePerson(entry, peeps) {
 	if (matches = entry.match(/^(.*\)); (.*)$/)) {
 		var person1 = PreparePerson(matches[1], peeps);
 		var person2 = PreparePerson(matches[2], peeps);
-		return person1 + "; " + person2;
+		return person1 + ";<br/>" + person2;
 	}
 
 	entry = entry.replace("-1", "&ndash;1");
@@ -409,9 +409,7 @@ function DisplayPianists(list, selector, peeps) {
 		}
 
 		var person  = PreparePerson(plist[i][1], null);
-if (person.match("Sommer")) {
-console.log("PERSON", person);
-}
+
 		matches = person.match(/\((c?[\d\/]+)&ndash;([\d\/]+)\)/);
 		if (matches) {
 			birth = matches[1];
@@ -428,16 +426,11 @@ console.log("PERSON", person);
 		} else if (matches = person.match(/\(([\d\/]+)&ndash;\)/)) {
 			birth = matches[1];
 			death = "";
-console.log("XPERSON", person);
 			person = person.replace(/\([\d\/]+&ndash;\)/, "");
-console.log("YPERSON", person);
 		} else {
 			birth = "";
 			death = "";
 		}
-if (person.match("Sommer")) {
-console.log("    PERSON ", person);
-}
 		output += person;
 		output += "</a>";
 		output += "</td>"
@@ -449,7 +442,6 @@ console.log("    PERSON ", person);
 				death = matches[2];
 			}
 		}
-
 		if (pbirth > 0) {
 			birth = pbirth;
 		}

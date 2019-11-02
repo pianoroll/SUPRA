@@ -8,6 +8,7 @@ summary:
 ---
 
 
+
 <input id="search" placeholder="search" value="" autocomplete="off">
 <span id="search-count"></span>
 
@@ -15,4 +16,5 @@ summary:
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
+{% include_relative listeners.html %}
 
