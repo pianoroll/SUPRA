@@ -78,42 +78,51 @@ function doSearch(text) {
 		}
 	}
 
+	text = text.replace(/\s*:\s*/g, ":");
+
 	var fields = text.split(/\s+/);
 	var entries = ROLLINFO;
 	var oldentries;
+	var matches;
+	var parameter = "";
 	for (var i=0; i<fields.length; i++) { 
 		if (fields[i].match(/^\s*$/)) {
 			continue;
+		}
+		matches = fields[i].match(/(.*):(.*)/);
+		if (matches) {
+			parameter = matches[1].toUpperCase();
+			fields[i] = matches[2];
+		} else {
+			parameter = "";
 		}
 		oldentries = entries;
 		entries = [];
 		var regexp = new RegExp(fields[i], "i");
 		for (var j=0; j<oldentries.length; j++) {
-			if (CGI.f) {
+			if (parameter) {
+				if (oldentries[j][parameter] && oldentries[j][parameter].match(regexp)) {
+					entries.push(oldentries[j]);
+				}
+			} else if (CGI.f) {
 				if (oldentries[j][CGI.f] && oldentries[j][CGI.f].match(regexp)) {
 					entries.push(oldentries[j]);
-					continue;
 				}
 			} else {
 				if (oldentries[j].TITLE && oldentries[j].TITLE.match(regexp)) {
 					entries.push(oldentries[j]);
-					continue;
 				}
-				if (oldentries[j].COMPOSER && oldentries[j].COMPOSER.match(regexp)) {
+				else if (oldentries[j].COMPOSER && oldentries[j].COMPOSER.match(regexp)) {
 					entries.push(oldentries[j]);
-					continue;
 				}
-				if (oldentries[j].PERFORMER && oldentries[j].PERFORMER.match(regexp)) {
+				else if (oldentries[j].PERFORMER && oldentries[j].PERFORMER.match(regexp)) {
 					entries.push(oldentries[j]);
-					continue;
 				}
-				if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
+				else if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
 					entries.push(oldentries[j]);
-					continue;
 				}
 			}
 		}
-		
 	}
 
 	displayList(entries, null, PEEPS);
