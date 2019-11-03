@@ -3,6 +3,7 @@ title: SUPRA statistics
 author: Craig Stuart Sapp
 keywords: statistics
 permalink: /stats/index.html
+vegalite: true
 vim: ts=3
 summary: 
 ---
@@ -22,6 +23,42 @@ summary:
 <h2> Basic statistics </h2>
 <div id="basic"></div>
 </article>
+
+
+<div id="lengthHistogram"></div>
+<script>
+//
+// print a histograms of the roll durations here, but first need to 
+//   get the duration of each roll performance.
+//
+var lengthHistogram = {
+   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+   "data": {"values": null},
+   "width": 1000,
+   "height": 300,
+   "mark": "bar",
+   "encoding": {
+      "x": {
+         "bin": true,
+         "field": "PDT",
+         "title": "Publication year",
+         "bin": {
+            "binned": true,
+            "step": 1
+         },
+         "type": "ordinal"
+      },
+      "y": {
+         "aggregate": "count",
+         "title": "Number of settings published",
+         "type": "quantitative"
+      }
+   }
+};
+
+// vegaEmbed('#lengthHistogram', lengthHistogram);
+
+</script>
 
 <a name="Scan"></a>
 <article>
