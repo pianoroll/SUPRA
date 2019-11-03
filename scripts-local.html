@@ -104,7 +104,7 @@ function doSearch(text) {
 			wm = null;
 			if (oldentries[j].LABEL) {
 				var ms = oldentries[j].LABEL.match(/Welte-Mignon\s*(\d+)/);
-				if (ms) {
+				if (ms && WMCATALOG) {
 					wm = WMCATALOG[ms[1]];
 				}
 			}
