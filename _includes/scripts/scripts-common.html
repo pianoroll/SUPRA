@@ -219,7 +219,24 @@ function MakeRollTableRows(list, peeps) {
 		output += "</a>";
 		output += "</td>";
 
-		output += "<td style='max-width:250px;'>" + list[i].TITLE + "</td>";
+		var alttitle = "";
+		var ms = list[i].LABEL.match(/Welte-Mignon\s*(\d+)/);
+		if (ms && WMCATALOG) {
+			var wm = WMCATALOG[ms[1]];
+			if (wm) {
+				alttitle = wm.title;
+				alttitle = alttitle.replace(/['"]/g, "");
+			}
+		}
+		output += "<td style='max-width:250px;'>";
+		output += "<span";
+		if (alttitle) {
+			output += " title='" + alttitle + "'";
+		}
+		output += ">";
+		output += list[i].TITLE;
+		output += "</span>";
+		output += "</td>";
 		output += "<td style='min-width:250px;'>";
 		if (list[i].COMPOSER) {
 		 	output += PreparePerson(list[i].COMPOSER, peeps);

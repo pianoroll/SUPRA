@@ -6,6 +6,7 @@
 <script>
 // vim: ts=3
 
+var WMCATALOG = null;  // used for alternate search list of works for Welte-Mignon catalog
 var SEARCHTIMEOUT = null;
 var aton = new ATON;
 var PEOPLE = aton.parse(`{% include data/people.aton %}`).PERSON;
@@ -18,6 +19,7 @@ var CGI = {};      // CGI parameters from URL
 var ROLLINFO = [];
 var SORTCOLUMN = 1;
 var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+var WMINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/gh-pages/_includes/data/welte-mignon-catalog.hmd";
 
 
 //////////////////////////////
@@ -42,6 +44,17 @@ document.addEventListener("DOMContentLoaded", function () {
 				doSearch();
 			}, 250);
 		});
+	}
+
+	if (sessionStorage.WMCATALOG) {
+		WMCATALOG = JSON.parse(sessionStorage.WMCATALOG);
+	} else {
+		var request = new XMLHttpRequest();
+		request.addEventListener("load", function () {
+			prepareWmCatalog(this.responseText);
+		});
+		request.open("GET", WMINDEX);
+		request.send();
 	}
 
 	if (sessionStorage.ROLLINFO) {

@@ -84,6 +84,7 @@ function doSearch(text) {
 	var entries = ROLLINFO;
 	var oldentries;
 	var matches;
+	var wm = null;
 	var parameter = "";
 	for (var i=0; i<fields.length; i++) { 
 		if (fields[i].match(/^\s*$/)) {
@@ -100,6 +101,13 @@ function doSearch(text) {
 		entries = [];
 		var regexp = new RegExp(fields[i], "i");
 		for (var j=0; j<oldentries.length; j++) {
+			wm = null;
+			if (oldentries[j].LABEL) {
+				var ms = oldentries[j].LABEL.match(/Welte-Mignon\s*(\d+)/);
+				if (ms) {
+					wm = WMCATALOG[ms[1]];
+				}
+			}
 			if (parameter) {
 				if (oldentries[j][parameter] && oldentries[j][parameter].match(regexp)) {
 					entries.push(oldentries[j]);
@@ -119,6 +127,10 @@ function doSearch(text) {
 					entries.push(oldentries[j]);
 				}
 				else if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
+					entries.push(oldentries[j]);
+				}
+				else if (wm && wm.title && wm.title.match(regexp)) {
+					console.log("ADDING WMCATALOG ENTRY", wm.number, wm.title);
 					entries.push(oldentries[j]);
 				}
 			}
@@ -195,6 +207,39 @@ function copyToClipboard(text) {
    document.body.removeChild(element);
 };
 
+
+//////////////////////////////
+//
+// prepareWmCatalog --
+//
+
+function prepareWmCatalog(text) {
+	WMCATALOG = {};
+	var lines = text.split(/\r?\n/);
+	for (var i=0; i<lines.length; i++) {
+		var line = lines[i];
+		if (line.match(/^\!/)) {
+			continue;
+		}
+		if (line.match(/^\*/)) {
+			continue;
+		}
+		if (line.match(/^\s*$/)) {
+			continue;
+		}
+		var data = line.split(/\t+/);
+		if (data.length != 3) {
+			continue;
+		}
+		var number = data[0];
+		var composer = data[1];
+		var title = data[2];
+		var object = {number: number, composer: composer, title: title};
+		WMCATALOG[number] = object;
+	}
+
+	sessionStorage.WMCATALOG = JSON.stringify(WMCATALOG);
+}
 
 </script>
 
