@@ -239,6 +239,9 @@ function prepareWmCatalog(text) {
 	}
 
 	sessionStorage.WMCATALOG = JSON.stringify(WMCATALOG);
+	// best to (re)do search once WMCATALOG is prepared in case
+	// search comes from CGI.
+	doSearch();
 }
 
 </script>
