@@ -9,6 +9,8 @@
 var CGI = {};      // CGI parameters from URL
 var ROLLINFO = [];
 var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+var DRUIDINFO = {};
+var DRUID = null;
 
 //////////////////////////////
 //
@@ -42,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function doAction(rollInfo) {
 	DisplayStats(rollInfo);
+	buildDruidIndex(rollInfo);
 	if (CGI.druid) {
+		DRUID = CGI.druid;
 		displayDruid(CGI.druid);
 	}
 }

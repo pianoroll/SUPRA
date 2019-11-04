@@ -2,7 +2,14 @@
 <script>
 // vim: ts=3
 
+
+//////////////////////////////
+//
+// displayDruid --
+//
+
 function displayDruid(druid) {
+	console.log("DRUID = ", druid);
 	if (!druid) {
 		return;
 	}
@@ -10,7 +17,190 @@ function displayDruid(druid) {
 	var file = "data/" + letter + "/" + druid + "_drift.json";
 	PLOT.data.url = file;
 	vegaEmbed("#plot", PLOT);
+	var element = document.querySelector("#info");
+	if (!element) {
+		return;
+	}
+	var info = DRUIDINFO[druid].info;
+	if (!info) {
+		return;
+	}
+	displayInfo(element, info);
 }
+
+
+
+//////////////////////////////
+//
+// displayInfo --
+//
+
+function displayInfo(element, info) {
+	if (!element) {
+		return;
+	}
+	if (!info) {
+		return;
+	}
+
+	var available = 1;
+	if (!info.DRIFT_RANGE) {
+		available = 0;
+	}
+
+	var output = "";
+	output += "<table class='info'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "DRUID:";
+	output += "<td>";
+	output += "<td>";
+	output += "<a href='/?q=druid%3A" + info.DRUID + "'>";
+	output += info.DRUID;
+	output += "</a>";
+	if (available) {
+		output += "&nbsp;";
+		output += "&nbsp;";
+		output += "&nbsp;";
+		output += "<a title='Scan of roll and audio' target='purl' href='/uv/?id=" + info.DRUID + "'><i style='color:#999;' class='fa fa-image'></i></a>";
+		}
+	output += "<td>";
+	output += "</tr>";
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Drift range:";
+		output += "<td>";
+		output += "<td>";
+		output += info.DRIFT_RANGE;
+		var mm = parseFloat(info.DRIFT_RANGE) / 300.25 * 25.54;
+		mm = parseInt(mm * 10.0 + 0.5)/10.0;
+		output += " / " + mm + " mm ";
+		output += " (";
+		output += info.DRIFT_MAX;
+		output += " to ";
+		output += info.DRIFT_MIN;
+		output += ")";
+		output += "<td>";
+	}
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Label:";
+	output += "<td>";
+	output += "<td>";
+	output += info.LABEL;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Title:";
+	output += "<td>";
+	output += "<td>";
+	output += info.TITLE;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Composer:";
+	output += "<td>";
+	output += "<td>";
+	output += info.COMPOSER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Performer:";
+	output += "<td>";
+	output += "<td>";
+	output += info.PERFORMER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "</table>";
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displayPrevDruid --
+//
+
+function displayPrevDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.prev;
+	displayDruid(DRUID);
+}
+
+
+
+//////////////////////////////
+//
+// displayNextDruid --
+//
+
+function displayNextDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.next;
+	displayDruid(DRUID);
+}
+
+
+
+//////////////////////////////
+//
+// buildDruidIndex --
+//
+
+function buildDruidIndex(rollinfo) {
+	DRUIDINFO = {};
+	var druid;
+	var druidnext;
+	var druidprev;
+	var obj;
+	for (var i=1; i<rollinfo.length - 1; i++) {
+		druid = rollinfo[i].DRUID;
+		druidnext = rollinfo[i+1].DRUID;
+		druidprev = rollinfo[i-1].DRUID;
+		DRUIDINFO[druid] = {
+			info: rollinfo[i],
+			curr: druid,
+			next: druidnext,
+			prev: druidprev
+		};
+	}
+
+	// and endpoints
+
+	DRUIDINFO[rollinfo[0].DRUID] = {
+		info: rollinfo[0],
+		curr: rollinfo[0].DRUID,
+		next: rollinfo[1].DRUID,
+		prev: rollinfo[rollinfo.length-1].DRUID
+	};
+
+	DRUIDINFO[rollinfo[rollinfo.length-1].DRUID] = {
+		info: rollinfo[rollinfo.length-1],
+		curr: rollinfo[rollinfo.length-1].DRUID,
+		next: rollinfo[0].DRUID,
+		prev: rollinfo[rollinfo.length-2].DRUID
+	};
+}
+
 
 
 </script>

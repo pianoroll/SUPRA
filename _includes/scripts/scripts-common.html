@@ -249,10 +249,20 @@ function MakeRollTableRows(list, peeps) {
 		output += "</td>";
 
 		output += "<td>";
+		output += "<span class='searchworks'>";
+		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
+		output += list[i].SEARCHWORKS;
+		output += "'>SW</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
 		output += "<span class='purl'>";
-		output += "<a title='Scan and audio' target='purl' href='/uv/?id=";
+		output += "<a title='Scan of roll and audio' target='purl' href='/uv/?id=";
 		output += list[i].DRUID;
-		output += "'>UV+</a>";
+		output += "'>";
+		output += "<i style='color:#999;' class='fa fa-image'></i>";
+		output += "</a>";
 		output += "</span>";
 		output += "</td>";
 
@@ -261,14 +271,6 @@ function MakeRollTableRows(list, peeps) {
 		output += "<a title='Stanford Digital Repository entry for roll' target='purl' href='";
 		output += list[i].PURL;
 		output += "'>SDR</a>";
-		output += "</span>";
-		output += "</td>";
-
-		output += "<td>";
-		output += "<span class='searchworks'>";
-		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
-		output += list[i].SEARCHWORKS;
-		output += "'>SW</a>";
 		output += "</span>";
 		output += "</td>";
 
@@ -282,13 +284,16 @@ function MakeRollTableRows(list, peeps) {
 
 		output += "<td>";
 		output += "<span class='purl'>";
-		output += "<a title='TIFF image of roll, 300 dpi, (green channel), large file' target='purl' href='";
+		output += "<a title='Uncompressed 300 DPI TIFF image of roll (green channel), warning: large file' target='purl' href='";
 		output += "https://stacks.stanford.edu/file/";
 		output += list[i].DRUID;
 		output += '/';
 		output += list[i].DRUID;
 		output += "_0001_gr.tif";
-		output += "'>TIFF</a>";
+		output += "'>";
+		output += "<i style='color:#999;' class='fa fa-camera'></i>";
+		output += "</a>";
+
 		output += "</span>";
 		output += "</td>";
 
@@ -296,7 +301,7 @@ function MakeRollTableRows(list, peeps) {
 		if (list[i].ROLL_TYPE) {
 			// https://github.com/pianoroll/SUPRA/blob/master/welte-red/midi-exp/bc072xf6791_exp.mid?raw=true
 			output += "<span class='midi'>";
-			output += "<a title='Link to Expressive MIDI file' target='midi' href='";
+			output += "<a title='Expressive MIDI file' target='midi' href='";
 			output += "https://github.com/pianoroll/SUPRA/blob/master/";
 			output += list[i].ROLL_TYPE.trim();
 			output += "/midi-exp/";
@@ -310,7 +315,7 @@ function MakeRollTableRows(list, peeps) {
 		if (list[i].ROLL_TYPE) {
 			// https://github.com/pianoroll/SUPRA/blob/master/welte-red/midi-raw/bc072xf6791_raw.mid?raw=true
 			output += "<span class='midi'>";
-			output += "<a title='Link to Raw MIDI file' target='midi' href='";
+			output += "<a title='Raw MIDI file' target='midi' href='";
 			output += "https://github.com/pianoroll/SUPRA/blob/master/";
 			output += list[i].ROLL_TYPE.trim();
 			output += "/midi-raw/";
