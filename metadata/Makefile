@@ -1,4 +1,7 @@
+
+
 .PHONY: commands
+
 
 # Download marcxml for pairings of DRUID/catkey entries in the
 # druid-to-catkey-mapping.txt index.  These stored marcxml are
@@ -7,11 +10,11 @@ download:
 	bin/downloadMarcxml -d marcxml druid-to-catkey-mapping.txt
 
 
-
 # Create a list of commands to insert metadata records into
 # the MIDI files.
 commands:
 	bin/marcxml2commands ../welte-red/midi-exp > commands
+
 
 # Run the list of commands to insert metadata records into
 # the MIDI files.
@@ -28,12 +31,13 @@ missing:
 	bin/checkForMissingMarcXml ../welte-red/midi-exp
 
 
-rolltype:
+# The ROLL_TYPE field is required in MIDI files in order for links
+# to the MIDI files and audio files on the supra website to be correct.
+# The ROLL_TYPE must match one of the subdirectories containing MIDI files
+# in the master branch (such as welte-red):
+rolltype: rolltype-welte-red
+rolltype-welte-red:
 	bin/setRollType -t welte-red ../welte-red/midi-exp/*.mid
 	bin/setRollType -t welte-red ../welte-red/midi-raw/*.mid
-
-
-
-
 
 
