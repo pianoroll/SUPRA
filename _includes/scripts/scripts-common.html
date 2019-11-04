@@ -273,6 +273,14 @@ function MakeRollTableRows(list, peeps) {
 		output += "</td>";
 
 		output += "<td>";
+		output += "<span class='drift'>";
+		output += "<a title='drift analysis for roll' target='searchworks' href='drift/?druid=";
+		output += list[i].DRUID.trim();
+		output += "'>D</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
 		output += "<span class='purl'>";
 		output += "<a title='TIFF image of roll, 300 dpi, (green channel), large file' target='purl' href='";
 		output += "https://stacks.stanford.edu/file/";

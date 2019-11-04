@@ -1,0 +1,16 @@
+
+<script>
+// vim: ts=3
+
+function displayDruid(druid) {
+	if (!druid) {
+		return;
+	}
+	var letter = druid.charAt(0);
+	var file = "data/" + letter + "/" + druid + "_drift.json";
+	PLOT.data.url = file;
+	vegaEmbed("#plot", PLOT);
+}
+
+
+</script>
