@@ -28,6 +28,12 @@ missing:
 	bin/checkForMissingMarcXml ../welte-red/midi-exp
 
 
+rolltype:
+	bin/setRollType -t welte-red ../welte-red/midi-exp/*.mid
+	bin/setRollType -t welte-red ../welte-red/midi-raw/*.mid
+
+
+
 
 
 

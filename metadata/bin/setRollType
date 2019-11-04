@@ -1,0 +1,42 @@
+#!/usr/local/bin/perl
+# vim: ts=3
+
+use strict;
+use Getopt::Long;
+
+my $rolltext = `which rolltext`;
+chomp $rolltext;
+if ($rolltext =~ /^\s*$/) {
+	if (-r "../midiroll/bin/rolltext") {
+		$rolltext = "../midiroll/bin/rolltext";
+	} else {
+		die "Cannot find rolltext program\n";
+	}
+}
+
+my $rolltype = 0;
+Getopt::Long::Configure("bundling");
+GetOptions (
+   't|type=s' => \$rolltype
+);
+if ($rolltype =~ /^\s*$/) {
+	die "Usage: $0 -t rolltype file(s)\n";
+}
+
+my $options = "--replace";
+my $command = "$rolltext $options";
+
+foreach my $file (@ARGV) {
+	die if !-r $file;
+	my $value = `$rolltext $file | grep "^\@ROLL_TYPE:"`;
+	chomp $value;
+	if ($value =~ /^\@ROLL_TYPE:\s*(.*)\s*$/) {
+		$value = $1;
+	} else {
+		$value = "";
+	}
+	# next if $value eq $rolltype;
+	print "Setting roll type to $rolltype in $file\n";
+	`$command -k ROLL_TYPE -v "\t\t$rolltype" $file`;
+}
+
