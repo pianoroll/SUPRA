@@ -29,7 +29,7 @@ table.info td:first-child {
 </style>
 
 <i onclick='displayPrevDruid()' title='Go to previous roll (left-arrow)' class='navy fa fa-caret-left'></i>&nbsp;
-<i onclick='displayNextDruid()' title='Go to previous roll (right-arrow)' class='navy fa fa-caret-right'></i>
+<i onclick='displayNextDruid()' title='Go to next roll (right-arrow)' class='navy fa fa-caret-right'></i>
 
 <div id="plot"></div>
 <div id="info"></div>
