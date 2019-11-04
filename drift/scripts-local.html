@@ -13,17 +13,29 @@ function displayDruid(druid) {
 	if (!druid) {
 		return;
 	}
+
+	var info = DRUIDINFO[druid].info;
+	if (!info) {
+		return;
+	}
+
 	var letter = druid.charAt(0);
 	var prefix = "https://supra.stanford.edu/drift/";
 	var file = prefix + "data/" + letter + "/" + druid + "_drift.json";
+
+	var firsthole = info.FIRST_HOLE;
+	if (firsthole) {
+		firsthole = parseInt(firsthole);
+		var calc = "(datum.r - " + firsthole  + ")/12.0/300.25";
+console.log("CALC", calc);
+		PLOT.transform[0].calculate = calc;
+	}
+
 	PLOT.data.url = file;
+
 	vegaEmbed("#plot", PLOT);
 	var element = document.querySelector("#info");
 	if (!element) {
-		return;
-	}
-	var info = DRUIDINFO[druid].info;
-	if (!info) {
 		return;
 	}
 	displayInfo(element, info);
@@ -48,6 +60,9 @@ function displayInfo(element, info) {
 	if (!info.DRIFT_RANGE) {
 		available = 0;
 	}
+
+	var feet;
+	var meter;
 
 	var output = "";
 	output += "<table class='info'>";
@@ -85,8 +100,55 @@ function displayInfo(element, info) {
 		output += info.DRIFT_MIN;
 		output += ")";
 		output += "<td>";
+		output += "</tr>";
 	}
-	output += "</tr>";
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Prefix length:";
+		output += "<td>";
+		output += "<td>";
+		feet = parseFloat(info.FIRST_HOLE) / 300.25 / 12.0;
+		meter = feet * 12.0 * 25.4 / 1000.0;
+		feet = parseInt(feet * 100.0 + 0.5)/100.0;
+		meter = parseInt(meter * 1000.0 + 0.5)/1000.0;
+		output += feet + " ft / " + meter + " m ";
+		output += " (distance from start of scan to leading edge of first hole)";
+		output += "<td>";
+		output += "</tr>";
+	}
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Music length:";
+		output += "<td>";
+		output += "<td>";
+		var feet = parseFloat(info.MUSICAL_LENGTH) / 300.25 / 12.0;
+		var meter = feet * 12.0 * 25.4 / 1000.0;
+		meter = parseInt(meter * 1000.0 + 0.5)/1000.0;
+		feet = parseInt(feet * 100.0 + 0.5)/100.0;
+		output += feet + " ft / " + meter + " m ";
+		output += " (distance from first hole to last hole)";
+		output += "<td>";
+		output += "</tr>";
+	}
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Scan length:";
+		output += "<td>";
+		output += "<td>";
+		var feet = parseFloat(info.IMAGE_LENGTH) / 300.25 / 12.0;
+		var meter = feet * 12.0 * 25.4 / 1000.0;
+		meter = parseInt(meter * 1000.0 + 0.5)/1000.0;
+		feet = parseInt(feet * 100.0 + 0.5)/100.0;
+		output += feet + " ft / " + meter + " m ";
+		output += "<td>";
+		output += "</tr>";
+	}
 
 	output += "<tr>";
 	output += "<td>";
