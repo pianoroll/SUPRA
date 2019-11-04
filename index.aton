@@ -1,6 +1,6 @@
 @@BEGIN: ROLL
 @DRUID: 		bb988jx6754
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -72,7 +72,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -146,7 +146,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bd915bs0646
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -220,7 +220,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bf074nj8801
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -294,7 +294,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bf644yy6536
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -368,7 +368,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -443,7 +443,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bj021jc9795
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -517,7 +517,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bj093nh2591
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -591,7 +591,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -665,7 +665,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bk297ff8944
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -739,7 +739,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bm016sg7202
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -813,7 +813,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bp952tr1116
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -887,7 +887,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bq744nq5945
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -961,7 +961,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bs173rx9307
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1035,7 +1035,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bs279zc9206
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1109,7 +1109,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		bs533ns1949
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1183,7 +1183,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1257,7 +1257,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		by076cz0337
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1362,16 +1362,16 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 939
 @LABEL: 		Welte-Mignon 5634
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/11392079
+@ROLL_TYPE: 		welte-red
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @DRUID: 		bz327kz4744
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		cd381jt9273
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1446,7 +1446,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cd435bw2771
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1520,7 +1520,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cg834ff4729
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1594,7 +1594,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ch197br4742
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1668,7 +1668,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ch401rm7382
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1762,19 +1762,19 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 4
 @LABEL: 		Welte-Mignon 284
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760259
 @PERFORMER: 		Lambrino, T&#xE9;l&#xE9;maque
 @COMPOSER: 		Beethoven, Ludwig van (1770-1827)
 @TITLE: 		Menuett (from Sonata op. 31 E flat major)
 @PURL: 			https://purl.stanford.edu/ch718mg2581
 @DRUID: 		ch718mg2581
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1849,7 +1849,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cp145vd3423
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -1923,7 +1923,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cp259ms0085
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2031,15 +2031,15 @@
 @AVG_HOLE_WIDTH: 19.97px
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763565
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2113,7 +2113,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cv806rf2664
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2187,7 +2187,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cw078rn1143
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2262,7 +2262,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cw211cn1219
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2337,7 +2337,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cw378sb0125
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2411,7 +2411,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cw427tw4145
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2485,7 +2485,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cw965qx3168
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2559,7 +2559,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cz847th6835
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2634,7 +2634,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		cz952kx0008
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2709,7 +2709,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dc021nq1464
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2781,7 +2781,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dc661yr7679
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2855,7 +2855,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dc920rk8870
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -2930,7 +2930,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dj406yq6980
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3004,7 +3004,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dp497dz1055
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3078,7 +3078,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dp563zh2166
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3152,7 +3152,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dp801zr4347
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3226,7 +3226,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dq126tp4234
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3300,7 +3300,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dq276yn8963
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3374,7 +3374,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dr835xg3992
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3448,7 +3448,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dr971dy1221
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3522,7 +3522,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ds710xd1794
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3596,7 +3596,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dt046tz6296
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3671,7 +3671,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dt352gh2011
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3745,7 +3745,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dw005gw3358
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3819,7 +3819,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dw083wh0675
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3893,7 +3893,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dw479gk0103
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -3967,7 +3967,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dw559kr7002
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4041,7 +4041,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dx555xv9093
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4115,7 +4115,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dy191sv5188
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4189,7 +4189,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dz112ky5575
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4263,7 +4263,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		dz678wd2724
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4337,7 +4337,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fb100cb2366
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4411,7 +4411,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fb623cd1247
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4485,7 +4485,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fd660zf8362
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4559,7 +4559,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fd761bx2206
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4633,7 +4633,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fg074rf2950
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4707,7 +4707,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fg895gs1373
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4783,7 +4783,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fh358rd2268
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4857,7 +4857,7 @@
 
 @@BEGIN: ROLL
 @ACCEL_PERCENT: 	0.22
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -4932,7 +4932,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fk036vh7282
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5006,7 +5006,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fk269mx8427
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5081,7 +5081,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fk960pq3086
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5155,7 +5155,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fm197wc9522
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5229,7 +5229,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fn111kx0654
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5303,7 +5303,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5377,7 +5377,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fr396nf3639
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5452,7 +5452,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fr853pn6519
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5526,7 +5526,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fr859hh7893
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5600,7 +5600,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ft113cg5195
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5675,7 +5675,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ft746ns5736
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5784,14 +5784,14 @@
 @FIRST_HOLE: 12629px
 @AVG_HOLE_WIDTH: 24.09px
 @HOLE_EXTENSION: 22.500000px
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763552
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		fw547rc7021
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5901,13 +5901,13 @@
 @EXP_WELTE_P: 		38
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		???
+@ROLL_TYPE: 		welte-red
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		fz215xr4723
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -5981,7 +5981,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		fz632cv0288
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6056,7 +6056,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gb034mq5877
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6130,7 +6130,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gc795vb4435
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6204,7 +6204,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gf160gq3516
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6279,7 +6279,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gf569df0451
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6369,6 +6369,7 @@
 @CATKEY: 		10763587
 @TITLE: 		Nocturne H-Dur op. 32
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763587
+@ROLL_TYPE: 		welte-red
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @PERFORMER: 		Gr&#xFC;nfeld, Alfred
 @COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
@@ -6378,13 +6379,12 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 34
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		gg920pz0818
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6458,7 +6458,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gh208gz5033
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6532,7 +6532,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gh272kd2238
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6604,7 +6604,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gm170gy7498
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6678,7 +6678,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gm296rz0673
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6752,7 +6752,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gq169nf1405
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6824,7 +6824,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gq401ng9171
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6898,7 +6898,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gq898yv9510
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -6972,7 +6972,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gq990gn6753
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7046,7 +7046,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gr034qm4805
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7121,7 +7121,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gr136pc5388
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7195,7 +7195,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gs012fx5529
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7270,7 +7270,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gs556hk6631
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7344,7 +7344,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gs573tj9547
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7418,7 +7418,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gt485ys0625
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7490,7 +7490,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gx107hd3026
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7564,7 +7564,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gx118hr0306
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7638,7 +7638,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gy310qs3678
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7712,7 +7712,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		gz430tm0196
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7786,7 +7786,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hc229ht1024
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7861,7 +7861,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hc909pp9868
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -7934,7 +7934,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8008,7 +8008,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8082,7 +8082,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hg709nf1997
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8156,7 +8156,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hh095vc8073
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8230,7 +8230,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hh429fw8081
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8304,7 +8304,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hh466mq4616
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8378,7 +8378,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hj604wr7502
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8452,7 +8452,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hk155fw7898
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8526,7 +8526,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hk752ck1008
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8619,19 +8619,19 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 7
 @PURL: 			https://purl.stanford.edu/hm373bm3807
 @PERFORMER: 		Adam-Benard, Eugenie
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763601
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @COMPOSER: 		Gounod, Charles (1818-1893)
 @TITLE: 		Faust prelude
 @LABEL: 		Welte-Mignon 57
 @DRUID: 		hm373bm3807
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		hm523dq5554
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8706,7 +8706,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hn285vs3930
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8780,7 +8780,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hn488rk0690
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8854,7 +8854,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hp956bx4547
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -8926,7 +8926,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hq933dq4264
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9000,7 +9000,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hr679fk5315
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9075,7 +9075,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hs635sh6729
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9147,7 +9147,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ht339gy6128
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9221,7 +9221,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hw588xk2111
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9317,14 +9317,14 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760281
+@ROLL_TYPE: 		welte-red
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		hx789sg2918
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9398,7 +9398,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		hy749gh2331
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9472,7 +9472,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jb107tz1859
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9546,7 +9546,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jc718cb5784
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9621,7 +9621,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jd052zg1047
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9695,7 +9695,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jd143sb1087
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9769,7 +9769,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jd625tw2164
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9841,7 +9841,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9915,7 +9915,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jf938sf5847
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -9989,7 +9989,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jf942gh3232
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10087,14 +10087,14 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760616
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		jg717nb8731
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10167,7 +10167,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jh069yf5255
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10242,7 +10242,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jh696my0069
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10316,7 +10316,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jj589sc7898
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10390,7 +10390,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jk211zx0169
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10464,7 +10464,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jk702cg2022
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10538,7 +10538,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jk842rg9750
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10612,7 +10612,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jm300wy4714
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10686,7 +10686,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jn038xx9588
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10779,19 +10779,19 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 18
 @DRUID: 		jn782fq7439
 @COMPOSER: 		Weber, Carl Maria von (1786-1826)
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760749
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @PERFORMER: 		Adam-Benard, Eugenie
 @TITLE: 		Rondo brillante op. 62
 @LABEL: 		Welte-Mignon 134
 @PURL: 			https://purl.stanford.edu/jn782fq7439
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		jq774vx6544
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10865,7 +10865,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jt036qh8967
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -10940,7 +10940,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jt308hp0877
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11014,7 +11014,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jt465zc6779
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11086,7 +11086,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jv484vp9065
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11160,7 +11160,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jw822wm2644
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11232,7 +11232,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jx095ty1753
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11306,7 +11306,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jy277ht0636
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11381,7 +11381,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		jy572md2211
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11455,7 +11455,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kf903tz5142
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11529,7 +11529,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kg263bn9176
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11602,7 +11602,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kg327qk8426
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11674,7 +11674,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kg488qt3887
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11749,7 +11749,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kj344bw3083
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11823,7 +11823,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kj388dj3308
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11898,7 +11898,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kp368nb7707
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -11972,7 +11972,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kq525dc4373
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12046,7 +12046,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kq892pn7618
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12120,7 +12120,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kr397bv2881
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12194,7 +12194,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kr645mg0298
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12268,7 +12268,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ks452px2704
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12343,7 +12343,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kt568yb8982
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12417,7 +12417,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kt780tm7975
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12512,17 +12512,17 @@
 @CATKEY: 		10763610
 @LABEL: 		Welte-Mignon 137
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763610
 @PERFORMER: 		Adam-Benard, Eugenie
 @COMPOSER: 		Bizet, Georges (1838-1875)
 @TITLE: 		Carmens Lied : tralalala
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		kv550vj8954
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12597,7 +12597,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kv601my2750
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12672,7 +12672,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kv921kh0629
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12746,7 +12746,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kw215gn3365
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12821,7 +12821,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kw738fg7467
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12896,7 +12896,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kx034vy1374
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -12970,7 +12970,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kx293yk2859
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13044,7 +13044,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kx695yq4528
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13118,7 +13118,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ky445sz4630
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13192,7 +13192,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ky458kj7325
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13266,7 +13266,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13338,7 +13338,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		kz819wb8990
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13412,7 +13412,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mb915gc4689
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13487,7 +13487,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		md331fy4209
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13562,7 +13562,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		md908xy8241
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13650,6 +13650,7 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 47
 @LABEL: 		Welte-Mignon 225
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763574
 @PERFORMER: 		Gr&#xFC;nfeld, Alfred
 @COMPOSER: 		Schumann, Robert (1810-1856)
@@ -13661,13 +13662,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		mf443ns5829
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13742,7 +13742,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mf940cg4339
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13816,7 +13816,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mg285ps6787
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13890,7 +13890,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mh120sr5901
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -13962,7 +13962,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mh156nr8259
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14038,7 +14038,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mh255vw4599
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14112,7 +14112,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mj416dn1432
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14186,7 +14186,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mn110mt1775
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14260,7 +14260,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mr400mf6531
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14334,7 +14334,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ms935qj0194
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14409,7 +14409,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mv259zt7103
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14483,7 +14483,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mv647hz9361
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14557,7 +14557,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mw198ym5807
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14629,7 +14629,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		mw870hc7232
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14703,6 +14703,7 @@
 
 @@BEGIN: ROLL
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763585
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @LABEL: 		Welte-Mignon 198
@@ -14738,13 +14739,12 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		mx599qs6329
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14818,7 +14818,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		my670qk6863
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -14916,8 +14916,8 @@
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @PERFORMER: 		Scharwenka, Xaver (1850-1924)
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763539
+@ROLL_TYPE: 		welte-red
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
@@ -14942,19 +14942,19 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 38
 @PURL: 			https://purl.stanford.edu/nf274ng7905
 @PERFORMER: 		Krah, Alexander 
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763583
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @COMPOSER: 		Chopin, Fr&#xE9;d&#xE9;ric (1810-1849)
 @TITLE: 		Nocturne op. 55, no. 2, E flat major
 @LABEL: 		Welte-Mignon 209
 @DRUID: 		nf274ng7905
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		nf733yv1324
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15028,7 +15028,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ng103jj1150
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15102,7 +15102,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nk632jz1564
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15176,7 +15176,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nn203bm7432
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15250,7 +15250,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		np204br1080
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15324,7 +15324,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		np829dt9039
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15398,7 +15398,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nq087cp3030
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15470,7 +15470,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nq190zp1066
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15544,7 +15544,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nq628rc4181
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15619,7 +15619,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ns598kr8616
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15693,7 +15693,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nt812xg8796
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15767,7 +15767,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15839,7 +15839,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nw765mr4994
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15913,7 +15913,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nx970yn7253
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -15987,7 +15987,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ny706rg1119
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16062,7 +16062,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ny937ph6981
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16136,7 +16136,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nz678zw1579
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16210,7 +16210,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		nz852nk6103
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16285,7 +16285,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pb026mb0704
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16360,7 +16360,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pb477ps9097
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16432,7 +16432,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pc276zv7038
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16506,7 +16506,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pc364sy7115
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16581,7 +16581,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pd354nj6106
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16655,7 +16655,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pf050rx0162
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16730,7 +16730,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ph502kz9777
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16804,7 +16804,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ph692rh6823
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16878,7 +16878,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pj688nx2384
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -16952,7 +16952,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pk245pq3468
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17024,7 +17024,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pk349zj4179
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17099,7 +17099,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pp798fc0175
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17173,7 +17173,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pr464zk8674
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17247,7 +17247,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ps108fn1431
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17322,7 +17322,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17394,7 +17394,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ps751km7125
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17468,7 +17468,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ps931qh5746
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17542,7 +17542,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17614,7 +17614,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pv279zy5193
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17707,19 +17707,19 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 1
 @PURL: 			https://purl.stanford.edu/py987gg6088
 @PERFORMER: 		Adam-Benard, Eugenie
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760282
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @COMPOSER: 		Gounod, Charles (1818-1893)
 @TITLE: 		Faust prelude
 @LABEL: 		Welte-Mignon 57
 @DRUID: 		py987gg6088
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		pz175wg5571
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17793,7 +17793,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		pz923dx9638
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17865,7 +17865,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qb477sd2923
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -17940,7 +17940,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qc650tp0469
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18012,7 +18012,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18086,7 +18086,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qd784zj3903
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18161,7 +18161,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qf640sj3141
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18236,7 +18236,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qf751dd5412
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18311,7 +18311,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qg041hb4569
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18386,7 +18386,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qg121rz6125
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18460,7 +18460,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qg708tz0324
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18533,7 +18533,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qj203cn5343
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18607,7 +18607,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qj233tv5549
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18680,7 +18680,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qk333zc6515
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18754,7 +18754,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qk926qc7779
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18828,7 +18828,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qm069fy5200
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18902,7 +18902,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qp421cd7297
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -18977,7 +18977,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qp506dy4541
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19051,7 +19051,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19125,7 +19125,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qq914np5449
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19199,7 +19199,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qt363fp0799
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19273,7 +19273,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qv334zb6243
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19347,7 +19347,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qv976bq3639
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19421,7 +19421,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qw257qp8232
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19496,7 +19496,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		qz155gk0442
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19568,7 +19568,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19641,7 +19641,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rb625rv7300
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19716,7 +19716,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rb861vm6094
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19790,7 +19790,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rc749wx0227
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19864,7 +19864,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rd899zb5188
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -19937,7 +19937,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rf416pb7833
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20012,7 +20012,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rg591sj4242
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20087,7 +20087,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rg931dy5023
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20161,7 +20161,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20235,7 +20235,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20309,7 +20309,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rk591jt8964
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20383,7 +20383,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rk796xd9697
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20457,7 +20457,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rn154dd5329
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20531,7 +20531,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rp146dk0477
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20605,7 +20605,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rp390kt0160
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20679,7 +20679,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rq642tt1626
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20754,7 +20754,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rq927dq9061
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20828,7 +20828,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rr990ym0199
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20903,7 +20903,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rs765sm2000
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -20978,7 +20978,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rt308hy9235
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21052,7 +21052,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rt595wj4442
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21126,7 +21126,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rv703vf3503
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21201,7 +21201,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		rv766dc1369
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21289,6 +21289,7 @@
 @CALLNUM: 		Stanford Libraries CONDON ROLL 52
 @LABEL: 		Welte-Mignon 226
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763575
 @PERFORMER: 		Popper, Hugo (1857-1910)
 @COMPOSER: 		Rosenzweig, Wilhelm
@@ -21300,13 +21301,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		rx933wn3761
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21380,7 +21380,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ry050yb9492
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21455,7 +21455,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ry948sf9078
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21529,7 +21529,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sb158jt0685
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21604,7 +21604,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sb487jm2092
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21678,7 +21678,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sc188ff2842
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21752,7 +21752,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sc787kg5664
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21826,7 +21826,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sg713kb1834
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -21900,6 +21900,7 @@
 
 @@BEGIN: ROLL
 @LEFT_HAND_ADJUST: 	-5
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763654
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @PERFORMER: 		Brzezi&#x144;ski, Franciszek (1867-19444)
@@ -21925,13 +21926,12 @@
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
 @MIDIFILE_TYPE: 	exp
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		sj582bt2976
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22005,7 +22005,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sj617nc3041
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22080,7 +22080,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sk293jg8184
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22154,7 +22154,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sk565bp3463
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22228,7 +22228,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sk832rf0203
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22302,7 +22302,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sk925fn6049
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22377,7 +22377,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sm246yb9650
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22452,7 +22452,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sn610pr8684
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22526,7 +22526,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sp773vt2651
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22600,7 +22600,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sq235zh0909
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22674,7 +22674,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sq640bh1919
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22749,7 +22749,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sr504pc8797
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22823,7 +22823,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sr577gv4813
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22898,7 +22898,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		st011pr3757
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -22972,7 +22972,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		st755cm2486
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23046,7 +23046,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23120,7 +23120,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sv842td3290
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23218,6 +23218,7 @@
 @ACCEL_PERCENT: 	0.22
 @TRACKER_EXTENSION: 	13px
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760613
 @LABEL: 		Welte-Mignon 76
 @DRUID: 		sw740gd4329
@@ -23230,13 +23231,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		sx275gw8801
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23310,7 +23310,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sx417qf9868
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23384,7 +23384,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		sz207mm8382
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23458,7 +23458,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tb323rh4122
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23530,7 +23530,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tb707nd8515
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23605,7 +23605,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		td134mh2760
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23679,7 +23679,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tj337qh7786
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23753,7 +23753,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tj759sv4290
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23825,7 +23825,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tm408mz6807
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23900,7 +23900,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tp302mb4101
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -23974,7 +23974,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tp747vf1137
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24048,7 +24048,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tq268fs9721
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24122,7 +24122,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tr243mz6407
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24196,7 +24196,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24271,7 +24271,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ts972sy8288
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24345,7 +24345,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tt435dd2897
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24419,7 +24419,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tw054jm0773
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24493,7 +24493,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tx437pj1389
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24567,7 +24567,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		tx963yw9164
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24641,7 +24641,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ty382mw3181
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24715,7 +24715,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ty610zx2946
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24789,7 +24789,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vb685pd6967
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24861,7 +24861,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -24934,7 +24934,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vd312rr8990
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25008,7 +25008,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vf252dc4872
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25082,7 +25082,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vj052cw2158
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25156,7 +25156,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vj076nk8220
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25228,7 +25228,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25302,7 +25302,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vm351pv9656
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25376,7 +25376,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vm423wb2944
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25450,7 +25450,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vp438dy0628
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25525,7 +25525,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vq227vv6345
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25599,7 +25599,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vq976gr5492
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25671,7 +25671,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vs059bb4318
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25745,7 +25745,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vs167qc5364
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25820,7 +25820,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vs880hb3425
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25895,7 +25895,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vw531zy4220
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -25969,7 +25969,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vy018tw5237
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26045,7 +26045,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vy193qr6005
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26120,7 +26120,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vy941zv8672
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26194,7 +26194,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		vz717bq6543
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26268,7 +26268,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wb381qd3151
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26342,7 +26342,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wc588rr6112
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26414,7 +26414,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wf903pd7291
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26486,7 +26486,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wg598sj1504
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26560,7 +26560,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wh678yv0330
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26632,7 +26632,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wj177bx9196
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26706,7 +26706,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26780,7 +26780,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wk295jd5289
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26855,7 +26855,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wk320bj4724
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -26929,7 +26929,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wn516xn5163
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27005,7 +27005,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wp442mf3514
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27079,7 +27079,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wp666fn2104
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27153,7 +27153,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wp877mn0317
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27227,7 +27227,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wq296df7434
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27301,7 +27301,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ws250sr1272
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27375,7 +27375,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ws749sk4778
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27447,7 +27447,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wt621xq0875
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27521,7 +27521,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wv641dn9264
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27596,7 +27596,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wv912mm2332
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27668,7 +27668,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ww627mg3287
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27742,7 +27742,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wz252pk3255
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27818,7 +27818,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		wz719qg6993
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27892,7 +27892,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xb072rc7617
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -27966,7 +27966,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xc665jf8254
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28040,7 +28040,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28115,7 +28115,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xg670df7262
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28189,7 +28189,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xg924dm1245
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28263,7 +28263,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xg976jt9573
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28336,7 +28336,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xh403hj3866
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28411,7 +28411,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xj540rr2929
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28485,7 +28485,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xk500gs5691
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28559,7 +28559,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xm418xm6937
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28633,7 +28633,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xm978sg7252
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28705,7 +28705,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xm993qd2681
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28779,7 +28779,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28853,7 +28853,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xn796bh4368
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -28927,7 +28927,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xp003dy0437
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29001,7 +29001,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xq762nt7491
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29075,7 +29075,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xr433hz5827
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29149,7 +29149,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xr682fm1233
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29222,7 +29222,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xw872bc8052
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29297,7 +29297,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xx766cn9843
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29372,7 +29372,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xx912rs1788
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29447,7 +29447,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xy699sy1462
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29520,7 +29520,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		xy812vy7103
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29594,7 +29594,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yb187qn0290
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29668,7 +29668,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yb682jn2494
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29740,7 +29740,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yc867qr9425
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29828,6 +29828,7 @@
 @EXP_WELTE_LOUD: 	70
 @DRUID: 		yg150mb0559
 @COMPOSER: 		Schumann, Robert (1810-1856)
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763584
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @PERFORMER: 		Gr&#xFC;nfeld, Alfred
@@ -29840,13 +29841,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		yg250xz9762
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29920,7 +29920,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yg667ds7662
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -29994,7 +29994,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yg939nd3043
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30067,7 +30067,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yj598pj2879
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30141,7 +30141,7 @@
 
 @@BEGIN: ROLL
 @TRACKER_EXTENSION: 	13px
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30215,7 +30215,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yk645sm6970
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30289,7 +30289,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ym117yd8356
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30376,6 +30376,7 @@
 @EXP_WELTE_LOUD: 	70
 @DRUID: 		ym420hv4366
 @COMPOSER: 		Mendelssohn-Bartholdy, Felix (1809-1847)
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760280
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @PERFORMER: 		M&#xF6;hle, Hermann
@@ -30388,13 +30389,12 @@
 @EXP_WELTE_SLOW_DECAY: 	2380 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		ym773gh2267
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30468,7 +30468,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yn137rt9938
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30562,6 +30562,7 @@
 @ACCEL_INCH: 		12
 @CALLNUM: 		Stanford Libraries CONDON ROLL 21
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10760752
+@ROLL_TYPE: 		welte-red
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
 @LABEL: 		Welte-Mignon 144
 @DRUID: 		yr287jf4422
@@ -30577,13 +30578,12 @@
 @FIRST_HOLE: 18926px
 @AVG_HOLE_WIDTH: 24.39px
 @HOLE_EXTENSION: 22.500000px
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		yr522jf5585
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30658,7 +30658,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ys250pr2232
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30730,7 +30730,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		ys288dd6430
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30837,15 +30837,15 @@
 @AVG_HOLE_WIDTH: 28.96px
 @HOLE_EXTENSION: 22.500000px
 @MIDIFILE_TYPE: 	exp
+@ROLL_TYPE: 		welte-red
 @SEARCHWORKS: 		https://searchworks.stanford.edu/view/10763568
 @SOFTWARE_HOLE: 	https://github.com/pianoroll/roll-image-parser
-@ROLL_TYPE:		???
 @@END: ROLL
 
 
 @@BEGIN: ROLL
 @DRUID: 		yt974cv2625
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30919,7 +30919,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yw484ky7093
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -30993,7 +30993,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yx139bt6626
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31065,7 +31065,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		yx536mq2915
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31140,7 +31140,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zb497jz4405
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31214,7 +31214,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zc118hn1152
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31288,7 +31288,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zc568zf0361
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31362,7 +31362,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zc614qh7060
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31436,7 +31436,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zf037wk3650
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31510,7 +31510,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zf673fy4620
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31585,7 +31585,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zf882fv0052
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31659,7 +31659,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zk082zq3962
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31733,7 +31733,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31807,7 +31807,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zn339mg3395
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31882,7 +31882,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zp085nr8664
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -31954,7 +31954,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zp424ps8426
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32029,7 +32029,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zp866tm4852
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32103,7 +32103,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zr938kz3902
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32177,7 +32177,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zt739gs4926
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32251,7 +32251,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zv706jf8277
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32325,7 +32325,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zv884mc0794
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32399,7 +32399,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zw485gh6070
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32471,7 +32471,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zw751nw0097
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32545,7 +32545,7 @@
 
 @@BEGIN: ROLL
 @EXP_WELTE_FAST_CRES: 	300 ms (time from welte_p to welte_mf)
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32619,7 +32619,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zw828tx0197
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32693,7 +32693,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zw904vm6502
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
@@ -32768,7 +32768,7 @@
 
 @@BEGIN: ROLL
 @DRUID: 		zx463rv8885
-@ROLL_TYPE:		welte-red
+@ROLL_TYPE: 		welte-red
 @THRESHOLD:		249
 @LENGTH_DPI:		300.25ppi
 @IMAGE_WIDTH:		4096px
