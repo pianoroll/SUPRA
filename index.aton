@@ -618,7 +618,7 @@
 @EXP_SOFTWARE: 		https://github.com/pianoroll/midi2exp
 @EXP_SOFTWARE_DATE:	Oct 29 2019 10:30:47
 @EXP_DATE:		Tue Oct 29 10:39:15 2019
-@VERSION: 1.1
+@VERSION:		1.1
 @LEFT_HAND_ADJUST: 	-5
 @ACCEL_PERCENT: 	0.22
 @EXP_WELTE_FAST_DECRS: 	400 ms (time from welte_p to welte_f)
