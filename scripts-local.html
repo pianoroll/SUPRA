@@ -119,19 +119,24 @@ function doSearch(text) {
 			} else {
 				if (oldentries[j].TITLE && oldentries[j].TITLE.match(regexp)) {
 					entries.push(oldentries[j]);
+					continue;
 				}
-				else if (oldentries[j].COMPOSER && oldentries[j].COMPOSER.match(regexp)) {
+				if (oldentries[j].COMPOSER && oldentries[j].COMPOSER.match(regexp)) {
 					entries.push(oldentries[j]);
+					continue;
 				}
-				else if (oldentries[j].PERFORMER && oldentries[j].PERFORMER.match(regexp)) {
+				if (oldentries[j].PERFORMER && oldentries[j].PERFORMER.match(regexp)) {
 					entries.push(oldentries[j]);
+					continue;
 				}
-				else if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
+				if (oldentries[j].LABEL && oldentries[j].LABEL.match(regexp)) {
 					entries.push(oldentries[j]);
+					continue;
 				}
-				else if (wm && wm.title && wm.title.match(regexp)) {
+				if (wm && wm.title && wm.title.match(regexp)) {
 					console.log("ADDING WMCATALOG ENTRY", wm.number, wm.title);
 					entries.push(oldentries[j]);
+					continue;
 				}
 			}
 		}
