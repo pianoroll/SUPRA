@@ -13,7 +13,8 @@ download:
 # Create a list of commands to insert metadata records into
 # the MIDI files.
 commands:
-	bin/marcxml2commands ../welte-red/midi-exp > commands
+	#bin/marcxml2commands ../welte-red/midi-exp > commands
+	bin/marcxml2commands ../welte-red/midi-raw > commands
 
 
 # Run the list of commands to insert metadata records into
@@ -28,7 +29,8 @@ commands2:
 # does not output any text, then all MIDI files have matching
 # marcxml data.
 missing:
-	bin/checkForMissingMarcXml ../welte-red/midi-exp
+	#bin/checkForMissingMarcXml ../welte-red/midi-exp
+	bin/checkForMissingMarcXml ../welte-red/midi-raw
 
 
 # The ROLL_TYPE field is required in MIDI files in order for links
@@ -37,7 +39,7 @@ missing:
 # in the master branch (such as welte-red):
 rolltype: rolltype-welte-red
 rolltype-welte-red:
-	bin/setRollType -t welte-red ../welte-red/midi-exp/*.mid
+	#bin/setRollType -t welte-red ../welte-red/midi-exp/*.mid
 	bin/setRollType -t welte-red ../welte-red/midi-raw/*.mid
 
 
