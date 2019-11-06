@@ -1,0 +1,77 @@
+{% include scripts/scripts-common.html %}
+
+{% include_relative scripts-local.html %}
+{% include_relative styles-local.html %}
+
+<script>{% include scripts/aton.js %}</script>
+
+<script>
+// vim: ts=3
+
+var CGI = {};      // CGI parameters from URL
+var ROLLINFO = [];
+var SHIFTS = [];
+var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+var SHIFTINDEX = "shifts.aton";
+var DRUIDINFO = {};
+var DRUID = null;
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+	HighlightLinkInHeader();
+	CGI = GetCgiParameters();
+	if (sessionStorage.ROLLINFO) {
+		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
+		doAction(ROLLINFO);
+	} else {
+		var request = new XMLHttpRequest();
+		request.addEventListener("load", function () {
+			var aton = new ATON;
+			ROLLINFO = aton.parse(this.responseText).ROLL;
+			doAction(ROLLINFO);
+		});
+		request.open("GET", ATONINDEX);
+		request.send();
+	}
+});
+
+
+
+//////////////////////////////
+//
+// doAction --
+//
+
+function doAction(rollInfo) {
+	DisplayStats(rollInfo);
+	buildDruidIndex(rollInfo);
+	var request = new XMLHttpRequest();
+	request.addEventListener("load", function () {
+		var aton = new ATON;
+		SHIFTS = aton.parse(this.responseText).SHIFT;
+		SHIFTS.sort((a,b) => Math.abs(parseFloat(b.MOVEMENT)) - Math.abs(parseFloat(a.MOVEMENT)));
+		doAction2(SHIFTS);
+	});
+	request.open("GET", SHIFTINDEX);
+	request.send();
+}
+
+
+
+//////////////////////////////
+//
+// doAction2 --
+//
+
+function doAction2(shifts) {
+	console.log("SHIFTS", shifts);
+	displayShiftStats();
+	displayShiftList();
+}
+
+
+</script>

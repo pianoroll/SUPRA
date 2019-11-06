@@ -751,12 +751,6 @@ function displayHoleList(druid, analysis, holes) {
 		output += "</td></tr>";
 
 		output += "<tr><td>";
-		var depthmm = parseInt(hole.WIDTH_COL) / 300 * 25.4;
-		depthmm = parseInt(depthmm * 10.0 + 0.5)/10.0;
-		output += "<b>Depth:</b></td><td>" + depthmm + " mm<br/>";
-		output += "</td></tr>";
-
-		output += "<tr><td>";
 		var feet = parseInt(hole.ORIGIN_ROW) / 300.25 / 12;
 		feet = parseInt(feet * 10.0 + 0.5)/10.0;
 		output += "<b>Position:</b></td><td>" + feet + " feet (from beginning of image)<br/>";
