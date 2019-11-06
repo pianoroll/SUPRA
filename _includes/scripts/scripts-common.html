@@ -283,6 +283,14 @@ function MakeRollTableRows(list, peeps) {
 		output += "</td>";
 
 		output += "<td>";
+		output += "<span class='image-analysis'>";
+		output += "<a title='image quality analysis for roll' target='searchworks' href='image-analysis/?druid=";
+		output += list[i].DRUID.trim();
+		output += "'>IA</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
 		output += "<span class='purl'>";
 		output += "<a title='Uncompressed 300 DPI TIFF image of roll (green channel), warning: large file' target='purl' href='";
 		output += "https://stacks.stanford.edu/file/";
