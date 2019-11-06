@@ -1,0 +1,90 @@
+
+<script>
+// vim: ts=3
+
+function displayHistogram() {
+
+	var HISTOGRAM = {
+		"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+		"width": 800,
+		"height": 300,
+		"data": {
+			values: []
+		},
+		"mark": "bar",
+		"encoding": {
+	  		"x": {
+				"field": "shift",
+				"title": "Shift magnitude [in 300 DPI pixels, absolute value]",
+				"bin": { "step": 1 },
+				"axis": {
+					"labelAngle": 0,
+				},
+				"type": "quantitative"
+	  		},
+	  		"y": {
+				"aggregate": "count",
+				"title": "Number of shifts",
+				"type": "quantitative"
+	  		},
+	  		"color": {
+				"field": "category",
+				"type": "nominal",
+				"legend": {"title": "Category"},
+				"scale": {
+					"domain": ["normal", "ending", "large"],
+					"range": ["#4c78a8", "limegreen", "#8f1515"]
+				}
+	  		}
+		},
+		"config": {}
+	};
+
+	var data = generateShiftData();
+	HISTOGRAM.data.values = data;
+console.log("HISTOGRAM = ", HISTOGRAM);
+	vegaEmbed("#histogram", HISTOGRAM);
+}
+
+
+
+//////////////////////////////
+//
+// generateShiftData --
+//
+
+function generateShiftData() {
+
+	var rollup = {};
+	var i;
+	for (i=0; i<ROLLINFO.length; i++) {
+		rollup[ROLLINFO[i].DRUID] = ROLLINFO[i];
+	}
+
+	var output = [];
+	for (var i=0; i<SHIFTS.length; i++) {
+		var druid = SHIFTS[i].DRUID;
+		var amount = Math.abs(parseFloat(SHIFTS[i].MOVEMENT));
+		var category = "normal";
+		var location = parseInt(SHIFTS[i].ROW);
+		var musicend = parseInt(rollup[druid].LAST_HOLE);
+		if (location > musicend) {
+			category = "ending";
+		} else if (amount >= 15.0) {
+			category = "large";
+		}
+		var obj = {
+			shift: amount,
+			category: category
+		};
+		output.push(obj);
+	}
+
+	return output;
+}
+
+</script>
+
+
+
+

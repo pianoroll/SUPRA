@@ -9,7 +9,7 @@ summary:
 
 {% include_relative listeners.html %}
 
-<h1> Operator shifts in the images </h1>
+<h1> Operator shifts in the roll images </h1>
 
 This page lists all operator shifts in the SUPRA roll images.  Shifts
 are sudden displacements of the roll to the left or right in the
@@ -20,7 +20,13 @@ the visual effects of each shift.
 
 <h2> Shift summary </h2>
 
-<span id="summary"></span>.
+<div id="summary"></div>
+
+The following histogram summarizes all of the shifts displayed below.  Regular
+shifts are shown in blue, shifts occurring after the end of the last music hole
+are shown in green, and borderline shift sizes are shown in red.
+
+<div id="histogram"></div>
 
 <h2> Shift list </h2>
 
@@ -37,6 +43,9 @@ in green, meaning OK).  These end shifts do not affect musical data
 extraction from the rolls.
 
 <div id="shift-list"></div>
+
+
+{% include_relative histogram.html %}
 
 
 

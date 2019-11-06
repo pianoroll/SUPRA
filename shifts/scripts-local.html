@@ -291,7 +291,6 @@ function displayShiftList() {
 //
 
 function displayShiftEntry(item) {
-	console.log("ITEM", item);
 	var druid = item.DRUID;
 
 	var rollup = {};
@@ -299,7 +298,6 @@ function displayShiftEntry(item) {
 	for (i=0; i<ROLLINFO.length; i++) {
 		rollup[ROLLINFO[i].DRUID] = ROLLINFO[i];
 	}
-console.log("ROLLUP XX", rollup);
 
 	var output = "";
 
@@ -351,7 +349,6 @@ console.log("ROLLUP XX", rollup);
 	feet = parseInt(feet * 10.0 + 0.5)/10.0;
 	output += "<b>Position:</b></td><td>" + feet + " feet (from beginning of image)";
 	var location = parseInt(sift.ROW);
-	console.log("ROLLUP", rollup[druid], "DRUID", druid);
 	var musicend = parseInt(rollup[druid].LAST_HOLE);
 	if (location > musicend) {
 		output += ".  <span style='color:limegreen;'>Shift occurs after last music hole.</span>";
