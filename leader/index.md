@@ -14,7 +14,7 @@ summary:
 <i onclick='displayNextDruid()' title='Go to next roll (right-arrow)' class='navy fa fa-caret-right'></i>
 
 <div id="info"></div>
-<div id="leader"><div style='height:800px;'></div></div>
+<div style="min-height:200px;" id="leader"></div>
 <div class="button" onclick="rotateImage()">rotate</div>
 <div class="button" onclick="mirrorImage()">mirror</div>
 <div style="height:100px;"></div>

@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/TrySound/magnify/fix-vanillajs/dist/magnify.js
+https://raw.githubusercontent.com/TrySound/magnify/fix-vanillajs/dist/magnify.css

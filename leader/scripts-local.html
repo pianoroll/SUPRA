@@ -111,15 +111,25 @@ function displayLeader(druid) {
 	url = "https://stacks.stanford.edu/image/iiif/" + druid;
 	url += "%2F" + druid + "_0001/";
 	url += x + "," + y + "," + dx + "," + dy;
-	url += "/pct:100/0/default.jpg";
+	url += "/pct:25/0/default.jpg";
+
+	var bigurl;
+	bigurl = "https://stacks.stanford.edu/image/iiif/" + druid;
+	bigurl += "%2F" + druid + "_0001/";
+	bigurl += x + "," + y + "," + dx + "," + dy;
+	bigurl += "/pct:100/0/default.jpg";
 
 	var output = "";
-	output += "<div style='min-height:800px; width:100%;'>";
-	output += "<img id='leader-image' style='width:100%;' class='rotate' src='";
+	output += "<div class='bright' style='min-height:200px;'>";
+	// output += "<a href='" + bigurl + "'>";
+	output += "<img id='leader-image' class='rotate' src='";
 	output += url;
 	output += "'>";
+	// output += "</a>";
 	output += "</div>";
 	element.innerHTML = output;
+
+   // $("img").magnify();
 	console.log("URL", url);
 }
 
