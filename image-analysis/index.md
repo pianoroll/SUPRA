@@ -10,18 +10,7 @@ summary:
 <i onclick='displayPrevDruid()' title='Go to previous roll (left-arrow)' class='navy fa fa-caret-left'></i>&nbsp;
 <i onclick='displayNextDruid()' title='Go to next roll (right-arrow)' class='navy fa fa-caret-right'></i>
 
-# Image analysis for <span id="druid"></span>#
-
-<style>
-.navy {
-	font-size: 3rem;
-	color: #999;
-}
-.navy:hover {
-	color: #8b1515;
-	cursor: pointer;
-}
-</style>
+<h1>Image analysis for <span id="druid"></span></h1>
 
 
 <div id="plot"></div>
