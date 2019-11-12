@@ -141,10 +141,8 @@ function PreparePerson(entry, peeps) {
 	entry = entry.replace("-1", "&ndash;1");
 	entry = entry.replace("-2", "&ndash;2");
 	entry = entry.replace("-\)", "&ndash;)");
-	entry = entry
-		.replace(" Nikolayevich", "")
-		// .replace("-Bartholdy", "")
-		.replace(" Konstantinovich", "");
+	entry = ShortenName(entry);
+
 	var nombre = entry;
 	var dates = "";
 	if (matches = entry.match(/^\s*(.*)\s+(\(.*\))\s*$/)) {
@@ -178,10 +176,7 @@ function PreparePerson(entry, peeps) {
 	output += "target='person' href='";
 	output += link;
 	output += "'>";
-	var n = nombre
-		.replace(" Konstantinovich", "")
-		.replace("-Bartholdy", "")
-		.replace(" Nikolayevich", "");
+	var n = ShortenName(nombre);
 	output += n;
 	output += "</a>";
 	if (!dates.match(/^\s*$/)) {
@@ -191,6 +186,25 @@ function PreparePerson(entry, peeps) {
 	return output;
 }
 
+
+
+//////////////////////////////
+//
+// ShortenName --
+//
+
+function ShortenName(name) {
+	return name.replace(" Nikolayevich", "")
+		.replace("-Bartholdy", "")
+		.replace(" Konstantinovich", "");
+}
+
+
+
+//////////////////////////////
+//
+// MakeRollTableRows --
+//
 function MakeRollTableRows(list, peeps) {
 	var output = "";
 	for (var i=0; i<list.length; i++) {
@@ -586,6 +600,8 @@ function DisplayPianists(list, selector, peeps) {
 		var onlyname = plist[i][1].replace(/\s*\(.*/, "");
 		if (PEEPS && PEEPS[onlyname] && PEEPS[onlyname].NATIONALITY) {
 			output += PEEPS[onlyname].NATIONALITY;
+		} else {
+			console.log("MISSING NATIONALITY FOR", onlyname, PEEPS[onlyname]);
 		}
 		output += "</td>"
 
@@ -705,10 +721,7 @@ function DisplayComposers(list, selector, peeps) {
 			birth = "";
 			death = "";
 		}
-		output += person
-			.replace(" Konstantinovich", "")
-			.replace("-Bartholdy", "")
-			.replace(" Nikolayevich", "");
+		output += ShortenName(person);
 		output += "</a>";
 		output += "</td>"
 
@@ -729,8 +742,11 @@ function DisplayComposers(list, selector, peeps) {
 
 		output += "<td>"
 		var onlyname = plist[i][1].replace(/\s*\(.*/, "");
+		onlyname = ShortenName(onlyname);
 		if (PEEPS && PEEPS[onlyname] && PEEPS[onlyname].NATIONALITY) {
 			output += PEEPS[onlyname].NATIONALITY;
+		} else {
+			console.log("MISSING NATIONALITY X FOR", onlyname, PEEPS[onlyname]);
 		}
 		output += "</td>"
 
