@@ -1,0 +1,112 @@
+#!/usr/bin/perl
+#
+# Description: This script extracts MARC21 fields/subfields from
+#              MARC21 files.  The input is a string containing a
+#              list of the records to extract and then a list
+#              of the filenames to extract from (or use standard input).
+#              A special field "druid" will extract the druid number from
+#              the filename if filenames are formatted correctly.
+#              Another special field is "catkey" which will extract the
+#              Searchworks ID number from the contents of the marcxml data
+#              (in controlfield 001).
+#
+# Example:        getMarcFields "druid,100e,100a" files
+#              This will return a list in the format "druid,role,person" from
+#              each file.
+#
+
+use strict;
+
+my $template = shift @ARGV;
+my @files = @ARGV;
+
+foreach my $file (@files) {
+	processFile($file);
+}
+
+
+
+##############################
+##
+## processFile --
+##
+
+sub processFile {
+	my ($file) = @_;
+	open (FILE, $file) or die "Cannot read $file\n";
+	my @contents = <FILE>;
+	close FILE;
+	chomp @contents;
+	my $tag = "";
+	my %entry;
+	my $druid = $file;
+	$druid =~ s/.*\///;
+	$druid =~ s/_.*//;
+	$druid =~ s/\.[^.]*$//;
+	$entry{"druid"} = $druid;
+
+	foreach my $line (@contents) {
+		# <?xml version="1.0"?>
+		if ($line =~ /<\?xml/) {
+			my $size = keys %entry;
+			if ($size > 1) {
+				my $result = getResult($template, %entry);
+				%entry = {};
+			} else {
+				next;
+			}
+		}
+  		# Catkey line: <controlfield tag="001">a10763719</controlfield>
+		if ($line =~ /<controlfield.*tag="001".*>a(\d+)<\/controlfield>/) {
+			$entry{"catkey"} = $1;
+			next;
+		}
+		# <datafield ind1="0" ind2="0" tag="033">
+		if ($line =~  /<datafield.*tag="(\d+)"/) {
+			$tag = $1;
+			next;
+		}
+   	# <subfield code="a">19050402</subfield>
+		if ($line =~ /<subfield[^>]*code="([^"]*)"[^>]*>(.*)<\/subfield>/) {
+			my $subtag = $1;
+			my $value = $2;
+			if ("$tag$subtag" ne "") {
+				if ($entry{"$tag$subtag"}) {
+					# append to existing data
+					$entry{"$tag$subtag"} .= "\t$value";
+				} else {
+					$entry{"$tag$subtag"} = "$value";
+				}
+			}
+		}
+	}
+
+	my $size = keys %entry;
+	if ($size) {
+		my $result = getResult($template, %entry);
+		print "$result\n";
+		%entry = {};
+	}
+
+}
+
+
+	
+##############################
+##
+## getResult --
+##
+
+sub getResult {
+	my ($template, %entry) = @_;
+	$template =~ s/\b/ZZZ/g;
+	foreach my $key (keys %entry) {
+		$template =~ s/ZZZ${key}ZZZ/$entry{$key}/g;
+	}
+	$template =~ s/ZZZ//g;
+	return $template;
+}
+
+
+
+
