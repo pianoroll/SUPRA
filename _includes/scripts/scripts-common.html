@@ -235,7 +235,7 @@ function MakeRollTableRows(list, peeps) {
 
 		var alttitle = "";
 		var ms = list[i].LABEL.match(/Welte-Mignon\s*(\d+)/);
-		if (ms && WMCATALOG) {
+		if (ms && (typeof(WMCATALOG) !== 'undefined') && WMCATALOG) {
 			var wm = WMCATALOG[ms[1]];
 			if (wm) {
 				alttitle = wm.title;
