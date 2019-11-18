@@ -32,7 +32,14 @@ a MIDI file.  The light-green bars are from a modified MIDI file
 that extends notes to the end of a sustain pedal.  The sustain pedal
 is shown in the background as darker regions.  The expression
 (dynamics) of the treble register of the piano is given as a red
-line, and that of the bass register is given in blue.
+line, and that of the bass register is given in blue.  Here is 
+a video of the playback in Sonic Visualiser (red and blue lines for bass and treble switched):
+
+<p>
+<div style="justify-content:center; text-align:center;">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/8gHmGGA3abM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</p>
 
 </section>
 
