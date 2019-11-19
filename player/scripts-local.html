@@ -1,0 +1,394 @@
+
+<script>
+// vim: ts=3
+
+
+
+//////////////////////////////
+//
+// displayDruid --
+//
+
+function displayDruid(druid) {
+	var info = DRUIDINFO[druid];
+	if (!info) {
+		return;
+	}
+	console.log("DISPLAYING DRUID", druid, info);
+	var entry = info.info;
+	if (!entry) {
+		return;
+	}
+
+	displayInfo(druid, ROLLINFO, PEEPS, "#info");
+
+	var rollstart    = parseInt(entry.PRELEADER_ROW);
+	var imagewidth   = parseInt(entry.IMAGE_WIDTH);
+	var imageheight  = parseInt(entry.IMAGE_LENGTH);
+	var lasthole     = parseInt(entry.LAST_HOLE);
+	var firsthole    = parseInt(entry.FIRST_HOLE);
+	var bassmargin   = parseInt(entry.HARD_MARGIN_BASS);
+	var treblemargin = parseInt(entry.HARD_MARGIN_TREBLE);
+	var musicend     = lasthole + 1000;
+	if (musicend > imageheight - 100) {
+		musicend = imageheight - 100;
+	}
+	musicend = imageheight;
+
+	var imagex = bassmargin;
+	var imagey = rollstart;
+	var imagedx = imagewidth - bassmargin - treblemargin;
+	var imagedy = musicend - rollstart;
+
+	// Add a border of one pixels to each side of roll.
+	// This allows for verifying that the roll edges are
+	// not clipped by the scanning region and that the
+	// edge detection (within the range of the music) was
+	// accurate.
+	var pborder = 1;  
+	iamgex = imagex - pborder;
+	if (imagex < 0) {
+		imagex = 0;
+	}
+	imagedx = imagedx + 2 * pborder;
+	var diff = imagewidth - imagex - imagedx;
+	if (diff < 0) {
+		imagedx = imagedx + diff;
+	}
+
+	var bbox = imagex + "," + imagey + "," + imagedx + "," + imagedy;
+	console.log("BBOX", bbox);
+
+	var rowoffset = firsthole - rollstart;
+	console.log("ROWOFFSET", rowoffset);
+
+	var percent = 20;
+	var rotation = 270;
+	var urlbase = "https://stacks.stanford.edu/image/iiif/";
+	var url = urlbase + druid + "%2F" + druid + "_0001/";
+	url += bbox + "/";
+	url += "pct:" + percent
+	url += "/" + rotation;
+	url += "/default.jpg";
+	
+	console.log("URL", url);
+
+	var image = document.querySelector("#image");
+	var output = "<img src='" + url + "'>";
+	image.innerHTML = output;
+
+	var winwidth = window.innerWidth;
+	image.style.width = (winwidth - 10) + "px";
+
+	var img = image.querySelector("img");
+	img.onmousedown = displayCoordinates;
+
+	animateImage(image, imagedy);
+}
+
+
+
+//////////////////////////////
+//
+// displayCoordinates --
+//
+
+function displayCoordinates(event) {
+	var xpos = 0;
+	var ypos = 0;
+	var img = document.querySelector("#image img");
+	var imgpos = getPosition(img);
+	if (!e) var e = window.event;
+	if (e.pageX || e.pageY) {
+		xpos = e.pageX;
+		ypos = e.pageY;
+	} else if (e.clientX || e.clientY) {
+		xpos = e.clientX + document.body.scrollLeft
+				+ document.documentElement.scrollLeft;
+		ypos = e.clientY + document.body.scrollTop
+				+ document.documentElement.scrollTop;
+	}
+	xpos = xpos - imgpos[0];
+	ypos = ypos - imgpos[1];
+
+	console.log("X=", xpos, "Y=", ypos);
+}
+
+
+
+//////////////////////////////
+//
+// getPosition --
+//
+
+function getPosition(elem) {
+	var xpos = 0;
+	var ypos = 0;
+	if (typeof(elem.offsetParent) != "undefined") {
+		for(xpos = 0, ypos = 0; elem; elem = elem.offsetParent) {
+			xpos += elem.offsetLeft;
+			ypos += elem.offsetTop;
+		}
+      return [ xpos, ypos ];
+    } else {
+      return [ elem.x, elem.y ];
+    }
+}
+
+
+
+//////////////////////////////
+//
+// animateImage --
+//
+
+var INTERVAL;
+
+function animateImage(element, length) {
+	if (!element) {
+		element = document.querySelector("#image");
+	}
+	var increment = -5;
+	var timestep = 50;  // milliseconds;
+	var matches;
+/*
+	INTERVAL = setInterval(function () {
+		var transform = element.style.transform;
+		matches = transform.match(/(-?\d+)px/);
+		var position = parseInt(matches[1]);
+		position += increment;
+		element.style.transform = "translateX(" + position + "px)";
+
+		if (-position > length) {
+			increment = -increment;
+		}
+		if (-position < 0) {
+			increment = -increment;
+		}
+	}, timestep);
+*/
+}
+
+
+
+//////////////////////////////
+//
+// buildDruidIndex --
+//
+
+function buildDruidIndex(rollinfo) {
+	DRUIDINFO = {};
+	var druid;
+	var druidnext;
+	var druidprev;
+	var obj;
+	for (var i=1; i<rollinfo.length - 1; i++) {
+		druid = rollinfo[i].DRUID;
+		druidnext = rollinfo[i+1].DRUID;
+		druidprev = rollinfo[i-1].DRUID;
+		DRUIDINFO[druid] = {
+			info: rollinfo[i],
+			curr: druid,
+			next: druidnext,
+			prev: druidprev
+		};
+	}
+
+	// and endpoints
+
+	DRUIDINFO[rollinfo[0].DRUID] = {
+		info: rollinfo[0],
+		curr: rollinfo[0].DRUID,
+		next: rollinfo[1].DRUID,
+		prev: rollinfo[rollinfo.length-1].DRUID
+	};
+
+	DRUIDINFO[rollinfo[rollinfo.length-1].DRUID] = {
+		info: rollinfo[rollinfo.length-1],
+		curr: rollinfo[rollinfo.length-1].DRUID,
+		next: rollinfo[0].DRUID,
+		prev: rollinfo[rollinfo.length-2].DRUID
+	};
+}
+
+
+
+//////////////////////////////
+//
+// displayInfo --
+//
+
+function displayInfo(druid, rollinfo, peeps, selector) {
+	var rindex = -1
+	for (var i=0; i<rollinfo.length; i++) {
+		if (rollinfo[i].DRUID === druid) {
+			rindex = i;
+			break;
+		}
+	}
+	if (rindex < 0) {
+		console.log("Error: druid", druid, "is not in database");
+		return;
+	}
+
+	var output = "";
+	output += "<table class='info'>";
+	output += "<tr>";
+
+	output += "<td>";
+	output += "<div id='audio_" + druid + "' ";
+	output += "style='width:150px; height:150px; cursor:pointer;' ";
+	output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
+	output += "class='play-big audio'>play</div>";
+	output += "</td>";
+
+	output += "<td>";
+
+	output += "<table class='key-value'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Title:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].TITLE) {
+		output += rollinfo[rindex].TITLE;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Composer:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].COMPOSER) {
+	 	output += PreparePerson(rollinfo[rindex].COMPOSER, peeps);
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Performer:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].PERFORMER) {
+	 	output += PreparePerson(rollinfo[rindex].PERFORMER, peeps);
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Label:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].LABEL) {
+		output += rollinfo[rindex].LABEL;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "</table>";
+
+	output += "</td>";
+
+	output += "</tr>";
+	output += "</table>";
+
+	var element = document.querySelector(selector);
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displayInfo --
+//
+
+function displayInfo(druid, rollinfo, peeps, selector) {
+	var rindex = -1
+	for (var i=0; i<rollinfo.length; i++) {
+		if (rollinfo[i].DRUID === druid) {
+			rindex = i;
+			break;
+		}
+	}
+	if (rindex < 0) {
+		console.log("Error: druid", druid, "is not in database");
+		return;
+	}
+
+	var output = "";
+	output += "<table class='info'>";
+	output += "<tr>";
+
+	output += "<td>";
+	output += "<div id='audio_" + druid + "' ";
+	output += "style='width:150px; height:150px; cursor:pointer;' ";
+	output += "onclick='PlayAudioFile(\"" + druid + "\", this);' ";
+	output += "class='play-big audio'>play</div>";
+	output += "</td>";
+
+	output += "<td>";
+
+	output += "<table class='key-value'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Title:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].TITLE) {
+		output += rollinfo[rindex].TITLE;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Composer:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].COMPOSER) {
+	 	output += PreparePerson(rollinfo[rindex].COMPOSER, peeps);
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Performer:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].PERFORMER) {
+	 	output += PreparePerson(rollinfo[rindex].PERFORMER, peeps);
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Label:";
+	output += "</td>";
+	output += "<td>";
+	if (rollinfo[rindex].LABEL) {
+		output += rollinfo[rindex].LABEL;
+	}
+	output += "</td>";
+	output += "</tr>";
+
+	output += "</table>";
+
+	output += "</td>";
+
+	output += "</tr>";
+	output += "</table>";
+
+	var element = document.querySelector(selector);
+	element.innerHTML = output;
+}
+
+</script>

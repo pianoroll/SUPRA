@@ -263,20 +263,20 @@ function MakeRollTableRows(list, peeps) {
 		output += "</td>";
 
 		output += "<td>";
-		output += "<span class='searchworks'>";
-		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
-		output += list[i].SEARCHWORKS;
-		output += "'>SW</a>";
-		output += "</span>";
-		output += "</td>";
-
-		output += "<td>";
 		output += "<span class='purl'>";
-		output += "<a title='Scan of roll and audio' target='purl' href='/uv/?id=";
+		output += "<a title='Scan of roll and audio' target='purl' href='/player/?id=";
 		output += list[i].DRUID;
 		output += "'>";
 		output += "<i style='color:#999;' class='fa fa-image'></i>";
 		output += "</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='searchworks'>";
+		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
+		output += list[i].SEARCHWORKS;
+		output += "'>SW</a>";
 		output += "</span>";
 		output += "</td>";
 
@@ -1044,6 +1044,7 @@ function SortByText(index, selector) {
 }
 
 
+
 //////////////////////////////
 //
 // GetDruidInfo --
@@ -1060,6 +1061,7 @@ function GetDruidInfo (rollinfo, druid) {
 	}
 	return {};
 }
+
 
 </script>
 
