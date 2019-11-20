@@ -1,0 +1,79 @@
+#!/usr/local/bin/perl
+#
+# vim: ts=3
+# Description: This program compares the lines in two file
+#    (with the intention that each line contain a DRUID), and
+#    the reports if there is a match of DRUID between the
+#    files or not.
+#
+
+use strict;
+
+die "Usage: $0 file1 file2\n" if @ARGV != 2;
+
+my %list1;
+my %list2;
+
+my $file1 = $ARGV[0];
+my $file2 = $ARGV[1];
+
+open (FILE1, $file1) or die "Cannot read file $file1\n";
+open (FILE2, $file2) or die "Cannot read file $file2\n";
+
+my $line;
+
+while ($line = <FILE1>) {
+	chomp $line;
+	next if $line =~ /^\s*$/;    # ignore empty lines
+	next if $line =~ /^\s*#/;    # ignore lines starting with #
+	next if $line =~ /^\!/;      # ignore lines starting with !
+	next if $line =~ /^\*/;      # ignore lines starting with *
+	$line =~ s/^\s+//;           # ignore spaces before text
+	$line =~ s/\s+$//;           # ignore spaces after text
+	next if $line =~ /\s/;       # no spaces allowed in text
+	$list1{$line}++;
+}
+
+my @keys1 = sort keys %list1;
+for (my $i=0; $i<@keys1; $i++) {
+	if ($list1{$keys1[$i]} > 1) {
+		print STDERR "Warning: entry $keys1[$i] occurs $list1{$keys1[$i]} times in the file.\n"
+	}
+}
+
+
+while ($line = <FILE2>) {
+	chomp $line;
+	next if $line =~ /^\s*$/;    # ignore empty lines
+	next if $line =~ /^\s*#/;    # ignore lines starting with #
+	next if $line =~ /^\!/;      # ignore lines starting with !
+	next if $line =~ /^\*/;      # ignore lines starting with *
+	$line =~ s/^\s+//;           # ignore spaces before text
+	$line =~ s/\s+$//;           # ignore spaces after text
+	next if $line =~ /\s/;       # no spaces allowed in text
+	$list2{$line}++;
+}
+my @keys2 = sort keys %list2;
+for (my $i=0; $i<@keys2; $i++) {
+	if ($list2{$keys2[$i]} > 1) {
+		print STDERR "Warning: entry $keys2[$i] occurs $list2{$keys2[$i]} times in the file.\n"
+	}
+}
+
+for (my $i=0; $i<@keys1; $i++) {
+	if ($list2{$keys1[$i]}) {
+		print "$keys1[$i]\t$keys1[$i]\n";
+	} else {
+		print "$keys1[$i]\tMISSING2\n";
+	}
+}
+for (my $i=0; $i<@keys2; $i++) {
+	if ($list1{$keys2[$i]}) {
+		# do nothing since they are already linked.
+	} else {
+		print "MISSING1\t$keys2[$i]\n";
+	}
+}
+
+
+

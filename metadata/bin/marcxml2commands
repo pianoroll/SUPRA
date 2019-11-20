@@ -88,6 +88,10 @@ sub generateCommands {
 	my $dir = $1;
 	my $druid = $2;
 	my $postfix = $3;
+	if ($dir !~ /^\s*$/) {
+		$dir = "$dir/";
+		$dir =~ s/\/+$/\//;
+	}
 
 	my $performer  = getPerformer(@contents);
 	my $composer   = getComposer(@contents);
