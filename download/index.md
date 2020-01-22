@@ -10,11 +10,14 @@ summary:
 <h1> Downloads </h1>
 
 &bull; <a target="_blank" href="https://purl.stanford.edu/xf457dx9166">
-Version 1.1 of the SUPRA dataset
+Version 1.1 of the SUPRA-RW dataset
 </a>
-is available from the Stanford Digital Repository.  This link contains
-ZIP files for the raw and expression MIDI files, as well as rendered
-audio files in WAV, MP4/M4A/AAC, and MP3 formats.
+is available from the Stanford Digital Repository (SDR).  This link
+contains ZIP files for the raw and expression MIDI files, as well
+as rendered audio files in WAV, MP4/M4A/AAC, and MP3 formats.  The
+dataset was featured as the <a target="_blank"
+href="https://library.stanford.edu/blogs/digital-library-blog/2019/11/sdr-deposit-month-player-piano-rolls-jump-21st-century">
+SDR Deposit of the Month for November 2019 </a>.
 
 &bull; MIDI files for SUPRA are also available from Github in the
 <a target="_blank" href="https://github.com/pianoroll/SUPRA">pianoroll/SUPRA</a>

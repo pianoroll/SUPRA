@@ -1,0 +1,469 @@
+
+<script>
+// vim: ts=3
+
+
+//////////////////////////////
+//
+// displayDruid --
+//
+
+function displayDruid(druid) {
+	console.log("DRUID = ", druid);
+	if (!druid) {
+		return;
+	}
+
+	var info = DRUIDINFO[druid].info;
+	if (!info) {
+		return;
+	}
+
+	var letter = druid.charAt(0);
+	var prefix = "https://supra.stanford.edu/drift/";
+	var file = prefix + "data/" + letter + "/" + druid + "_drift.json";
+
+	var firsthole = info.FIRST_HOLE;
+	if (firsthole) {
+		firsthole = parseInt(firsthole);
+		var calc = "(datum.r - " + firsthole  + ")/12.0/300.25";
+		PLOT.transform[0].calculate = calc;
+	}
+
+	PLOT.data.url = file;
+
+	vegaEmbed("#plot", PLOT);
+	var element = document.querySelector("#info");
+	if (!element) {
+		return;
+	}
+	displayInfo(element, info);
+}
+
+
+
+//////////////////////////////
+//
+// displayInfo --
+//
+
+function displayInfo(element, info) {
+	if (!element) {
+		return;
+	}
+	if (!info) {
+		return;
+	}
+
+	var available = 1;
+	if (!info.DRIFT_RANGE) {
+		available = 0;
+	}
+
+	var feet;
+	var meter;
+
+	var output = "";
+	output += "<table class='info'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "DRUID:";
+	output += "<td>";
+	output += "<td>";
+	output += "<a href='/?q=druid%3A" + info.DRUID + "'>";
+	output += info.DRUID;
+	output += "</a>";
+	if (available) {
+		output += "&nbsp;";
+		output += "&nbsp;";
+		output += "&nbsp;";
+		output += "<a title='Scan of roll and audio' target='purl' href='/uv/?id=" + info.DRUID + "'><i style='color:#999;' class='fa fa-image'></i></a>";
+		}
+	output += "<td>";
+	output += "</tr>";
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Drift range:";
+		output += "<td>";
+		output += "<td>";
+		output += info.DRIFT_RANGE;
+		var mm = parseFloat(info.DRIFT_RANGE) / 300.25 * 25.54;
+		mm = parseInt(mm * 10.0 + 0.5)/10.0;
+		output += " / " + mm + " mm ";
+		output += " (";
+		output += info.DRIFT_MAX;
+		output += " to ";
+		output += info.DRIFT_MIN;
+		output += ")";
+		output += "<td>";
+		output += "</tr>";
+	}
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Prefix length:";
+		output += "<td>";
+		output += "<td>";
+		feet = parseFloat(info.FIRST_HOLE) / 300.25 / 12.0;
+		meter = feet * 12.0 * 25.4 / 1000.0;
+		feet = parseInt(feet * 100.0 + 0.5)/100.0;
+		meter = parseInt(meter * 1000.0 + 0.5)/1000.0;
+		output += feet + " ft / " + meter + " m ";
+		output += " (distance from start of scan to leading edge of first hole)";
+		output += "<td>";
+		output += "</tr>";
+	}
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Music length:";
+		output += "<td>";
+		output += "<td>";
+		var feet = parseFloat(info.MUSICAL_LENGTH) / 300.25 / 12.0;
+		var meter = feet * 12.0 * 25.4 / 1000.0;
+		meter = parseInt(meter * 1000.0 + 0.5)/1000.0;
+		feet = parseInt(feet * 100.0 + 0.5)/100.0;
+		output += feet + " ft / " + meter + " m ";
+		output += " (distance from first hole to last hole)";
+		output += "<td>";
+		output += "</tr>";
+	}
+
+	if (available) {
+		output += "<tr>";
+		output += "<td>";
+		output += "Scan length:";
+		output += "<td>";
+		output += "<td>";
+		var feet = parseFloat(info.IMAGE_LENGTH) / 300.25 / 12.0;
+		var meter = feet * 12.0 * 25.4 / 1000.0;
+		meter = parseInt(meter * 1000.0 + 0.5)/1000.0;
+		feet = parseInt(feet * 100.0 + 0.5)/100.0;
+		output += feet + " ft / " + meter + " m ";
+		output += "<td>";
+		output += "</tr>";
+	}
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Label:";
+	output += "<td>";
+	output += "<td>";
+	output += info.LABEL;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Title:";
+	output += "<td>";
+	output += "<td>";
+	output += info.TITLE;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Composer:";
+	output += "<td>";
+	output += "<td>";
+	output += info.COMPOSER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Performer:";
+	output += "<td>";
+	output += "<td>";
+	output += info.PERFORMER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "</table>";
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displayPrevDruid --
+//
+
+function displayPrevDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.prev;
+	displayDruid(DRUID);
+}
+
+
+
+//////////////////////////////
+//
+// displayNextDruid --
+//
+
+function displayNextDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.next;
+	displayDruid(DRUID);
+}
+
+
+
+//////////////////////////////
+//
+// buildDruidIndex --
+//
+
+function buildDruidIndex(rollinfo) {
+	DRUIDINFO = {};
+	var druid;
+	var druidnext;
+	var druidprev;
+	var obj;
+	for (var i=1; i<rollinfo.length - 1; i++) {
+		druid = rollinfo[i].DRUID;
+		druidnext = rollinfo[i+1].DRUID;
+		druidprev = rollinfo[i-1].DRUID;
+		DRUIDINFO[druid] = {
+			info: rollinfo[i],
+			curr: druid,
+			next: druidnext,
+			prev: druidprev
+		};
+	}
+
+	// and endpoints
+
+	DRUIDINFO[rollinfo[0].DRUID] = {
+		info: rollinfo[0],
+		curr: rollinfo[0].DRUID,
+		next: rollinfo[1].DRUID,
+		prev: rollinfo[rollinfo.length-1].DRUID
+	};
+
+	DRUIDINFO[rollinfo[rollinfo.length-1].DRUID] = {
+		info: rollinfo[rollinfo.length-1],
+		curr: rollinfo[rollinfo.length-1].DRUID,
+		next: rollinfo[0].DRUID,
+		prev: rollinfo[rollinfo.length-2].DRUID
+	};
+}
+
+
+
+//////////////////////////////
+//
+// displayShiftList --
+//
+
+function displayShiftList() {
+	var element = document.querySelector("#shift-list");
+	if (!element) {
+		return;
+	}
+	var output = "";
+	for (var i=0; i<SHIFTS.length; i++) {
+		console.log
+		output += displayShiftEntry(SHIFTS[i]);
+	}
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displayShiftEntry --
+//
+
+function displayShiftEntry(item) {
+	var druid = item.DRUID;
+
+	var rollup = {};
+	var i;
+	for (i=0; i<ROLLINFO.length; i++) {
+		rollup[ROLLINFO[i].DRUID] = ROLLINFO[i];
+	}
+
+	var output = "";
+
+	output += "<table class='tear'>";
+
+	var url;
+	var x;
+	var y;
+	var dx;
+	var dy;
+	var boundingbox;
+
+	var topmargin    = 300;
+	var bottommargin = 300;
+
+	var sift = item;
+	url = "https://stacks.stanford.edu/image/iiif/" + druid;
+	url += "%2F" + druid + "_0001/";
+	// x,y,dx,dy
+	x  = 0;
+	y  = parseInt(sift.ROW) - topmargin;
+	dx = 4096;
+	dy = topmargin + bottommargin;
+	boundingbox = x + "," + y + "," + dx + "," + dy;
+	url += x + "," + y + "," + dx + "," + dy;
+	url += "/pct:75/0/default.jpg";
+
+	output += "<tr>";
+	output += "<td style='vertical-align:top;'>";
+	output += "<table>";
+
+	output += "<tr><td>";
+	output += "<b>Hole ID:</b></td><td>";
+	output += "<a href='";
+	output += "/image-analysis?druid=";
+	output += sift.DRUID;
+	output += "'>";
+	output +=  sift.DRUID;
+	output += "</a>";
+	output +=  ":" + sift.ID + "<br/>";
+	output += "</td></tr>";
+
+	output += "<tr><td>";
+	output += "<b>Shift:</b></td><td>" + sift.MOVEMENT + "<br/>";
+	output += "</td></tr>";
+
+	output += "<tr><td>";
+	var feet = parseInt(sift.ROW) / 300.25 / 12;
+	feet = parseInt(feet * 10.0 + 0.5)/10.0;
+	output += "<b>Position:</b></td><td>" + feet + " feet (from beginning of image)";
+	var location = parseInt(sift.ROW);
+	var musicend = parseInt(rollup[druid].LAST_HOLE);
+	if (location > musicend) {
+		output += ".  <span style='color:limegreen;'>Shift occurs after last music hole.</span>";
+	}
+
+	output += "</td></tr>";
+
+	output += "<tr><td>";
+	output += "<b>Bounding&nbsp;box:</b></td><td>" + boundingbox + " (pixels)";
+	output += "</td></tr>";
+
+	output += "</table>";
+	output += "</td></tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<br/>";
+	output += "<div class='scroll'>";
+	output += "<img src='" + url + "'>";
+	output += "</div>";
+	output += "<hr noshade>";
+	output += "</br>";
+	output += "</td>";
+	output += "</tr>";
+
+	output += "</table>";
+	return output;
+}
+
+
+
+
+//////////////////////////////
+//
+// displayShiftStats --
+//
+
+function displayShiftStats() {
+	var element = document.querySelector("#summary");
+	if (!element) {
+		return;
+	}
+
+	var bydruids = [];
+	var i;
+	for (i=0; i<SHIFTS.length; i++) {
+		var druid = SHIFTS[i].DRUID;
+		if (!bydruids[druid]) {
+			bydruids[druid] = 1;
+		} else {
+			bydruids[druid]++;
+		}
+	}
+	var maxx = 0;
+	var maxdruid = "";
+	var keys = Object.keys(bydruids) 
+	for (i=0; i<keys.length; i++) {
+		if (bydruids[keys[i]] > maxx) {
+			maxx = bydruids[keys[i]];
+			maxdruid = keys[i];
+		}
+	}
+
+	var output = "";
+	output += "<table>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Number&nbsp;of&nbsp;roll&nbsp;images:</b>";
+	output += "</td>";
+	output += "<td>";
+	output += ROLLINFO.length;
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Number&nbsp;of&nbsp;shifts:</b>";
+	output += "</td>";
+	output += "<td>";
+	output += SHIFTS.length;
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Roll&nbsp;image&nbsp;with&nbsp;most&nbsp;shifts:</b>";
+	output += "</td>";
+	output += "<td>";
+	output += maxx;
+	output += " (for <a href='/image-analysis/?druid=" + maxdruid + "'>" + maxdruid + "</a>)";
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Largest&nbsp;shift:</b>";
+	output += "</td>";
+	output += "<td>";
+	output += SHIFTS[0].MOVEMENT;
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Smallest&nbsp;shift&nbsp;(detected):</b>";
+	output += "</td>";
+	output += "<td>";
+	output += SHIFTS[SHIFTS.length-1].MOVEMENT;
+	output += "</td>";
+	output += "</tr>";
+
+	output += "<table>";
+	element.innerHTML = output;
+}
+
+
+</script>

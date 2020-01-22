@@ -1,0 +1,170 @@
+
+
+<!--
+ include scripts/magnify/magnify.html
+-->
+
+
+{% include scripts/scripts-common.html %}
+
+<script>{% include scripts/aton.js %}</script>
+{% include_relative scripts-local.html %}
+{% include_relative styles-local.html %}
+
+<script>
+// vim: ts=3
+
+var CGI = {};      // CGI parameters from URL
+var ROLLINFO = [];
+var ATONINDEX = "https://raw.githubusercontent.com/pianoroll/SUPRA/master/index.aton";
+var DRUIDINFO = {};
+var DRUID = null;
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+	HighlightLinkInHeader();
+	CGI = GetCgiParameters();
+	if (sessionStorage.ROLLINFO) {
+		ROLLINFO = JSON.parse(sessionStorage.ROLLINFO);
+		doAction(ROLLINFO);
+	} else {
+		var request = new XMLHttpRequest();
+		request.addEventListener("load", function () {
+			var aton = new ATON;
+			ROLLINFO = aton.parse(this.responseText).ROLL;
+			doAction(ROLLINFO);
+		});
+		request.open("GET", ATONINDEX);
+		request.send();
+	}
+});
+
+
+
+//////////////////////////////
+//
+// doAction --
+//
+
+function doAction(rollInfo) {
+	DisplayStats(rollInfo);
+	buildDruidIndex(rollInfo);
+	if (CGI.druid) {
+		DRUID = CGI.druid;
+		displayDruid(CGI.druid);
+	} else {
+		DRUID = "xq762nt7491";
+		displayDruid(DRUID);
+	}
+}
+
+////////////////////////////////////////////////////////////////// 
+
+// List of Key Codes.  More can be extracted from this page:
+// https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+const AKey            = 65; // Letters
+const BKey            = 66;
+const CKey            = 67;
+const DKey            = 68;
+const EKey            = 69;
+const FKey            = 70;
+const GKey            = 71;
+const HKey            = 72;
+const IKey            = 73;
+const JKey            = 74;
+const KKey            = 75;
+const LKey            = 76;
+const MKey            = 77;
+const NKey            = 78;
+const OKey            = 79;
+const PKey            = 80;
+const QKey            = 81;
+const RKey            = 82;
+const SKey            = 83;
+const TKey            = 84;
+const UKey            = 85;
+const VKey            = 86;
+const WKey            = 87;
+const XKey            = 88;
+const YKey            = 89;
+const ZKey            = 90;
+const ZeroKey         = 48; // Numbers
+const OneKey          = 49;
+const TwoKey          = 50;
+const ThreeKey        = 51;
+const FourKey         = 52;
+const FiveKey         = 53;
+const SixKey          = 54;
+const SevenKey        = 55;
+const EightKey        = 56;
+const NineKey         = 57;
+const BackspaceKey    =  8; // Other
+const TabKey          =  9;
+const EnterKey        = 13;
+const EscKey          = 27;
+const SpaceKey        = 32;
+const EqualsKey       = 187;
+const MinusKey        = 189;
+const PageUpKey       = 33;
+const PageDownKey     = 34;
+const EndKey          = 35;
+const HomeKey         = 36;
+const DeleteKey       = 46;
+const ControlKey      = 17; // State keys
+const AltKey          = 18;
+const ShiftKey        = 16;
+const CommandLeftKey  = 91; // or Window key in MSWindows, and Meta key in Unix
+const CommandRightKey = 93;
+const F1Key           = 112; // Function keys
+const F2Key           = 113;
+const F3Key           = 114;
+const F4Key           = 115;
+const F5Key           = 116;
+const F6Key           = 117;
+const F7Key           = 118;
+const F8Key           = 119;
+const F9Key           = 120;
+const F10Key          = 121;
+const SlashKey        = 191;
+const SquareLeftKey   = 219;
+const SquareRightKey  = 221;
+
+// Arrows:
+const UpArrowKey      = 38;    // maybe also 30 & 57373
+const DownArrowKey    = 40;    // maybe also 31 & 57374
+const LeftArrowKey    = 37;    // maybe also 28 & 57375
+const RightArrowKey   = 39;    // maybe also 29 & 57376
+
+
+//////////////////////////////
+//
+// keydown event listener -- for keyboard shortcuts.
+//
+
+window.addEventListener('keydown', function(event) {
+	console.log("EVENT", event);
+
+	if (event.metaKey) {
+		return;
+	}
+
+	switch (event.keyCode) {
+		case LeftArrowKey:
+		case UpArrowKey:
+			displayPrevDruid();
+			break;
+
+		case RightArrowKey:
+		case DownArrowKey:
+			displayNextDruid();
+			break;
+	}
+});
+
+
+
+</script>

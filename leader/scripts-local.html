@@ -1,0 +1,297 @@
+
+<script>
+// vim: ts=3
+
+
+//////////////////////////////
+//
+// displayDruid --
+//
+
+function displayDruid(druid) {
+	if (!druid) {
+		druid = DRUID;
+	}
+	if (!druid) {
+		return;
+	}
+	DRUID = druid;
+
+	displayLeader(druid);
+	displayInfo(druid);
+}
+
+
+
+//////////////////////////////
+//
+// rotateImage --
+//
+
+function rotateImage() {
+	var element = document.querySelector("#leader-image");
+	if (!element) {
+		return;
+	}
+	var classname = element.className;
+	if (classname === "rotate") {
+		classname = "nothing";
+	} else if (classname === "nothing") {
+		classname = "rotate";
+	} else if (classname === "rotateMirror") {
+		classname = "mirror";
+	} else if (classname === "mirror") {
+		classname = "rotateMirror";
+	}
+	element.className = classname;
+}
+
+
+
+//////////////////////////////
+//
+// mirrorImage --
+//
+
+function mirrorImage() {
+	var element = document.querySelector("#leader-image");
+	if (!element) {
+		return;
+	}
+	var classname = element.className;
+	if (classname === "mirror") {
+		classname = "nothing";
+	} else if (classname === "nothing") {
+		classname = "mirror";
+	} else if (classname === "rotateMirror") {
+		classname = "rotate";
+	} else if (classname === "rotate") {
+		classname = "rotateMirror";
+	}
+	element.className = classname;
+}
+
+
+//////////////////////////////
+//
+// displayLeader --
+//
+
+function displayLeader(druid) {
+	var element = document.querySelector("#leader");
+	if (!element) {
+		return;
+	}
+
+	info = DRUIDINFO[druid].info;
+	if (!info) {
+		return;
+	}
+
+	var x;
+	var y;
+	var dx;
+	var dy;
+	var boundingbox;
+
+	var topmargin    = 300;
+	var bottommargin = 300;
+
+
+	// x,y,dx,dy
+	x  = 0;
+	y  = parseInt(info.PRELEADER_ROW);
+	dx = 4096;
+	dy = parseInt(info.LEADER_ROW) - y;
+	if (dy > 3000) {
+		dy = 3000;
+	}
+	boundingbox = x + "," + y + "," + dx + "," + dy;
+
+	url = "https://stacks.stanford.edu/image/iiif/" + druid;
+	url += "%2F" + druid + "_0001/";
+	url += x + "," + y + "," + dx + "," + dy;
+	url += "/pct:25/0/default.jpg";
+
+	var bigurl;
+	bigurl = "https://stacks.stanford.edu/image/iiif/" + druid;
+	bigurl += "%2F" + druid + "_0001/";
+	bigurl += x + "," + y + "," + dx + "," + dy;
+	bigurl += "/pct:100/0/default.jpg";
+
+	var output = "";
+	output += "<div class='bright' style='min-height:200px;'>";
+	output += "<a href='" + bigurl + "'>";
+	output += "<img id='leader-image' class='rotate' src='";
+	output += url;
+	output += "'>";
+	output += "</a>";
+	output += "</div>";
+	element.innerHTML = output;
+
+   // $("img").magnify();
+	console.log("URL", url);
+}
+
+
+
+//////////////////////////////
+//
+// displayInfo --
+//
+
+function displayInfo(druid) {
+	var info = DRUIDINFO[druid].info;
+	var element = document.querySelector("#info");
+	if (!element) {
+		return;
+	}
+	if (!info) {
+		return;
+	}
+	
+	var available = 1;
+	if (!info.DRIFT_RANGE) {
+		available = 0;
+	}
+
+	var feet;
+	var meter;
+
+	var output = "";
+	output += "<table class='info'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "DRUID:";
+	output += "<td>";
+	output += "<td>";
+	output += "<a href='/?q=druid%3A" + info.DRUID + "'>";
+	output += info.DRUID;
+	output += "</a>";
+	if (available) {
+		output += "&nbsp;";
+		output += "&nbsp;";
+		output += "&nbsp;";
+		output += "<a title='Scan of roll and audio' target='purl' href='/uv/?id=" + info.DRUID + "'><i style='color:#999;' class='fa fa-image'></i></a>";
+		}
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Label:";
+	output += "<td>";
+	output += "<td>";
+	output += info.LABEL;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Title:";
+	output += "<td>";
+	output += "<td>";
+	output += info.TITLE;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Composer:";
+	output += "<td>";
+	output += "<td>";
+	output += info.COMPOSER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "Performer:";
+	output += "<td>";
+	output += "<td>";
+	output += info.PERFORMER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "</table>";
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displayPrevDruid --
+//
+
+function displayPrevDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.prev;
+	displayDruid(DRUID);
+}
+
+
+
+//////////////////////////////
+//
+// displayNextDruid --
+//
+
+function displayNextDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.next;
+	displayDruid(DRUID);
+}
+
+
+
+//////////////////////////////
+//
+// buildDruidIndex --
+//
+
+function buildDruidIndex(rollinfo) {
+	DRUIDINFO = {};
+	var druid;
+	var druidnext;
+	var druidprev;
+	var obj;
+	for (var i=1; i<rollinfo.length - 1; i++) {
+		druid = rollinfo[i].DRUID;
+		druidnext = rollinfo[i+1].DRUID;
+		druidprev = rollinfo[i-1].DRUID;
+		DRUIDINFO[druid] = {
+			info: rollinfo[i],
+			curr: druid,
+			next: druidnext,
+			prev: druidprev
+		};
+	}
+
+	// and endpoints
+
+	DRUIDINFO[rollinfo[0].DRUID] = {
+		info: rollinfo[0],
+		curr: rollinfo[0].DRUID,
+		next: rollinfo[1].DRUID,
+		prev: rollinfo[rollinfo.length-1].DRUID
+	};
+
+	DRUIDINFO[rollinfo[rollinfo.length-1].DRUID] = {
+		info: rollinfo[rollinfo.length-1],
+		curr: rollinfo[rollinfo.length-1].DRUID,
+		next: rollinfo[0].DRUID,
+		prev: rollinfo[rollinfo.length-2].DRUID
+	};
+}
+
+
+
+</script>

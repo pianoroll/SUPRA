@@ -16,6 +16,7 @@
 //
 
 function printInfo(analysis) {
+	return;  // ignore for now
 	var element = document.querySelector("#info");
 	if (!element) {
 		return;
@@ -451,61 +452,181 @@ function addRect(x, y, w, h, fillcolor, strokecolor, parameter) {
 
 //////////////////////////////
 //
-// displayMenu --
+// displayTearAnalysis --
 //
 
-function displayMenu(rollinfo) {
-	var element = document.querySelector("#menu");
+function displayTearAnalysis(analysis) {
+	console.log("ANALYSIS", analysis);
+	var output = "";
+
+	var druid = DRUID;
+	var element = document.querySelector("#tear");
 	if (!element) {
-		reutrn;
+		setContents("#etears", 0);
+		return;
 	}
-	
-	var output = "<select onchange='displayReport(this.value)'>";
-	for (var i=0; i<rollinfo.length; i++) {
-		output += addOption(rollinfo[i]);
+	var tears = analysis.TEARS;
+	if (!tears) {
+		output += "<p>";
+		output += "There are no significant edge tears on the roll.";
+		output += "</p>";
+		element.innerHTML = output;
+		setContents("#etears", 0);
+		return;
 	}
-	output += "</select>";
-
+	var treble_tears = tears.TREBLE_TEARS;
+	var bass_tears = tears.BASS_TEARS;
+	if ((!bass_tears) && (!treble_tears)) {
+		output += "<p>";
+		output += "There are no significant edge tears on roll";
+		output += "</p>";
+	}
+	if (bass_tears) {
+		output += displayTearListBass(druid, analysis, bass_tears);
+	}
+	if (treble_tears) {
+		output += displayTearListTreble(druid, analysis, treble_tears);
+	}
+	setContents("#etears", TEARTREBLECOUNT + TEARBASSCOUNT);
 	element.innerHTML = output;
-
 }
+
 
 
 //////////////////////////////
 //
-// addOption --
+// displayShiftAnalysis --
 //
 
-function addOption(obj) {
+function displayShiftAnalysis(analysis) {
+	console.log("ANALYSIS", analysis);
 	var output = "";
-	output += "<option value='";
-	output += obj.DRUID;
-	output += "'>";
 
-	output += obj.DRUID;
-	if (obj.LABEL) {
-		output += ": ";
-		output += obj.LABEL.replace("Welte-Mignon", "WM");
+	var druid = DRUID;
+	var element = document.querySelector("#shifts");
+	if (!element) {
+		setContents("#oshifts", 0);
+		return;
 	}
-	output += ": ";
+	var shifts = analysis.SHIFTS;
+	if (!shifts) {
+		output += "<p>";
+		output += "No operator shifts were detected on the roll.";
+		output += "</p>";
+		element.innerHTML = output;
+		setContents("#oshifts", 0);
+		return;
+	}
+	if (shifts == 0) {
+		output += "<p>";
+		output += "No operator shifts were detected on the roll.";
+		output += "</p>";
+		element.innerHTML = output;
+		setContents("#oshifts", 0);
+		return;
+	}
+	shifts = shifts[1].SHIFT;
 
-	if (obj.COMPOSER) {
-		output += obj.COMPOSER.replace(/,.*$/, "");
-	}
-	if (obj.COMPOSER && obj.PERFORMER) {
-		output += "/";
-	}
-	if (obj.PERFORMER) {
-		output += obj.PERFORMER.replace(/,.*$/, "");
-	}
-	if (obj.TITLE) {
-		if (obj.COMPOSER || obj.PERFORMER) {
-			output += ": ";
-		}
-		output += obj.TITLE;
+	if (!Array.isArray(shifts)) {
+		shifts = [ shifts ];
 	}
 
-	output += "</option>";
+	output += displayShiftList(druid, analysis, shifts);
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displayShiftList --
+//
+
+function displayShiftList(druid, analysis, shifts) {
+	console.log("MMMMMMMMMMMMMM", shifts);
+	var output = "";
+
+	var stext = shifts.length;
+	if (shifts.length == 1) {
+		output += "<p>There is one shift on the roll.";
+		output += " The shift is centered vertically in the image.";
+		output += " Scroll right in the image below to view the right side of the roll.";
+		output += "</p>";
+		stext += " (";
+		stext += shifts[0].MOVEMENT;
+		stext += ")";
+	} else {
+		output += "<p>There are " + shifts.length  + " shifts on the roll.  The following list of the shifts are sorted by size (largest first).";
+		output += " The shifts are centered vertically in the images.";
+		output += " Scroll right in the images below to view the right sides of the rolls.";
+		output += "</p>";
+		stext += " (max shift ";
+		stext += shifts[0].MOVEMENT;
+		stext += ")";
+	}
+	
+	setContents("#oshifts", stext);
+
+	output += "<table class='tear'>";
+
+	var url;
+	var x;
+	var y;
+	var dx;
+	var dy;
+	var boundingbox;
+
+	var topmargin    = 300;
+	var bottommargin = 300;
+
+	for (var i=0; i<shifts.length; i++) {
+		var sift = shifts[i];
+		url = "https://stacks.stanford.edu/image/iiif/" + druid;
+		url += "%2F" + druid + "_0001/";
+		// x,y,dx,dy
+		x  = 0;
+		y  = parseInt(sift.ROW) - topmargin;
+		dx = 4096;
+		dy = topmargin + bottommargin;
+		boundingbox = x + "," + y + "," + dx + "," + dy;
+		url += x + "," + y + "," + dx + "," + dy;
+		url += "/pct:75/0/default.jpg";
+
+		output += "<tr>";
+		output += "<td style='vertical-align:top;'>";
+		output += "<table>";
+
+		output += "<tr><td>";
+		output += "<b>Hole ID:</b></td><td>" + sift.ID + "<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		output += "<b>Shift:</b></td><td>" + sift.MOVEMENT + "<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var feet = parseInt(sift.ROW) / 300.25 / 12;
+		feet = parseInt(feet * 10.0 + 0.5)/10.0;
+		output += "<b>Position:</b></td><td>" + feet + " feet (from beginning of image)<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		output += "<b>Bounding&nbsp;box:</b></td><td>" + boundingbox + " (pixels)<br/>";
+		output += "</td></tr>";
+
+		output += "</table>";
+		output += "</td></tr>";
+
+		output += "<tr>";
+		output += "<td>";
+		output += "<div class='scroll'>";
+		output += "<img src='" + url + "'>";
+		output += "</div>";
+		output += "</td>";
+		output += "</tr>";
+	}
+
+	output += "</table>";
 	return output;
 }
 
@@ -513,10 +634,339 @@ function addOption(obj) {
 
 //////////////////////////////
 //
-// displayDriftAnalysis --
+// setContents --
 //
 
-function displayDriftAnalysis(analysis) {
+function setContents(selector, value) {
+	var element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	element.innerHTML = value;
+}
+
+
+
+//////////////////////////////
+//
+// displayHoleAnalysis --
+//
+
+function displayHoleAnalysis(analysis) {
+	console.log("ANALYSIS", analysis);
+	var output = "";
+
+	var druid = DRUID;
+	var element = document.querySelector("#holes");
+	if (!element) {
+		setContents("#sholes", 0);
+		return;
+	}
+	var holes = analysis.BADHOLES;
+	if (!holes) {
+		output += "<p>";
+		output += "There are no suspicious holes on the roll.";
+		output += "</p>";
+		element.innerHTML = output;
+		setContents("#sholes", 0);
+		return;
+	}
+	holes = holes.HOLE;
+
+	if (!Array.isArray(holes)) {
+		holes = [ holes ];
+	}
+
+	output += displayHoleList(druid, analysis, holes);
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// displayHoleList --
+//
+
+function displayHoleList(druid, analysis, holes) {
+	console.log("MMMMMMMMMMMMMM", holes);
+	var output = "";
+
+	if (holes.length == 1) {
+		output += "<p>There is one suspicious hole on the roll.";
+		output += "  Not all suspicious holes are bad, and not all bad holes are marked as suspicious (but probably most are).";
+		output += "</p>";
+	} else {
+		output += "<p>There are " + holes.length  + " suspicious holes on the roll.";
+		output += "  Not all suspicious holes are bad, and not all bad holes are marked as suspicious (but probably most are).";
+		output += "</p>";
+	}
+	setContents("#sholes", holes.length);
+
+	output += "<table class='tear'>";
+
+	var url;
+	var x;
+	var y;
+	var dx;
+	var dy;
+	var boundingbox;
+
+	var rightmargin  = 50;
+	var leftmargin   = 50;
+	var topmargin    = 50;
+	var bottommargin = 50;
+
+	for (var i=0; i<holes.length; i++) {
+		var hole = holes[i];
+		url = "https://stacks.stanford.edu/image/iiif/" + druid;
+		url += "%2F" + druid + "_0001/";
+		// x,y,dx,dy
+		x  = parseInt(hole.ORIGIN_COL) - leftmargin;
+		y  = parseInt(hole.ORIGIN_ROW) - topmargin;
+		dx = parseInt(hole.WIDTH_COL) + rightmargin + leftmargin;
+		dy = parseInt(hole.WIDTH_ROW) + topmargin + bottommargin;
+		boundingbox = x + "," + y + "," + dx + "," + dy;
+		url += x + "," + y + "," + dx + "," + dy;
+		url += "/pct:100/0/default.jpg";
+		output += "<tr>";
+
+		output += "<td>";
+		output += "<img src='" + url + "'><br/>";
+		output += "</td><td style='vertical-align:top;'>";
+		output += "<table>";
+
+		output += "<tr><td>";
+		output += "<b>Hole ID:</b></td><td>" + hole.ID + "<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		output += "<b>Reason:</b></td><td>" + hole.REASON + "<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var areamm = parseInt(hole.AREA) / 90000 * 645.16;
+		areamm = parseInt(areamm * 10.0 + 0.5)/10.0;
+		output += "<b>Area:</b></td><td>" + areamm + " mm<sup>2</sup><br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var feet = parseInt(hole.ORIGIN_ROW) / 300.25 / 12;
+		feet = parseInt(feet * 10.0 + 0.5)/10.0;
+		output += "<b>Position:</b></td><td>" + feet + " feet (from beginning of image)<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		output += "<b>Bounding&nbsp;box:</b></td><td>" + boundingbox + " (pixels)<br/>";
+		output += "</td></tr>";
+
+		output += "</table>";
+		output += "</td></tr>";
+	}
+
+	output += "</table>";
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// displayTearListBass --
+//
+// <img src="https://stacks.stanford.edu/image/iiif/jc718cb5784%2Fjc718cb5784_0001/0,20000,1500,1500/pct:50/0/default.jpg">
+//
+
+function displayTearListBass(druid, analysis, tears) {
+	console.log("YYYYYYYYYYYYYYY", tears);
+	console.log("XXXXXXXXXXXXX", tears.TEAR);
+	var output = "";
+
+	var tearlist = tears.TEAR;
+	if (!Array.isArray(tearlist)) {
+		tearlist = [ tearlist ];
+	}
+
+	if (tearlist.length == 1) {
+		output += "<p>There is one tear on the bass side of the roll.</p>";
+	} else {
+		output += "<p>There are " + tearlist.length  + " tears on the bass side of the roll.  The following list of tears is sorted by the size of the tear, from largest to smallest.</p>";
+	}
+	TEARBASSCOUNT = tearlist.length;
+
+	output += "<table class='tear'>";
+
+	var url;
+	var x;
+	var y;
+	var dx;
+	var dy;
+	var boundingbox;
+
+	var rightmargin = 300;
+	var topmargin = 100;
+	var bottommargin = 100;
+
+	for (var i=0; i<tearlist.length; i++) {
+		var tear = tearlist[i];
+		url = "https://stacks.stanford.edu/image/iiif/" + druid;
+		url += "%2F" + druid + "_0001/";
+		// x,y,dx,dy
+		x  = parseInt(tear.ORIGIN_COL);
+		y  = parseInt(tear.ORIGIN_ROW) - topmargin;
+		dx = parseInt(tear.WIDTH_COL) + rightmargin;
+		dy = parseInt(tear.WIDTH_ROW) + topmargin + bottommargin;
+		boundingbox = x + "," + y + "," + dx + "," + dy;
+		url += x + "," + y + "," + dx + "," + dy;
+		url += "/pct:50/0/default.jpg";
+		output += "<tr>";
+
+		output += "<td>";
+		output += "<img src='" + url + "'><br/>";
+		output += "</td><td style='vertical-align:top;'>";
+		output += "<table>";
+
+		output += "<tr><td>";
+		output += "<b>Tear ID:</b></td><td>" + tear.ID + "<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var areamm = parseInt(tear.AREA) / 90000 * 645.16;
+		areamm = parseInt(areamm * 10.0 + 0.5)/10.0;
+		output += "<b>Area:</b></td><td>" + areamm + " mm<sup>2</sup><br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var depthmm = parseInt(tear.WIDTH_COL) / 300 * 25.4;
+		depthmm = parseInt(depthmm * 10.0 + 0.5)/10.0;
+		output += "<b>Depth:</b></td><td>" + depthmm + " mm<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var feet = parseInt(tear.ORIGIN_ROW) / 300.25 / 12;
+		feet = parseInt(feet * 10.0 + 0.5)/10.0;
+		output += "<b>Position:</b></td><td>" + feet + " feet (from beginning of image)<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		output += "<b>Bounding&nbsp;box:</b></td><td>" + boundingbox + " (pixels)<br/>";
+		output += "</td></tr>";
+
+		output += "</table>";
+		output += "</td></tr>";
+	}
+
+	output += "</table>";
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// displayTearListTreble --
+//
+// <img src="https://stacks.stanford.edu/image/iiif/jc718cb5784%2Fjc718cb5784_0001/0,20000,1500,1500/pct:50/0/default.jpg">
+//   /0,20000,1500,1500/pct:50/0/default.jpg">
+//
+
+function displayTearListTreble(druid, analysis, tears) {
+	console.log("YYYYYYYYYYYYYYY", tears);
+	console.log("XXXXXXXXXXXXX", tears.TEAR);
+	var output = "";
+
+	var tearlist = tears.TEAR;
+	if (!Array.isArray(tearlist)) {
+		tearlist = [ tearlist ];
+	}
+
+	if (tearlist.length == 1) {
+		output += "<p>There is one tear on the treble side of the roll.</p>";
+	} else {
+		output += "<p>There are " + tearlist.length  + " tears on the treble side of the roll.  The following list of tears is sorted by the size of the tear, from largest to smallest.</p>";
+	}
+	TEARTREBLECOUNT = tearlist.length;
+
+	output += "<table class='tear'>";
+
+	var url;
+	var x;
+	var y;
+	var dx;
+	var dy;
+	var boundingbox;
+
+	var leftmargin = 300;
+	var topmargin = 100;
+	var bottommargin = 100;
+
+	for (var i=0; i<tearlist.length; i++) {
+
+		var tear = tearlist[i];
+		url = "https://stacks.stanford.edu/image/iiif/" + druid;
+		url += "%2F" + druid + "_0001/";
+		// x,y,dx,dy
+		x  = parseInt(tear.ORIGIN_COL) - leftmargin;
+		y  = parseInt(tear.ORIGIN_ROW) - topmargin;
+		dx = parseInt(tear.WIDTH_COL) + leftmargin;
+		dy = parseInt(tear.WIDTH_ROW) + topmargin + bottommargin;
+		boundingbox = x + "," + y + "," + dx + "," + dy;
+		url += x + "," + y + "," + dx + "," + dy;
+		url += "/pct:50/0/default.jpg";
+
+		output += "<tr>";
+
+		output += "<td style='vertical-align:top;'>";
+		output += "<table>";
+
+		output += "<tr><td>";
+		output += "<b>Tear ID:</b></td><td>" + tear.ID + "<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var areamm = parseInt(tear.AREA) / 90000 * 645.16;
+		areamm = parseInt(areamm * 10.0 + 0.5)/10.0;
+		output += "<b>Area:</b></td><td>" + areamm + " mm<sup>2</sup><br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var depthmm = parseInt(tear.WIDTH_COL) / 300 * 25.4;
+		depthmm = parseInt(depthmm * 10.0 + 0.5)/10.0;
+		output += "<b>Depth:</b></td><td>" + depthmm + " mm<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		var feet = parseInt(tear.ORIGIN_ROW) / 300.25 / 12;
+		feet = parseInt(feet * 10.0 + 0.5)/10.0;
+		output += "<b>Position:</b></td><td>" + feet + " feet (from beginning of image)<br/>";
+		output += "</td></tr>";
+
+		output += "<tr><td>";
+		output += "<b>Bounding&nbsp;box:</b></td><td>" + boundingbox + " (pixels)<br/>";
+		output += "</td></tr>";
+
+		output += "</table>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<img src='" + url + "'><br/>";
+		output += "</td>";
+
+		output += "</tr>";
+	}
+
+	output += "</table>";
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// displayDriftAnalysisOld --
+//
+
+function displayDriftAnalysisOld(analysis) {
 	if (!analysis.DRIFT) {
 		return;
 	}
@@ -568,7 +1018,12 @@ function displayDriftAnalysis(analysis) {
 
 
 function displayHoleHistogram(analysis, region) {
-	console.log("DISPLAY HOLE HISTOGRAM");
+	if (!analysis.DEBUGGING) {
+		return;
+	}
+	if (!analysis.DEBUGGING.HOLE_HISTOGRAM) {
+		return;
+	}
 
 	var histtext = analysis.DEBUGGING.HOLE_HISTOGRAM;
 	var histlist = histtext.split(/\r?\n/);
@@ -629,6 +1084,251 @@ function displayHoleHistogram(analysis, region) {
 	vegaEmbed("#hole-histogram-" + region, mydata);
 }
 
+
+//////////////////////////////
+//
+// displayPrevDruid --
+//
+
+function displayPrevDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.prev;
+	document.body.style.cursor = "wait";
+	clearReport();
+	displayReport(DRUID);
+}
+
+
+
+//////////////////////////////
+//
+// displayNextDruid --
+//
+
+function displayNextDruid() {
+	var entry = DRUIDINFO[DRUID];
+	if (!entry) {
+		return;
+	}
+	DRUID = entry.next;
+	document.body.style.cursor = "wait";
+	clearReport();
+	displayReport(DRUID);
+}
+
+
+//////////////////////////////
+//
+// clearReport --
+//
+
+function clearReport() {
+	var element;
+
+	setContents("#sholes", "");
+	setContents("#oshifts", "");
+	setContents("#etears", "");
+
+	element = document.querySelector("#tear");
+	if (element) {
+		element.innerHTML = "";
+	}
+
+	element = document.querySelector("#info");
+	if (element) {
+		element.innerHTML = "";
+	}
+
+	element = document.querySelector("#drift");
+	if (element) {
+		element.innerHTML = "";
+	}
+
+	element = document.querySelector("#holes");
+	if (element) {
+		element.innerHTML = "";
+	}
+
+	element = document.querySelector("#shifts");
+	if (element) {
+		element.innerHTML = "";
+	}
+
+
+
+}
+
+
+//////////////////////////////
+//
+// buildDruidIndex --
+//
+
+function buildDruidIndex(rollinfo) {
+	DRUIDINFO = {};
+	var druid;
+	var druidnext;
+	var druidprev;
+	var obj;
+	for (var i=1; i<rollinfo.length - 1; i++) {
+		druid = rollinfo[i].DRUID;
+		druidnext = rollinfo[i+1].DRUID;
+		druidprev = rollinfo[i-1].DRUID;
+		DRUIDINFO[druid] = {
+			info: rollinfo[i],
+			curr: druid,
+			next: druidnext,
+			prev: druidprev
+		};
+	}
+
+	// and endpoints
+
+	DRUIDINFO[rollinfo[0].DRUID] = {
+		info: rollinfo[0],
+		curr: rollinfo[0].DRUID,
+		next: rollinfo[1].DRUID,
+		prev: rollinfo[rollinfo.length-1].DRUID
+	};
+
+	DRUIDINFO[rollinfo[rollinfo.length-1].DRUID] = {
+		info: rollinfo[rollinfo.length-1],
+		curr: rollinfo[rollinfo.length-1].DRUID,
+		next: rollinfo[0].DRUID,
+		prev: rollinfo[rollinfo.length-2].DRUID
+	};
+}
+
+
+
+//////////////////////////////
+//
+// displayDriftAnalysis --
+//
+
+function displayDriftAnalysis() {
+	druid = DRUID;
+	console.log("DRUID = ", druid);
+	if (!druid) {
+		return;
+	}
+
+	var letter = druid.charAt(0);
+	var prefix = "https://supra.stanford.edu/drift/";
+	var file = prefix + "data/" + letter + "/" + druid + "_drift.json";
+
+	var firsthole = info.FIRST_HOLE;
+	if (firsthole) {
+		firsthole = parseInt(firsthole);
+		// var calc = "(datum.r - " + firsthole  + ")/12.0/300.25";
+		var calc = "datum.r/12.0/300.25";
+		PLOT.transform[0].calculate = calc;
+	}
+
+	PLOT.data.url = file;
+
+	vegaEmbed("#drift", PLOT);
+
+}
+
+
+
+//////////////////////////////
+//
+// displayInfo --
+//
+
+function displayInfo() {
+	var druid = DRUID;
+	var info = DRUIDINFO[druid].info;
+	if (!info) {
+		return;
+	}
+	var element = document.querySelector("#info");
+	if (!element) {
+		return;
+	}
+
+	var available = 1;
+	if (!info.DRIFT_RANGE) {
+		available = 0;
+	}
+
+	var feet;
+	var meter;
+
+	var output = "";
+	output += "<table class='info'>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Label:</b>";
+	output += "<td>";
+	output += "<td>";
+	output += info.LABEL;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Title:</b>";
+	output += "<td>";
+	output += "<td>";
+	output += info.TITLE;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Composer:</b>";
+	output += "<td>";
+	output += "<td>";
+	output += info.COMPOSER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Performer:</b>";
+	output += "<td>";
+	output += "<td>";
+	output += info.PERFORMER;
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Edge&nbsp;tears:</b>";
+	output += "<td>";
+	output += "<td>";
+	output += "<span id='etears'></span>";
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Suspicious&nbsp;holes:</b>";
+	output += "<td>";
+	output += "<td>";
+	output += "<span id='sholes'></span>";
+	output += "<td>";
+	output += "</tr>";
+
+	output += "<tr>";
+	output += "<td>";
+	output += "<b>Operator&nbsp;shifts:</b>";
+	output += "<td>";
+	output += "<td>";
+	output += "<span id='oshifts'></span>";
+	output += "<td>";
+	output += "</tr>";
+
+	output += "</table>";
+	element.innerHTML = output;
+}
 
 
 </script>

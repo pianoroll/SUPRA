@@ -1,0 +1,8 @@
+#!/usr/local/bin/perl
+
+
+while ($line = <>) {
+	next if $line !~ /"d":([-\d.]+)/;
+	print "$1\n";
+}
+

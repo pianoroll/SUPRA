@@ -27,7 +27,6 @@ function displayDruid(druid) {
 	if (firsthole) {
 		firsthole = parseInt(firsthole);
 		var calc = "(datum.r - " + firsthole  + ")/12.0/300.25";
-console.log("CALC", calc);
 		PLOT.transform[0].calculate = calc;
 	}
 

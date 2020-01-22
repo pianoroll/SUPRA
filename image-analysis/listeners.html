@@ -7,6 +7,12 @@
 <script>
 // vim: ts=3
 
+var DRUIDINFO = {};
+var DRUID = null;
+
+var TEARBASSCOUNT = 0;
+var TEARTREBLECOUNT = 0;
+
 var aton = new ATON;
 var PEOPLE = aton.parse(`{% include data/people.aton %}`).PERSON;
 var PEEPS = {};
@@ -44,12 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		request.send();
 	}
 
-	if (CGI.id) {
-		displayReport(CGI.id);
-	} else {
-		displayReport("fg074rf2950");
-	}
-
 });
 
 
@@ -61,7 +61,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function displayReport(id) {
 	if (!id) {
+		id = DRUID;
+	}
+	if (!id) {
 		id = "zw904vm6502";
+	}
+	DRUID = id;
+
+	displayInfo();
+
+	var e = document.querySelector("#druid");
+	if (e) {
+		e.innerHTML = id;
 	}
 
 	if (id) {
@@ -71,7 +82,9 @@ function displayReport(id) {
 		}
 	}
 
-	var url = "https://bitbucket.org/craigsapp/piano-roll-analyses/raw/master/";
+	var url = "https://bitbucket.org/craigsapp/piano-roll-analyses/raw/master/analysis/";
+	var letter = id.charAt(0);
+	url += letter + "/";
 	url += id;
 	url += "_analysis.txt.bz2";
 
@@ -96,8 +109,12 @@ function displayReport(id) {
 //
 
 function doAction2(analysis) {
+console.log("GOT HERE ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ");
 	printInfo(analysis);
 	displayDriftAnalysis(analysis);
+	displayTearAnalysis(analysis);
+	displayHoleAnalysis(analysis);
+	displayShiftAnalysis(analysis);
 	displayHoleHistogram(analysis, 0);
 	displayHoleHistogram(analysis, 1);
 	displayHoleHistogram(analysis, 2);
@@ -106,17 +123,20 @@ function doAction2(analysis) {
 	displayHoleHistogram(analysis, 5);
 	displayHoleHistogram(analysis, 6);
 	displayHoleHistogram(analysis, 7);
+
+/*
 	var element = document.querySelector("#analysis");
 	if (!element) {
 		return;
 	}
 	element.innerHTML = "";
-
 	renderjson.set_show_to_level(1);
 	// renderjson.set_icons("+", "-");
-
 	element.appendChild(renderjson(analysis));
 	displaySvgImage(analysis);
+*/
+
+	document.body.style.cursor = "auto";
 }
 
 
@@ -128,8 +148,116 @@ function doAction2(analysis) {
 
 function doAction(rollInfo) {
 	DisplayStats(ROLLINFO);
-	displayMenu(ROLLINFO);
+	buildDruidIndex(rollInfo);
+	if (CGI.druid) {
+		DRUID = CGI.druid;
+		displayReport(CGI.druid);
+	}
 }
+
+
+////////////////////////////////////////////////////////////////// 
+
+// List of Key Codes.  More can be extracted from this page:
+// https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+const AKey            = 65; // Letters
+const BKey            = 66;
+const CKey            = 67;
+const DKey            = 68;
+const EKey            = 69;
+const FKey            = 70;
+const GKey            = 71;
+const HKey            = 72;
+const IKey            = 73;
+const JKey            = 74;
+const KKey            = 75;
+const LKey            = 76;
+const MKey            = 77;
+const NKey            = 78;
+const OKey            = 79;
+const PKey            = 80;
+const QKey            = 81;
+const RKey            = 82;
+const SKey            = 83;
+const TKey            = 84;
+const UKey            = 85;
+const VKey            = 86;
+const WKey            = 87;
+const XKey            = 88;
+const YKey            = 89;
+const ZKey            = 90;
+const ZeroKey         = 48; // Numbers
+const OneKey          = 49;
+const TwoKey          = 50;
+const ThreeKey        = 51;
+const FourKey         = 52;
+const FiveKey         = 53;
+const SixKey          = 54;
+const SevenKey        = 55;
+const EightKey        = 56;
+const NineKey         = 57;
+const BackspaceKey    =  8; // Other
+const TabKey          =  9;
+const EnterKey        = 13;
+const EscKey          = 27;
+const SpaceKey        = 32;
+const EqualsKey       = 187;
+const MinusKey        = 189;
+const PageUpKey       = 33;
+const PageDownKey     = 34;
+const EndKey          = 35;
+const HomeKey         = 36;
+const DeleteKey       = 46;
+const ControlKey      = 17; // State keys
+const AltKey          = 18;
+const ShiftKey        = 16;
+const CommandLeftKey  = 91; // or Window key in MSWindows, and Meta key in Unix
+const CommandRightKey = 93;
+const F1Key           = 112; // Function keys
+const F2Key           = 113;
+const F3Key           = 114;
+const F4Key           = 115;
+const F5Key           = 116;
+const F6Key           = 117;
+const F7Key           = 118;
+const F8Key           = 119;
+const F9Key           = 120;
+const F10Key          = 121;
+const SlashKey        = 191;
+const SquareLeftKey   = 219;
+const SquareRightKey  = 221;
+
+// Arrows:
+const UpArrowKey      = 38;    // maybe also 30 & 57373
+const DownArrowKey    = 40;    // maybe also 31 & 57374
+const LeftArrowKey    = 37;    // maybe also 28 & 57375
+const RightArrowKey   = 39;    // maybe also 29 & 57376
+
+
+//////////////////////////////
+//
+// keydown event listener -- for keyboard shortcuts.
+//
+
+window.addEventListener('keydown', function(event) {
+	console.log("EVENT", event);
+
+	if (event.metaKey) {
+		return;
+	}
+
+	switch (event.keyCode) {
+		case LeftArrowKey:
+		case UpArrowKey:
+			displayPrevDruid();
+			break;
+
+		case RightArrowKey:
+		case DownArrowKey:
+			displayNextDruid();
+			break;
+	}
+});
 
 
 

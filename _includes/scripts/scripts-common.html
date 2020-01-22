@@ -141,10 +141,8 @@ function PreparePerson(entry, peeps) {
 	entry = entry.replace("-1", "&ndash;1");
 	entry = entry.replace("-2", "&ndash;2");
 	entry = entry.replace("-\)", "&ndash;)");
-	entry = entry
-		.replace(" Nikolayevich", "")
-		// .replace("-Bartholdy", "")
-		.replace(" Konstantinovich", "");
+	entry = ShortenName(entry);
+
 	var nombre = entry;
 	var dates = "";
 	if (matches = entry.match(/^\s*(.*)\s+(\(.*\))\s*$/)) {
@@ -178,10 +176,7 @@ function PreparePerson(entry, peeps) {
 	output += "target='person' href='";
 	output += link;
 	output += "'>";
-	var n = nombre
-		.replace(" Konstantinovich", "")
-		.replace("-Bartholdy", "")
-		.replace(" Nikolayevich", "");
+	var n = ShortenName(nombre);
 	output += n;
 	output += "</a>";
 	if (!dates.match(/^\s*$/)) {
@@ -191,6 +186,25 @@ function PreparePerson(entry, peeps) {
 	return output;
 }
 
+
+
+//////////////////////////////
+//
+// ShortenName --
+//
+
+function ShortenName(name) {
+	return name.replace(" Nikolayevich", "")
+		.replace("-Bartholdy", "")
+		.replace(" Konstantinovich", "");
+}
+
+
+
+//////////////////////////////
+//
+// MakeRollTableRows --
+//
 function MakeRollTableRows(list, peeps) {
 	var output = "";
 	for (var i=0; i<list.length; i++) {
@@ -221,7 +235,7 @@ function MakeRollTableRows(list, peeps) {
 
 		var alttitle = "";
 		var ms = list[i].LABEL.match(/Welte-Mignon\s*(\d+)/);
-		if (ms && WMCATALOG) {
+		if (ms && (typeof(WMCATALOG) !== 'undefined') && WMCATALOG) {
 			var wm = WMCATALOG[ms[1]];
 			if (wm) {
 				alttitle = wm.title;
@@ -249,20 +263,20 @@ function MakeRollTableRows(list, peeps) {
 		output += "</td>";
 
 		output += "<td>";
-		output += "<span class='searchworks'>";
-		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
-		output += list[i].SEARCHWORKS;
-		output += "'>SW</a>";
-		output += "</span>";
-		output += "</td>";
-
-		output += "<td>";
 		output += "<span class='purl'>";
-		output += "<a title='Scan of roll and audio' target='purl' href='/uv/?id=";
+		output += "<a title='Scan of roll and audio' target='purl' href='/player/?id=";
 		output += list[i].DRUID;
 		output += "'>";
 		output += "<i style='color:#999;' class='fa fa-image'></i>";
 		output += "</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='searchworks'>";
+		output += "<a title='SearchWorks: Stanford Libraries card catalog entry' target='searchworks' href='";
+		output += list[i].SEARCHWORKS;
+		output += "'>SW</a>";
 		output += "</span>";
 		output += "</td>";
 
@@ -276,7 +290,39 @@ function MakeRollTableRows(list, peeps) {
 
 		output += "<td>";
 		output += "<span class='drift'>";
-		output += "<a title='drift analysis for roll' target='searchworks' href='drift/?druid=";
+		output += "<a title='roll leader' target='leader' href='/leader/?druid=";
+		output += list[i].DRUID.trim();
+		output += "'>L</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='image-analysis";
+		if (list[i].QUALITY_TAG) {
+			if (list[i].QUALITY_TAG === "0-0-0") {
+				output += " good";
+			} else if (list[i].QUALITY_TAG.match(/\d\d+-\d\d+-\d\d+/)) {
+				output += " verybad";
+			} else if (list[i].QUALITY_TAG.match(/\d\d/)) {
+				output += " bad";
+			}
+		}
+		output +="'>";
+		output += "<a title='image quality analysis for roll";
+		if (list[i].QUALITY_TAG) {
+			output += " (" + list[i].QUALITY_TAG + ")";
+		}
+		output += "' target='searchworks' href='image-analysis/?druid=";
+		output += list[i].DRUID.trim();
+		output += "'>";
+		output += "IA";
+		output += "</a>";
+		output += "</span>";
+		output += "</td>";
+
+		output += "<td>";
+		output += "<span class='drift'>";
+		output += "<a title='drift analysis for roll' target='drift' href='/drift/?druid=";
 		output += list[i].DRUID.trim();
 		output += "'>D</a>";
 		output += "</span>";
@@ -366,6 +412,48 @@ function MakeRollTableRows(list, peeps) {
 		output += "</tr>";
 	}
 	return output;
+}
+
+
+
+//////////////////////////////
+//
+// BuildQualityTags --
+//
+
+function BuildQualityTags(list) {
+	if (!list) {
+		list = ROLLINFO;
+	}
+	var tag;
+	for (var i=0; i<list.length; i++) {
+		tag = "";
+
+		if (typeof list[i].EDGE_TEAR_COUNT !== "undefined") {
+			tag += list[i].EDGE_TEAR_COUNT.trim();
+		} else {
+			tag += "?";
+		}
+		tag += "-";
+
+		if (typeof list[i].BAD_HOLE_COUNT !== "undefined") {
+			tag += list[i].BAD_HOLE_COUNT.trim();
+		} else {
+			tag += "?";
+		}
+		tag += "-";
+
+		if (typeof list[i].SHIFTS === "string") {
+			tag += list[i].SHIFTS;
+		} else if (Array.isArray(list[i].SHIFTS)) {
+			tag += list[i].SHIFTS[0];
+		} else if (!(typeof list[i].SHIFT === "undefined")) {
+			tag += list[i].SHIFTS;
+		} else {
+			tag += "?";
+		}
+		list[i].QUALITY_TAG = tag;
+	}
 }
 
 
@@ -512,6 +600,8 @@ function DisplayPianists(list, selector, peeps) {
 		var onlyname = plist[i][1].replace(/\s*\(.*/, "");
 		if (PEEPS && PEEPS[onlyname] && PEEPS[onlyname].NATIONALITY) {
 			output += PEEPS[onlyname].NATIONALITY;
+		} else {
+			console.log("MISSING NATIONALITY FOR", onlyname, PEEPS[onlyname]);
 		}
 		output += "</td>"
 
@@ -631,10 +721,7 @@ function DisplayComposers(list, selector, peeps) {
 			birth = "";
 			death = "";
 		}
-		output += person
-			.replace(" Konstantinovich", "")
-			.replace("-Bartholdy", "")
-			.replace(" Nikolayevich", "");
+		output += ShortenName(person);
 		output += "</a>";
 		output += "</td>"
 
@@ -655,8 +742,11 @@ function DisplayComposers(list, selector, peeps) {
 
 		output += "<td>"
 		var onlyname = plist[i][1].replace(/\s*\(.*/, "");
+		onlyname = ShortenName(onlyname);
 		if (PEEPS && PEEPS[onlyname] && PEEPS[onlyname].NATIONALITY) {
 			output += PEEPS[onlyname].NATIONALITY;
+		} else {
+			console.log("MISSING NATIONALITY X FOR", onlyname, PEEPS[onlyname]);
 		}
 		output += "</td>"
 
@@ -954,6 +1044,7 @@ function SortByText(index, selector) {
 }
 
 
+
 //////////////////////////////
 //
 // GetDruidInfo --
@@ -970,6 +1061,7 @@ function GetDruidInfo (rollinfo, druid) {
 	}
 	return {};
 }
+
 
 </script>
 
