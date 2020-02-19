@@ -28,11 +28,35 @@ table.info td:first-child {
 
 </style>
 
-<i onclick='displayPrevDruid()' title='Go to previous roll (left-arrow)' class='navy fa fa-caret-left'></i>&nbsp;
+<div align="center">
+<i onclick='displayPrevDruid()' title='Go to previous roll (left-arrow)' class='navy fa fa-caret-left'></i>
+Browse drift plots for other scans: 
 <i onclick='displayNextDruid()' title='Go to next roll (right-arrow)' class='navy fa fa-caret-right'></i>
+</div>
+
+
+<h1>Drift plot</h1>
+
+
+<div id="info"></div>
+
+This page shows a drift plot for the roll listed above.  The next plot shows the left-to-right drift of the roll 
+throughout the scan.  The axis units are in pixels, with the image scanned at 300 dpi.  So the total range of the plot
+represents about 0.2 inches, or 5 mm.  The horizontal axis if the plot is the position in feet from the first 
+musical hole on the roll (drift is not analyze before or after the music).
 
 <div id="plot"></div>
-<div id="info"></div>
+
+The following plot (in red) shows the slope of the drift plot.  The slope is taken as the difference between the current
+position on the roll and the position one inch (300 pixels) later.  This value is then smoothed to remove
+irregularities caused by small-scale deviations.
+
+<div id="plot-slope"></div>
+
+The third plot in green shows the acceleration, which is the slope of the slope of the drift plot.  This plot
+is also smoothed to remove small-scale features.
+
+<div id="plot-accel"></div>
 
 <script>
 
@@ -47,6 +71,7 @@ var PLOT = {
 	"data": {
 		"url": "data/b/bc072xf6791_drift.json"
 	},
+
 	"encoding": {
 		"x": {
 			"field": "feet", 

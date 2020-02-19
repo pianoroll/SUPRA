@@ -20,7 +20,8 @@ function displayDruid(druid) {
 	}
 
 	var letter = druid.charAt(0);
-	var prefix = "https://supra.stanford.edu/drift/";
+	// var prefix = "https://supra.stanford.edu/drift/";
+	var prefix = "";
 	var file = prefix + "data/" + letter + "/" + druid + "_drift.json";
 
 	var firsthole = info.FIRST_HOLE;
@@ -32,7 +33,21 @@ function displayDruid(druid) {
 
 	PLOT.data.url = file;
 
+	var PLOT_SLOPE = JSON.parse(JSON.stringify(PLOT));
+	PLOT_SLOPE.encoding.y.field = "s";
+	PLOT_SLOPE.encoding.y.title = "smoothed slope [px]";
+	PLOT_SLOPE.encoding.color = {"value": "#ff0000"};
+	delete PLOT_SLOPE.encoding.y.scale;
+
+	var PLOT_ACCEL = JSON.parse(JSON.stringify(PLOT));
+	PLOT_ACCEL.encoding.y.field = "a";
+	PLOT_ACCEL.encoding.y.title = "smoothed acceleration [px]";
+	PLOT_ACCEL.encoding.color = {"value": "#00ff00"};
+	delete PLOT_ACCEL.encoding.y.scale;
+
 	vegaEmbed("#plot", PLOT);
+	vegaEmbed("#plot-slope", PLOT_SLOPE);
+	vegaEmbed("#plot-accel", PLOT_ACCEL);
 	var element = document.querySelector("#info");
 	if (!element) {
 		return;

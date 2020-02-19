@@ -1,0 +1,168 @@
+#!/usr/local/bin/perl
+
+use strict;
+
+my @files = @ARGV;
+
+my $distance = 1 * 300;
+
+foreach my $file (@files) {
+	print "PROCESSING $file\n";
+	addSlope($file);
+}
+
+exit(0);
+
+
+###########################################################################
+
+
+##############################
+##
+## addSlope --
+##
+
+sub addSlope {
+	my ($file) = @_;
+	open (FILE, $file) or die "Cannot read $file\n";
+	my @contents = <FILE>;
+	close FILE;
+	chomp @contents;
+
+	my @r;
+	my @d;
+
+	for (my $i=0; $i<@contents; $i++) {
+		my $line = $contents[$i];
+		next if $line !~ /"d"/;  # drift
+		next if $line !~ /"r"/;  # row
+		if ($line !~ /"d"\s*:\s*([-+\d.]+)/) {
+			next;
+		}
+		my $dvalue = $1;
+		if ($line !~ /"r"\s*:\s*([-+\d.]+)/) {
+			next;
+		}
+		my $rvalue = $1;
+		$r[@r] = $rvalue;
+		$d[@d] = $dvalue;
+	}
+
+	# build sequence
+	my @data;
+	my @slope;
+	my @accel;
+	my $size = $r[$#r] + 1;
+	for (my $i=$size-1; $i<=0; $i--) {
+		$data[$i] = "X";
+		$slope[$i] = "X";
+		$accel[$i] = "X";
+	}
+
+	for (my $i=0; $i<$#r; $i++) {
+		for (my $j=$r[$i]; $j<$r[$i+1]; $j++) {
+			$data[$j] = $d[$i];
+		}
+	}
+
+	for (my $i=0; $i<@data; $i++) {
+		my $i2 = $i + $distance;
+		last if $i2 >= @data;
+		next if $data[$i] eq "X";
+		next if $data[$i2] eq "X";
+		$slope[$i] = $data[$i2] - $data[$i];
+	}
+
+	for (my $i=0; $i<@slope; $i++) {
+		my $i2 = $i + $distance;
+		last if $i2 >= @slope;
+		next if $slope[$i] eq "X";
+		next if $slope[$i2] eq "X";
+		$accel[$i] = $slope[$i2] - $slope[$i];
+	}
+
+
+	# smooth slope data
+	#   y[n] = k * x[n] + (1-k) * y[n-1]
+	my $k = 0.0005;
+	my @slopefilter;
+	$slopefilter[0] = 0;
+	for (my $i=1; $i<@slope; $i++) {
+		$slopefilter[$i] = "X";
+		next if $slope[$i] eq "X";
+		next if $slope[$i-1] eq "X";
+		$slopefilter[$i] = $k * $slope[$i] + (1.0-$k) * $slopefilter[$i-1];
+	}
+
+	# smooth slope data in reverse
+	#   y[n] = k * x[n] + (1-k) * y[n-1]
+	my @slopefilterreverse;
+	$slopefilterreverse[$#slopefilter] = 0;
+	for (my $i=@slopefilter - 2; $i>=0; $i--) {
+		$slopefilterreverse[$i] = 0;
+		next if $slopefilter[$i] eq "X";
+		next if $slopefilter[$i+1] eq "X";
+		$slopefilterreverse[$i] = $k * $slopefilter[$i] + (1.0-$k) * $slopefilterreverse[$i+1];
+	}
+
+	# smooth acceleration data
+	#   y[n] = k * x[n] + (1-k) * y[n-1]
+	my @accelfilter;
+	$accelfilter[0] = 0;
+	for (my $i=1; $i<@accel; $i++) {
+		$accelfilter[$i] = "X";
+		next if $accel[$i] eq "X";
+		next if $accel[$i-1] eq "X";
+		$accelfilter[$i] = $k * $accel[$i] + (1.0-$k) * $accelfilter[$i-1];
+	}
+
+	# smooth accelleration data in reverse
+	#   y[n] = k * x[n] + (1-k) * y[n-1]
+	my @accelfilterreverse;
+	$accelfilterreverse[$#accelfilter] = 0;
+	for (my $i=@accelfilter - 2; $i>=0; $i--) {
+		$accelfilterreverse[$i] = 0;
+		next if $accelfilter[$i] eq "X";
+		next if $accelfilter[$i+1] eq "X";
+		$accelfilterreverse[$i] = $k * $accelfilter[$i] + (1.0-$k) * $accelfilterreverse[$i+1];
+	}
+
+	# now insert filtered slope and acceleration into original file
+	for (my $i=0; $i<@contents; $i++) {
+		my $line = $contents[$i];
+
+		if ($line !~ /"r"\s*:\s*([-+\d.]+)/) {
+			next;
+		}
+		my $rvalue = $1;
+
+		if ($line !~ /"d"\s*:\s*([-+\d.]+)/) {
+			next;
+		}
+		my $dvalue = $1;
+
+		my $svalue = $slopefilterreverse[$rvalue];
+		my $avalue = $accelfilterreverse[$rvalue];
+		$svalue = 0.0 if $avalue eq "X";
+		$avalue = 0.0 if $avalue eq "X";
+		$svalue = 0 if $avalue =~ /^\s*$/;
+		$avalue = 0 if $avalue =~ /^\s*$/;
+		$svalue = int($svalue * 1000 + 0.5)/1000.0;
+		$avalue = int($avalue * 1000 + 0.5)/1000.0;
+	
+		next if $svalue eq "X";
+		next if $svalue =~ /^\s*$/;
+		$line =~ s/\s*,\s*"s"\s*:\s*[-+\d.]+//;  # remove old slope
+		$line =~ s/\s*,\s*"a"\s*:\s*[-+\d.]+//;  # remove old accel
+		$line =~ s/}/,"s":$svalue,"a":$avalue}/;
+		$contents[$i] = $line;
+	}
+
+	open (XFILE, ">$file") or die "Cannot read $file\n";
+	for (my $i=0; $i<@contents; $i++) {
+		print XFILE "$contents[$i]\n";
+	}
+	close XFILE;
+}
+
+
