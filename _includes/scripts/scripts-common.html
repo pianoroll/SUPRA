@@ -206,6 +206,14 @@ function ShortenName(name) {
 // MakeRollTableRows --
 //
 function MakeRollTableRows(list, peeps) {
+	var mp3base = "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp";
+	// Problem with SELinux? so using a direct copy:
+	mp3base = "https://ccrma.stanford.edu/~craig/supra-audio/welte-red/mp3-exp";
+
+	var mp4base = "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp";
+	// Problem with SELinux? so using a direct copy:
+	mp4base = "https://ccrma.stanford.edu/~craig/supra-audio/welte-red/mp4-exp";
+
 	var output = "";
 	for (var i=0; i<list.length; i++) {
 		if (!list[i].TITLE) {
@@ -372,10 +380,9 @@ function MakeRollTableRows(list, peeps) {
 		output += "</td>";
 
 		output += "<td>";
-		// http://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/bc072xf6791.m4a
 		output += "<span class='mp4'>";
 		output += "<a title='Link to MP4 audio file' target='audio' href='";
-		output += "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/";
+		output += mp4base + "/";
 		output += list[i].DRUID.trim() + ".m4a'>";
 		output += "MP4";
 		output += "</a>";
@@ -383,10 +390,9 @@ function MakeRollTableRows(list, peeps) {
 		output += "</td>";
 
 		output += "<td>";
-		// http://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp/bc072xf6791.mp3
 		output += "<span class='mp3'>";
 		output += "<a title='Link to MP3 audio file' target='audio' href='";
-		output += "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp/";
+		output += mp3base + "/";
 		output += list[i].DRUID.trim() + ".mp3'>";
 		output += "MP3";
 		output += "</a>";
@@ -395,7 +401,6 @@ function MakeRollTableRows(list, peeps) {
 
 /*
 		output += "<td>";
-		// http://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp/bc072xf6791.mp3
 		output += "<span class='wav'>";
 		output += "<a title='Link to WAV audio file' target='audio' href='";
 		output += "https://stacks.stanford.edu/file/";

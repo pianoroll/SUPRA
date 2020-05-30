@@ -57,15 +57,24 @@ function PlayAudioFile(druid, element, starttime) {
 		AUDIO.removeAttribute('controls');
       AUDIO.pause();
 		
+		var mp3base = "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp";
+		// Problem with SELinux? so using a direct copy:
+		mp3base = "https://ccrma.stanford.edu/~craig/supra-audio/welte-red/mp3-exp";
+
+		var mp4base = "https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp";
+		// Problem with SELinux? so using a direct copy:
+		mp4base = "https://ccrma.stanford.edu/~craig/supra-audio/welte-red/mp4-exp";
+
       AUDIOid = element.id;
 		var source = '';
 		// Can't have seekable dynamic content in audio element:
 		//source += '<source src="/data?a=mp3&id=' + druid + '" ';
-		source += '<source src="https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp4-exp/' + druid + '.m4a" ';
+		source += '<source src="' + mp4base + '/' + druid + '.m4a" ';
 		// source += '<source src="https://stacks.stanford.edu/file/' + druid + '/'  + druid + '_sl.m4a" ';
 		source += 'type="audio/mp4"/>\n';
 		// MP3 alternate source (in cdase MP4 cannot be played):
 		source += '<source src="https://ccrma.stanford.edu/~craig/piano-roll-project/supra/welte-red/mp3-exp/' + druid + '.mp3" ';
+		source += '<source src="' + mp3base + '/' + druid + '.mp3" ';
 		source += 'type="audio/mpeg"/>\n';
 		AUDIO.innerHTML = source;
 
